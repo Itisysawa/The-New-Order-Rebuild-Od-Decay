@@ -1,0 +1,136 @@
+music = {
+	name = "TMR_SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE"
+	file = "TMR_SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE.ogg"
+}
+music = {
+	name = "TMB_SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE"
+	file = "TMB_SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE.ogg"
+}
+music = {
+	name = "POL_SE_POLISH_WIN_PGW"
+	file = "POL_SE_POLISH_WIN_PGW.ogg"
+}
+music = {
+	name = "POL_SE_POLISH_UKRAINIAN_WAR"
+	file = "POL_SE_POLISH_UKRAINIAN_WAR.ogg"
+}
+music = {
+	name = "POL_SE_POLISH_GERMAN_WAR"
+	file = "POL_SE_POLISH_GERMAN_WAR.ogg"
+}
+music = {
+	name = "POL_SE_DEFEATED_GERMAN"
+	file = "SE_DEFRATED_GERMAN.ogg"
+}
+music = {
+	name = "SE_ANTIREALISM_FISRT_REUNIFIED"
+	file = "SE_ANTIREALISM_FISRT_REUNIFIED.ogg"
+}
+music = {
+	name = "SE_PWA_reunification"
+	file = "SE_PWA_reunification.ogg"
+}
+music = {
+	name = "SE_PWB_reunification"
+	file = "SE_PWB_reunification.ogg"
+}
+music = {
+	name = "SE_PWL_reunification"
+	file = "SE_PWL_reunification.ogg"
+}
+music = {
+	name = "SE_PWD_reunification"
+	file = "SE_PWD_reunification.ogg"
+}
+music = {
+	name = "SE_PWE_reunification"
+	file = "SE_PWE_reunification.ogg"
+}
+music = {
+	name = "SE_PWF_reunification"
+	file = "SE_PWF_reunification.ogg"
+}
+music = {
+	name = "SE_PWG_reunification"
+	file = "SE_PWG_reunification.ogg"
+}
+music = {
+	name = "SE_PWM_reunification"
+	file = "SE_PWM_reunification.ogg"
+}
+music = {
+	name = "SE_PWH_reunification"
+	file = "SE_PWH_reunification.ogg"
+}
+music = {
+	name = "SE_PWI_reunification"
+	file = "SE_PWI_reunification.ogg"
+}
+music = {
+	name = "SE_PWJ_reunification"
+	file = "SE_PWJ_reunification.ogg"
+}
+music = {
+	name = "SE_PWK_reunification"
+	file = "SE_PWK_reunification.ogg"
+}
+music = {
+	name = "SE_TCA_unified_akh"
+	file = "SE_TCA_unified_akh.ogg"
+}
+music = {
+	name = "SE_TCA_unified_gas"
+	file = "SE_TCA_unified_gas.ogg"
+}
+music = {
+	name = "SE_TCB_unified"
+	file = "SE_TCB_unified.ogg"
+}
+music = {
+	name = "SE_TCC_unified"
+	file = "SE_TCC_unified.ogg"
+}
+music = {
+	name = "SE_TCD_unified"
+	file = "SE_TCD_unified.ogg"
+}
+music = {
+	name = "SE_TCF_unified"
+	file = "SE_TCF_unified.ogg"
+}
+music = {
+	name = "SE_TCH_unified"
+	file = "SE_TCH_unified.ogg"
+}
+music = {
+	name = "SE_TCK_unified"
+	file = "SE_TCK_unified.ogg"
+}
+music = {
+	name = "SE_TCK_unified_despo"
+	file = "SE_TCK_unified_despo.ogg"
+}
+music = {
+	name = "SE_TCL_unified_comm"
+	file = "SE_TCL_unified_comm.ogg"
+}
+music = {
+	name = "SE_TCL_unified_socio"
+	file = "SE_TCL_unified_prog.ogg"
+}
+music = {
+	name = "SE_TCL_unified_prog"
+	file = "SE_TCL_unified_socio.ogg"
+}
+music = {
+	name = "SE_TMB_unified"
+	file = "SE_TMB_unified.ogg"
+}
+music = {
+	name = "SE_TPA_unified"
+	file = "SE_TPA_unified.ogg"
+}
+music = {
+	name = "SE_TPC_unified"
+	file = "SE_TPC_unified.ogg"
+}
