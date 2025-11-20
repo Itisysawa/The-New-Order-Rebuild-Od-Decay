@@ -1,0 +1,14 @@
+ideas = {
+    hidden_ideas = {
+        SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE = {}
+        SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE_D = {}
+        SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_RUSSIAN_REUNIFICATION_CAIN = {}
+        SE_RUSSIAN_REUNIFICATION_CAIN_D = {}
+        SE_RUSSIAN_REUNIFICATION_CAIN_A = {}
+    }
+}

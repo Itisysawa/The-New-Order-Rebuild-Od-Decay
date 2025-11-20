@@ -1,0 +1,779 @@
+shared_focus = {
+	id = GGN_strange_place
+	icon = GFX_focus_POL_stanislaws_last_stand
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_strange_place"
+		add_stability = -0.05
+        set_variable = { guns_to_poland = 0 }
+        set_variable = { at_weap_to_poland = 0 }
+        set_variable = { motorize_eq_to_pol = 0 }
+		set_variable = { Preparing_for_uprise = 0 }
+		set_variable = { aa_weap_to_poland = 0 }
+		custom_effect_tooltip = GGN_strange_place_tt
+	}
+}
+shared_focus = {
+	id = GGN_1962_parade
+	icon = GFX_focus_POL_you_will_serve
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_strange_place
+	}
+	relative_position_id = GGN_strange_place
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_strange_place"
+		add_war_support = 0.03
+		add_stability = 0.02
+		add_manpower = -250
+		country_event = { id = by_kasimir_event.6 }
+	}
+}
+shared_focus = {
+	id = GGN_repress_reactionary_power
+	icon = GFX_focus_POL_one_day_closer_to_death
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_1962_parade
+	}
+	relative_position_id = GGN_1962_parade
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_strange_place"
+		TNO_improve_admin_efficiency_low = yes
+		TNO_worsen_industrial_expertise_low = yes
+		add_ideas = GGN_polish_genocide
+		swap_ideas = {
+			add_idea = POL_underground_state_2
+			remove_idea = POL_underground_state
+		}
+		hidden_effect = {
+			POL = {
+				add_ideas = GGN_polish_genocide
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GGN_strengthen_blue_police
+	icon = GFX_focus_POL_the_blue_dogs
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_1962_parade
+	}
+	relative_position_id = GGN_1962_parade
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_strengthen_blue_police"
+		TNO_improve_admin_efficiency_low = yes
+		TNO_worsen_military_supervision_policy_effectiveness_low = yes
+		add_stability = 0.05
+		add_political_power = -50
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.05 }
+        econ_spend_money_once_effect_raw_money = yes
+		country_event = { id = by_kasimir_event.24 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_whats_next
+	icon = GFX_focus_POL_the_king_stands
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_strengthen_blue_police
+	}
+	prerequisite = {
+		focus = GGN_repress_reactionary_power
+	}
+	relative_position_id = GGN_repress_reactionary_power
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_whats_next"
+		add_political_power = -25
+		TNO_improve_admin_efficiency_low = yes
+		country_event = { id = by_kasimir_event.25 days = 3 }
+		custom_effect_tooltip = GGN_whats_next_tt
+	}
+}
+shared_focus = {
+	id = GGN_ggn_stand_still
+	icon = GFX_focus_POL_general_government
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_whats_next
+	}
+	mutually_exclusive = {
+		focus = GGN_prepare_for_a_final_riseup
+	}
+	relative_position_id = GGN_whats_next
+	x = -4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_ggn_stand_still"
+		add_popularity = {
+            ideology = national_socialism
+            popularity = 0.03
+        }
+        add_stability = 0.02
+		set_country_flag = GGN_controls_government
+        mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = GGN_ggn_stand_still_tt
+	}
+}
+
+
+
+######德佬总督府国策######
+shared_focus = {
+	id = GGN_Stellvertretender_Reichskommissar
+	icon = GFX_focus_POL_government_in_crisis
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+        focus =  GGN_ggn_stand_still
+    }
+	allow_branch = {
+        has_country_flag = GGN_controls_government
+    }
+	relative_position_id = GGN_ggn_stand_still
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_Stellvertretender_Reichskommissar"
+		custom_effect_tooltip = GGN_Stellvertretender_Reichskommissar_tt
+	}
+}
+
+
+
+#####波兰家乡军准备国策####
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
+	id = GGN_prepare_for_a_final_riseup
+	icon = GFX_focus_POL_government_in_crisis
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_whats_next
+	}
+	mutually_exclusive = {
+		focus = GGN_ggn_stand_still
+	}
+	relative_position_id = GGN_whats_next
+	x = 4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_prepare_for_a_final_riseup"
+		add_popularity = {
+            ideology = paternalism
+            popularity = 0.03
+        }
+        add_stability = -0.05
+        set_country_flag = we_support_poland_uprising
+        mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			country_event = { id = by_kasimir_event.8 days = 3 }
+			country_event = { id = by_kasimir_event.28 days = 7 }
+		}
+		custom_effect_tooltip = GGN_prepare_for_a_final_riseup_tt
+	}
+}
+shared_focus = {
+	id = GGN_POL_is_not_yet_lost
+	icon = GFX_focus_POL_poland_not_yet_lost
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    allow_branch = {
+        has_country_flag = we_support_poland_uprising
+    }
+	prerequisite = {
+		focus = GGN_prepare_for_a_final_riseup
+	}
+	relative_position_id = GGN_prepare_for_a_final_riseup
+	x = -4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_POL_is_not_yet_lost"
+		add_popularity = {
+            ideology = paternalism
+            popularity = 0.02
+        }
+        add_to_variable = { guns_to_poland = 300 }
+        add_to_variable = { at_weap_to_poland = 100 }
+        custom_effect_tooltip = GGN_secret_arm_ow_tt
+        custom_effect_tooltip = GGN_POL_is_not_yet_lost_tt
+		country_event = { id = by_kasimir_event.1 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_as_we_still_breath
+	icon = GFX_focus_POL_no_room_for_subversion
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_POL_is_not_yet_lost
+	}
+	relative_position_id = GGN_POL_is_not_yet_lost
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_as_we_still_breath"
+		country_event = { id = by_kasimir_event.2 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_what_invasor_took
+	icon = GFX_focus_POL_secret_government
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_POL_is_not_yet_lost
+	}
+	relative_position_id = GGN_POL_is_not_yet_lost
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_what_invasor_took"
+		add_stability = -0.05
+        swap_ideas = {
+            remove_idea = POL_underground_state_2
+            add_idea = POL_underground_state
+        }
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = GGN_we_will_take_it_back_by_our_sword
+	icon = GFX_focus_POL_send_them_to_freedom
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_as_we_still_breath
+	}
+    prerequisite = {
+		focus = GGN_what_invasor_took
+	}
+	relative_position_id = GGN_as_we_still_breath
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_we_will_take_it_back_by_our_sword"
+        POL = {
+            add_war_support = 0.05
+            custom_effect_tooltip = GGN_secret_arm_ow_tt
+            add_to_variable = { guns_to_poland = 300 }
+        }
+		country_event = { id = by_kasimir_event.3 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = GGN_unite_and_prepare_to_fight
+	icon = GFX_focus_POL_unite_to_resist
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_prepare_for_a_final_riseup
+    }
+	allow_branch = {
+        has_country_flag = we_support_poland_uprising
+    }
+	relative_position_id = GGN_prepare_for_a_final_riseup
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_unite_and_prepare_to_fight"
+		POL = {
+            add_stability = 0.03
+            TNO_improve_army_professionalism_med = yes
+        }
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = GGN_cooperation_that_never_thought
+	icon = GFX_focus_POL_we_need_the_lot_of_them
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_unite_and_prepare_to_fight
+	}
+	relative_position_id = GGN_prepare_for_a_final_riseup
+	x = 0
+	y = 2
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_cooperation_that_never_thought"
+		POL = {
+            add_war_support = 0.05
+            add_stability = 0.05
+            add_popularity = {
+                ideology = ultranationalism
+                ideology = paternalism 
+                popularity = 0.03
+            }
+        }
+		add_ideas = POL_underground_state_preparing
+		add_command_power = 50
+		country_event = { id = by_kasimir_event.5 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_cooperate_to_satan
+	icon = GFX_focus_POL_unify_for_us
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+        has_country_flag = we_support_poland_uprising
+    }
+    prerequisite = {
+        focus =  GGN_cooperation_that_never_thought
+    }
+	prerequisite = {
+        focus =  GGN_support_from_USA
+    }
+	relative_position_id = GGN_prepare_for_a_final_riseup
+	x = 1
+	y = 3
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_cooperation_that_never_thought"
+		POL = {
+            add_war_support = 0.05
+            add_stability = 0.05
+            add_popularity = {
+                ideology = ultranationalism
+                ideology = communist 
+                popularity = 0.03
+            }
+        }
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = GGN_secret_arm_ak
+	icon = GFX_focus_POL_jednostka_operacji_specjalnych
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    allow_branch = {
+        has_country_flag = we_support_poland_uprising
+    }
+	prerequisite = {
+		focus = GGN_prepare_for_a_final_riseup
+	}
+	relative_position_id = GGN_prepare_for_a_final_riseup
+	x = 4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_secret_arm_ak"
+		add_popularity = {
+            ideology = paternalism
+            popularity = 0.01
+        }
+        add_war_support = -0.01
+        add_to_variable = { guns_to_poland = 500 }
+        custom_effect_tooltip = GGN_secret_arm_ow_tt
+	}
+}
+shared_focus = {
+	id = GGN_support_from_USA
+	icon = GFX_focus_generic_offer_from_ofn
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+        has_country_flag = we_support_poland_uprising
+    }
+    prerequisite = {
+        focus =  GGN_secret_arm_ak
+    }
+	relative_position_id = GGN_secret_arm_ak
+	x = -0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_support_from_USA"
+		POL = {
+            add_war_support = 0.05
+            add_stability = 0.05
+            add_popularity = {
+                ideology = liberalism
+                popularity = 0.03
+            }
+        }
+		country_event = { id = by_kasimir_event.7 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_run_from_romania
+	icon = GFX_focus_POL_our_last_hope
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_secret_arm_ak
+    }
+	relative_position_id = GGN_secret_arm_ak
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_run_from_romania"
+		POL = {
+			set_temp_variable = { temp_econ_spending_amount = 0.25 }
+        	econ_spend_money_once_effect_raw_money = yes
+			add_to_variable = { guns_to_poland = 500 }
+			add_to_variable = { aa_weap_to_poland = 100 } 
+        	add_to_variable = { at_weap_to_poland = 130 }
+			add_to_variable = { motorize_eq_to_pol = 120 }
+			custom_effect_tooltip = GGN_run_from_romania_tt
+        }
+	}
+}
+shared_focus = {
+	id = GGN_pilecki_plan
+	icon = GFX_focus_POL_pilecki_plan
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_run_from_romania
+    }
+	relative_position_id = GGN_run_from_romania
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_pilecki_plan"
+		add_stability = -0.05
+		add_command_power = 25
+	}
+}
+shared_focus = {
+	id = GGN_from_italy_to_poland
+	icon = GFX_focus_POL_from_italy_to_poland
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_support_from_USA
+	}
+	relative_position_id = GGN_support_from_USA
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_from_italy_to_poland"
+        POL = {
+            add_war_support = 0.05
+        }
+	}
+}
+shared_focus = {
+	id = GGN_blue_police_corruption
+	icon = GFX_focus_generic_corruption
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_pilecki_plan
+    }
+	prerequisite = {
+        focus =  GGN_from_italy_to_poland
+    }
+	relative_position_id = GGN_pilecki_plan
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_blue_police_corruption"
+		add_stability = -0.05
+		add_political_power = 50
+		set_temp_variable = { temp_econ_spending_amount = 0.05 }
+        econ_spend_money_once_effect_raw_money = yes
+	}
+}
+shared_focus = {
+	id = GGN_secret_arm_ow
+	icon = GFX_focus_POL_strengthen_the_ow_zj
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_cooperate_to_satan
+	}
+	relative_position_id = GGN_cooperate_to_satan
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_secret_arm_ow"
+		add_popularity = {
+            ideology = ultranationalism
+            popularity = 0.01
+        }
+        add_popularity = {
+            ideology = despotism
+            popularity = 0.02
+        }
+        add_war_support = -0.02
+        add_to_variable = { guns_to_poland = 500 }
+        custom_effect_tooltip = GGN_secret_arm_ow_tt
+	}
+}
+shared_focus = {
+	id = GGN_marsh_like_dabrowski
+	icon = GFX_focus_POL_ludowa_i_krajowa
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_we_will_take_it_back_by_our_sword
+	}
+	prerequisite = {
+        focus =  GGN_set_up_different_war_zone
+    }
+	relative_position_id = GGN_we_will_take_it_back_by_our_sword
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_marsh_like_dabrowski"
+        POL = {
+            add_war_support = 0.05
+        }
+		country_event = { id = by_kasimir_event.4 days = 3 }
+	}
+}
+shared_focus = {
+	id = GGN_set_up_different_war_zone
+	icon = GFX_focus_generic_war_of_attrition
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_cooperation_that_never_thought
+    }
+
+	relative_position_id = GGN_cooperation_that_never_thought
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_set_up_different_war_zone"
+		POL = {
+            TNO_improve_army_professionalism_high = yes
+        }
+	}
+}
+shared_focus = {
+	id = GGN_unite_war
+	icon = GFX_focus_generic_support_personnel
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = GGN_marsh_like_dabrowski
+	}
+	prerequisite = {
+		focus = GGN_secret_arm_ow
+	}
+	relative_position_id = GGN_marsh_like_dabrowski
+	x = -0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_unite_war"
+        POL = {
+            add_war_support = 0.05
+        }
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = GGN_unite_treatment
+	icon = GFX_focus_generic_balancing_the_council
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+		focus = GGN_secret_arm_ow
+	}
+	prerequisite = {
+		focus = GGN_blue_police_corruption
+	}
+
+	relative_position_id = GGN_secret_arm_ow
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_unite_treatment"
+		POL = {
+            add_stability = 0.05
+        }
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = GGN_split_up_teamwork
+	icon = GFX_focus_POL_attack_from_diff_direction
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus =  GGN_unite_treatment
+    }
+    prerequisite = {
+        focus =  GGN_unite_war
+    }
+	relative_position_id = GGN_unite_war
+	x = 2  
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GGN_split_up_teamwork"
+		POL = {
+            TNO_improve_admin_efficiency_low = yes
+            add_stability = 0.03
+        }
+		country_event = { id = by_kasimir_event.18 days = 3 }
+		custom_effect_tooltip = GGN_split_up_teamwork_tt
+	}
+}

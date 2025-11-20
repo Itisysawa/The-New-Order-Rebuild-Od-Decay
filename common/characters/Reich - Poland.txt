@@ -1,0 +1,413 @@
+characters = {
+	POL_Emil_Fieldorf = {
+		name = POL_Emil_Fieldorf
+#		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Emil_Fieldorf.png" } }
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Emil_Fieldorf_re.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_kasimir.dds" } }
+		country_leader = {
+			desc = "POLITICS_EMIL_FIELDORF_DESC"
+			ideology = paternalism_provisional_government_subtype
+			expire = "1999.4.4"
+			traits = { resister_of_polish }
+			id = -1
+		}
+		field_marshal = {
+			traits = { logistics_wizard expert_delegator war_hero brilliant_strategist infantry_officer }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	AKJ_tadeusz_komorovski = {
+		name = AKJ_tadeusz_komorovski
+		portraits = { civilian = { large = "gfx/leaders/POL/tadeusz_komorowski.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_kasimir.dds" } }
+		country_leader = {
+			desc = "AKJ_tadeusz_komorovski_desc"
+			ideology = despotism_military_junta_subtype
+			expire = "1999.4.4"
+			traits = { resister_of_polish }
+			id = -1
+		}
+		field_marshal = {
+			traits = { logistics_wizard expert_delegator war_hero brilliant_strategist infantry_officer }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	EPJ_Adam_Koc = {
+		name = EPJ_Adam_Koc
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_ttt.dds" } }
+		portraits = { civilian = { large = "gfx/leaders/EPJ/Adam_Koc.dds" } }
+		country_leader = {
+			desc = "POLITICAL_EPJ_Adam_Koc_desc"
+			ideology = paternalism_sanacja_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	## COLLAB LEADERS ##
+	POL_Werner_Schrader = {
+		name = POL_Werner_Schrader
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_POL_Werner_Schrader.png" } }
+	}
+	POL_Stanislaw_Wachowiak = {
+		name = POL_Stanislaw_Wachowiak
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Stanislaw_Wachowiak.png" } }
+	}
+	POL_Adam_Baworowski = {
+		name = POL_Adam_Baworowski
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Adam_Baworowski.png" } }
+	}
+	PMW_Dmitry_Medvedev = {
+		name = PMW_Dmitry_Medvedev
+		portraits = { civilian = { large = "gfx/leaders/PMW/PMW_Dmitry_Medvedev.png" } }
+		country_leader = {
+			desc = "PMW_Dmitry_Medvedev_desc"
+			ideology = communist_bolshevism_subtype
+			expire = "1999.4.4"
+			traits = { }
+			id = -1
+		}
+	}
+	PMW_provisional_government = {
+		name = PMW_provisional_government
+		portraits = { civilian = { large = "gfx/leaders/PMW/PMW_provisional_government.png" } }
+		country_leader = {
+			desc = "PMW_provisional_government_desc"
+			ideology = Paternalism_provisional_government_subtype
+			expire = "1999.4.4"
+			traits = { }
+			id = -1
+		}
+	}
+	## PARTY LEADERS ##
+	POL_Wladyslaw_Gomulka = {
+		name = POL_Wladyslaw_Gomulka
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Wladyslaw_Gomulkas.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_fog.dds" } }
+		country_leader = {
+			desc = "POL_Wladyslaw_Gomulka_desc"
+			ideology = communist_national_communism_subtype
+			expire = "1999.4.4"
+			traits = { general_secretary_of_polish }
+			id = -1
+		}
+	}
+	ALD_Wladyslaw_Gomulka = {
+		name = POL_Wladyslaw_Gomulka
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Wladyslaw_Gomulkas.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_fog.dds" } }
+		country_leader = {
+			desc = "POL_Wladyslaw_Gomulka_desc"
+			ideology = communist_national_communism_subtype
+			expire = "1999.4.4"
+			traits = { resister_of_polish }
+			id = -1
+		}
+	}
+	POL_Joseph_Pilsudski = {
+		name = POL_Joseph_Pilsudski
+		portraits = { civilian = { large = "gfx/leaders/POL/Pilsudski.png" } }
+	}
+	POL_takanashi_hoshino = {
+		name = POL_takanashi_hoshino
+		portraits = { civilian = { large = "gfx/leaders/POL/hoshino.png" } }
+	}
+	POL_revolutive_council_cha = {
+		name = POL_revolutive_council_cha
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_revolutive_council.png" } }
+		country_leader = {
+			desc = "POL_revolutive_council_cha_desc"
+			ideology = socialist_revolutionary_frontism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Antoni_Pajak = {
+		name = POL_Antoni_Pajak
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Antoni_Pajak.png" } }
+		country_leader = {
+			ideology = socialist_polish_socialism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Stanislaw_Banczyk = {
+		name = POL_Stanislaw_Banczyk
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Stanislaw_Banczyk.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_nut.dds" } }
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Zygmunt_Muchniewski = {
+		name = POL_Zygmunt_Muchniewski
+		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
+		country_leader = {
+			ideology = liberalism_liberal_radicalism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Tadeusz_Bielecki = {
+		name = POL_Tadeusz_Bielecki
+		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
+		country_leader = {
+			desc = "POL_Tadeusz_Bielecki_desc"
+			ideology = conservatism_agrarianism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Stanislaw_Kasznica = {
+		name = POL_Stanislaw_Kasznica
+		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
+		country_leader = {
+			ideology = despotism_military_junta_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Friedrich_Christian = {
+		name = POL_Friedrich_Christian
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_f_c.png" } }
+	}
+	POL_Jan_Wyglenda = {
+		name = POL_Jan_Wyglenda
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_salski.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_black.dds" } }
+		country_leader = {
+			ideology = ultranationalism_great_pole_thought_subtype
+			expire = "1999.4.4"
+			id = -1
+			desc = "POL_Jan_Wyglenda_desc"
+
+		}
+		field_marshal = {
+			traits = { }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	OZJ_Jan_Wyglenda = {
+		name = POL_Jan_Wyglenda
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_salski.png" } }
+		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_black.dds" } }
+		country_leader = {
+			ideology = ultranationalism_great_pole_thought_subtype
+			expire = "1999.4.4"
+			id = -1
+			desc = "POL_Jan_Wyglenda_desc"
+
+		}
+		field_marshal = {
+			traits = { }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	## UNIT LEADERS ##
+	POL_Kazimierz_Sosnkowski = {
+		name = POL_Kazimierz_Sosnkowski
+		portraits = { civilian = { large = "gfx/leaders/POL/Sosnkowski.png" } }
+		field_marshal = {
+			traits = { logistics_wizard expert_delegator war_hero brilliant_strategist infantry_officer }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	POL_Mieczyslaw_Boruta_Spiechowicz = {
+		name = POL_Mieczyslaw_Boruta_Spiechowicz
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Mieczyslaw_Boruta_Spiechowicz.png" } }
+		field_marshal = {
+			traits = { war_hero brilliant_strategist infantry_officer armor_officer infantry_leader Trickster trait_mountaineer hill_fighter }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	POL_Witold_Pilecki = {
+		name = POL_Witold_Pilecki
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Witold Pilecki.png" } }
+		corps_commander = {
+			traits = { cavalry_leader urban_assault_specialist trait_cautious brilliant_strategist }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	POL_Kazimierz_Iranek_Osmecki = {
+		name = POL_Kazimierz_Iranek_Osmecki
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Kazimierz_Iranek-Osmeckis.png" } }
+		corps_commander = {
+			traits = { trickster infantry_expert infantry_leader commando inflexible_strategist camouflage_expert }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	POL_Stanislaw_Jankowski = {
+		name = POL_Stanislaw_Jankowski
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Stanislaw_Jankowski.png" } }
+		corps_commander = {
+			traits = { trait_cautious engineer_officer trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	POL_Stanislaw_Ostrowski = {
+		name = POL_Stanislaw_Ostrowski
+		portraits = {
+			civilian = {
+				small = GFX_POL_Stanislaw_Ostrowski
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = POL_Stanislaw_Ostrowski_hog
+			traits = {
+				head_of_government
+				hog_pragmatic_statesman
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Florian_Siwicki = {
+		name = POL_Florian_Siwicki
+		portraits = {
+			civilian = {
+				small = GFX_POL_Florian_Siwicki
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = POL_Florian_Siwicki_sec
+			traits = {
+				security_minister
+				sec_crime_fighter
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_August_Zaleski = {
+		name = POL_August_Zaleski
+		portraits = {
+			civilian = {
+				small = GFX_POL_August_Zaleski
+				large = "gfx/leaders/POL/POL_AZ.png"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = POL_August_Zaleski_eco
+			traits = {
+				economy_minister
+				eco_strategic_destruction_proponent
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Czeslaw_Milosz = {
+		name = POL_Czeslaw_Milosz
+		portraits = {
+			civilian = {
+				small = "GFX_POL_Czeslaw_Milosz"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = POL_Czeslaw_Milosz_for
+			traits = {
+				foreign_minister
+				for_general_staffer
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Michal_Rola_Zymierski = {
+		name = POL_Michal_Rola_Zymierski
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Michal_Rola_Zymierski.dds" } }
+		corps_commander = {
+			traits = { career_officer infantry_officer trait_cautious infantry_leader infantry_expert organizer skilled_staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	POL_Marian_spychalski = {
+		name = POL_Marian_spychalski
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Marian_spychalski.dds" } }
+		corps_commander = {
+			traits = { politically_connected infantry_officer trait_cautious engineer_officer organizer skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	POL_Wojciech_Jaruzelski = {
+		name = POL_Wojciech_Jaruzelski
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Wojciech_Jaruzelski.dds" } }
+		corps_commander = {
+			traits = { politically_connected trait_reckless harsh_leader organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	POL_Zygmunt_Berling = {
+		name = POL_Zygmunt_Berling
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Zygmunt_Berling.dds" } }
+		field_marshal = {
+			traits = { war_hero career_officer inflexible_strategist infantry_leader infantry_expert organizer trickster }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

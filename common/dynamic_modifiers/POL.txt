@@ -1,0 +1,16 @@
+POL_defensive_war_plan = { #for faction status
+	enable = { always = yes }
+	icon = "GFX_idea_idea_generic_unity"
+
+	army_attack_factor = polish_army_att
+	army_defence_factor = polish_army_def
+	army_org_factor = polish_army_org
+	army_morale_factor = polish_army_mor
+	war_support_factor = polish_war_sup
+	conscription_factor = polish_conscription
+	surrender_limit = POL_surrender_limit
+	mobilization_speed = polish_mob_spd
+	cas_damage_reduction = polish_cas_dmg_red
+	recon_factor_while_entrenched = polish_recon_aft_entr
+	army_attack_speed_factor = polish_army_attack_spd
+}

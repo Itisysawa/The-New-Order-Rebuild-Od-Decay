@@ -1,0 +1,17 @@
+shared_focus = {
+	id = TCI_long_night
+	icon = GFX_focus_POL_a_trip_to_lwow
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_long_night"
+		add_stability = -0.05
+	}
+}

@@ -1,0 +1,55 @@
+
+leader_traits = {
+    continer_of_sanaji = { #Pol emil fieldorf
+        random = no
+        stability_factor = 0.1
+        paternalism_drift = 0.01
+    }
+}
+leader_traits = {
+    resister_of_polish = { #Pol emil fieldorf
+        random = no
+        stability_weekly = 0.001
+        surrender_limit = 0.03
+        army_core_defence_factor = 0.05
+    }
+}
+leader_traits = {
+    general_secretary_of_polish = { #Pol gomulka
+        random = no
+        stability_weekly = 0.001
+        communist_drift = 0.01
+        political_power_gain = -0.05
+    }
+}
+leader_traits = {
+    father_of_polish = { #Pol Pilsudski
+        random = no
+        stability_weekly = 100
+        weekly_manpower = 1500000
+        war_support_factor = 1000
+        army_defence_factor = 100000
+        army_attack_factor = 100000
+        army_speed_factor = 100000
+        army_morale_factor = 1000
+        army_org_factor = 1000
+        free_production_units_modifier = 100000
+        training_time_army_factor = -1
+    }
+}
+leader_traits = {
+    man_of_national_glory = { #Pol salski
+        random = no
+        stability_weekly = 0.001
+        ultranationalism_drift = 0.01
+        war_support_weekly = 0.01
+    }
+}
+leader_traits = {
+    new_pilsuski_of_poland = { #Pol fieldorf
+        random = no
+        surrender_limit = 0.05
+        stability_factor = 0.1
+        army_core_defence_factor = 0.05
+    }
+}

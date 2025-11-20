@@ -1,0 +1,3261 @@
+add_namespace = POL_ROD
+add_namespace = POL_ROD.FUK
+add_namespace = before_wsw
+add_namespace = by_kasimir_event
+
+country_event = {
+	id = POL_ROD.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = POL_ROD.0.t
+	desc = POL_ROD.0.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.0.a
+		add_to_variable = { PWR_OWZJ_affection = 5 }
+		add_to_variable = { PWR_sanaji_affection = -5 }
+		declare_war_on = {
+			target = BLR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = JST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = DST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = OST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = UPO
+			type = annex_everything
+		}
+	}
+	option = {
+		name = POL_ROD.0.b
+		add_to_variable = { PWR_OWZJ_affection = -1 }
+		add_to_variable = { PWR_sanaji_affection = 1 }
+		declare_war_on = {
+			target = BLR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = JST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = DST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = OST
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = UPO
+			type = annex_everything
+		}
+		POL = {
+			add_to_faction = MST
+		}
+	}
+}
+country_event = {
+	id = by_kasimir_event.1                                                   #1~4是地下学校
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.1.t
+	desc = by_kasimir_event.1.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.1.a
+		POL = {
+			add_manpower = -1
+		}
+	}
+}
+country_event = {
+	id = by_kasimir_event.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.2.t
+	desc = by_kasimir_event.2.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.2.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.3.t
+	desc = by_kasimir_event.3.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.3.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.4                                                       #地下学校 完
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.4.t
+	desc = by_kasimir_event.4.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.4.a
+		
+	}
+}
+country_event = {
+	id = by_kasimir_event.5                                                       #希米格维之死
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.5.t
+	desc = by_kasimir_event.5.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.5.a
+		POL = {
+			add_manpower = -1
+		}
+	}
+}
+country_event = {
+	id = by_kasimir_event.6                                                       #波兰奴工起义
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.6.t
+	desc = by_kasimir_event.6.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.6.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.7                                                       #华绍之旅
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.7.t
+	desc = by_kasimir_event.7.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.7.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.8                                                       #独立之路长漫漫
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.8.t
+	desc = by_kasimir_event.8.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.8.a
+		country_event = { id = by_kasimir_event.9 days = 7 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.9                                                       #对苏战争
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.9.t
+	desc = by_kasimir_event.9.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.9.a
+		country_event = { id = by_kasimir_event.10 days = 7 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.10                                                       #元帅之死到战争
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.10.t
+	desc = by_kasimir_event.10.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.10.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.11                                                       #11-13从戎三十年
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.11.t
+	desc = by_kasimir_event.11.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.11.a
+		country_event = { id = by_kasimir_event.12 days = 7 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.12                                                       #11-13从戎三十年
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.12.t
+	desc = by_kasimir_event.12.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.12.a
+		country_event = { id = by_kasimir_event.13 days = 7 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.13                                                       #11-13从戎三十年
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.13.t
+	desc = by_kasimir_event.13.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.13.a
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = by_kasimir_event.14                                                       #独立后的文创
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.14.t
+	desc = by_kasimir_event.14.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.14.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.15                                                       #希米格维的葬礼
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.15.t
+	desc = by_kasimir_event.15.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.15.a
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = by_kasimir_event.16                                                       #毕苏斯基诈尸1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.16.t
+	desc = by_kasimir_event.16.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.16.a
+		add_manpower = 1
+		country_event = { id = by_kasimir_event.17 days = 3 }
+	}
+}
+news_event = {
+	id = by_kasimir_event.17                                                       #毕苏斯基诈尸2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = by_kasimir_event.17.t
+	desc = by_kasimir_event.17.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = by_kasimir_event.17.a
+	}
+}
+country_event = {
+	id = before_wsw.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.1.t
+	desc = before_wsw.1.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.1.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.18                                                       #波兰会议
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.18.t
+	desc = by_kasimir_event.18.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.18.a
+		country_event = { id = by_kasimir_event.19 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.19                                                       #波兰会议2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.19.t
+	desc = by_kasimir_event.19.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.19.a
+		country_event = { id = by_kasimir_event.20 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.20                                                       #波兰会议3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.20.t
+	desc = by_kasimir_event.20.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.20.a
+		country_event = { id = by_kasimir_event.21 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.21                                                       #波兰会议4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.21.t
+	desc = by_kasimir_event.21.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.21.a
+		country_event = { id = by_kasimir_event.22 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.22                                                       #波兰会议5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.22.t
+	desc = by_kasimir_event.22.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.22.a
+		country_event = { id = by_kasimir_event.23 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.23                                                       #波兰会议6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.23.t
+	desc = by_kasimir_event.23.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.23.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.24                                                     #面包师1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.24.t
+	desc = by_kasimir_event.24.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.24.a
+		country_event = { id = by_kasimir_event.26 days = 3 }
+
+	}
+}
+country_event = {
+	id = by_kasimir_event.25                                                     #卡尔·阿尔布雷西特
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.25.t
+	desc = by_kasimir_event.25.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.25.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.26                                                     #面包师2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.26.t
+	desc = by_kasimir_event.26.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.26.a
+		country_event = { id = by_kasimir_event.27 days = 3 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.27                                                     #面包师3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.27.t
+	desc = by_kasimir_event.27.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.27.a
+	}
+}
+country_event = {
+	id = by_kasimir_event.28                                                     #东行漫记1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.28.t
+	desc = by_kasimir_event.28.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.28.a
+		country_event = { id = by_kasimir_event.29 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.29                                                     #东行漫记2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.29.t
+	desc = by_kasimir_event.29.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.29.a
+		country_event = { id = by_kasimir_event.30 days = 25 }
+
+	}
+}
+country_event = {
+	id = by_kasimir_event.30                                                     #东行漫记3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.30.t
+	desc = by_kasimir_event.30.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.30.a
+		country_event = { id = by_kasimir_event.31 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.31                                                     #东行漫记4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.31.t
+	desc = by_kasimir_event.31.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.31.a
+		country_event = { id = by_kasimir_event.32 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.32                                                     #东行漫记5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.32.t
+	desc = by_kasimir_event.32.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.32.a
+		country_event = { id = by_kasimir_event.33 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.33                                                     #东行漫记6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.33.t
+	desc = by_kasimir_event.33.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.33.a
+		country_event = { id = by_kasimir_event.34 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.34                                                     #东行漫记7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.34.t
+	desc = by_kasimir_event.34.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.34.a
+		country_event = { id = by_kasimir_event.35 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.35                                                     #东行漫记8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.35.t
+	desc = by_kasimir_event.35.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.35.a
+		country_event = { id = by_kasimir_event.36 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.36                                                     #东行漫记9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.36.t
+	desc = by_kasimir_event.36.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.36.a
+		country_event = { id = by_kasimir_event.37 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.37                                                     #东行漫记10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.37.t
+	desc = by_kasimir_event.37.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.37.a
+		country_event = { id = by_kasimir_event.38 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.38                                                     #东行漫记11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.38.t
+	desc = by_kasimir_event.38.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.38.a
+		country_event = { id = by_kasimir_event.46 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.46                                                     #东行漫记11.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.46.t
+	desc = by_kasimir_event.46.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.46.a
+		country_event = { id = by_kasimir_event.39 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.39                                                     #东行漫记12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.39.t
+	desc = by_kasimir_event.39.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.39.a
+		country_event = { id = by_kasimir_event.40 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.40                                                     #东行漫记13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.40.t
+	desc = by_kasimir_event.40.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.40.a
+		country_event = { id = by_kasimir_event.41 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.41                                                     #东行漫记14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.41.t
+	desc = by_kasimir_event.41.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.41.a
+		country_event = { id = by_kasimir_event.42 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.42                                                     #东行漫记15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.42.t
+	desc = by_kasimir_event.42.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.42.a
+		country_event = { id = by_kasimir_event.43 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.43                                                     #东行漫记16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.43.t
+	desc = by_kasimir_event.43.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.43.a
+		country_event = { id = by_kasimir_event.44 days = 25 }
+	}
+}
+country_event = {
+	id = by_kasimir_event.44                                                     #东行漫记17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.44.t
+	desc = by_kasimir_event.44.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.44.a
+		country_event = { id = by_kasimir_event.45 days = 25 }
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = by_kasimir_event.45                                                     #东行漫记18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = by_kasimir_event.45.t
+	desc = by_kasimir_event.45.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = by_kasimir_event.45.a
+		add_manpower = -1
+	}
+}
+country_event = {
+	id = before_wsw.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.2.t
+	desc = before_wsw.2.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.2.a
+	}
+}
+country_event = {
+	id = before_wsw.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.3.t
+	desc = before_wsw.3.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.3.a
+	}
+}
+country_event = {
+	id = before_wsw.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.4.t
+	desc = before_wsw.4.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.4.a
+	}
+}
+country_event = {
+	id = before_wsw.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.5.t
+	desc = before_wsw.5.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.5.a
+		POL = {
+			TNO_improve_army_professionalism_high = yes
+			TNO_improve_conscription_policy_effectiveness_med = yes
+		}
+		set_global_flag = POL_prepared_army_in_zamosiki
+		custom_effect_tooltip = POL_prepared_army_in_zamosiki_tt
+	}
+}
+country_event = {
+	id = before_wsw.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.6.t
+	desc = before_wsw.6.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.6.a
+		POL = {
+            add_equipment_to_stockpile = {
+    	   		type = infantry_equipment
+    	   		amount = 800
+    	   		producer = POL
+    	   	}
+    	   	add_equipment_to_stockpile = {
+	       		type = anti_air_equipment
+	       		amount = 400
+	       		producer = POL
+	       	}
+		    add_equipment_to_stockpile = {
+	      		type = artillery_equipment
+	       		amount = 320
+	       		producer = POL
+	       	}
+        	add_equipment_to_stockpile = {
+	       		type = anti_tank_equipment
+	       		amount = 300
+        		producer = POL
+        	}
+			add_manpower = -35
+        }
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = -800
+    		producer = POL
+    	}
+    	add_equipment_to_stockpile = {
+	    	type = anti_air_equipment
+	    	amount = -400
+	    	producer = POL
+	    }
+		add_equipment_to_stockpile = {
+	    	type = artillery_equipment
+	    	amount = -320
+	    	producer = POL
+	    }
+        add_equipment_to_stockpile = {
+	    	type = anti_tank_equipment
+	    	amount = -300
+        	producer = POL
+        }
+	}
+}
+country_event = {
+	id = before_wsw.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.7.t
+	desc = before_wsw.7.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.7.a
+		add_manpower = -350
+		POL = {
+            add_manpower = 2000
+        }
+	}
+}
+country_event = {
+	id = before_wsw.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.8.t
+	desc = before_wsw.8.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.8.a
+	}
+}
+country_event = {
+	id = before_wsw.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.9.t
+	desc = before_wsw.9.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.9.a
+	}
+}
+country_event = {
+	id = before_wsw.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = before_wsw.10.t
+	desc = before_wsw.10.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = before_wsw.10.a
+	}
+}
+country_event = {
+	id = POL_ROD.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.1" }
+	title = POL_ROD.1.t
+	desc = POL_ROD.1.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.1.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_POLISH_UKRAINIAN_WAR }
+		TNO_fire_super_event = yes
+		hidden_effect = {
+			play_song = "POL_SE_POLISH_UKRAINIAN_WAR"
+		}
+		
+	}
+}
+country_event = {
+	id = POL_ROD.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.2" }
+	title = POL_ROD.2.t
+	desc = POL_ROD.2.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.2.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_POLISH_GERMAN_WAR }
+		TNO_fire_super_event = yes
+		hidden_effect = {
+			play_song = "POL_SE_POLISH_GERMAN_WAR"
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.3.t
+	desc = POL_ROD.3.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.3.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_POLISH_WIN_PGW }
+		TNO_fire_super_event = yes
+		hidden_effect = {
+			play_song = "POL_SE_POLISH_WIN_PGW"
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.FUK.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.FUK.1.t
+	desc = POL_ROD.FUK.1.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.FUK.1.a
+		ai_chance = {
+			factor = 5
+		}
+		POL = {
+			country_event = { id = POL_ROD.5 days = 0 }
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 65
+		}
+		name = POL_ROD.FUK.1.b
+		POL = {
+			country_event = { id = POL_ROD.6 days = 0 }
+		}
+		POL = {
+			set_country_flag = finish_ukr_prob
+			add_to_variable = { PWR_PZPR_affection = -5 }
+			add_to_variable = { PWR_sanaji_affection = 5 }
+			hidden_effect = {
+			    add_to_faction = EPJ
+				add_to_faction = FUK
+        	}
+			set_autonomy = {
+				target = EPJ
+				autonomy_state = autonomy_military_district
+			}
+			transfer_state = 91
+	    	transfer_state = 1394
+			declare_war_on = {
+				target = UKS
+				type = annex_everything
+			}
+		}
+        93 = {
+            add_core_of = EPJ
+        }
+        1431 = {
+            add_core_of = EPJ
+        }
+		
+        EPJ = {
+			transfer_state = 1431
+            set_popularities = {
+                conservatism = 17
+	    		paternalism = 33
+		    	despotism = 23
+                paternalism_1 = 24
+                ultranationalism = 3
+			}
+            set_politics = {
+			  	ruling_party = paternalism
+				elections_allowed = no
+			}
+            load_oob = EPJ_1962	
+	    }
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = POL_ROD.FUK.1.c
+		POL = {
+			country_event = { id = POL_ROD.6 days = 0 }
+		}
+		POL = {
+			set_country_flag = finish_ukr_prob
+			add_to_variable = { PWR_PZPR_affection = 5 }
+			add_to_variable = { PWR_sanaji_affection = -5 }
+			add_to_faction = UKS
+			set_autonomy = {
+				target = EPJ
+				autonomy_state = autonomy_military_district
+			}
+			declare_war_on = {
+				target = FUK
+				type = annex_everything
+			}
+		}
+        93 = {
+            add_core_of = EPJ
+        }
+        1431 = {
+            add_core_of = EPJ
+        }
+		
+        EPJ = {
+            set_popularities = {
+                conservatism = 17
+	    		paternalism = 33
+		    	despotism = 23
+                paternalism_1 = 24
+                ultranationalism = 3
+			}
+            set_politics = {
+			  	ruling_party = paternalism
+				elections_allowed = no
+			}
+            load_oob = EPJ_1962	
+	    }
+	}
+}
+country_event = {
+	id = POL_ROD.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.4.t
+	desc = POL_ROD.4.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = POL_ROD.4.a
+		set_politics = { ruling_party = communist elections_allowed = no }
+		add_popularity = {
+			ideology = communist
+			popularity = 0.65
+		}
+		add_popularity = {
+			ideology = communist_1
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communist_2
+			popularity = 0.1
+		}
+		set_cosmetic_tag = pol_soc
+		set_country_flag = communist_won
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.45
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = POL_ROD.4.b
+		set_politics = { ruling_party = socialist elections_allowed = no }
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.35
+		}
+		set_country_flag = socialist_won
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.45
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = POL_ROD.4.c
+		set_politics = { ruling_party = progressivism elections_allowed = no }
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.3
+		}
+		set_country_flag = progressivism_won
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.45
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = POL_ROD.4.e
+		set_politics = { ruling_party = liberalism elections_allowed = no }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.25
+		}
+		set_country_flag = liberalism_won
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -0.45
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.45
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+
+}
+country_event = {
+	id = POL_ROD.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.5.t
+	desc = POL_ROD.5.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.5.a
+		declare_war_on = {
+			target = FUK
+			type = annex_everything
+		}
+		country_event = { id = POL_ROD.1 days = 3 }
+		country_event = { id = by_kasimir_event.11 days = 7 }
+	}
+}
+country_event = {
+	id = POL_ROD.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.6.t
+	desc = POL_ROD.6.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.6.a
+	}
+}
+country_event = {
+	id = POL_ROD.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.7.t
+	desc = POL_ROD.7.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.7.a
+	}
+}
+country_event = {
+	id = POL_ROD.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.8.t
+	desc = POL_ROD.8.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.8.a
+		add_ideas = POL_gold_from_Koc
+		set_temp_variable = { money_reserves_temp = 2.0 }
+		econ_money_reserves_change_raw_money = yes
+	}
+}
+country_event = {
+	id = POL_ROD.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.9.t
+	desc = POL_ROD.9.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.9.a
+		add_war_support = -0.025
+		add_stability = -0.01
+	}
+	option = {
+		name = POL_ROD.9.b
+		add_war_support = 0.025
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.02
+		}
+		add_to_variable = { PWR_OWZJ_affection = 5 }
+		add_to_variable = { PWR_sanaji_affection = -5 }
+		hidden_effect = {
+			random_owned_state = {
+				create_unit = {
+					division = "name = \"OW ZJ armes\" division_template = \"Polish Partisan 2\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"OW ZJ armes\" division_template = \"Polish Partisan 2\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"OW ZJ armes\" division_template = \"Polish Partisan 2\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"OW ZJ armes\" division_template = \"Polish Partisan 2\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+					owner = POL
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.10111
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.10a" }
+	title = POL_ROD.10111.t
+	desc = POL_ROD.10111.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.10111.a
+		87 = {
+			set_demilitarized_zone = yes
+		}
+		85 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.10112
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.10a" }
+	title = POL_ROD.10112.t
+	desc = POL_ROD.10112.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.10112.a
+		93 = {
+			set_demilitarized_zone = yes
+		}
+		1389 = {
+			set_demilitarized_zone = yes
+		}
+		1388 = {
+			set_demilitarized_zone = yes
+		}
+		1391 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.11.t
+	desc = POL_ROD.11.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.11.a
+		country_event = { id = POL_ROD.8 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.12.t
+	desc = POL_ROD.12.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.12.a
+		country_event = { id = POL_ROD.11 days = 3 }
+	}
+}
+news_event = {
+	id = POL_ROD.13                                                    
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.13.t
+	desc = POL_ROD.13.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.13.a
+	}
+}
+country_event = {
+	id = POL_ROD.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.14.t
+	desc = POL_ROD.14.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.14.a
+		hidden_effect = {
+			add_stability = -0.4
+			clr_country_flag = Polish_power_struggle
+			set_politics = { ruling_party = socialist elections_allowed = yes }
+			remove_ideas = {
+				POL_unstable_new_government
+				POL_slowly_regenerating_economy
+				POL_exhausted_arms
+				POL_pitsuski_nvr_die
+				POL_reconstruction_planning
+				POL_experienced_army
+				POL_quality_better_than_amount
+				POL_amount_better_than_quality
+				wont_make_past_again
+				POL_core_land_war
+				POL_disorganized_army
+				POL_disorganized_army_2
+				POL_combined_army
+				POL_combined_army_2
+				POL_commissaire_politique
+				POL_organize_p_idea
+				POL_ground_production
+				POL_Vistula_miracle
+			}
+			remove_dynamic_modifier = { modifier = POL_defensive_war_plan }
+			set_party_name = {
+				ideology = socialist
+				name = POL_socialist_AL_party
+				long_name = POL_socialist_AL_party_long
+			}	
+			load_focus_tree = AL_victory
+			remove_country_leader_role = { ideology = socialist_revolutionary_frontism_subtype }
+			add_country_leader_role = {
+				character = POL_revolutive_council_cha
+				promote_leader = yes
+				country_leader = {
+					expire = "1999.1.1"
+					ideology = socialist_revolutionary_frontism_subtype
+					id = -1
+					desc = "POL_revolutive_council_cha_desc"
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event BRG_collapse.11" }
+	title = POL_ROD.15.t
+	desc = POL_ROD.15.d
+	picture = GFX_report_event_BRG_event15
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = POL_ROD.15.a
+		country_event = { id = POL_ROD.899 days = 2 }
+		set_global_flag = defeat_of_german
+	}
+	option = {
+		name = POL_ROD.15.b
+		goto_province = 19181
+		hidden_effect = {
+			GER = {
+				launch_nuke = {
+					province = 19181
+					use_nuke = no
+				}
+				launch_nuke = {
+					province = 3559
+					use_nuke = no
+				}
+				launch_nuke = {
+					province = 3497
+					use_nuke = no
+				}
+				launch_nuke = {
+					province = 11479
+					use_nuke = no
+				}
+			}
+			ZZZ = {
+				set_cosmetic_tag = ZZZ_nuclear
+				annex_country = {
+					target = POL
+					transfer_troops = no
+				}
+				set_country_flag = PLAYER_NATION_POSTAPOC
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = POL_ROD.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.16.t
+	desc = POL_ROD.16.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.16.a
+	}
+}
+country_event = {
+	id = POL_ROD.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.17.t
+	desc = POL_ROD.17.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.17.a
+	}
+}
+country_event = {
+	id = POL_ROD.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.19.t
+	desc = POL_ROD.19.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.19.a
+		set_country_flag = POL_bloody_street_flag
+		set_country_flag = POL_suppressing_the_potential_uprising_flag
+		mark_focus_tree_layout_dirty = yes
+		add_stability = -0.1
+	}
+}
+country_event = {
+	id = POL_ROD.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.18.t
+	desc = POL_ROD.18.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.18.a
+		set_country_flag = POL_sanaji_won
+		mark_focus_tree_layout_dirty = yes
+		remove_country_leader_role = { ideology = Paternalism_provisional_government_subtype }
+		add_country_leader_role = {
+			character = POL_emil_fieldorf
+			portraits = { civilian = { large = "gfx/leaders/POL/POL_Emil_fieldorf.png" } }			
+			promote_leader = yes
+			country_leader = {
+				expire = "1999.1.1"
+				ideology = paternalism_sanacja_subtype
+				traits = { continer_of_sanaji }
+				id = -1
+				desc = "POLITICS_EMIL_FIELDORF_DESC"
+			}
+		}
+		set_cosmetic_tag = POL_sanaji
+		POL_emil_fieldorf = {
+			set_portraits = {
+				army = { large = "gfx/leaders/POL/POL_Emil_fieldorf.png" }
+				civilian = { large = "gfx/leaders/POL/POL_Emil_fieldorf.png" }
+			}
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.400
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.400.t
+	desc = POL_ROD.400.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.400.a
+		transfer_state = 234
+	}
+}
+
+country_event = {
+	id = POL_ROD.401
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.401.t
+	desc = POL_ROD.401.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.401.a
+		CAU = {
+			transfer_state = 137
+		}
+		country_event = { id = POL_ROD.402 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.402
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.402.t
+	desc = POL_ROD.402.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.402.a
+		remove_country_leader_role = { ideology = communist_red_troops_subtype }
+		add_country_leader_role = {
+			character = PWJ_ulrike_meinhof
+			promote_leader = yes
+			country_leader = {
+				expire = "1999.1.1"
+				ideology = socialist_deutsches_socialism_subtype
+				id = -1
+				desc = "PWJ_ulrike_meinhof_desc"
+			}	
+		}
+		set_politics = { ruling_party = socialist elections_allowed = no }
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.18
+		}
+	}
+	option = {
+		name = POL_ROD.402.b
+		add_country_leader_role = {
+			character = PWJ_Andreas_Baader
+			promote_leader = yes
+			country_leader = {
+				expire = "1999.1.1"
+				ideology = socialist_revolutionary_frontism_subtype
+				id = -1
+				desc = "PWJ_Andreas_Baader_desc"
+			}	
+		}
+		set_politics = { ruling_party = socialist elections_allowed = no }
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.18
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.500                                            #经济危机
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.500.t
+	desc = POL_ROD.500.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.500.a
+		
+	}
+}
+country_event = {
+	id = POL_ROD.899
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.899.t
+	desc = POL_ROD.899.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.899.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_POLISH_WIN_PGW }
+		TNO_fire_super_event = yes
+		hidden_effect = {
+			play_song = "POL_SE_POLISH_WIN_PGW"
+		}
+		POL = {
+			white_peace = GER
+			clr_country_flag = POL_prewar_period
+			set_autonomy = {
+				target = SLO 
+				autonomy_state = autonomy_dominion
+			}
+			transfer_state = 2530
+		}
+		EPJ = {
+			transfer_state = 97
+		}
+        GER = {
+			white_peace = POL
+			dismantle_faction = yes
+            country_event = {
+            	id = POL_ROD.900 days = 3
+            }
+        }
+		PWB = {
+			annex_country = {
+				target = GER
+				transfer_troops = no
+			}
+			set_cosmetic_tag = GER
+		}
+		set_global_flag = skip_default_capitulation
+		PWB = {
+			country_event = { id = POL_ROD.900 days = 3 }
+		}
+		SLO = {
+			set_popularities = {
+                conservatism = 3
+	    		paternalism = 55
+		    	despotism = 25
+                paternalism_1 = 17
+                ultranationalism = 0
+			}
+            set_politics = {
+			  	ruling_party = paternalism
+				elections_allowed = no
+			}
+            load_oob = SLO_1962	
+			remove_faction_status = yes
+		}
+		POL = {
+			white_peace = CAU
+			set_autonomy = {
+				target = CAU
+				autonomy_state = autonomy_dominion
+			}	
+			set_autonomy = {
+				target = GEO
+				autonomy_state = autonomy_dominion
+			}	
+			set_autonomy = {
+				target = AZR
+				autonomy_state = autonomy_dominion
+			}	
+		}
+		FUK = {
+			white_peace = CAU
+			transfer_state = 137
+		}
+		GEO = {
+			add_state_core = 231
+			add_state_core = 1556
+			add_state_core = 1558
+			add_state_core = 1293
+			transfer_state = 231
+			transfer_state = 1556
+			transfer_state = 1558
+			transfer_state = 1293
+			add_ideas = AGCDL_member
+			set_popularities = {
+				paternalism = 75
+				despotism = 15
+				ultranationalism = 10
+			}
+			set_politics = {
+				ruling_party = paternalism
+				last_election = "1941.4.17"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			load_oob = CAU_1962
+			add_ideas = economic_recovering_ee_idea
+		}
+		AZR = {
+			add_state_core = 229
+			add_state_core = 1552
+			add_state_core = 1554
+			add_state_core = 244
+			add_state_core = 2131
+			add_state_core = 1730
+			transfer_state = 229
+			transfer_state = 1552
+			transfer_state = 1554
+			transfer_state = 244
+			transfer_state = 2131
+			transfer_state = 1730
+			add_ideas = AGCDL_member
+			set_popularities = {
+				conservatism = 80
+				despotism = 5
+				paternalism = 15
+			}
+			set_politics = {
+				ruling_party = conservatism
+				last_election = "1941.4.17"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			load_oob = CAU_1962
+			add_ideas = economic_recovering_ee_idea
+		}
+		CAU = {
+			set_cosmetic_tag = CAU_kuban
+			add_ideas = AGCDL_member
+			set_popularities = {
+				paternalism = 80
+				despotism = 20
+			}
+			set_politics = {
+				ruling_party = paternalism
+				last_election = "1941.4.17"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			load_oob = CAU_1962
+			remove_ideas = CAU_bergbaureich
+			remove_ideas = CAU_shipments_to_ger
+			remove_ideas = CAU_stratified
+			remove_faction_status = yes
+			add_ideas = economic_recovering_ee_idea
+		}
+		hidden_effect = {
+			country_event = { id = POL_ROD.500 days = 240 }
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.900
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.900.t
+	desc = POL_ROD.900.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.900.a 
+		PWB = {
+			country_event = { id = POL_ROD.901 days = 80 }
+		}
+		set_variable = { GCW_ends_counting = 0 }
+	}
+}
+country_event = {
+	id = POL_ROD.901
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.901.t
+	desc = POL_ROD.901.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.901.a
+		58 = { set_demilitarized_zone = yes }
+		188 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.902 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.902
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.902.t
+	desc = POL_ROD.902.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.902.a
+		775 = { set_demilitarized_zone = yes }
+		61 = { set_demilitarized_zone = yes }
+		64 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.903 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.903
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.903.t
+	desc = POL_ROD.903.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.903.a
+		776 = { set_demilitarized_zone = yes }
+		1813 = { set_demilitarized_zone = yes }
+		1814 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.904 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.904
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.904.t
+	desc = POL_ROD.904.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.904.a
+		59 = { set_demilitarized_zone = yes }
+		60 = { set_demilitarized_zone = yes }
+		1373 = { set_demilitarized_zone = yes }
+		56 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.905 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.905
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.905.t
+	desc = POL_ROD.905.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.905.a
+		1809 = { set_demilitarized_zone = yes }
+		1810 = { set_demilitarized_zone = yes }
+		57 = { set_demilitarized_zone = yes }
+		42 = { set_demilitarized_zone = yes }
+		1815 = { set_demilitarized_zone = yes }
+		55 = { set_demilitarized_zone = yes }
+		8 = { set_demilitarized_zone = yes }
+		1812 = { set_demilitarized_zone = yes }
+		57 = { set_demilitarized_zone = yes }
+		1811 = { set_demilitarized_zone = yes }
+		28 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.906 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.906
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.906.t
+	desc = POL_ROD.906.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.906.a
+		66 = { set_demilitarized_zone = yes }
+		67 = { set_demilitarized_zone = yes }
+		50 = { set_demilitarized_zone = yes }
+		54 = { set_demilitarized_zone = yes }
+		72 = { set_demilitarized_zone = yes }
+		68 = { set_demilitarized_zone = yes }
+		1026 = { set_demilitarized_zone = yes }
+		53 = { set_demilitarized_zone = yes }
+		52 = { set_demilitarized_zone = yes }
+		152 = { set_demilitarized_zone = yes }
+		69 = { set_demilitarized_zone = yes }
+		9 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.907 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.907
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.907.t
+	desc = POL_ROD.907.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.907.a
+		153 = { set_demilitarized_zone = yes }
+		86 = { set_demilitarized_zone = yes }
+		62 = { set_demilitarized_zone = yes }
+		1772 = { set_demilitarized_zone = yes }
+		98 = { set_demilitarized_zone = yes }
+		770 = { set_demilitarized_zone = yes }
+		1025 = { set_demilitarized_zone = yes }
+		75 = { set_demilitarized_zone = yes }
+		4 = { set_demilitarized_zone = yes }
+		63 = { set_demilitarized_zone = yes }
+		85 = { set_demilitarized_zone = yes }
+		87 = { set_demilitarized_zone = yes }
+		5 = { set_demilitarized_zone = yes }
+		65 = { set_demilitarized_zone = yes }
+		country_event = { id = POL_ROD.908 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.908
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.908.t
+	desc = POL_ROD.908.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.908.a
+		58 = { set_demilitarized_zone = no }
+		188 = { set_demilitarized_zone = no }
+		775 = { set_demilitarized_zone = no }
+		61 = { set_demilitarized_zone = no }
+		PWA = {
+			transfer_state = 58
+			transfer_state = 188
+			transfer_state = 775
+			transfer_state = 61
+			load_oob = "PWA_1962"
+			load_oob = "PWA_1962"
+			load_oob = "PWA_1962"
+			add_ideas = PWA_great_german
+		}
+		58 = {
+			add_core_of = PWA
+		}
+		188 = {
+			add_core_of = PWA
+		}
+		775 = {
+			add_core_of = PWA
+		}
+		61 = {
+			add_core_of = PWA
+		}
+		country_event = { id = POL_ROD.909 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.909
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.909.t
+	desc = POL_ROD.909.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.909.a
+		63 = { set_demilitarized_zone = no }
+		776 = { set_demilitarized_zone = no }
+		64 = { set_demilitarized_zone = no }
+		1813 = { set_demilitarized_zone = no }
+		1814 = { set_demilitarized_zone = no }
+		PWB = {
+			transfer_state = 775
+			transfer_state = 61
+			load_oob = "PWB_1962"
+			load_oob = "PWB_1962"
+			load_oob = "PWB_1962"
+			add_ideas = PWB_national_security
+		}
+		PWE = {
+			transfer_state = 63
+			transfer_state = 776
+			transfer_state = 64
+			transfer_state = 1813
+			transfer_state = 1814
+			load_oob = "PWE_1962"
+			load_oob = "PWE_1962"
+			load_oob = "PWE_1962"
+			add_ideas = PWE_osten_defence
+		}
+		775 = {
+			add_core_of = PWB
+		}
+		61 = {
+			add_core_of = PWB
+		}
+		63 = {
+			add_core_of = PWE
+		}
+		776 = {
+			add_core_of = PWE
+		}
+		64 = {
+			add_core_of = PWE
+		}
+		1813 = {
+			add_core_of = PWE
+		}
+		1814 = {
+			add_core_of = PWE
+		}
+		country_event = { id = POL_ROD.910 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.910
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.910.t
+	desc = POL_ROD.910.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.910.a
+		59 = { set_demilitarized_zone = no }
+		60 = { set_demilitarized_zone = no }
+		56 = { set_demilitarized_zone = no }
+		1373 = { set_demilitarized_zone = no }
+		1810 = { set_demilitarized_zone = no }
+		1809 = { set_demilitarized_zone = no }
+		51 = { set_demilitarized_zone = no }
+		57 = { set_demilitarized_zone = no }
+		42 = { set_demilitarized_zone = no }
+		1815 = { set_demilitarized_zone = no }
+		PWF = {
+			transfer_state = 59
+			load_oob = "PWF_1962"
+			load_oob = "PWF_1962"
+			load_oob = "PWF_1962"
+			add_ideas = PWF_last_war_for_freedom
+		}
+		PWC = {
+			transfer_state = 63
+			transfer_state = 2526
+			transfer_state = 2527
+			load_oob = "PWC_1962"
+			load_oob = "PWC_1962"
+			load_oob = "PWC_1962"
+			add_ideas = PWC_it_is_time
+		}
+		PWD = {
+			create_faction = deutsches_democratic_front
+        	add_to_faction = PWC
+			add_ideas = PWD_federal_national_security
+		}
+		PWH = {
+			transfer_state = 56
+			transfer_state = 1373
+			transfer_state = 60
+			transfer_state = 1810
+			transfer_state = 1809
+			transfer_state = 1815
+			transfer_state = 51
+			transfer_state = 57
+			transfer_state = 42
+			load_oob = "PWH_1962"
+			load_oob = "PWH_1962"
+			load_oob = "PWH_1962"
+			add_ideas = PWH_legacy_of_november_revolution
+		}
+		63 = {
+			add_core_of = PWC
+		}
+		59 = {
+			add_core_of = PWF
+		}
+		60 = {
+			add_core_of = PWF
+		}
+		56 = {
+			add_core_of = PWH
+		}
+		1373 = {
+			add_core_of = PWh
+		}
+		1810 = {
+			add_core_of = PWh
+		}
+		1809 = {
+			add_core_of = PWh
+		}
+		51 = {
+			add_core_of = PWh
+		}
+		57 = {
+			add_core_of = PWh
+		}
+		42 = {
+			add_core_of = PWh
+		}
+		1815 = {
+			add_core_of = PWh
+		}
+		country_event = { id = POL_ROD.911 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.911
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.911.t
+	desc = POL_ROD.911.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.911.a
+		8 = { set_demilitarized_zone = no }
+		1812 = { set_demilitarized_zone = no }
+		28 = { set_demilitarized_zone = no }
+		1811 = { set_demilitarized_zone = no }
+		50 = { set_demilitarized_zone = no }
+		54 = { set_demilitarized_zone = no }
+		55 = { set_demilitarized_zone = no }
+		72 = { set_demilitarized_zone = no }
+		PWF = {
+			transfer_state = 56
+			transfer_state = 1373
+			transfer_state = 60
+			
+		}
+		PWI = {
+			transfer_state = 8
+			transfer_state = 1812
+			transfer_state = 1811
+			transfer_state = 28
+			transfer_state = 50
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 72
+			load_oob = "PWI_1962"
+			load_oob = "PWI_1962"
+			load_oob = "PWI_1962"
+			add_ideas = PWI_ghost_of_new_francaise
+		}
+		56 = {
+			add_core_of = PWF
+		}
+		1373 = {
+			add_core_of = PWF
+		}
+		60 = {
+			add_core_of = PWF
+		}
+		51 = {
+			add_core_of = PWI
+		}
+		8 = {
+			add_core_of = PWI
+		}
+		1812 = {
+			add_core_of = PWI
+		}
+		1811 = {
+			add_core_of = PWI
+		}
+		28 = {
+			add_core_of = PWI
+		}
+		50 = {
+			add_core_of = PWJ
+		}
+		54 = {
+			add_core_of = PWJ
+		}
+		55 = {
+			add_core_of = PWJ
+		}
+		72 = {
+			add_core_of = PWJ
+		}
+		country_event = { id = POL_ROD.912 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.912
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.912.t
+	desc = POL_ROD.912.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.912.a
+		5 = { set_demilitarized_zone = no }
+		85 = { set_demilitarized_zone = no }
+		87 = { set_demilitarized_zone = no }
+		PWG = {
+			transfer_state = 56
+			transfer_state = 1373
+			load_oob = "PWG_1962"
+			load_oob = "PWG_1962"
+			load_oob = "PWG_1962"
+			add_ideas = GER_SCW_no_join
+			add_ideas = PWG_fortress_of_deutsches_socialism
+		}
+		PWH = {
+			create_faction = People_liberation_front
+			add_ideas = GER_SCW_no_join
+        	add_to_faction = PWG
+		}
+		PWJ = {
+			transfer_state = 50
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 72
+			load_oob = "PWJ_1962"
+			load_oob = "PWJ_1962"
+			load_oob = "PWJ_1962"
+			add_ideas = PWJ_overheated_revolution
+			add_ideas = PWJ_students_and_star_of_revolution
+		}
+		PWR = {
+			transfer_state = 5
+			transfer_state = 85
+			transfer_state = 87
+			transfer_state = 2528
+			transfer_state = 2529
+			load_oob = "PWR_1962"
+			add_ideas = PWR_prepare_final_war
+		}
+		56 = {
+			add_core_of = PWG
+		}
+		1373 = {
+			add_core_of = PWG
+		}
+		5 = {
+			add_core_of = PWR
+		}
+		85 = {
+			add_core_of = PWR
+		}
+		87 = {
+			add_core_of = PWR
+		}
+		country_event = { id = POL_ROD.913 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.913
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.913.t
+	desc = POL_ROD.913.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.913.a
+		153 = { set_demilitarized_zone = no }
+		86 = { set_demilitarized_zone = no }
+		62 = { set_demilitarized_zone = no }
+		152 = { set_demilitarized_zone = no }
+		1772 = { set_demilitarized_zone = no }
+		4 = { set_demilitarized_zone = no }
+		1025 = { set_demilitarized_zone = no }
+		770 = { set_demilitarized_zone = no }
+		98 = { set_demilitarized_zone = no }
+		PWO = {
+			transfer_state = 153
+			transfer_state = 86
+			transfer_state = 62
+			transfer_state = 152
+			transfer_state = 1772
+			transfer_state = 4
+			transfer_state = 1025
+			transfer_state = 770
+			transfer_state = 98
+			load_oob = "PWO_1962"
+			load_oob = "PWO_1962"
+			load_oob = "PWO_1962"
+			add_ideas = PWO_SS_lefted
+		}
+		153 = {
+			add_core_of = PWO
+		}
+		86 = {
+			add_core_of = PWO
+		}
+		62 = {
+			add_core_of = PWO
+		}
+		1772 = {
+			add_core_of = PWO
+		}
+		4 = {
+			add_core_of = PWN
+		}
+		1025 = {
+			add_core_of = PWN
+		}
+		770 = {
+			add_core_of = PWS
+		}
+		98 = {
+			add_core_of = PWS
+		}
+		country_event = { id = POL_ROD.914 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.914
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.914.t
+	desc = POL_ROD.914.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.914.a
+		69 = { set_demilitarized_zone = no }
+		9 = { set_demilitarized_zone = no }
+		75 = { set_demilitarized_zone = no }
+		1026 = { set_demilitarized_zone = no }
+		68 = { set_demilitarized_zone = no }
+		PWP = {
+			transfer_state = 9
+			transfer_state = 75
+			load_oob = "PWP_1962"
+			load_oob = "PWP_1962"
+			load_oob = "PWP_1962"
+			add_ideas = PWP_czech_stability
+		}
+		PWN = {
+			transfer_state = 4
+			transfer_state = 1025
+			load_oob = "PWN_1962"
+			load_oob = "PWN_1962"
+			load_oob = "PWN_1962"
+			add_ideas = PWN_free_austria
+		}
+		PWS = {
+			transfer_state = 770
+			transfer_state = 98
+			load_oob = "PWS_1962"
+			load_oob = "PWS_1962"
+			load_oob = "PWS_1962"
+		}
+		PWK = {
+			transfer_state = 1026
+			transfer_state = 68
+			load_oob = "PWK_1962"
+			load_oob = "PWK_1962"
+			load_oob = "PWK_1962"
+			add_ideas = PWK_last_revolution
+		}
+		PWD = {
+			transfer_state = 69
+		}
+		69 = {
+			add_core_of = PWD
+		}
+		9 = {
+			add_core_of = PWO
+		}
+		75 = {
+			add_core_of = PWO
+		}
+		1026 = {
+			add_core_of = PWK
+		}
+		68 = {
+			add_core_of = PWK
+		}
+		country_event = { id = POL_ROD.915 days = 3 }
+	}
+}
+country_event = {
+	id = POL_ROD.915
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.915.t
+	desc = POL_ROD.915.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.915.a
+		65 = {
+			add_core_of = PWD
+		}
+		PWD = {
+			transfer_state = 65
+			load_oob = "PWD_1962"
+			load_oob = "PWD_1962"
+			load_oob = "PWD_1962"
+			
+		}
+		65 = { set_demilitarized_zone = no }
+		66 = { set_demilitarized_zone = no }
+		67 = { set_demilitarized_zone = no }
+		53 = { set_demilitarized_zone = no }
+		52 = { set_demilitarized_zone = no }
+		152 = { set_demilitarized_zone = no }
+		PWM = {
+			transfer_state = 66
+			transfer_state = 67
+			add_ideas = PWM_ultramilitarist_way
+		}
+		PWL = {
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 152
+			load_oob = "PWL_1962"
+			load_oob = "PWL_1962"
+			load_oob = "PWL_1962"
+			add_ideas = PWL_last_good_of_wehrmacht
+		}
+		PWQ = {
+			transfer_state = 75
+			load_oob = "PWQ_1962"
+			load_oob = "PWQ_1962"
+			load_oob = "PWQ_1962"
+			add_ideas = PWQ_free_czech
+		}
+		PWM = {
+			load_oob = "PWM_1962"
+			load_oob = "PWM_1962"
+			load_oob = "PWM_1962"
+			add_ideas = PWM_ultramilitarist_way
+		}
+		66 = {
+			add_core_of = PWM
+		}
+		67 = {
+			add_core_of = PWM
+		}
+		52 = {
+			add_core_of = PWL
+		}
+		53 = {
+			add_core_of = PWL
+		}
+		152 = {
+			add_core_of = PWL
+		}
+		75 = {
+			add_core_of = PWQ
+		}
+		ICE = {
+			country_event = { id = POL_ROD.916 days = 3 }
+		}
+		PWB = {
+			set_cosmetic_tag = PWB
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.916
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.916.t
+	desc = POL_ROD.916.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.916.a
+		set_global_flag = second_gcw_started
+		PWF = {
+			declare_war_on = {
+				target = PWG
+				type = annex_everything		
+        	}
+		}
+		PWI = {
+			declare_war_on = {
+				target = PWH
+				type = annex_everything		
+        	}
+		}
+		PWJ = {
+			declare_war_on = {
+				target = PWK
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWL
+				type = annex_everything		
+        	}
+		}
+		PWK = {
+			declare_war_on = {
+				target = PWL
+				type = annex_everything		
+        	}
+		}
+		PWA = {
+			declare_war_on = {
+				target = PWB
+				type = annex_everything		
+        	}
+		}
+		PWP = {
+			declare_war_on = {
+				target = PWQ
+				type = annex_everything		
+        	}
+		}
+		PWO = {
+			declare_war_on = {
+				target = PWN
+				type = annex_everything		
+        	}
+		}
+		PWE = {
+			declare_war_on = {
+				target = PWM
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWD
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWC
+				type = annex_everything		
+        	}
+		}
+		PWM = {
+			declare_war_on = {
+				target = PWC
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWD
+				type = annex_everything		
+        	}
+		}
+		PWA = {
+			add_ideas = civilwar_of_ger
+		}
+		PWB = {
+			add_ideas = civilwar_of_ger
+		}
+		PWE = {
+			add_ideas = civilwar_of_ger
+		}
+		PWF = {
+			add_ideas = civilwar_of_ger
+		}
+		PWG = {
+			add_ideas = civilwar_of_ger
+		}
+		PWH = {
+			add_ideas = civilwar_of_ger
+		}
+		PWI = {
+			add_ideas = civilwar_of_ger
+		}
+		PWJ = {
+			add_ideas = civilwar_of_ger
+		}
+		PWK = {
+			add_ideas = civilwar_of_ger
+		}
+		PWL = {
+			add_ideas = civilwar_of_ger
+		}
+		PWM = {
+			add_ideas = civilwar_of_ger
+		}
+		PWN = {
+			add_ideas = civilwar_of_ger
+		}
+		PWO = {
+			add_ideas = civilwar_of_ger
+		}
+		PWP = {
+			add_ideas = civilwar_of_ger
+		}
+		PWQ = {
+			add_ideas = civilwar_of_ger
+		}
+		PWR = {
+			add_ideas = civilwar_of_ger
+		}
+		PWS = {
+			add_ideas = civilwar_of_ger
+		}
+		every_country = {
+			limit = { is_ai = no }
+			news_event = POL_ROD.9999
+		}
+		
+		POL = {
+			country_event = { id = POL_ROD.917 days = 7 }
+		}
+		hidden_effect = {
+			PWA = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1400
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 500
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 300
+				    producer = GER
+			    }
+			}
+			PWB = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2300
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 800
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 600
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 200
+				    producer = GER
+			    }
+			}
+			PWC = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1000
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 300
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 200
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 200
+				    producer = GER
+			    }
+			}
+			PWD = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2300
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 900
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 600
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 700
+				    producer = GER
+			    }
+			}
+			PWE = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2600
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 950
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 750
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 620
+				    producer = GER
+			    }
+			}
+			PWF = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 100
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 100
+				    producer = GER
+			    }
+			}
+			PWG = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 100
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 100
+				    producer = GER
+			    }
+			}
+			PWH = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2200
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 800
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 600
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 600
+				    producer = GER
+			    }
+			}
+			PWI = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 100
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 100
+				    producer = GER
+			    }
+			}
+			PWJ = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2400
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 800
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 400
+				    producer = GER
+			    }
+			}
+			PWK = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 100
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 100
+				    producer = GER
+			    }
+			}
+			PWL = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2400
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 700
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 300
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 500
+				    producer = GER
+			    }
+			}
+			PWM = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 3000
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 800
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 700
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 700
+				    producer = GER
+			    }
+			}
+			PWN = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 100
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 100
+				    producer = GER
+			    }
+			}
+			PWO = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2200
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 600
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 300
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 300
+				    producer = GER
+			    }
+			}
+			PWP = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2200
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 600
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 300
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 300
+				    producer = GER
+			    }
+			}
+			PWQ = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 2500
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 800
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 200
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 700
+				    producer = GER
+			    }
+			}
+			PWR = {
+				add_equipment_to_stockpile = {
+			    	type = infantry_equipment
+			    	amount = 1800
+			    	producer = GER
+		    	}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 400
+				    producer = GER
+			    }
+				add_equipment_to_stockpile = {
+				    type = anti_tank_equipment
+				    amount = 400
+				    producer = GER
+			    }
+			}
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.917
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.917.t
+	desc = POL_ROD.917.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.917.a
+		declare_war_on = {
+			target = PWR
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.919
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
+	title = POL_ROD.919.t
+	desc = POL_ROD.919.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.919.a
+		annex_country = {
+			target = PWR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = EPJ
+			transfer_troops = yes
+		}
+		set_autonomy = {
+			target = PWR 
+			autonomy_state = autonomy_military_district
+		}
+		97 = {
+			remove_core_of = PWR
+		}
+		87 = {
+			remove_core_of = PWR
+		}
+		85 = {
+			remove_core_of = PWR
+		}
+		PWR = {
+			
+			set_politics = { ruling_party = despotism elections_allowed = no }
+			set_popularities = {
+               	conservatism = 0
+				paternalism = 3
+				despotism = 77
+				despotism_1 = 12
+				despotism_2 = 8
+           	    ultranationalism = 0
+			}
+		}
+		every_owned_state = {
+			add_core_of = POL
+		}
+		PWR = {
+			transfer_state = 5
+			transfer_state = 2528
+		}
+	}
+}
+news_event = {
+	id = POL_ROD.9999
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.9999.t
+	desc = POL_ROD.9999.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.9999.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_DEFRATED_GERMAN }
+		TNO_fire_super_event = yes
+		hidden_effect = {
+			play_song = "POL_SE_DEFEATED_GERMAN"
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.10000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.10000.t
+	desc = POL_ROD.10000.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.10000.a
+		PWH = {
+			dismantle_faction = yes
+		}
+		POL = {
+			add_to_faction = PWH
+		}
+	}
+}

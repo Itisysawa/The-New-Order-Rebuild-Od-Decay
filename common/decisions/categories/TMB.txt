@@ -1,0 +1,11 @@
+TMB_first_sacred_war = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = TMB
+	}
+	visible = {
+		has_country_flag = TMB_tara_riot_flag
+	}
+	visible_when_empty = yes
+}

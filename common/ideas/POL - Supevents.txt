@@ -1,0 +1,224 @@
+ideas = {
+    hidden_ideas = {
+        SE_POLISH_GERMAN_WAR = {}
+        SE_POLISH_GERMAN_WAR_D = {}
+        SE_POLISH_GERMAN_WAR_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_POLISH_UKRAINIAN_WAR = {}
+        SE_POLISH_UKRAINIAN_WAR_D = {}
+        SE_POLISH_UKRAINIAN_WAR_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_POLISH_WIN_PGW = {}
+        SE_POLISH_WIN_PGW_D = {}
+        SE_POLISH_WIN_PGW_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_DEFRATED_GERMAN = {}
+        SE_DEFRATED_GERMAN_D = {}
+        SE_DEFRATED_GERMAN_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_ANTIREALISM_FISRT_REUNIFIED = {}
+        SE_ANTIREALISM_FISRT_REUNIFIED_D = {}
+        SE_ANTIREALISM_FISRT_REUNIFIED_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWA_reunification = {}
+        SE_PWA_reunification_D = {}
+        SE_PWA_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWB_reunification = {}
+        SE_PWB_reunification_D = {}
+        SE_PWB_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWD_reunification = {}
+        SE_PWD_reunification_D = {}
+        SE_PWD_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWE_reunification = {}
+        SE_PWE_reunification_D = {}
+        SE_PWE_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWF_reunification = {}
+        SE_PWF_reunification_D = {}
+        SE_PWF_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWG_reunification = {}
+        SE_PWG_reunification_D = {}
+        SE_PWG_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWH_reunification = {}
+        SE_PWH_reunification_D = {}
+        SE_PWH_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWI_reunification = {}
+        SE_PWI_reunification_D = {}
+        SE_PWI_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWJ_reunification = {}
+        SE_PWJ_reunification_D = {}
+        SE_PWJ_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWK_reunification = {}
+        SE_PWK_reunification_D = {}
+        SE_PWK_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWL_reunification = {}
+        SE_PWL_reunification_D = {}
+        SE_PWL_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_PWM_reunification = {}
+        SE_PWM_reunification_D = {}
+        SE_PWM_reunification_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCA_unified_akh = {}
+        SE_TCA_unified_akh_D = {}
+        SE_TCA_unified_akh_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCA_unified_gas = {}
+        SE_TCA_unified_gas_D = {}
+        SE_TCA_unified_gas_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCB_unified = {}
+        SE_TCB_unified_D = {}
+        SE_TCB_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCC_unified = {}
+        SE_TCC_unified_D = {}
+        SE_TCC_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCD_unified = {}
+        SE_TCD_unified_D = {}
+        SE_TCD_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCF_unified = {}
+        SE_TCF_unified_D = {}
+        SE_TCF_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCH_unified = {}
+        SE_TCH_unified_D = {}
+        SE_TCH_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCK_unified = {}
+        SE_TCK_unified_D = {}
+        SE_TCK_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCK_unified_despo = {}
+        SE_TCK_unified_despo_D = {}
+        SE_TCK_unified_despo_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCL_unified_comm = {}
+        SE_TCL_unified_comm_D = {}
+        SE_TCL_unified_comm_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCL_unified_socio = {}
+        SE_TCL_unified_socio_D = {}
+        SE_TCL_unified_socio_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TCL_unified_prog = {}
+        SE_TCL_unified_prog_D = {}
+        SE_TCL_unified_prog_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TMB_unified = {}
+        SE_TMB_unified_D = {}
+        SE_TMB_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TPA_unified = {}
+        SE_TPA_unified_D = {}
+        SE_TPA_unified_A = {}
+    }
+}
+ideas = {
+    hidden_ideas = {
+        SE_TPC_unified = {}
+        SE_TPC_unified_D = {}
+        SE_TPC_unified_A = {}
+    }
+}

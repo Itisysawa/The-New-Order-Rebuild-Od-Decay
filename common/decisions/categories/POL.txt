@@ -1,0 +1,200 @@
+POL_uprising_preparing = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = GGN
+	}
+	visible = {
+		has_country_flag = we_support_poland_uprising
+	}
+	visible_when_empty = yes
+	scripted_gui = POL_uprising_preparation
+}
+Polish_form_occu_zone = {
+	icon = GFX_decision_category_generic_democracy
+	priority = 119999
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = fuk_ukr
+	}
+	visible_when_empty = no
+	picture = "GFX_decision_category_POL_decision_lwow_land"
+}
+Polish_form_occu_zone_ost = {
+	icon = GFX_decision_category_generic_control_warlord
+	priority = 119999
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = fuk_ost
+	}
+	visible_when_empty = no
+	picture = "GFX_decision_category_POL_decision_belarus_land"
+}
+
+POL_civil_armes = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = civil_armes
+	}
+	visible_when_empty = no
+	picture = "GFX_polska_underground_state"
+}
+POL_armament_purchasing = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = pol_can_buy_gun
+	}
+	visible_when_empty = yes
+	picture = "GFX_polska_underground_state"
+}
+POL_armament_purchasing = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = POL
+	}
+	visible = {
+		OR = {
+			has_country_flag = POL_rom_hun_no_war
+			has_country_flag = POL_rom_hun_war
+		}
+	}
+	visible_when_empty = yes
+	picture = "GFX_polska_underground_state"
+}
+POL_sacred_war = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 1199990000
+	allowed = {
+		original_tag = POL
+		has_war_with = GER
+	}
+	visible = {
+		original_tag = POL
+		has_war_with = GER
+	}
+	visible_when_empty = yes
+	scripted_gui = POL_our_final_war
+}
+ROD_debug_decisions = {
+	picture = "GFX_pol_debug"
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		original_tag = POL
+		is_debug = yes
+	}
+	visible = {
+		original_tag = POL
+		is_debug = yes
+	}
+	visible_when_empty = yes
+}
+POL_power_struggle = {
+	icon = GFX_decision_category_generic_power_struggle
+	priority = 10000000
+	allowed = {
+		original_tag = POL
+		has_country_flag = Polish_power_struggle
+	}
+	visible = {
+		original_tag = POL
+		has_country_flag = Polish_power_struggle
+	}
+	visible_when_empty = yes
+	scripted_gui = POL_pwrstruggle_container
+}
+POL_ita_supp = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 9999999
+	allowed = {
+		has_country_flag = POL_italian_support
+		original_tag = POL
+		not = {
+			AND = {
+				has_country_flag = POL_finished_ita_gun
+				has_country_flag = POL_finished_ita_art
+				has_country_flag = POL_finished_ita_aa
+				has_country_flag = POL_finished_ita_at
+			}
+		}
+	}
+	visible = {
+		has_country_flag = POL_italian_support
+		original_tag = POL
+		not = {
+			AND = {
+				has_country_flag = POL_finished_ita_gun
+				has_country_flag = POL_finished_ita_art
+				has_country_flag = POL_finished_ita_aa
+				has_country_flag = POL_finished_ita_at
+			}
+		}
+	}
+	visible_when_empty = no
+}
+POL_revo_council = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 9999999
+	allowed = {
+		has_country_flag = POL_revolutive_council_flag
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = POL_revolutive_council_flag
+		original_tag = POL
+	}
+	visible_when_empty = yes
+}
+POL_salski_massacre_on_AK_and_AL = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 9999999
+	allowed = {
+		has_country_flag = POL_wolfs_rounds_flag
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = POL_wolfs_rounds_flag
+		original_tag = POL
+	}
+	visible_when_empty = yes
+	scripted_gui = POL_salski_catch_AK
+}
+POL_reforming_progress = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 9999999
+	allowed = {
+		has_country_flag = POL_reforming_progress_flag
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = POL_reforming_progress_flag
+		original_tag = POL
+	}
+	visible_when_empty = yes
+}
+POL_suppressing_the_potential_uprising = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 9999999
+	allowed = {
+		has_country_flag = POL_suppressing_the_potential_uprising_flag
+		original_tag = POL
+	}
+	visible = {
+		has_country_flag = POL_suppressing_the_potential_uprising_flag
+		original_tag = POL
+	}
+	visible_when_empty = yes
+}

@@ -1,0 +1,327 @@
+characters = {
+	# Leaders #
+	
+	PWA_Albert_bormann = {
+		name = PWA_Albert_bormann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Albert_Bormann.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = national_socialism_spartanism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CRO_Josip_Broz_Tito_2 = {
+		name = CRO_Josip_Broz_Tito
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/Portrait_Yugoslavia_Josip_Broz_Tito.png"
+			}
+		}
+	}
+	PWB_Karl_Donitz = {
+		name = PWB_Karl_Donitz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWB_Karl_Donitz.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_military_junta_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWC_reinhard_gehlen = {
+		name = PWC_reinhard_gehlen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_POL_Karl_Donitz.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = conservatism_populist_conservatism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWD_willy_brandt = {
+		name = PWD_willy_brandt
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWD_willy_brandt.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = progressivism_popular_front_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWE_hans_speidel = {
+		name = PWE_hans_speidel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Hans_Speidel.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_military_junta_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWF_anarchy_council = {
+		name = PWF_anarchy_council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SBA/Portrait_North_Siberia_Regional_Councils.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = socialist_anarcho_communist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWG_ernst_aust = {
+		name = PWG_ernst_aust
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWG_ernst_aus.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = communist_stratocratic_communism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWH_willy_stoph = {
+		name = PWH_willy_stoph
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_GER_willy_stoph.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = communist_national_communism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWI_Gustav_Krukenberg = {
+		name = PWI_Gustav_Krukenberg
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRG/Portrait_Burgundy_Gustav_Krukenberg.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = national_socialism_burgundian_system_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWJ_ulrike_meinhof = {
+		name = PWJ_ulrike_meinhof
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_GER_ulrike_meinhof.png"
+			}
+		}
+		country_leader = {
+			desc = "PWJ_ulrike_meinhof_desc"
+			expire = "1999.1.1"
+			ideology = communist_red_troops_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWJ_Andreas_Baader = {
+		name = PWJ_Andreas_Baader
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Andreas_Baader.png"
+			}
+		}
+		country_leader = {
+			desc = "PWJ_Andreas_Baader_desc"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWK_heinz_kessler = {
+		name = PWK_heinz_kessler
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DFK/Portrait_Deutsches_Freikorps_Otto_Weidinger.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_warlordism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWL_heinz_gunther_guderian = {
+		name = PWL_heinz_gunther_guderian
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Heinz_Gunther_Guderian.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = paternalism_provisional_government_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	LUX_Dominique_Urbany = {
+		name = LUX_Dominique_Urbany
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/LUX_Dominique_Urbany.png"
+			}
+		}
+		country_leader = {
+			desc = "LUX_Dominique_Urbany_desc"
+			expire = "1999.1.1"
+			ideology = communist_national_communism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWM_ferdinand_schorner = {
+		name = PWM_ferdinand_schorner
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Ferdinand_Schorner.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = ultranationalism_stratocracy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWN_julius_raab = {
+		name = PWN_julius_raab
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWN_julius_raab.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = liberalism_national_liberal_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWO_karl_oberkamp = {
+		name = PWO_karl_oberkamp
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWO_karl_oberkamp.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = national_socialism_spartanism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWP_rudolf_tocsan = {
+		name = PWP_rudolf_tocsan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWP_rudolf_tocsan.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = ultranationalism_stratocracy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWQ_frantisek_slunecko = {
+		name = PWQ_frantisek_slunecko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/PWQ_frantisek_slunecko.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = liberalism_national_liberal_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWR_walter_weiss = {
+		name = PWR_walter_weiss
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_PWQ_walter_weiss.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = national_socialism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PWS_edvard_kardelj = {
+		name = PWS_edvard_kardelj
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_PWS_edvard_kardelj.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = liberalism_national_liberal_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,320 @@
+shared_focus = {
+	id = POL_armia_krajowa_came_back
+	icon = GFX_focus_POL_integrate_the_army
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_armia_krajowa_came_back"
+	
+	}
+}
+shared_focus = {
+	id = POL_restoring_order
+	icon = GFX_focus_generic_call_the_council_to_order
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 2
+	available = {
+	}
+	prerequisite = {
+		focus = POL_armia_krajowa_came_back
+	}
+	relative_position_id = POL_armia_krajowa_came_back
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_restoring_order"
+	
+	}
+}
+shared_focus = {
+	id = POL_expel_german
+	icon = GFX_focus_GER_back_to_germany
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_restoring_order
+	}
+	relative_position_id = POL_restoring_order
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_expel_german"
+	
+	}
+}
+shared_focus = {
+	id = POL_opinion_poll
+	icon = GFX_focus_NOV_sunrise_democracy_sunset_dictatorship
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_radical_liberalism_rises 
+	}
+	x = -4
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_armia_krajowa_came_back
+	}
+	relative_position_id = POL_armia_krajowa_came_back
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_opinion_poll"
+	
+	}
+}
+shared_focus = {
+	id = POL_radical_liberalism_rises
+	icon = GFX_focus_generic_liberalization
+	cost = 1
+	available_if_capitulated = no
+	mutually_exclusive = {
+		focus = POL_opinion_poll
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	x = 4
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_armia_krajowa_came_back
+	}
+	relative_position_id = POL_armia_krajowa_came_back
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_radical_liberalism_rises"
+	
+	}
+}
+shared_focus = {
+	id = POL_divide_and_chaos
+	icon = GFX_focus_generic_death_of_democracy
+	cost = 1
+	available_if_capitulated = no
+
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_radical_liberalism_rises
+	}
+	relative_position_id = POL_radical_liberalism_rises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_divide_and_chaos"
+	
+	}
+}
+shared_focus = {
+	id = POL_incite_the_ppl_in_serm
+	icon = GFX_focus_generic_question_reactionaries
+	cost = 1
+	available_if_capitulated = no
+
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_radical_liberalism_rises
+	}
+	relative_position_id = POL_radical_liberalism_rises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_incite_the_ppl_in_serm"
+	
+	}
+}
+shared_focus = {
+	id = POL_stay_fully_control_to_serm
+	icon = GFX_focus_generic_despotism
+	cost = 1
+	available_if_capitulated = no
+
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_incite_the_ppl_in_serm
+	}
+	prerequisite = {
+		focus = POL_divide_and_chaos
+	}
+	relative_position_id = POL_divide_and_chaos
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_incite_the_ppl_in_serm"
+		set_country_flag = POL_we_choose_the_liberalism
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+shared_focus = {
+	id = POL_limited_appeasement_to_AL
+	icon = GFX_focus_POL_ludowa_i_krajowa
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_opinion_poll
+	}
+	relative_position_id = POL_opinion_poll
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_limited_appeasement_to_AL"
+	
+	}
+}
+shared_focus = {
+	id = POL_iron_feet_to_OWZJ
+	icon = GFX_focus_POL_jednostka_operacji_specjalnych_ak
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_opinion_poll
+	}
+	relative_position_id = POL_opinion_poll
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_iron_feet_to_OWZJ"
+
+	}
+}
+shared_focus = {
+	id = POL_both_in_soft_and_hard_way
+	icon = GFX_focus_POL_jednostka_operacji_specjalnych_ak
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_limited_appeasement_to_AL
+	}
+	prerequisite = {
+		focus = POL_iron_feet_to_OWZJ
+	}
+	relative_position_id = POL_limited_appeasement_to_AL
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_both_in_soft_and_hard_way"
+
+	}
+}
+shared_focus = {
+	id = POL_political_crisis
+	icon = GFX_focus_POL_retribution
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	allow_branch = {
+		NOT = {
+			has_country_flag = POL_we_choose_the_liberalism
+		}
+	}
+	prerequisite = {
+		focus = POL_expel_german
+	}
+	prerequisite = {
+		focus = POL_both_in_soft_and_hard_way
+	}
+	relative_position_id = POL_both_in_soft_and_hard_way
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_both_in_soft_and_hard_way"
+
+	}
+}
+shared_focus = {
+	id = POL_
+	icon = GFX_focus_POL_retribution
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_political_crisis
+	}
+	relative_position_id = POL_political_crisis
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_"
+
+	}
+}
+shared_focus = {
+	id = POL_start_the_martial_law
+	icon = GFX_focus_WAL_martial_law
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 6
+	y = 1
+	available = {
+	}
+	allow_branch = {
+		has_country_flag = POL_we_choose_the_liberalism
+	}
+	prerequisite = {
+		focus = POL_expel_german
+	}
+	prerequisite = {
+		focus = POL_stay_fully_control_to_serm
+	}
+	relative_position_id = POL_both_in_soft_and_hard_way
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_start_the_martial_law"
+
+	}
+}

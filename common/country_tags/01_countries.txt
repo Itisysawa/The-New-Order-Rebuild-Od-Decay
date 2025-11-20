@@ -1,0 +1,8 @@
+# STOP DELETING THIS
+TPA = "countries/Far East.txt"				    # Outer Balka
+TPB = "countries/Far East.txt"				    # Sobchak
+TPC = "countries/Far East.txt"				    # FE republic
+TPD = "countries/West Russia.txt"				# WR german puppet
+TPE = "countries/West Russia.txt"				# WR german puppet
+TPF = "countries/West Russia.txt"				# WR german puppet
+TPG = "countries/Central Asia.txt"              # kazazh german puppet

@@ -1,0 +1,27 @@
+
+on_actions = {
+    on_startup = {
+        effect = {
+            set_variable = { polish_army_core_att = 0 }
+            set_variable = { polish_army_core_def = 0 }
+            set_variable = { polish_army_org = 0 }
+            set_variable = { polish_army_mor = 0 }
+            set_variable = { polish_air_ran = 0 }
+            set_variable = { polish_war_sup = 0 }
+            set_variable = { polish_out_of_sup = 0 }
+            set_variable = { polish_conscription = 0 }
+            set_variable = { polish_dig_in_spd = 0 }
+            set_variable = { polish_supply_consump = 0 }
+            set_variable = { polish_max_dig_in = 0 }
+            set_variable = { polish_prod_fact_max_eff = 0 }
+            set_variable = { POL_surrender_limit = 0 }
+            set_variable = { polish_mob_spd = 0 }
+            set_variable = { polish_cas_dmg_red = 0 }
+            set_variable = { polish_break_fac = 0 }
+            set_variable = { polish_eq_capt = 0 }
+            set_variable = { polish_recon_aft_entr = 0 }
+            set_variable = { polish_army_attack_spd = 0 }
+        }
+        
+    }
+}

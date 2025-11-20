@@ -1,0 +1,60 @@
+german_reunification = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		OR = {
+			original_tag = PWA
+			original_tag = PWB
+			original_tag = PWC
+			original_tag = PWD
+			original_tag = PWE
+			original_tag = PWF 
+			original_tag = PWG 
+			original_tag = PWH 
+			original_tag = PWI 
+			original_tag = PWJ 
+			original_tag = PWK 
+			original_tag = PWL 
+			original_tag = PWM 
+			original_tag = PWN 
+			original_tag = PWO 
+			original_tag = PWP 
+			original_tag = PWQ 
+			original_tag = PWR 
+			original_tag = PWS
+		}
+	}
+	visible = {
+	}
+	visible_when_empty = no
+}
+german_reunification_war = {
+	icon = GFX_decision_category_USA_state_dept
+	priority = 119999
+	allowed = {
+		OR = {
+			original_tag = PWA
+			original_tag = PWB
+			original_tag = PWC
+			original_tag = PWD
+			original_tag = PWE
+			original_tag = PWF 
+			original_tag = PWG 
+			original_tag = PWH 
+			original_tag = PWI 
+			original_tag = PWJ 
+			original_tag = PWK 
+			original_tag = PWL 
+			original_tag = PWM 
+			original_tag = PWN 
+			original_tag = PWO 
+			original_tag = PWP 
+			original_tag = PWQ 
+			original_tag = PWR 
+			original_tag = PWS
+		}
+	}
+	visible = {
+	}
+	visible_when_empty = no
+}

@@ -1,0 +1,12 @@
+focus_tree = {
+	id = PWJ_short
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PWJ
+		}
+	}
+	default = no
+	shared_focus = PWJ_rote_armee_fraktion
+}

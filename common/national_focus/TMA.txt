@@ -1,0 +1,12 @@
+focus_tree = {
+	id = TMA_shared
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = TMA_on_the_ruins
+}

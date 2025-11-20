@@ -1,0 +1,2145 @@
+shared_focus = {
+	id = TMB_declare_destiny
+	icon = GFX_focus_cain_destiny
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_declare_destiny"
+		add_stability = 0.02
+		country_event = { id = TMB_ROD.0 days = 3 }
+		set_province_name = { id = 10696 name = VICTORY_POINTS_10696_satan }
+		571 = {	set_state_name = STATE_571_abaddon }
+		set_province_name = { id = 10568 name = VICTORY_POINTS_10568_satan }
+		set_province_name = { id = 4700 name = VICTORY_POINTS_4700_satan }
+	}
+}
+shared_focus = {
+	id = TMB_satan_lead_us
+	icon = GFX_focus_generic_do_or_die_brigades
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_declare_destiny
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_declare_destiny
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_satan_lead_us"
+		swap_ideas = {
+			add_idea = TMB_evil_unbound_2
+			remove_idea = TMB_evil_unbound
+		}
+	}
+}
+shared_focus = {
+	id = TMB_the_fallen_angel
+	icon = GFX_focus_TMB_fallen_angel
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_satan_lead_us
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_satan_lead_us
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_the_fallen_angel"
+		TNO_improve_army_professionalism_low = yes
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = TMB_pick_up_your_sword
+	icon = GFX_focus_generic_fight_like_demons
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_satan_lead_us
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_satan_lead_us
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_pick_up_your_sword"
+		add_ideas = {
+			TMB_evil_warway
+			tno_military_supervision_kill_em_all
+		}
+	}
+}
+
+shared_focus = {
+	id = TMB_clear_povertys
+	icon = GFX_focus_generic_aryan_blood
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_the_fallen_angel
+	}
+	prerequisite = {
+		focus = TMB_pick_up_your_sword
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_the_fallen_angel
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_clear_povertys"
+		TNO_improve_poverty_high = yes
+		add_stability = -0.05
+		add_ideas = TMB_kill_povertys
+	}
+}
+shared_focus = {
+	id = TMB_absorb_blood
+	icon = GFX_focus_generic_deploy_our_boys
+	cost = 3
+	available_if_capitulated = no
+	available = {
+		not = {
+			has_country_flag = TMB_tara_riot_flag
+		}
+	}
+	prerequisite = {
+		focus = TMB_clear_povertys
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_clear_povertys
+	x = 4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_absorb_blood"
+		TNO_worsen_minimum_wage_policy_effectiveness_med = yes
+		set_temp_variable = { gdp_growth_temp = 0.5 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { income_tax_temp = 0.30 }
+		econ_income_tax_rate_change = yes
+	}
+}
+shared_focus = {
+	id = TMB_sword_to_destroy_them
+	icon = GFX_focus_generic_force_weaponry_integration
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_clear_povertys
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_clear_povertys
+	x = -4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_sword_to_destroy_them"
+		add_war_support = 0.05
+		TMO = {
+			add_war_support = 0.02
+		}
+	}
+}
+shared_focus = {
+	id = TMB_forced_serve
+	icon = GFX_focus_generic_yet_the_darkness_did_not_overcome
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_sword_to_destroy_them
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_sword_to_destroy_them
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_forced_serve"
+		swap_ideas = {
+			remove_idea = tno_conscription_extensive_conscription
+			add_idea = tno_conscription_all_adults_serve
+		}
+	}
+}
+shared_focus = {
+	id = TMB_ez_make_gunz
+	icon = GFX_focus_generic_gun_production
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_sword_to_destroy_them
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_sword_to_destroy_them
+	x = 3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_ez_make_gunz"
+		add_ideas = TMB_EZ_GUN
+	}
+}
+shared_focus = {
+	id = TMB_things_left_from_black_league
+	icon = GFX_focus_OMS_the_new_order
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_ez_make_gunz
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_ez_make_gunz
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_things_left_from_black_league"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = OMS
+		}
+	}
+}
+shared_focus = {
+	id = TMB_riot_in_tara
+	icon = GFX_focus_OMS_infiltrate_our_enemies
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_ez_make_gunz
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_ez_make_gunz
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_riot_in_tara"
+		custom_effect_tooltip = TMB_riot_in_tara_tt
+		set_country_flag = tara_prob_solving
+	}
+}
+shared_focus = {
+	id = TMB_release_rules
+	icon = GFX_focus_TMB_release_rules
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_absorb_blood
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_absorb_blood
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_release_rules"
+		add_stability = 0.1
+		add_political_power = 50
+		TNO_improve_admin_efficiency_med = yes
+		TNO_worsen_education_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_opposite_religous
+	icon = GFX_focus_generic_change_law_religion
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_absorb_blood
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_absorb_blood
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_opposite_religous"
+		tno_improve_religious_rights_policy_effectiveness_high = yes
+		add_stability = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_worship_abaddon
+	icon = GFX_focus_TMB_worship_abaddon
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_release_rules
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_release_rules
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_worship_abaddon"
+		swap_ideas = {
+			remove_idea = tno_political_parties_one_party_state
+			add_idea = tno_political_parties_nonpartisan_system
+		}
+		add_stability = 0.03
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.10
+		}
+		add_popularity = {
+			ideology = esoteric_nazism
+			popularity = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = TMB_failure_angel
+	icon = GFX_focus_JST_and_there_is_nothing_left_to_say
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_opposite_religous
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_opposite_religous
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_failure_angel"
+		add_war_support = 0.05
+		TNO_improve_religious_rights_policy_effectiveness_med = yes
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.03
+		}
+	}
+}
+shared_focus = {
+	id = TMB_russia_in_jail
+	icon = GFX_focus_generic_orthographic_russia
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_opposite_religous
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_opposite_religous
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_russia_in_jail"
+		add_trait = {
+			character = TMB_Abaddon
+			trait = man_of_national_glory
+		}
+		add_political_power = 80
+	}
+}
+shared_focus = {
+	id = TMB_bloody_padoru
+	icon = GFX_focus_generic_blood_iron_and_democracy
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_failure_angel
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_failure_angel
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_failure_angel"
+		TNO_improve_army_professionalism_med = yes
+		TNO_improve_conscription_policy_effectiveness_med = yes
+		add_war_support = 0.02
+	}
+}
+shared_focus = {
+	id = TMB_new_Avignon
+	icon = GFX_focus_MCW_he_will_survive_and_so_will_this_place
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_russia_in_jail
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_russia_in_jail
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_new_Avignon"
+		set_temp_variable = { temp_econ_spending_amount = 0.10 }
+        econ_spend_money_once_effect_raw_money = yes
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 4780
+		}
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 7800
+		}
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 12652
+		}
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 10600
+		}
+		add_building_construction = {
+			type = bunker
+			level = 1
+			instant_build = yes
+			province = 12580
+		}
+	}
+}
+shared_focus = {
+	id = TMB_the_fall_of_paul
+	icon = GFX_focus_generic_a_new_dawn
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_worship_abaddon
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_worship_abaddon
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_the_fall_of_paul"
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_the_rise_of_evil
+	icon = GFX_focus_generic_evil_and_betrayal
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_worship_abaddon
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_worship_abaddon
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_the_rise_of_evil"
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_council
+	icon = GFX_focus_generic_the_industrial_security_council
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_the_fall_of_paul
+	}
+	prerequisite = {
+		focus = TMB_the_rise_of_evil
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_the_fall_of_paul
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_council"
+		TNO_improve_admin_efficiency_low = yes
+		TNO_improve_conscription_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_punishment
+	icon = GFX_focus_generic_punish_rebellion
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_council
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_council
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_punishment"
+		swap_ideas = {
+			remove_idea = TMB_evil_unbound_2
+			add_idea = TMB_evil_unbound_3
+		}
+	}
+}
+shared_focus = {
+	id = TMB_becoming_godlike
+	icon = GFX_focus_BOV_blood_and_soil
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_bloody_padoru
+	}
+	prerequisite = {
+		focus = TMB_the_fall_of_paul
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_bloody_padoru
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_becoming_godlike"
+		TNO_improve_military_supervision_policy_effectiveness_high = yes
+		add_war_support = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_the_place_with_abaddon
+	icon = GFX_focus_AMR_liberation_from_misguidance
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_new_Avignon
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_new_Avignon
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_the_place_with_abaddon"
+		add_political_power = 15
+		add_stability = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_is_the_holy_place
+	icon = GFX_focus_BOV_a_score_unsettled
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_new_Avignon
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_new_Avignon
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_the_place_with_abaddon"
+		add_war_support = 0.03
+		TNO_improve_penal_system_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_removing_limitation
+	icon = GFX_focus_BRG_blackest_of_markets
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_the_place_with_abaddon
+	}
+	prerequisite = {
+		focus = TMB_becoming_godlike
+	}
+	prerequisite = {
+		focus = TMB_is_the_holy_place
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_the_place_with_abaddon
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_removing_limitation"
+		set_temp_variable = { income_tax_temp = 0.15 }
+		econ_income_tax_rate_change = yes
+		set_temp_variable = { business_tax_temp = 0.55 }
+		econ_business_tax_rate_change = yes
+		set_temp_variable = { sales_tax_temp = 0.05 }
+		econ_sales_tax_rate_change = yes
+		set_temp_variable = { gdp_growth_temp = 2.5 }
+		econ_gdp_growth_change = yes
+		add_stability = -0.1
+	}
+}
+shared_focus = {
+	id = TMB_way_of_antikhrist
+	icon = GFX_focus_the_way_of_antikhrist
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_riot_in_tara
+	}
+	prerequisite = {
+		focus = TMB_things_left_from_black_league
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_riot_in_tara
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_way_of_antikhrist"
+		custom_effect_tooltip = TMB_way_of_antikhrist_tt
+		set_country_flag = TMB_Antikhrist_movement
+		add_to_variable = { rising_speed_in_irisikur = -0.1 }
+		add_to_variable = { rising_speed_in_tara = -0.1 }
+	}
+}
+shared_focus = {
+	id = TMB_their_christ_disease
+	icon = GFX_focus_generic_christianity_crushed
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_way_of_antikhrist
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_way_of_antikhrist
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_their_christ_disease"
+		add_ideas = tno_religious_rights_state_religion
+		set_country_flag = TMB_solve_their_christ_d_flag
+		add_to_variable = { rising_speed_in_irisikur = -0.1 }
+		add_to_variable = { rising_speed_in_tara = -0.1 }
+	}
+}
+shared_focus = {
+	id = TMB_let_them_burn
+	icon = GFX_focus_generic_burn_them_all
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_way_of_antikhrist
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_way_of_antikhrist
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_let_them_burn"
+		571 = {
+			add_manpower = -100000
+		}
+		add_to_variable = { tara_riot = -10 }
+        add_to_variable = { irisikur_riot = -10 }
+		custom_effect_tooltip = TMB_let_them_burn_tt
+	}
+}
+shared_focus = {
+	id = TMB_use_punishment
+	icon = GFX_focus_generic_slavery_toppled
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_forced_serve
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_forced_serve
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_use_punishment"
+		571 = {
+			add_manpower = -50000
+		}
+		TNO_improve_army_professionalism_high = yes
+	}
+}
+shared_focus = {
+	id = TMB_use_council
+	icon = GFX_focus_GER_we_fight_devils
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_use_punishment
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_use_punishment
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_use_council"
+		TNO_improve_admin_efficiency_med = yes
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = TMB_pacify_troop
+	icon = GFX_focus_generic_slaves_for_the_smelteries
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_use_council
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_use_council
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_pacify_troop"
+		division_template = {
+			name = "Pacify troop"
+			division_names_group = SLO_INF_1
+			regiments = {
+				light_infantry = { x = 0 y = 0 }
+				light_infantry = { x = 0 y = 1 }
+				light_infantry = { x = 0 y = 2 }
+				light_infantry = { x = 1 y = 0 }
+				light_infantry = { x = 1 y = 1 }
+				light_infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+			}
+		}
+		571 = {
+			create_unit = {
+				division = "name = \"Pacify troop\" division_template = \"Pacify troop\" start_experience_factor = 0.3 start_equipment_factor = 1"
+				owner = TMB
+    	        prioritize_location = 10696
+			}
+			create_unit = {
+				division = "name = \"Pacify troop\" division_template = \"Pacify troop\" start_experience_factor = 0.3 start_equipment_factor = 1"
+				owner = TMB
+    	        prioritize_location = 10696
+			}
+		}
+	}
+}
+shared_focus = {
+	id = TMB_field_bishop
+	icon = GFX_focus_generic_watch_their_troops
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_use_council
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_use_council
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_pacify_troop"
+		swap_ideas = {
+			remove_idea = TMB_evil_arms
+			add_idea = TMB_field_bishop_idea
+		}
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = TMB_combine_holy_arms
+	icon = GFX_focus_generic_change_law_slavery
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_pacify_troop
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_pacify_troop
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_combine_holy_arms"
+		add_ideas = TMB_combine_holy_arms_idea
+	}
+}
+shared_focus = {
+	id = TMB_troop_priest
+	icon = GFX_focus_generic_a_ray_of_hope
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_field_bishop
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_field_bishop
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_combine_holy_arms"
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+		TNO_improve_army_professionalism_med = yes
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = TMB_strike_enemys_of_satan
+	icon = GFX_focus_generic_a_temporary_pact
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_combine_holy_arms
+	}
+	prerequisite = {
+		focus = TMB_troop_priest
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_combine_holy_arms
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_strike_enemys_of_satan"
+		571 = {
+			add_manpower = -300000
+		}
+		add_to_variable = { tara_riot = -10 }
+        add_to_variable = { irisikur_riot = -10 }
+		add_stability = 0.01
+	}
+}
+shared_focus = {
+	id = TMB_massacre_was_peace
+	icon = GFX_focus_MCW_he_will_not_fix_this_unless_he_kills_me
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_their_christ_disease
+	}
+	prerequisite = {
+		focus = TMB_let_them_burn
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_their_christ_disease
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_massacre_was_peace"
+		571 = {
+			add_manpower = -150000
+		}
+		add_to_variable = { tara_riot = -10 }
+        add_to_variable = { irisikur_riot = -10 }
+		custom_effect_tooltip = TMB_massacre_was_peace_tt
+	}
+}
+shared_focus = {
+	id = TMB_special_economic
+	icon = GFX_focus_BRG_clouds_over_the_black_sun
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_removing_limitation
+	}
+	prerequisite = {
+		focus = TMB_punishment
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_removing_limitation
+	x = -4
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_special_economic"
+		TNO_worsen_admin_efficiency_med = yes
+		set_temp_variable = { gdp_growth_temp = 1.5 }
+		econ_gdp_growth_change = yes
+	}
+}
+shared_focus = {
+	id = TMB_reexplain_satanism
+	icon = GFX_focus_TMB_newbirth_of_satan
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_massacre_was_peace
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_massacre_was_peace
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_reexplain_satanism"
+		TNO_improve_religious_rights_policy_effectiveness_high = yes
+		add_war_support = 0.05
+		add_stability = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_and_for_those_betrayer
+	icon = GFX_focus_generic_cross_examination
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_reexplain_satanism
+	}
+	prerequisite = {
+		focus = TMB_strike_enemys_of_satan
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_strike_enemys_of_satan
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_strike_enemys_of_satan"
+		custom_effect_tooltip = TMB_and_for_those_betrayer_tt
+	}
+}
+shared_focus = {
+	id = TMB_send_them_to_satan
+	icon = GFX_focus_generic_execute
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_and_for_those_betrayer
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = tara_riot_done
+			check_variable = { tara_riot < 5 }
+		}
+		custom_trigger_tooltip = {
+			tooltip = irisikur_riot_done
+			check_variable = { irisikur_riot < 5 }
+		}
+	}
+	relative_position_id = TMB_and_for_those_betrayer
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_send_them_to_satan"
+		clr_country_flag = TMB_tara_riot_flag
+		571 = {
+			add_manpower = -250000
+		}
+		custom_effect_tooltip = TMB_send_them_to_satan_tt
+		add_stability = 0.1
+		remove_ideas = {
+			TMB_tara_riot_idea
+			TMB_Redeemed_black_league_affection
+		}
+	}
+}
+shared_focus = {
+	id = TMB_no_more_social_evils
+	icon = GFX_focus_generic_blood_money
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_special_economic
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_special_economic
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_no_more_social_evils"
+		TNO_worsen_poverty_high = yes
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_black_market_chain
+	icon = GFX_focus_generic_bulldoze_the_slums
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_special_economic
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_special_economic
+	x = -3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_black_market_chain"
+		set_temp_variable = { gdp_growth_temp = 1 }
+		econ_gdp_growth_change = yes
+		add_stability = -0.1
+	}
+}
+shared_focus = {
+	id = TMB_theres_only_me
+	icon = GFX_focus_RUS_red_terror_marches
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_special_economic
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_special_economic
+	x = 3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_theres_only_me"
+		add_stability = 0.03
+	}
+}
+shared_focus = {
+	id = TMB_militarism_rising
+	icon = GFX_focus_generic_military_contacts
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_send_them_to_satan
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_send_them_to_satan
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_militarism_rising"
+		swap_ideas = {
+			remove_idea = tno_conscription_all_adults_serve
+			add_idea = tno_conscription_scraping_the_barrel
+		}
+	}
+}
+shared_focus = {
+	id = TMB_and_ready_for_the_war_to_black_league
+	icon = GFX_focus_OMS_against_the_old_guard
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_send_them_to_satan
+	}
+	prerequisite = {
+		focus = TMB_unlock_armament_trading
+	}
+	prerequisite = {
+		focus = TMB_unknow_is_power
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_send_them_to_satan
+	x = 3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_and_ready_for_the_war_to_black_league"
+		add_war_support = 0.15
+	}
+}
+shared_focus = {
+	id = TMB_forced_mobilization
+	icon = GFX_focus_generic_forced_conscription
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_and_ready_for_the_war_to_black_league
+	}
+	prerequisite = {
+		focus = TMB_militarism_rising
+	}
+	prerequisite = {
+		focus = TMB_core_leader
+	}
+	prerequisite = {
+		focus = TMB_we_dont_care_if_they_fking_dead
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_militarism_rising
+	x = 5
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_forced_mobilization"
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+}
+
+shared_focus = {
+	id = TMB_unlock_armament_trading
+	icon = GFX_focus_generic_arms_cache
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_black_market_chain
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_black_market_chain
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_unlock_armament_trading"
+		set_temp_variable = { business_tax_temp = 0.08 }
+		econ_business_tax_rate_change = yes
+	}
+}
+shared_focus = {
+	id = TMB_unknow_is_power
+	icon = GFX_focus_RUS_tax_debate
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_black_market_chain
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_black_market_chain
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_unlock_armament_trading"
+		TNO_worsen_education_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = TMB_fall_in_devils
+	icon = GFX_focus_BRG_total_darkness
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_no_more_social_evils
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_no_more_social_evils
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_fall_in_devils"
+		add_stability = -0.05
+		custom_effect_tooltip = TMB_fall_in_devils_tt
+	}
+}
+shared_focus = {
+	id = TMB_say_opposites_and_poor_guy
+	icon = GFX_focus_generic_gun_shoot_manhole_dissident
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_theres_only_me
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_theres_only_me
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_say_opposites_and_poor_guy"
+		custom_effect_tooltip = TMB_say_opposites_and_poor_guy_tt
+	}
+}
+shared_focus = {
+	id = TMB_satans_slave
+	icon = GFX_focus_generic_change_law_slavery
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_theres_only_me
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_theres_only_me
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_satans_slave"
+		TNO_worsen_max_workhours_policy_effectiveness_med = yes
+		TNO_worsen_pensions_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_core_leader
+	icon = GFX_focus_BRG_salt_the_earth
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_fall_in_devils
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_fall_in_devils
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_fall_in_devils"
+		custom_effect_tooltip = TMB_core_leader_tt
+		add_ideas = tno_draft_exemptions_elite_exemptions
+	}
+}
+shared_focus = {
+	id = TMB_we_dont_care_if_they_fking_dead
+	icon = GFX_focus_generic_we_failed_the_poor
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_say_opposites_and_poor_guy
+	}
+	prerequisite = {
+		focus = TMB_satans_slave
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_say_opposites_and_poor_guy
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_say_opposites_and_poor_guy"
+		TNO_worsen_poverty_high = yes
+		set_temp_variable = { gdp_growth_temp = 0.2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { income_tax_temp = 0.15 }
+		econ_income_tax_rate_change = yes
+	}
+}
+shared_focus = {
+	id = TMB_great_war_starts
+	icon = GFX_focus_TMB_the_great_war
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_forced_mobilization
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = TMB_forced_mobilization
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_great_war_starts"
+		custom_effect_tooltip = TMB_let_us_fight_OMSK
+		hidden_effect = {
+			declare_war_on = {
+				target = TMO
+				type = annex_everything
+			}
+		}
+	}
+}
+shared_focus = {
+	id = TMB_war_still_not_end
+	icon = GFX_focus_BRG_absolute_loyalty
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_great_war_starts
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TMB_unified
+	}
+	relative_position_id = TMB_great_war_starts
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_war_still_not_end"
+		add_war_support = 0.05
+		TNO_improve_conscription_policy_effectiveness_low = yes
+		hidden_effect = {
+			TMT = {
+			create_faction  = TMT_defensive_union
+				add_to_faction = TMI
+				add_to_faction = TME
+				add_to_faction = TMF
+				add_to_faction = TMJ
+			}
+		}
+	}
+}
+shared_focus = {
+	id = TMB_south_to_the_institution
+	icon = GFX_focus_TMB_caught_kardashev
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_war_still_not_end
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+		TMI = {
+			is_in_faction = yes
+		}
+	}
+	relative_position_id = TMB_war_still_not_end
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_south_to_the_institution"
+		declare_war_on = {
+			target = TMI
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = TMB_crack_the_whips_to_north
+	icon = GFX_focus_TMB_fuck_holyrus_airtroops
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_war_still_not_end
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_war_still_not_end
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_crack_the_whips_to_north"
+		declare_war_on = {
+			target = TMD
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = TMB_end_the_kazazhs
+	icon = GFX_focus_TMB_fuck_kazakh
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_crack_the_whips_to_north
+	}
+	prerequisite = {
+		focus = TMB_south_to_the_institution
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_war_still_not_end
+	x = 0
+	y = 2
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_end_the_kazazhs"
+		declare_war_on = {
+			target = TMK
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = TMB_time_for_minerals
+	icon = GFX_focus_generic_reopen_mines
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_end_the_kazazhs
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_end_the_kazazhs
+	x = 0
+	y = 1
+	available = {
+		NOT = {
+			country_exists = TMK
+			country_exists = TMD
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_time_for_minerals"
+		set_temp_variable = { gdp_growth_temp = 3 }
+		econ_gdp_growth_change = yes
+		add_stability = -0.2
+		589 = {
+			add_resistance = 30
+			add_compliance = -30
+			set_demilitarized_zone = yes			
+		}
+		1804 = {
+			add_resistance = 30
+			add_compliance = -30
+			set_demilitarized_zone = yes			
+		}
+		404 = {
+			add_resistance = 30
+			add_compliance = -30
+	
+		}
+		1803 = {
+			add_resistance = 30
+			add_compliance = -30
+		
+		}
+		590 = {
+			add_resistance = 30
+			add_compliance = -30
+			set_demilitarized_zone = yes			
+		}
+		1808 = {
+			add_resistance = 30
+			add_compliance = -30			
+		}
+	}
+}
+shared_focus = {
+	id = TMB_raid_those_kazakhs
+	icon = GFX_focus_RUS_kazakhstan
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_time_for_minerals
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_time_for_minerals
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_raid_those_kazakhs"
+		590 = {
+			set_demilitarized_zone = no	
+			add_manpower = -730000		
+		}
+		589 = {
+			set_demilitarized_zone = no			
+			add_manpower = -620000		
+		}
+		1804 = {
+			set_demilitarized_zone = no			
+			add_manpower = -550000		
+		}
+		TNO_improve_industrial_expertise_low = yes
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = TMB_slavery_mining
+	icon = GFX_focus_generic_change_law_slavery
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_raid_those_kazakhs
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_raid_those_kazakhs
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_raid_those_kazakhs"
+		TNO_worsen_poverty_high = yes
+		set_temp_variable = { gdp_growth_temp = 2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { income_tax_temp = 0.3 }
+		econ_income_tax_rate_change = yes
+		add_stability = -0.1
+	}
+}
+shared_focus = {
+	id = TMB_threat_to_middle_asia
+	icon = GFX_focus_generic_change_law_slavery
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_learn_from_German
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_learn_from_German
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_threat_to_middle_asia"
+		
+	}
+}
+shared_focus = {
+	id = TMB_extensive_ind_with_slaves
+	icon = GFX_focus_generic_slavery_toppled
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_time_for_minerals
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_time_for_minerals
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_extensive_ind_with_slaves"
+		TNO_improve_slavery_policy_effectiveness_med = yes
+		TNO_improve_industrial_expertise_low = yes
+		swap_ideas = {
+			remove_idea = TMB_evil_unbound_3
+			add_idea = TMB_evil_unbound_4
+		}
+		swap_ideas = {
+			remove_idea = TMB_kill_povertys
+			add_idea = TMB_kill_povertys_2
+		}
+		add_ideas = tno_max_workhours_unlimited_work_day
+	}
+}
+shared_focus = {
+	id = TMB_change_rules
+	icon = GFX_focus_TMB_abaddon_despotis
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_removing_resistance
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_removing_resistance
+	x = -2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_change_rules"
+		
+	}
+}
+shared_focus = {
+	id = TMB_abaddons_authority
+	icon = GFX_focus_TMB_abaddon_authority
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_extensive_ind_with_slaves
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_extensive_ind_with_slaves
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_abaddons_authority"
+		add_stability = 0.1
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+shared_focus = {
+	id = TMB_think_edu
+	icon = GFX_focus_generic_primary_education_act
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_change_rules
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_change_rules
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_think_edu"
+		
+	}
+}
+shared_focus = {
+	id = TMB_slower_conscription
+	icon = GFX_focus_generic_forced_conscription
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_change_rules
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_change_rules
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_slower_conscription"
+		
+	}
+}
+shared_focus = {
+	id = TMB_removing_resistance
+	icon = GFX_focus_generic_gun_shoot_manhole_dissident
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_abaddons_authority
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_abaddons_authority
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_removing_resistance"
+		
+	}
+}
+shared_focus = {
+	id = TMB_a_weird_experiment
+	icon = GFX_focus_TMB_a_weird_experiment
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_abaddons_authority
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_abaddons_authority
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_removing_resistance"
+		
+	}
+}
+shared_focus = {
+	id = TMB_trade_with_sikiang
+	icon = GFX_focus_generic_tone_back_trade
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_slavery_mining
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_slavery_mining
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_trade_with_sikiang"
+		
+	}
+}
+shared_focus = {
+	id = TMB_learn_from_German
+	icon = GFX_focus_MCW_brothers_in_arms_trade_in_arms
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_slavery_mining
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_slavery_mining
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_learn_from_German"
+		
+	}
+}
+shared_focus = {
+	id = TMB_extra_raid_to_middle_asia
+	icon = GFX_focus_generic_take_from_the_unworthy
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_threat_to_middle_asia
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_threat_to_middle_asia
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_extra_raid_to_middle_asia"
+		
+	}
+}
+shared_focus = {
+	id = TMB_raid_chelyabinsk
+	icon = GFX_focus_TMB_institute
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_threat_to_middle_asia
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_threat_to_middle_asia
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_raid_chelyabinsk"
+		
+	}
+}
+shared_focus = {
+	id = TMB_their_nightmare
+	icon = GFX_focus_TMB_their_nightmare
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_removing_resistance
+	}
+	prerequisite = {
+		focus = TMB_a_weird_experiment
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_removing_resistance
+	x = 1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_their_nightmare"
+		
+	}
+}
+shared_focus = {
+	id = TMB_true_words
+	icon = GFX_focus_generic_tone_back_trade
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_trade_with_sikiang
+	}
+	prerequisite = {
+		focus = TMB_learn_from_German
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_learn_from_German
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_true_words"
+		
+	}
+}
+shared_focus = {
+	id = TMB_use_slivko
+	icon = GFX_focus_TMB_use_slivko
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_their_nightmare
+	}
+	prerequisite = {
+		focus = TMB_true_words
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_their_nightmare
+	x = 2
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_use_slivko"
+		
+	}
+}
+shared_focus = {
+	id = TMB_totally_loyalty
+	icon = GFX_focus_TMB_totally_loyalty
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_use_slivko
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_use_slivko
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_use_slivko"
+		
+	}
+}
+shared_focus = {
+	id = TMB_accidental_toxic_gas_to_chelyabinsk
+	icon = GFX_focus_generic_gas_soldier
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_slower_conscription
+	}
+	prerequisite = {
+		focus = TMB_think_edu
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_slower_conscription
+	x = 3
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_sloweTMB_accidental_toxic_gas_to_chelyabinskr_conscription"
+		
+	}
+}
+shared_focus = {
+	id = TMB_unbound_hell
+	icon = GFX_focus_GER_into_hell_itself
+	cost = 2
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_extra_raid_to_middle_asia
+	}
+	prerequisite = {
+		focus = TMB_raid_chelyabinsk
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_extra_raid_to_middle_asia
+	x = -1
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_unbound_hell"
+		
+	}
+}
+shared_focus = {
+	id = TMB_after_threating
+	icon = GFX_focus_generic_political_crisis
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_totally_loyalty
+	}
+	prerequisite = {
+		focus = TMB_accidental_toxic_gas_to_chelyabinsk
+	}
+	prerequisite = {
+		focus = TMB_unbound_hell
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_totally_loyalty
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_after_threating"
+		
+	}
+}
+shared_focus = {
+	id = TMB_start_what_we_should_do
+	icon = GFX_focus_generic_evil_and_betrayal
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = TMB_after_threating
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+	}
+	relative_position_id = TMB_after_threating
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMB_start_what_we_should_do"
+		
+	}
+}

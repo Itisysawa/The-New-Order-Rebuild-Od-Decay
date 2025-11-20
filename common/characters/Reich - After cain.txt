@@ -1,0 +1,325 @@
+characters = {
+	# Leaders #
+	
+	TCA_Yuri_Gastev = {
+		name = TCA_Yuri_Gastev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCA/TCA_yuri_gastev.dds"
+			}
+		}
+		country_leader = {
+			desc = "TCA_Yuri_Gastev_desc"
+			expire = "1999.1.1"
+			ideology = esoteric_nazism_unity_socialist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCA_Sergey_Akhromeyev = {
+		name = TCA_Sergey_Akhromeyev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCA/TCA_Sergey_Akhromeyev.dds"
+			}
+		}
+		country_leader = {
+			desc = "TCA_Sergey_Akhromeyev_desc"
+			expire = "1999.1.1"
+			ideology = communist_stratocratic_communism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCI_Erik_Bulatov = {
+		name = TCI_Erik_Bulatov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCI/TCI_Erik_Bulatov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCI_Erik_Bulatov_desc"
+			expire = "1999.1.1"
+			ideology = surrealism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCL_Vladimir_Kryuchkov = {
+		name = TCL_Vladimir_Kryuchkov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCL/TCL_Vladimir_Kryuchkov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCL_Vladimir_Kryuchkov_desc"
+			expire = "1999.1.1"
+			ideology = communist_marxism_leninism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCD_Evgeny_Savintsev = {
+		name = TCD_Evgeny_Savintsev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OMS/Portrait_Omsk_Evgeny_Savintsev.png"
+			}
+		}
+		country_leader = {
+			desc = "TCD_Evgeny_Savintsev_desc"
+			expire = "1999.1.1"
+			ideology = despotism_interim_government_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCC_Vladimir_Komarov = {
+		name = TCC_Vladimir_Komarov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCC/TCC_Vladimir_Komarov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCC_Vladimir_Komarov_desc"
+			expire = "1999.1.1"
+			ideology = socialist_ultravisionary_socialism_pink_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCC_Alexander_Zaitsev = {
+		name = TCC_Alexander_Zaitsev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCC/TCC_Alexander_Zaitsev.png"
+			}
+		}
+		country_leader = {
+			desc = "TCC_Alexander_Zaitsev_desc"
+			expire = "1999.1.1"
+			ideology = Annihilationism_posadas_thought_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TPD_Ryszard_Kuklinski = {
+		name = TPD_Ryszard_Kuklinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TPD_Ryszard_Kuklinski.png"
+			}
+		}
+		country_leader = {
+			desc = "TPD_Ryszard_Kuklinski_desc"
+			expire = "1999.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TMB_Anatoly_slivko = {
+		name = TMB_Anatoly_slivko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TMB_Anatoly_slivko.png"
+			}
+		}
+		country_leader = {
+			desc = "TMB_Anatoly_slivko_desc"
+			expire = "1999.1.1"
+			ideology = ultranationalism_fundamentalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCF_Ivan_Kozhedub = {
+		name = TCF_Ivan_Kozhedub
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCF_Ivan_Kozhedub.png"
+			}
+		}
+		country_leader = {
+			desc = "TCF_Ivan_Kozhedub_desc"
+			expire = "1999.1.1"
+			ideology = despotism_interim_government_subtype
+			traits = { }
+			id = -1
+		}
+		country_leader = {
+			desc = "TCF_Ivan_Kozhedub_desc"
+			expire = "1999.1.1"
+			ideology = socialist_revolutionary_frontism_subtype
+			traits = { }
+			id = -1
+		}
+		country_leader = {
+			desc = "TCF_Ivan_Kozhedub_desc"
+			expire = "1999.1.1"
+			ideology = communist_bolshevism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCH_Pavel_Zyryanov = {
+		name = TCH_Pavel_Zyryanov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCH_Pavel_Zyryanov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCH_Pavel_Zyryanov_desc"
+			expire = "1999.1.1"
+			ideology = despotism_eurasianism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCJ_Welhium_Rudolf_Mann = {
+		name = TCJ_Welhium_Rudolf_Mann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCJ_Welhium_Rudolf_Mann.png"
+			}
+		}
+		country_leader = {
+			desc = "TCJ_Welhium_Rudolf_Mann_desc"
+			expire = "1999.1.1"
+			ideology = fascism_statist_corporatocracy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCE_Vasily_Grossman = {
+		name = TCE_Vasily_Grossman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCE_Vasily_Grossman.png"
+			}
+		}
+		country_leader = {
+			desc = "TCE_Vasily_Grossman_desc"
+			expire = "1999.1.1"
+			ideology = liberalism_liberal_radicalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCE_Yevgeny_Primakov = {
+		name = TCE_Yevgeny_Primakov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCE_Yevgeny_Primakov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCE_Yevgeny_Primakov_desc"
+			expire = "1999.1.1"
+			ideology = despotism_interim_government_subtype
+			traits = { }
+			id = -1
+		}
+		country_leader = {
+			desc = "TCE_Yevgeny_Primakov_desc"
+			expire = "1999.1.1"
+			ideology = paternalism_oligarchy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCE_Joseph_Brodsky = {
+		name = TCE_Joseph_Brodsky
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCE_Joseph_Brodsky.png"
+			}
+		}
+		country_leader = {
+			desc = "TCE_Joseph_Brodsky_desc"
+			expire = "1999.1.1"
+			ideology = progressivism_liberal_socialism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCM_Aleksandr_Dugin = {
+		name = TCM_Aleksandr_Dugin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCM_Aleksandr_Dugin.png"
+			}
+		}
+		country_leader = {
+			desc = "TCM_Aleksandr_Dugin_desc"
+			expire = "1999.1.1"
+			ideology = national_socialism_national_bolshevism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCA_Anatoly_Kitov = {
+		name = TCA_Anatoly_Kitov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCA_Anatoly_Kitov.png"
+			}
+		}
+		country_leader = {
+			desc = "TCA_Anatoly_Kitov_desc"
+			expire = "1999.1.1"
+			ideology = ultranationalism_INGSOC_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	WWB_Anatoly_Sobchak = {
+		name = WWB_Anatoly_Sobchak
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMR/TMR_sobchak_80s.dds"
+			}
+		}
+		country_leader = {
+			desc = "WWB_Anatoly_Sobchak_desc"
+			expire = "1999.1.1"
+			ideology = despotism_interim_government_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCL_Leonid_Sablin = {
+		name = TCL_Leonid_Sablin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/after_cain/TCL_Leonid_Sablin.png"
+			}
+		}
+		country_leader = {
+			desc = "TCL_Leonid_Sablin_desc"
+			expire = "1999.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	TCB_Antikchrist = {
+		name = TCB_Antikchrist
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMB/Antikhrist.dds"
+			}
+		}
+		country_leader = {
+			desc = "TCB_Antikchrist_desc"
+			expire = "1999.1.1"
+			ideology = esoteric_nazism_esoteric_fundamentalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

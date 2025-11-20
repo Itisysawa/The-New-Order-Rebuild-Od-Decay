@@ -1,0 +1,38 @@
+shared_focus = {
+	id = PWJ_rote_armee_fraktion
+	icon = GFX_focus_POL_remind_the_workers
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PWJ_rote_armee_fraktion"
+		
+	}
+}
+shared_focus = {
+	id = PWJ_unite_with_workers
+	icon = GFX_focus_POL_remind_the_workers
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = PWJ_rote_armee_fraktion
+	}
+	relative_position_id = PWJ_rote_armee_fraktion
+	x = 0
+	y = 1
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PWJ_unite_with_workers"
+		
+	}
+}

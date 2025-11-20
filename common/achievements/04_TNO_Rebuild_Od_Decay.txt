@@ -1,0 +1,36 @@
+unique_id = ROD_achievements
+
+hoshino_destroy_nazis = {
+	possible = {
+		has_start_date < 1962.01.02
+		tag = POL
+	}
+
+	happened = {
+		has_global_flag = defeat_of_german
+		has_country_leader = {
+			character = POL_takanashi_hoshino
+		}
+	}
+}
+polish_hard_defence = {
+	possible = {
+		has_start_date < 1962.01.02
+		tag = POL
+	}
+
+	happened = {
+		GER = {
+            casualties_inflicted_by = {
+                opponent = POL
+                thousands > 650
+            }
+        }
+		POL = {
+            casualties_inflicted_by = {
+                opponent = GER
+                thousands < 50
+            }
+        }
+	}
+}

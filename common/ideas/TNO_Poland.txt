@@ -1,0 +1,1001 @@
+ideas = {
+
+	country = {
+		GGN_polish_genocide = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GGN_polish_genocide" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = -0.05
+				political_power_gain = 0.05
+			}
+		}
+		POL_gold_from_Koc = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				annual_gdp_growth_factor = 0.02
+				civilian_expenditures_factor = -0.05
+				consumer_goods_use_modifier = -0.15
+			}
+		}
+		POL_democratizing_poland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_democratizing_poland" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				liberalism_drift = 0.02
+				conservatism_drift = 0.04
+				paternalism_drift = 0.01
+				stability_factor = 0.15
+				war_support_factor = -0.05
+			}
+		}
+		POL_reconstruct_work_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_democratizing_poland" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+		POL_AK_and_AL_fuk_OWZJ = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				communist_drift = 0.03
+				paternalism_drift = 0.03
+				stability_factor = -0.2
+				stability_weekly = -0.02
+			}
+		}
+		POL_ending_Armia_Krajowa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				paternalism_drift = -0.02
+				stability_weekly = 0.02
+			}
+		}
+		POL_kill_monarchist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				despotism_drift = -0.01
+				stability_weekly = 0.01
+			}
+		}
+		POL_Monarchist_revo = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_koc_gold
+
+			removal_cost = -1
+
+			modifier = {
+				despotism_drift = 0.02
+				war_support_factor = -0.1
+			}
+		}
+		POL_underground_state = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_polish_ug_state
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.30
+				industrial_capacity_factory = -0.15
+				army_org_factor = -0.2
+			}
+		}
+		POL_underground_state_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_polish_ug_state
+			name = POL_underground_state
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.25
+				industrial_capacity_factory = -0.10
+				army_org_factor = -0.15
+			}
+		}
+		POL_defensive_war_start = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.03
+				conscription_factor = 0.05
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				war_support_factor = 0.05
+			}
+		}
+		POL_italian_industry_support = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+				stability_factor = 0.1
+				annual_gdp_growth_factor = 0.005
+				inflation_rate_modifier = -0.05
+			}
+		}
+		POL_debug = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 100
+    		    weekly_manpower = 1500000
+    		    war_support_factor = 10000
+    		    army_defence_factor = 100000
+    		    army_attack_factor = 100000
+    		    army_speed_factor = 100000
+    		    army_morale_factor = 100
+    		    army_org_factor = 1000
+    		    free_production_units_modifier = 100
+    		    training_time_army_factor = -1
+			}
+		}
+		POL_reconstruction_planning = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_fortress_city
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				industrial_capacity_factory = 0.05
+				army_speed_factor = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		POL_weak_ak = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_weak_ak" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		POL_organize_p_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_weak_ak" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1500
+			}
+		}
+		POL_Sturmabteilung = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_weak_ak" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 100
+				conscription_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		POL_ground_production = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_weak_ak" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				annual_gdp_growth_factor = -0.1
+				free_production_units_modifier = 5 
+				production_factory_max_efficiency_factor = 0.3
+				production_units_to_GDP_ratio_modifier = 0.2
+			}
+		}
+		POL_commissaire_politique = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_weak_ak" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}
+		economic_recovering_ee_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				hidden_modifier	= { 
+					free_production_units_modifier = 5 
+					production_factory_max_efficiency_factor = 0.2
+					production_units_to_GDP_ratio_modifier = 0.4
+				}
+				annual_gdp_growth_factor = 0.035
+			}
+		}
+		POL_underground_state_preparing = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.3
+				stability_weekly = -0.005
+			}
+		}
+		POL_slowly_regenerating_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_slowly_regenerating_economy" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_fading_economy
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				civilian_expenditures_factor = 0.1
+				civilian_annual_cost = 0.2
+				drift_defence_factor = -0.2
+			}
+		}
+		POL_production_cant_be_stop = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_slowly_regenerating_economy" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_weapons_production
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+				conscription_factor = -0.25
+				production_factory_max_efficiency_factor = 0.4
+				production_factory_efficiency_gain_factor = 0.6
+			}
+		}
+		POL_offence_cant_be_stop = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_slowly_regenerating_economy" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_weapons_production
+
+			removal_cost = -1
+
+			modifier = {
+				offence = 0.3
+				defence = -0.25
+				army_core_attack_factor = 0.3
+				army_attack_factor = 0.15
+				army_core_defence_factor = -0.1
+				army_defence_factor = -0.3
+			}
+		}
+		POL_no_more_step_back = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_slowly_regenerating_economy" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_weapons_production
+
+			removal_cost = -1
+
+			modifier = {
+				offence = -0.2
+				defence = 0.3
+				army_core_attack_factor = -0.2
+				army_attack_factor = -0.3
+				army_core_defence_factor = 0.2
+				army_defence_factor = 0.2
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+			}
+		}
+		POL_core_land_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_core_land_war" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_polish_home_defense
+
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = -0.2
+				army_core_defence_factor = 0.35
+				army_attack_factor = -0.25
+				army_core_attack_factor = 0.35
+			}
+		}
+		POL_MCW_civilwar = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_core_land_war" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_polish_home_defense
+
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.25
+			}
+		}
+		POL_exhausted_arms = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_exhausted_arms" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_war_exhaustion
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.2
+			}
+		}
+		POL_disorganized_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_disorganized_army" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_negative_public_relation
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				army_attack_factor = -0.4
+				breakthrough_factor = -0.4
+				army_defence_factor = -0.3
+				army_morale_factor = -0.2
+				army_org_factor = -0.125
+				conscription = 0.015
+			}
+		}
+		POL_disorganized_army_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_disorganized_army" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_negative_public_relation
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				army_attack_factor = -0.25
+				breakthrough_factor = -0.3
+				army_defence_factor = -0.2
+				army_morale_factor = -0.05
+				army_org_factor = -0.1
+				conscription = 0.025
+			}
+		}
+		POL_experienced_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_experienced_army" }
+			allowed = {
+				always = no
+			}
+
+			picture = POL_AK_old_one
+
+			removal_cost = -1
+
+			modifier = {
+				offence = -0.05
+				defence = 0.05
+				army_defence_factor = 0.12
+				army_morale_factor = 0.03
+				army_org_factor = 0.06
+				planning_speed = -0.16
+				recon_factor = 0.04
+				out_of_supply_factor = -0.02
+				dig_in_speed_factor = 0.02
+			}
+		}
+		POL_polish_partisan = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_polish_partisan" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_partisan_alliance
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+		POL_ukrainian_consumer_good = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_ukrainian_consumer_good" }
+			allowed = {
+				always = no
+			}
+
+			picture = generic_agrarian_society
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				production_units_to_GDP_ratio_modifier = 0.1
+			}
+		}
+		POL_partisan_scare = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_partisan_scare" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_terrified_garrison
+
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.1
+			}
+		}
+		POL_hungarian_mine_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_partisan_scare" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_closed_mines
+
+			targeted_modifier = {
+				tag = ROM
+				extra_trade_to_target_factor = 0.20
+			}
+			modifier = {
+				inflation_rate_modifier = -0.2
+				GDP_growth_modifier = 0.2
+			}
+		}
+		POL_Vistula_miracle = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_Vistula_miracle" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_terrified_garrison
+
+			modifier = {
+				GDP_growth_modifier = 1.5
+				stability_factor = 0.05
+			}
+		}
+		POL_unstable_new_government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_unstable_new_government" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ideology_conflict
+
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.2
+			}
+		}
+		POL_pitsuski_nvr_die = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_unstable_new_government" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_pitsuski_never_die
+
+			modifier = {
+				army_org_factor = 0.05
+				surrender_limit = 0.05
+				army_core_defence_factor = 0.12
+				army_core_attack_factor = 0.02
+				war_support_factor = 0.1
+			}
+		}
+		POL_state_owned_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_state_owned_eco" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_pitsuski_never_die
+
+			modifier = {
+				production_units_to_GDP_ratio_modifier = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+				stability_factor = -0.06
+				political_power_gain = 0.05
+			}
+		}
+		POL_useless_armor = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_useless_armor" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_sabotaged_armor
+
+			modifier = {
+				army_armor_speed_factor = -0.40
+				army_armor_attack_factor = -0.40
+				army_armor_defence_factor = -0.40
+			}
+		}
+		POL_combined_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_combined_army" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_army
+
+			modifier = {
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				army_core_defence_factor = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		POL_combined_army_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_combined_army" }
+			allowed = {
+				always = no
+			}
+			name = POL_combined_army
+			removal_cost = -1
+
+			picture = generic_volunteer_army
+
+			modifier = {
+				army_speed_factor = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = -0.08
+				army_morale_factor = -0.08
+				army_core_defence_factor = 0.1
+				training_time_army_factor = -0.12
+			}
+		}
+		POL_remain_cavalry_tradition = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_remain_cavalry_tradition" }
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_volunteer_army
+
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.1
+			}
+		}
+		POL_quality_better_than_amount = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_quality_better_than_amount" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_quality_to_the_armies
+
+			modifier = {
+				training_time_army_factor = 0.2
+				conscription_factor = -0.2
+				army_morale_factor = -0.15
+				army_org_factor = 0.1
+				army_speed_factor = 0.15
+				army_defence_factor = 0.1
+			}
+		}
+		POL_amount_better_than_quality = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_quality_better_than_amount" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_amount_to_the_armies
+
+			modifier = {
+				training_time_army_factor = -0.3
+				mobilization_speed = 0.2
+				conscription_factor = 0.2
+				army_morale_factor = 0.1
+				army_speed_factor = -0.1
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+			}
+		}
+		POL_help_from_italy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_combined_army" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_sabotaged_armor
+
+			modifier = {
+				send_volunteer_size = 10
+				paternalism_acceptance = 50
+			}
+		}
+		wont_make_past_again = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_combined_army" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_land_battle
+
+			modifier = {
+				war_support_factor = 0.1
+				army_defence_factor = 0.05
+				army_org_factor = 0.02
+				out_of_supply_factor = 0.05
+			}
+		}
+		POL_home_defense = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_home_defense" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_polish_home_defense
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.1
+				surrender_limit = 0.06
+			}
+		}
+		POL_war_time_warsaw = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_home_defense" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_demands_for_democracy
+
+			modifier = {
+				production_units_to_GDP_ratio_modifier = 0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				conscription_factor = 0.2
+				mobilization_speed = 0.05
+				consumer_goods_use_modifier = -0.15
+				annual_gdp_growth_factor = -0.25
+			}
+		}
+		POL_social_liberal_market_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_social_liberal_market_idea" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_demands_for_democracy
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				annual_gdp_growth_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		POL_socialist_market_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_social_liberal_market_idea" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = HAI_socialist_economy
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				annual_gdp_growth_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		POL_fiat_car_design = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_fiat_car_design" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_demands_for_democracy
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_units_to_GDP_ratio_modifier = 0.04
+			}
+		}
+		POL_underground_handmade_guns = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_underground_handmade_guns" }
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_black_market_arms
+
+			modifier = {
+				army_attack_factor = -0.075
+				production_speed_buildings_factor = -0.3
+				production_factory_max_efficiency_factor = -0.4
+				production_factory_efficiency_gain_factor = 0.2
+				free_production_units_modifier = 2
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.15
+					reliability = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.15
+					reliability = -0.1
+					instant = yes
+				}
+			}
+		}
+		POL_Hardened_Defense = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_Hardened_Defense" }
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_partisan_alliance
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				dig_in_speed_factor = 0.05
+				max_dig_in = 1.5
+			}
+		}
+		POL_reclamation_those_wastelands_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_reclamation_those_wastelands_idea" }
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_partisan_alliance
+
+			modifier = {
+				agriculture_monthly_rate = 0.1
+			}
+		}
+		POL_improve_military_production = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_improve_military_production" }
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_partisan_alliance
+
+			modifier = {
+				production_units_to_GDP_ratio_modifier = 0.13
+				production_speed_buildings_factor = -0.3
+				production_factory_max_efficiency_factor = -0.3
+				production_factory_efficiency_gain_factor = 0.23
+				political_power_gain = -0.5
+				annual_gdp_growth_factor = -0.2
+				free_production_units_modifier = 3
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+					reliability = -0.1
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.2
+					reliability = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					reliability = -0.1
+					instant = yes
+				}
+			}
+		}
+	}
+}

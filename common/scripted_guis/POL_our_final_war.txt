@@ -1,0 +1,36 @@
+scripted_gui = {
+	POL_our_final_war = {
+		context_type = decision_category
+		window_name = "POL_our_final_war_container"
+
+		visible = {
+			original_tag = POL
+		}
+		effects = {
+			
+
+		}
+		properties = {
+			
+			POL_final_war_supply = {
+				frame = POL_final_war_supply_var
+			}
+			POL_final_war_ger_war_supp = {
+				frame = POL_final_war_ger_war_supp_var
+			}
+			POL_supplies_during_war = {
+				frame = 0
+			}
+			POL_tension_during_war = {
+				frame = 0
+			}
+			POL_war_supply = {
+				frame = 0
+			}
+			POL_german_tension = {
+				frame = 0
+			}
+		}
+	}
+}
+ 

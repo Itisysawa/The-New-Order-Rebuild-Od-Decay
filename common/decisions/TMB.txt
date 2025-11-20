@@ -1,0 +1,318 @@
+TMB_first_sacred_war = {
+    
+    pressing_tara_riot = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { has_country_flag = TMB_tara_riot_flag }
+		activation = { 
+            has_country_flag = TMB_tara_riot_flag
+        }
+		available = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+        visible = {
+        }
+		priority = 3655
+		days_mission_timeout = 530
+		is_good = no
+		selectable_mission = no
+        mission = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+            mark_focus_tree_layout_dirty = yes
+            load_focus_tree = ZZZ_blank_focus
+            kill_country_leader = yes
+            set_cosmetic_tag = TMB_anarchy
+            add_ideas = TMB_collapse
+            TMO = {
+                declare_war_on = {
+                    target = TMB
+                    type = annex_everything
+                }
+            }
+            add_popularity = {
+                ideology = paternalism
+                popularity = 0.3
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.6
+            }
+		}
+        complete_effect = {
+            clr_country_flag = TMB_tara_riot_flag
+            add_popularity = {
+                ideology = paternalism
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = -1
+            }
+        }
+	}
+    tara_action = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { has_country_flag = TMB_tara_riot_flag }
+		activation = { 
+            has_country_flag = TMB_tara_riot_flag
+        }
+		available = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+        visible = {
+        }
+		priority = 3655
+		days_mission_timeout = 7
+		is_good = no
+		selectable_mission = no
+        mission = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: tara_action timeout"
+            activate_mission = tara_action
+            add_to_variable = { tara_riot = rising_speed_in_tara }
+            clamp_variable = { 
+             	var = tara_riot
+    	        min = 0
+	        	max = 100
+            }
+		}
+	}
+    irisikur_action = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { has_country_flag = TMB_tara_riot_flag }
+		activation = { 
+            has_country_flag = TMB_tara_riot_flag
+        }
+		available = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+        visible = {
+        }
+		priority = 3655
+		days_mission_timeout = 7
+		is_good = no
+		selectable_mission = no
+        mission = {
+            not = {
+                has_country_flag = TMB_tara_riot_flag
+            }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: tara_action timeout"
+            activate_mission = irisikur_action
+            add_to_variable = { irisikur_riot = rising_speed_in_irisikur }
+            clamp_variable = { 
+             	var = irisikur_riot
+    	        min = 0
+	        	max = 100
+            }
+		}
+	}
+    use_secret_police = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = tara_prob_solving
+            has_political_power > 24.99
+		}
+
+		visible = {
+            has_country_flag = tara_prob_solving
+		}
+        fire_only_once = no
+
+        days_re_enable = 7
+        days_remove = 7
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            custom_effect_tooltip = use_secret_police_tt
+            571 = {
+                add_manpower = -5000
+            }
+            add_stability = -0.02
+            add_to_variable = { tara_riot = -3.5 }
+            add_to_variable = { irisikur_riot = -3.5 }
+            add_popularity = {
+                ideology = paternalism
+                popularity = -0.001
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = -0.001
+            }
+            clamp_variable = { 
+             	var = irisikur_riot
+    	        min = 0
+	        	max = 100
+            }
+            clamp_variable = { 
+             	var = tara_riot
+    	        min = 0
+	        	max = 100
+            }
+        }
+    }
+    mind_wash_edu = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = tara_prob_solving
+            has_political_power > 24.99
+		}
+
+		visible = {
+            has_country_flag = tara_prob_solving
+		}
+        fire_only_once = no
+
+        days_re_enable = 7
+        days_remove = 7
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            custom_effect_tooltip = mind_wash_edu_tt
+            add_stability = 0.05
+            add_to_variable = { irisikur_riot = -1.5 }
+            add_to_variable = { tara_riot = -1.5 }
+            add_popularity = {
+                ideology = paternalism
+                popularity = -0.001
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = -0.001
+            }
+            clamp_variable = { 
+             	var = irisikur_riot
+    	        min = 0
+	        	max = 100
+            }
+            clamp_variable = { 
+             	var = tara_riot
+    	        min = 0
+	        	max = 100
+            }
+        }
+    }
+    army_pressing = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = TMB_Antikhrist_movement
+            command_power > 4.99
+		}
+
+		visible = {
+            has_country_flag = TMB_Antikhrist_movement
+		}
+        fire_only_once = no
+
+        days_re_enable = 7
+        days_remove = 7
+        complete_effect = {
+            add_command_power = -5
+        }
+        remove_effect = {
+            custom_effect_tooltip = army_pressing_tt
+            add_to_variable = { tara_riot = -3 }
+            add_to_variable = { irisikur_riot = -3 }
+            571 = {
+                add_manpower = -10000
+            }
+            add_stability = -0.01
+            add_popularity = {
+                ideology = paternalism
+                popularity = -0.001
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = -0.001
+            }
+            clamp_variable = { 
+             	var = irisikur_riot
+    	        min = 0
+	        	max = 100
+            }
+            clamp_variable = { 
+             	var = tara_riot
+    	        min = 0
+	        	max = 100
+            }
+        }
+    }
+    Solving_jesus_christ_prob = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = TMB_solve_their_christ_d_flag
+            command_power > 4.99
+		}
+
+		visible = {
+            has_country_flag = TMB_solve_their_christ_d_flag
+		}
+        fire_only_once = no
+
+        days_re_enable = 7
+        days_remove = 7
+        complete_effect = {
+            add_command_power = -5
+        }
+        remove_effect = {
+            custom_effect_tooltip = Solving_jesus_christ_prob_tt
+            add_to_variable = { tara_riot = -1.4 }
+            add_to_variable = { irisikur_riot = -1.4 }
+            571 = {
+                add_manpower = -1000
+            }
+            add_stability = -0.01
+            add_popularity = {
+                ideology = paternalism
+                popularity = -0.001
+            }
+            clamp_variable = { 
+             	var = irisikur_riot
+    	        min = 0
+	        	max = 100
+            }
+            clamp_variable = { 
+             	var = tara_riot
+    	        min = 0
+	        	max = 100
+            }
+        }
+    }
+}

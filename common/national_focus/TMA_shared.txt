@@ -1,0 +1,428 @@
+shared_focus = {
+	id = TMA_on_the_ruins
+	icon = GFX_focus_POL_amongst_the_ruins
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_on_the_ruins"
+		add_stability = -0.05
+		TNO_worsen_admin_efficiency_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_counting_foods
+	icon = GFX_focus_generic_food_for_all
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = TMA_on_the_ruins
+	}
+	relative_position_id = TMA_on_the_ruins
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_counting_foods"
+		TNO_improve_agriculture_low = yes
+		TNO_improve_industrial_expertise_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_in_the_despair
+	icon = GFX_focus_generic_a_ray_of_hope
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = TMA_on_the_ruins
+	}
+	relative_position_id = TMA_on_the_ruins
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_counting_foods"
+		
+	}
+}
+shared_focus = {
+	id = TMA_distribute_the_foods
+	icon = GFX_focus_generic_food_stamps
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_counting_foods
+	}
+	relative_position_id = TMA_counting_foods
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_distribute_the_foods"
+		add_ideas = TMA_food_distributing
+	}
+}
+shared_focus = {
+	id = TMA_the_greatest_threat
+	icon = GFX_focus_generic_fortify_the_border
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_in_the_despair
+	}
+	relative_position_id = TMA_in_the_despair
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_the_greatest_threat"
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = TMA_what_we_only_got_is_people
+	icon = GFX_focus_generic_refugee_crisis
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = TMA_the_greatest_threat
+	}
+	prerequisite = {
+		focus = TMA_distribute_the_foods
+	}
+	relative_position_id = TMA_the_greatest_threat
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_what_we_only_got_is_people"
+		add_ideas = tno_conscription_extensive_conscription
+		TNO_improve_conscription_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_we_are_shabby
+	icon = GFX_focus_generic_we_failed_the_poor
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_what_we_only_got_is_people
+	}
+	relative_position_id = TMA_what_we_only_got_is_people
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_we_are_shabby"
+		TNO_worsen_poverty_low = yes
+		add_stability = -0.05
+	}
+}
+shared_focus = {
+	id = TMA_but_we_have_gun
+	icon = GFX_focus_generic_defensive_doctrine
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_we_are_shabby
+	}
+	relative_position_id = TMA_we_are_shabby
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_but_we_have_gun"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = WRS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 200
+			producer = WRS
+		}
+	}
+}
+shared_focus = {
+	id = TMA_if_necessary_just_go_again
+	icon = GFX_focus_RUS_a_socialist_indoctrination
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -4
+	y = 1
+	prerequisite = {
+		focus = TMA_but_we_have_gun
+	}
+	relative_position_id = TMA_but_we_have_gun
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_if_necessary_just_go_again"
+		add_war_support = 0.05
+		TNO_improve_army_professionalism_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_this_is_war_of_people
+	icon = GFX_focus_RUS_inspiration
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 4
+	y = 1
+	prerequisite = {
+		focus = TMA_but_we_have_gun
+	}
+	relative_position_id = TMA_but_we_have_gun
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_this_is_war_of_people"
+		TNO_improve_military_supervision_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_production_faster
+	icon = GFX_focus_RUS_a_productive_union
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_if_necessary_just_go_again
+	}
+	relative_position_id = TMA_if_necessary_just_go_again
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_production_faster"
+		TNO_improve_industrial_expertise_med = yes
+		add_ideas = TMA_production_faster_idea
+	}
+}
+shared_focus = {
+	id = TMA_ignite_war_supp
+	icon = GFX_focus_generic_soldiers_red
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_this_is_war_of_people
+	}
+	relative_position_id = TMA_this_is_war_of_people
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_ignite_war_supp"
+		
+	}
+}
+shared_focus = {
+	id = TMA_for_peoples_safety
+	icon = GFX_focus_generic_minority_protections
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = TMA_production_faster
+	}
+	relative_position_id = TMA_production_faster
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_for_peoples_safety"
+		add_war_support = 0.1
+	}
+}
+shared_focus = {
+	id = TMA_warning_from_vyatka
+	icon = GFX_focus_RUS_summon_the_revolutionary_war_command
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = TMA_production_faster
+	}
+	relative_position_id = TMA_production_faster
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_warning_from_vyatka"
+		#country_event
+	}
+}
+shared_focus = {
+	id = TMA_the_jade_shattered
+	icon = GFX_focus_RUS_let_the_past_fade
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = TMA_ignite_war_supp
+	}
+	relative_position_id = TMA_ignite_war_supp
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_the_jade_shattered"
+		add_ideas = TMA_the_jade_shattered_idea
+	}
+}
+shared_focus = {
+	id = TMA_red_flag_under_ash
+	icon = GFX_focus_RUS_soviet_legacy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = TMA_ignite_war_supp
+	}
+	relative_position_id = TMA_ignite_war_supp
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_red_flag_under_ash"
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = TMA_even_die_together
+	icon = GFX_focus_generic_burn_it_all
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = TMA_warning_from_vyatka
+	}
+	prerequisite = {
+		focus = TMA_the_jade_shattered
+	}
+	prerequisite = {
+		focus = TMA_red_flag_under_ash
+	}
+	prerequisite = {
+		focus = TMA_for_peoples_safety
+	}
+	relative_position_id = TMA_warning_from_vyatka
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_red_flag_under_ash"
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = TMA_we_got_them
+	icon = GFX_focus_generic_anti_fascism
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_even_die_together
+	}
+	relative_position_id = TMA_even_die_together
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_we_got_them"
+		TNO_improve_training_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = TMA_sacred_war
+	icon = GFX_focus_RUS_map_wrrf
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = TMA_we_got_them
+	}
+	relative_position_id = TMA_we_got_them
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TMA_sacred_war"
+		custom_effect_tooltip = TMA_sacred_war_tt
+		hidden_effect = {
+			declare_war_on = {
+				target = KOM
+				type = annex_everything
+			}
+		}
+	}
+}

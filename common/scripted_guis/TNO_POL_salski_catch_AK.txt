@@ -1,0 +1,29 @@
+scripted_gui = {
+	POL_salski_catch_AK = {
+		context_type = decision_category
+		window_name = "POL_salski_gotAKresistant_container"
+
+		visible = {
+			original_tag = POL
+		}
+		effects = {
+			
+
+		}
+		properties = {
+			GUI_western_poland = {
+				frame = GUI_western_poland_var
+			}
+			GUI_western_ukraine = {
+				frame = GUI_western_ukraine_var
+			}
+			GUI_belarus = {
+				frame = GUI_belarus_var
+			}
+			GUI_eastern_poland = {
+				frame = GUI_eastern_poland_var
+			}
+		}
+	}
+}
+ 

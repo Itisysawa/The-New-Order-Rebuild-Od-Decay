@@ -1,0 +1,12 @@
+focus_tree = {
+	id = cain_brotherhood_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = TMB_declare_destiny
+}

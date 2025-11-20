@@ -1,0 +1,2552 @@
+POL_uprising_preparing = {
+    warsaw_rise = {
+        icon = GFX_GGN_uprising
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_global_flag = german_civil_war
+            custom_trigger_tooltip = {
+				tooltip = POL_warsaw_rise_value_tt
+				check_variable = { Preparing_for_uprise > 99.99 }
+			}
+		}
+
+		visible = {
+		}
+        fire_only_once = yes
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision warsaw_rise"
+            country_event = { id = ggn.3 }
+        }
+    }
+    armament_thief = {
+        icon = GFX_decision_generic_pakt_guns
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision warsaw_rise"
+            custom_effect_tooltip = higher_uprise_preparing
+            add_to_variable = { Preparing_for_uprise = 10 }
+            country_event = { id = before_wsw.6 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+    }
+    destroy_their_building = {
+        icon = GFX_decision_generic_building_prisons
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 40
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision destroy_their_building"
+            damage_building = { type = prisons damage = 2 }
+            custom_effect_tooltip = higher_uprise_preparing
+            country_event = { id = before_wsw.7 }
+            add_stability = -0.05
+            add_to_variable = { Preparing_for_uprise = 10 }          
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+    }
+    planning_for_uprising_warplan = {
+        icon = GFX_decision_diplo_poland
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 60
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision planning_for_uprising_warplan"
+
+            add_to_variable = { Preparing_for_uprise = 10 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    contacting_the_troops = {
+        icon = GFX_decision_category_generic_army_reform
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision contacting_the_troops"
+            country_event = { id = before_wsw.5 }
+            add_to_variable = { Preparing_for_uprise = 10 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    POL_distribute_supply = {
+        icon = GFX_decision_generic_supply
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 40
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision contacting_the_troops"
+            POL = {
+                remove_ideas = POL_exhausted_arms
+            }
+            add_to_variable = { Preparing_for_uprise = 15 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    POL_contact_npl_army = {
+        icon = GFX_decision_diplo_kazakhstan
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 60
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision POL_contact_npl_army"
+            set_global_flag = POL_npl_army_help
+            add_to_variable = { Preparing_for_uprise = 15 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    POL_scare_them_hard = {
+        icon = GFX_decision_generic_insider_attack_indent
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 60
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision POL_scare_them_hard"
+            add_stability = -0.2
+            POL = {
+                add_stability = 0.1
+            }
+            add_to_variable = { Preparing_for_uprise = 10 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    POL_gun_production = {
+        icon = GFX_decision_generic_military_guns_blue
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 60
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision POL_scare_them_hard"
+            POL = {
+                add_equipment_to_stockpile = {
+        	   		type = infantry_equipment
+        	   		amount = 800
+    	   		    producer = POL
+    	   	    }
+            }
+            add_to_variable = { Preparing_for_uprise = 10 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+    POL_tks_troop = {
+        icon = GFX_decision_generic_tank
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            not = {
+                has_country_flag = Using_decision_to_uprising
+            }
+		}
+        custom_cost_trigger = {
+            command_power > 4.99
+        }
+        custom_cost_text = decision_cost_5_cp
+
+		visible = {
+		}
+        fire_only_once = yes
+        days_remove = 60
+        complete_effect = {
+            add_command_power = -5
+            set_country_flag = Using_decision_to_uprising
+        }
+        remove_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision POL_tks_troop"
+            set_global_flag = POL_tks_ready
+            custom_effect_tooltip = POL_tks_ready_tt
+            add_to_variable = { Preparing_for_uprise = 10 }
+            clamp_variable = {
+				var = Preparing_for_uprise
+				min = 0
+				max = 100
+			}
+            clr_country_flag = Using_decision_to_uprising
+        }
+        
+    }
+}
+Polish_form_occu_zone = {
+    east_poland_junta = {
+        icon = GFX_decision_diplo_poland
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = fuk_ukr
+            custom_trigger_tooltip = {
+				tooltip = east_poland_junta_tt
+				AND = {
+                    OR = {
+                        93 = {
+                            is_fully_controlled_by = POL
+                        }
+                        93 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        93 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        93 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                    }
+                    OR = {
+                        1431 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1431 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1431 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1431 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                    }
+                }
+			}
+		}
+        
+		visible = {
+            has_country_flag = fuk_ukr
+		}
+        fire_only_once = yes
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision east_poland_junta"
+            hidden_effect = {
+                add_ideas = AGCDL_member
+            }
+            
+            93 = {
+                add_core_of = EPJ
+            }
+            1431 = {
+                add_core_of = EPJ
+            }
+            set_autonomy = {
+				target = EPJ
+				autonomy_state = autonomy_military_district
+			}
+            transfer_state = 1392
+            transfer_state = 91
+            transfer_state = 1394
+            transfer_state = 89
+            transfer_state = 1388
+            transfer_state = 1387
+            EPJ = {
+                add_ideas = AGCDL_member
+		    	transfer_state = 93
+		    	transfer_state = 1431
+                hidden_effect = {
+                    set_popularities = {
+                        conservatism = 17
+	    				paternalism = 33
+		    			despotism = 23
+                        paternalism_1 = 24
+                        ultranationalism = 3
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EPJ_1962
+                }
+				
+	    	}
+        }
+    }
+    UKR_new_one = {
+        icon = GFX_decision_UKR_heerema_noc
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            custom_trigger_tooltip = {
+				tooltip = UKR_new_one_tt
+                OR = {
+                    AND = {
+                        NOT = {
+                            country_exists = BOV
+                            country_exists = UKR
+				    	}
+                        OR = {
+                            AND = {
+                                NOT = {
+                                    country_exists = FUK
+                                }
+                                is_in_faction_with = UKS
+                            }
+                            AND = {
+                                NOT = {
+                                    country_exists = UKS
+                                }
+                                is_in_faction_with = FUK
+                            }
+                        }
+                    }
+                    NOT = {
+                        country_exists = BOV
+                        country_exists = UKR
+                        country_exists = UKS
+                        country_exists = FUK
+	    			}
+                }
+            }
+		}
+
+		visible = {
+            has_country_flag = fuk_ukr
+		}
+        fire_only_once = yes
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision UKR_new_one"
+            set_country_flag = finish_ukr_prob
+            if = {
+                limit = { NOT = { is_in_faction_with = UKS } }
+                if = {
+                    limit = { not = { FUK = { is_in_faction_with = POL } } }
+                    set_autonomy = {
+	    				target = FUK
+					    autonomy_state = autonomy_dominion
+				    }
+			    	FUK = {
+		    			set_popularities = {
+	    					paternalism = 80
+	    					despotism = 20
+	    				}
+	    				set_politics = {
+	    					ruling_party = paternalism
+		    				last_election = "1941.4.17"
+	     					election_frequency = 48
+    						elections_allowed = no
+					    }
+				    }
+                }   
+                FUK = {
+                    load_oob = UKR_1962
+                    add_ideas = AGCDL_member
+                    hidden_effect = {
+                        transfer_state = 197
+		            	transfer_state = 199
+	    	    	    transfer_state = 1430
+                        transfer_state = 773
+    		    	    transfer_state = 202
+                        transfer_state = 201
+                        transfer_state = 1428
+		            	transfer_state = 1429
+                        transfer_state = 1427
+    		    	    transfer_state = 225
+                        transfer_state = 218
+		        	    transfer_state = 228
+                        transfer_state = 221
+                        transfer_state = 227
+                        transfer_state = 259
+                        transfer_state = 1426
+                        transfer_state = 200
+                        transfer_state = 226
+                        
+                        add_ideas = economic_recovering_ee_idea
+                    }
+		    		set_capital = { state = 1428 remember_old_capital = no }
+	        	}
+            }
+            if = {
+                limit = { is_in_faction_with = UKS }
+                UKS = {
+                    load_oob = UKR_1962
+                    add_ideas = AGCDL_member
+                    hidden_effect = {
+                        transfer_state = 197
+		            	transfer_state = 199
+	    	    	    transfer_state = 1430
+                        transfer_state = 773
+    		    	    transfer_state = 202
+                        transfer_state = 201
+                        transfer_state = 1428
+		            	transfer_state = 1429
+                        transfer_state = 1427
+    		    	    transfer_state = 225
+                        transfer_state = 218
+		        	    transfer_state = 228
+                        transfer_state = 221
+                        transfer_state = 227
+                        transfer_state = 259
+                        transfer_state = 1426
+                        transfer_state = 200
+                        transfer_state = 226
+                        
+                        add_ideas = economic_recovering_ee_idea
+                    }
+		    		set_capital = { state = 1428 remember_old_capital = no }
+	        	}
+            }
+        }
+    }
+}
+
+Polish_form_occu_zone_ost = {
+    Belarus_republic = {
+        icon = GFX_decision_generic_decision
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = fuk_ost 
+            custom_trigger_tooltip = {
+				tooltip = Belarus_republic_tt
+				AND = {
+                    OR = {
+                        1407 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1407 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1407 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1407 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        1407 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        95 = {
+                            is_fully_controlled_by = POL
+                        }
+                        95 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        95 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        95 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        95 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        1406 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1406 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1406 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1406 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        1406 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        1403 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1403 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1403 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1403 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        1403 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        1404 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1404 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1404 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1404 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        1404 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        204 = {
+                            is_fully_controlled_by = POL
+                        }
+                        204 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        204 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        204 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        204 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        194 = {
+                            is_fully_controlled_by = POL
+                        }
+                        194 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        194 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        194 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        194 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        1405 = {
+                            is_fully_controlled_by = POL
+                        }
+                        1405 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        1405 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        1405 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        1405 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        206 = {
+                            is_fully_controlled_by = POL
+                        }
+                        206 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        206 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        206 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        206 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                    OR = {
+                        207 = {
+                            is_fully_controlled_by = POL
+                        }
+                        207 = {
+                            is_fully_controlled_by = FUK
+                        }
+                        207 = {
+                            is_fully_controlled_by = UKS
+                        }
+                        207 = {
+                            is_fully_controlled_by = EPJ
+                        }
+                        207 = {
+                            is_fully_controlled_by = MST
+                        }
+                    }
+                }
+			}
+		}
+
+		visible = {
+            has_country_flag = fuk_ost
+		}
+        fire_only_once = yes
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision Belarus_republic"
+            1407 = {
+                add_core_of = EPJ
+            }
+            95 = {
+                add_core_of = EPJ
+            }
+            1406 = {
+                add_core_of = EPJ
+            }
+            1403 = {
+                add_core_of = EPJ
+            }
+            204 = {
+                add_core_of = BLR
+            }
+            206 = {
+                add_core_of = BLR
+            }
+            207 = {
+                add_core_of = BLR
+            }
+            194 = {
+                add_core_of = BLR
+            }
+            1404 = {
+                add_core_of = BLR
+            }
+            1405 = {
+                add_core_of = BLR
+            }
+            set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_dominion
+			}
+            
+            EPJ = {
+                transfer_state = 95
+		    	transfer_state = 1407
+                transfer_state = 1406
+                transfer_state = 1403
+            }
+            BLR = {
+                add_ideas = economic_recovering_ee_idea
+                transfer_state = 204
+                transfer_state = 206
+                transfer_state = 207
+                transfer_state = 194
+                transfer_state = 1404
+                transfer_state = 1405
+                hidden_effect = {
+                    set_popularities = {
+	    				paternalism = 80
+		    			despotism = 20
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EST_1962
+                }
+				load_focus_tree = ZZZ_blank_focus
+                add_ideas = AGCDL_member
+	    	}
+            set_country_flag = belarus_completed
+            
+        }
+    }
+    Lithuan_republic = {
+        icon = GFX_decision_diplo_ostland
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = fuk_ost
+            custom_trigger_tooltip = {
+				tooltip = Lithuan_republic_tt
+				OR = {
+                    AND = {
+                        NOT = {
+                            country_exists = DST
+                            country_exists = JST
+                            country_exists = UPO
+                            country_exists = OST
+				    	}
+                        AND = {
+                            OR = {
+                                NOT = {
+                                    country_exists = MST
+                                }
+                                is_in_faction_with = MST
+                            }
+                            OR = {
+                                NOT = {
+                                    country_exists = BLR
+                                }
+                                is_in_faction_with = BLR
+                            }
+                        }
+                    }
+                }
+            }
+		}
+
+		visible = {
+            has_country_flag = fuk_ost
+		}
+        fire_only_once = yes
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: Decision Lithuan_republic"
+            1401 = {
+                add_core_of = LIT
+            }
+            189 = {
+                add_core_of = LIT
+            }
+            1400 = {
+                add_core_of = LIT
+            }
+            2451 = {
+                add_core_of = LIT
+            }
+            11 = {
+                add_core_of = LIT
+            }
+            #MST
+            12 = {
+                add_core_of = MST
+            }
+            190 = {
+                add_core_of = MST
+            }
+            943 = {
+                add_core_of = MST
+            }
+            1397 = {
+                add_core_of = MST
+            }
+            1398 = {
+                add_core_of = MST
+            }
+            1399 = {
+                add_core_of = MST
+            }
+            #EST
+            1395 = {
+                add_core_of = EST
+            }
+            1396 = {
+                add_core_of = EST
+            }
+            2450 = {
+                add_core_of = EST
+            }
+            191 = {
+                add_core_of = EST
+            }
+            1440 = {
+                add_core_of = EST
+            }
+            13 = {
+                add_core_of = EST
+            }
+            #PMW
+            96 = {
+                add_core_of = EPJ
+            }
+            79 = {
+                add_core_of = LIT
+            }
+            241 = {
+                add_core_of = PMW
+            }
+            2452 = {
+                add_core_of = PMW
+            }
+            257 = {
+                add_core_of = PMW
+            }
+            1402 = {
+                add_core_of = PMW
+            }
+            209 = {
+                add_core_of = PMW
+            }
+            1421 = {
+                add_core_of = PMW
+            }
+            set_autonomy = {
+				target = LIT
+				autonomy_state = autonomy_dominion
+			}
+            LIT = {
+                add_ideas = economic_recovering_ee_idea
+                add_ideas = AGCDL_member
+                transfer_state = 1401
+                transfer_state = 11
+                transfer_state = 189
+                transfer_state = 1400
+                transfer_state = 2451
+                transfer_state = 79
+                hidden_effect = {
+                    set_popularities = {
+	    				paternalism = 80
+		    			despotism = 20
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EST_1962
+                }
+				
+	    	}
+            
+            set_autonomy = {
+				target = MST
+				autonomy_state = autonomy_dominion
+			}
+            MST = {
+                add_ideas = economic_recovering_ee_idea
+                add_ideas = AGCDL_member
+                transfer_state = 12
+                transfer_state = 190
+                transfer_state = 943
+                transfer_state = 1397
+                transfer_state = 1398
+                transfer_state = 1399
+                hidden_effect = {
+                    set_popularities = {
+	    				paternalism = 80
+		    			despotism = 20
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EST_1962
+                }
+				set_capital = { state = 1397 remember_old_capital = no }
+                set_cosmetic_tag = LAT
+                set_party_name = {
+					ideology = paternalism
+					long_name = LAT_paternalism_party_long
+					name = LAT_paternalism_party
+				}
+	    	}
+            set_autonomy = {
+				target = EST
+				autonomy_state = autonomy_dominion
+			}
+            EST = {
+                add_ideas = economic_recovering_ee_idea
+                add_ideas = AGCDL_member
+                transfer_state = 1395
+                transfer_state = 1396
+                transfer_state = 191
+                transfer_state = 2450
+                transfer_state = 1440
+                transfer_state = 13
+                hidden_effect = {
+                    set_popularities = {
+	    				paternalism = 80
+		    			despotism = 20
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EST_1962
+                }
+	    	}
+            set_autonomy = {
+				target = PMW
+				autonomy_state = autonomy_dominion
+			}
+            PMW = {
+                add_ideas = economic_recovering_ee_idea
+                add_ideas = AGCDL_member
+                transfer_state = 241
+                transfer_state = 2452
+                transfer_state = 257
+                transfer_state = 1402
+                transfer_state = 209
+                transfer_state = 1421
+                hidden_effect = {
+                    set_popularities = {
+	    				communist = 0
+                    	ultranationalism = 0
+	                    socialist = 0
+	                    progressivism = 6
+	                    liberalism = 7
+
+	                    conservatism = 12
+	                    paternalism = 63
+	                    despotism = 12
+	                    fascism = 0
+			    	}
+                    set_politics = {
+				    	ruling_party = paternalism
+			    		elections_allowed = no
+				    }
+                    load_oob = EST_1962
+                }
+	    	}
+            EPJ = {
+                transfer_state = 96
+                
+            }
+        }
+        
+    }
+}
+POL_civil_armes = {
+    POL_invit_belarus_militia = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = belarus_militia
+		}
+
+		visible = {
+            has_country_flag = belarus_militia
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -500
+			    producer = POL
+		    }
+            EPJ = {
+                add_equipment_to_stockpile = {
+			        type = infantry_equipment
+			        amount = 500
+			        producer = POL
+		        }
+                create_unit = {
+					division = "name = \"belarus millitia\" division_template = \"Bielaruskaje apalčennie\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					owner = EPJ
+                    location = 1406
+				}
+            }
+        }
+    }
+    POL_invit_ukrainian_militia = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = ukraine_militia
+		}
+
+		visible = {
+            has_country_flag = ukraine_militia
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        remove_effect = {
+            add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -500
+			    producer = POL
+		    }
+            EPJ = {
+                add_equipment_to_stockpile = {
+			        type = infantry_equipment
+			        amount = 500
+			        producer = POL
+		        }
+                create_unit = {
+					division = "name = \"ukraine millitia\" division_template = \"Strilets'ka Dyviziya\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					owner = EPJ
+                    location = 474
+				}
+            }
+        }
+    }
+    
+}
+POL_armament_purchasing = {
+    POL_buy_bul_sup_eq = {
+        icon = GFX_decision_diplo_bulgaria
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = bulgarian_support_eq
+		}
+
+		visible = {
+            has_country_flag = pol_can_buy_gun
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -25
+            
+        }
+        remove_effect = {
+            BUL = {
+                set_temp_variable = { money_reserves_temp = 0.06 }
+		        econ_money_reserves_change_raw_money = yes
+                add_equipment_to_stockpile = {
+	    		    type = support_equipment
+    		        amount = -100
+		    	    producer = BUL
+		        }
+                
+            }
+            add_equipment_to_stockpile = {
+	    	    type = support_equipment
+    		    amount = 100
+		        producer = BUL
+		    }
+            set_temp_variable = { temp_econ_spending_amount = 0.060 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+    }
+    POL_buy_turkey_guns = {
+        icon = GFX_decision_diplo_turkey
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = turkey_guns
+		}
+
+		visible = {
+            has_country_flag = pol_can_buy_gun
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            TUR = {
+                set_temp_variable = { money_reserves_temp = 0.04 }
+		        econ_money_reserves_change_raw_money = yes
+                add_equipment_to_stockpile = {
+	    		    type = infantry_equipment
+    		        amount = -800
+		    	    producer = TUR
+		        }
+                
+            }
+            add_equipment_to_stockpile = {
+	    	    type = infantry_equipment
+    		    amount = 800
+		        producer = TUR
+		    }
+            set_temp_variable = { temp_econ_spending_amount = 0.040 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+    }
+    POL_buy_italian_truck = {
+        icon = GFX_decision_diplo_italy
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = italian_trucks
+		}
+
+		visible = {
+            has_country_flag = pol_can_buy_gun
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            ITA = {
+                set_temp_variable = { money_reserves_temp = 0.06 }
+		        econ_money_reserves_change_raw_money = yes
+                add_equipment_to_stockpile = {
+	    		    type = motorized_equipment
+    		        amount = -120
+		    	    producer = ITA
+                    
+		        }
+                
+            }
+            add_equipment_to_stockpile = {
+	    	    type = motorized_equipment
+    		    amount = 120
+		        producer = ITA
+		    }
+            set_temp_variable = { temp_econ_spending_amount = 0.060 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+    }
+    POL_buy_iberian_artillery = {
+        icon = GFX_decision_market_towed_artillery_indent
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = iberian_artillery
+		}
+
+		visible = {
+            has_country_flag = pol_can_buy_gun
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            IBR = {
+                set_temp_variable = { money_reserves_temp = 0.06 }
+		        econ_money_reserves_change_raw_money = yes
+                add_equipment_to_stockpile = {
+	    		    type = artillery_equipment
+    		        amount = -120
+		    	    producer = IBR
+		        }
+            }
+
+            add_equipment_to_stockpile = {
+	    	    type = artillery_equipment
+    		    amount = 120
+		        producer = IBR
+		    }
+            set_temp_variable = { temp_econ_spending_amount = 0.060 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+    }
+    POL_buy_iberian_at_eq = {
+        icon = GFX_decision_generic_tank_indent
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = iberian_artillery
+		}
+
+		visible = {
+            has_country_flag = pol_can_buy_gun
+		}
+        fire_only_once = no
+
+        days_re_enable = 30
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -25
+        }
+        remove_effect = {
+            IBR = {
+                set_temp_variable = { money_reserves_temp = 0.06 }
+		        econ_money_reserves_change_raw_money = yes
+                add_equipment_to_stockpile = {
+	    		    type = anti_tank_equipment
+    		        amount = -120
+		    	    producer = IBR
+		        }
+                
+            }
+            add_equipment_to_stockpile = {
+	    	    type = anti_tank_equipment
+    		    amount = 120
+		        producer = IBR
+		    }
+            set_temp_variable = { temp_econ_spending_amount = 0.060 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+    }
+}
+POL_sacred_war = {
+    pol_war = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { 
+            POL = {
+                has_war_with = GER
+            }
+        }
+		activation = { 
+            POL = {
+                has_war_with = GER
+            }
+        }
+		available = {
+            check_variable = { POL_final_war_ger_war_supp_var > 80 }
+        }
+        visible = {
+            original_tag = pol
+        }
+		priority = 3655
+		days_mission_timeout = 7
+		is_good = yes
+		selectable_mission = no
+        mission = {
+            check_variable = { POL_final_war_ger_war_supp_var > 80 }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+            activate_mission = pol_war
+            add_to_variable = { POL_final_war_supply_var = 3 }
+            add_war_support = -0.01
+            
+            clamp_variable = {
+	          	var = POL_final_war_supply_var
+	            min = 0
+            	max = 100
+	        }
+		}
+        complete_effect = {
+            POL = {
+			    country_event = { id = POL_ROD.15 }
+			}
+        }
+        days_re_enable = 0
+	}
+    decision_strike_their_fortress = {
+        icon = GFX_AM_Amur
+		ai_will_do = {
+			factor = 0
+		}
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+        fire_only_once = No
+        days_remove = 20
+        days_re_enable = 10
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+    		    amount = -200
+		        producer = POL
+            }
+            add_manpower = -4000
+        }
+        remove_effect = {
+            
+        }
+    }
+}
+ROD_debug_decisions = {
+    revive_pilsuski = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = no
+        days_re_enable = 0
+
+        complete_effect = {
+            POL_Emil_Fieldorf = {
+                remove_country_leader_role = { ideology = paternalism_provisional_government_subtype }
+            }
+			add_country_leader_role = {
+			   	character = POL_Joseph_Pilsudski
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	paternalism_sanacja_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_Joseph_Pilsudski_desc"
+                    expire = "1999.4.4"
+			        traits = { father_of_polish }
+                    id = -1
+		        }
+                field_marshal = {
+			        traits = { logistics_wird expert_delegator war_hero brilliant_strategist infantry_officer }
+			        skill = 99
+			        attack_skill = 999
+			        defense_skill = 999
+		    	    planning_skill = 999
+	    		    logistics_skill = 999
+    	    	}
+	    	}
+            country_event = { id = by_kasimir_event.16 days = 3 }
+        }
+    }
+    hoshino_as_leader = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+
+        complete_effect = {
+            POL_Emil_Fieldorf = {
+                remove_country_leader_role = { ideology = paternalism_provisional_government_subtype }
+            }
+            POL_Wladyslaw_Gomulka = {
+                remove_country_leader_role = { ideology = communist_marxism_leninism_subtype }
+            }
+			add_country_leader_role = {
+			   	character = POL_takanashi_hoshino
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	paternalism_social_credit_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_takanashi_hoshino_desc"
+                    expire = "1999.4.4"
+			        traits = { }
+                    id = -1
+		        }
+	    	}
+            add_country_leader_role = {
+			   	character = POL_takanashi_hoshino
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	communist_marxism_leninism_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_takanashi_hoshino_desc"
+                    expire = "1999.4.4"
+			        traits = { }
+                    id = -1
+		        }
+	    	}
+            set_cosmetic_tag = POL_abydos
+        }
+    }
+    core_all_land = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = no
+        days_re_enable = 0 
+        complete_effect = {
+            every_owned_state = {
+                add_core_of = POL
+            }
+        }
+    }
+    Santa_fieldorf = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+
+        complete_effect = {
+            POL_Emil_Fieldorf = {
+                set_portraits = {
+				    civilian = {
+				    	large = "gfx/leaders/POL/Santa_fieldorf.png"
+				    }
+			    }
+            }
+        }
+    }
+    load_PZPR_focus_tree = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+
+        complete_effect = {
+            set_politics = {
+                ruling_party = communist 
+			    elections_allowed = no 
+            }
+            load_focus_tree = POL_gomulka_start
+        }
+    }
+}
+
+POL_power_struggle = {
+    NON_STOP_PRODUCTION = {
+        icon = GFX_AM_Amur
+        available = {
+            
+            NOT = {
+                has_country_flag = pwrst_doing_decision
+            }
+        }
+		ai_will_do = {
+			factor = 0
+		}
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+        fire_only_once = no
+        days_remove = 30
+        days_re_enable = 30
+        complete_effect = {
+            add_political_power = -50
+            set_country_flag = pwrst_doing_decision
+            add_timed_idea = { 
+                idea =  POL_production_cant_be_stop
+                days = 45
+            }
+		    add_to_variable = { PWR_PZPR_opposition = 5 }
+            custom_effect_tooltip = POL_PWR_AL_opposition_tt
+        }
+        remove_effect = {
+            
+            clr_country_flag = pwrst_doing_decision
+        }
+    }
+    NON_STOP_OFFENCE = {
+        icon = GFX_AM_Amur
+        available = {
+            
+            NOT = {
+                has_country_flag = pwrst_doing_decision
+            }
+        }
+		ai_will_do = {
+			factor = 0
+		}
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+        fire_only_once = no
+        days_remove = 30
+        days_re_enable = 30
+        complete_effect = {
+            add_political_power = -50
+            set_country_flag = pwrst_doing_decision
+            add_timed_idea = { 
+                idea =  POL_offence_cant_be_stop
+                days = 30
+            }
+        }
+        remove_effect = {
+            
+            clr_country_flag = pwrst_doing_decision
+        }
+    }
+    NO_STEP_BACK = {
+        icon = GFX_AM_Amur
+        available = {
+            
+            NOT = {
+                has_country_flag = pwrst_doing_decision
+            }
+        }
+		ai_will_do = {
+			factor = 0
+		}
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+        fire_only_once = no
+        days_remove = 30
+        days_re_enable = 30
+        complete_effect = {
+            add_political_power = -50
+            set_country_flag = pwrst_doing_decision
+            add_timed_idea = { 
+                idea = POL_no_more_step_back
+                days = 30
+            }
+        }
+        remove_effect = {
+            
+            clr_country_flag = pwrst_doing_decision
+        }
+    }
+}
+
+POL_ita_supp = {
+    italian_gun_production = {
+        icon = GFX_AM_Amur
+        available = {
+            
+            NOT = {
+                has_country_flag = doing_decision
+            }
+        }
+		ai_will_do = {
+			factor = 0
+		}
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -50
+            set_temp_variable = { temp_econ_spending_amount = 0.0350 }
+            econ_spend_money_once_effect_raw_money = yes
+            set_country_flag = doing_decision
+        }
+        remove_effect = {
+            set_country_flag = POL_finished_ita_gun
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+    		    amount = 5500
+		        producer = ITA
+            }
+            clr_country_flag = doing_decision
+        }
+    }
+    italian_artillery_production = {
+        icon = GFX_AM_Amur
+        available = {
+            NOT = {
+                has_country_flag = doing_decision
+            }
+        }
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -50
+            set_temp_variable = { temp_econ_spending_amount = 0.0350 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+        remove_effect = {
+            set_country_flag = POL_finished_ita_art
+            add_equipment_to_stockpile = {
+                type = artillery_equipment
+    		    amount = 750
+		        producer = ITA
+            }
+        }
+    }
+    italian_aa_production = {
+        icon = GFX_AM_Amur
+        available = {
+            NOT = {
+                has_country_flag = doing_decision
+            }
+        }
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -50
+            set_temp_variable = { temp_econ_spending_amount = 0.0450 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+        remove_effect = {
+            set_country_flag = POL_finished_ita_aa
+            add_equipment_to_stockpile = {
+                type = anti_air_equipment
+    		    amount = 1050
+		        producer = ITA
+            }
+        }
+    }
+    italian_at_production = {
+        icon = GFX_AM_Amur
+        available = {
+            NOT = {
+                has_country_flag = doing_decision
+            }
+        }
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        custom_cost_text = decision_cost_50_pp
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+        days_remove = 30
+        complete_effect = {
+            add_political_power = -50
+            set_temp_variable = { temp_econ_spending_amount = 0.0450 }
+            econ_spend_money_once_effect_raw_money = yes
+        }
+        remove_effect = {
+            set_country_flag = POL_finished_ita_at
+            add_equipment_to_stockpile = {
+                type = anti_tank_equipment
+    		    amount = 1050
+		        producer = ITA
+            }
+        }
+    }
+}
+POL_salski_massacre_on_AK_and_AL = {
+    AK_movement_decision = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { has_country_flag = POL_wolfs_rounds_flag }
+		activation = { 
+            has_country_flag = POL_wolfs_rounds_flag
+        }
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+		available = {
+            NOT = {
+                has_country_flag = POL_wolfs_rounds_flag
+            }
+        }
+        visible = {
+            original_tag = pol
+        }
+		priority = 3655
+		days_mission_timeout = 7
+		is_good = no
+		selectable_mission = no
+        mission = {
+            not = {
+                original_tag = pol
+            }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+            activate_mission = AK_movement_decision
+            add_popularity = {
+                ideology = paternalism
+                popularity = 0.01
+            }
+            custom_effect_tooltip = AK_movement_decision_tt
+            hidden_effect = {
+                random_list = {
+                    25 = {
+                        add_to_variable = { western_poland_AK = 2 }
+	                	clamp_variable = {
+	        	        	var = western_poland_AK
+	                 		min = 0
+            	    		max = 100
+	                  	}
+                    }
+                    25 = {
+                 		add_to_variable = { eastern_poland_AK = 2 }
+	                   	clamp_variable = {
+	             	    	var = eastern_poland_AK
+	             	    	min = 0
+                			max = 100
+            	    	}
+                    }
+                    25 = {
+                		add_to_variable = { western_ukraine_AK = 2 }
+                		clamp_variable = {
+                			var = western_ukraine_AK
+            	    		min = 0
+            	    		max = 100
+            	    	}
+                    }
+                    25 = {
+                 		add_to_variable = { belarus_AK = 2 }
+                 		clamp_variable = {
+                			var = belarus_AK
+                			min = 0
+    	            		max = 100
+    	            	}
+                    }
+                }
+            }
+		}
+        days_re_enable = 3
+	}
+    AK_overthrow_Salski_decision = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { has_country_flag = POL_wolfs_rounds_flag }
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+		activation = { 
+            has_country_flag = POL_wolfs_rounds_flag
+        }
+		available = {
+            NOT = {
+                has_country_flag = POL_wolfs_rounds_flag
+            }
+        }
+        visible = {
+            original_tag = pol
+        }
+		priority = 3655
+#		days_mission_timeout = 180
+		days_mission_timeout = 1
+		is_good = no
+		selectable_mission = no
+        mission = {
+            not = {
+                original_tag = pol
+            }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+            custom_effect_tooltip = AK_overthrow_Salski_decision_tt
+            hidden_effect = {
+                add_popularity = {
+		        	ideology = ultranationalism
+		        	popularity = -0.45
+	    	    }
+                add_popularity = {
+		        	ideology = fascism
+		        	popularity = -0.18
+	    	    }
+                add_popularity = {
+		        	ideology = national_socialism
+		        	popularity = -0.18
+	    	    }
+                set_politics = {
+                    ruling_party = paternalism 
+				    elections_allowed = no 
+                }
+                clr_country_flag = POL_wolfs_rounds_flag
+                set_cosmetic_tag = POL_sanaji
+                load_focus_tree = POL_pileski
+                remove_ideas = {
+                    POL_ending_Armia_Krajowa
+                    POL_kill_monarchist
+                    POL_AK_and_AL_fuk_OWZJ
+				    POL_Monarchist_revo
+                    POL_Sturmabteilung
+                }
+            }
+		}
+	}
+    the_victory_of_Polish_national_state_decision = {
+        icon = GFX_AM_Amur
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = the_victory_of_Polish_national_state_decision_req_tt
+				check_variable = { western_poland_AK < 10 }
+                check_variable = { western_ukraine_AK < 10 }
+                check_variable = { belarus_AK < 10 }
+                check_variable = { eastern_poland_AK < 10 }
+			}
+        }
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = yes
+        complete_effect = {
+            custom_effect_tooltip = the_victory_of_Polish_national_state_decision_tt
+            hidden_effect = {
+                add_popularity = {
+		        	ideology = ultranationalism
+		        	popularity = 0.15
+		        }
+                add_popularity = {
+		        	ideology = fascism
+		        	popularity = 0.15
+		        }
+                add_popularity = {
+		        	ideology = national_socialism
+		        	popularity = 0.15
+		        }
+                clr_country_flag = POL_wolfs_rounds_flag
+            }
+        }
+    }
+	decision_strike_AK = {
+        icon = GFX_AM_Amur
+        custom_cost_trigger = {
+            has_political_power > 49.99
+        }
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+        custom_cost_text = decision_cost_50_pp
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = no
+        days_remove = 14
+        days_re_enable = 14
+        complete_effect = {
+            add_political_power = -50
+        }
+        remove_effect = {
+            custom_effect_tooltip = decision_strike_AK_tt
+            add_popularity = {
+		    	ideology = ultranationalism
+		    	popularity = 0.015
+		    }
+            hidden_effect = {
+                random_list = {
+                    25 = {
+                        add_to_variable = { western_poland_AK = -5 }
+	                	clamp_variable = {
+	        	        	var = western_poland_AK
+	                 		min = 0
+            	    		max = 100
+	                  	}
+                    }
+                    25 = {
+                 		add_to_variable = { eastern_poland_AK = -5 }
+	                   	clamp_variable = {
+	             	    	var = eastern_poland_AK
+	             	    	min = 0
+                			max = 100
+            	    	}
+                    }
+                    25 = {
+                		add_to_variable = { western_ukraine_AK = -5 }
+                		clamp_variable = {
+                			var = western_ukraine_AK
+            	    		min = 0
+            	    		max = 100
+            	    	}
+                    }
+                    25 = {
+                 		add_to_variable = { belarus_AK = -5 }
+                 		clamp_variable = {
+                			var = belarus_AK
+                			min = 0
+    	            		max = 100
+    	            	}
+                    }
+                }
+            }
+        }
+    }
+    decision_strike_their_fortress = {
+        icon = GFX_AM_Amur
+        custom_cost_trigger = {
+            command_power > 14.99
+        }
+        custom_cost_text = decision_cost_15_cp
+		ai_will_do = {
+			factor = 0
+		}
+        visible = {
+            has_country_flag = POL_wolfs_rounds_flag
+		}
+        fire_only_once = No
+        days_remove = 20
+        days_re_enable = 10
+        complete_effect = {
+            add_political_power = -50
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+    		    amount = -200
+		        producer = POL
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = decision_strike_AK_tt
+            add_popularity = {
+		    	ideology = paternalism
+		    	popularity = -0.01
+		    }
+            add_popularity = {
+		    	ideology = paternalism_1
+		    	popularity = -0.01
+		    }
+            hidden_effect = {
+                random_list = {
+                    25 = {
+                        add_to_variable = { western_poland_AK = -7 }
+	                	clamp_variable = {
+	        	        	var = western_poland_AK
+	                 		min = 0
+            	    		max = 100
+	                  	}
+                    }
+                    25 = {
+                 		add_to_variable = { eastern_poland_AK = -7 }
+	                   	clamp_variable = {
+	             	    	var = eastern_poland_AK
+	             	    	min = 0
+                			max = 100
+            	    	}
+                    }
+                    25 = {
+                		add_to_variable = { western_ukraine_AK = -7 }
+                		clamp_variable = {
+                			var = western_ukraine_AK
+            	    		min = 0
+            	    		max = 100
+            	    	}
+                    }
+                    25 = {
+                 		add_to_variable = { belarus_AK = -7 }
+                 		clamp_variable = {
+                			var = belarus_AK
+                			min = 0
+    	            		max = 100
+    	            	}
+                    }
+                }
+            }
+        }
+    }
+}
+POL_suppressing_the_potential_uprising = {
+    POL_betrayers_affection = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { 
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+        }
+		activation = { 
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+        }
+		available = {
+            NOT = {
+                has_country_flag = POL_suppressing_the_potential_uprising_flag
+            }
+
+        }
+        visible = {
+            original_tag = pol
+        }
+		priority = 3655
+		days_mission_timeout = 7
+		is_good = yes
+		selectable_mission = no
+        mission = {
+            check_variable = { POL_final_war_ger_war_supp_var > 80 }
+        }
+		timeout_effect = {
+			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+            activate_mission = POL_betrayers_affection
+            add_to_variable = { var_gomulka_res = 1 }
+            add_stability = -0.01
+            
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+		}
+        complete_effect = {
+            
+        }
+        days_re_enable = 7
+	}
+    POL_Jar_dec_toggle = {
+        icon = GFX_decision_generic_document_target
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+        fire_only_once = no
+        days_re_enable = 0
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = Jar_dec_deactive }
+                clr_country_flag = Jar_dec_deactive
+            }
+            else_if = {
+                limit = { NOT = { has_country_flag = Jar_dec_deactive } }
+                set_country_flag = Jar_dec_deactive
+            }
+        }
+    }
+    POL_catch_them_with_list = {
+        icon = GFX_decision_generic_document_burn
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Jar_dec_deactive
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.2
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.22
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.07
+            }
+            add_to_variable = { var_gomulka_res = -8 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_settle_martial_law = {
+        icon = GFX_decision_generic_document
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Jar_dec_deactive
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.05
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.03
+            }
+            add_to_variable = { var_gomulka_res = -5 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_use_up_troops = {
+        icon = GFX_decision_generic_military_hat_red
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Jar_dec_deactive
+            }
+		}
+        fire_only_once = no
+        days_re_enable = 15
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.1
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.05
+            random_owned_state = {
+                add_manpower = -5000
+            }
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.06
+            }
+            add_to_variable = { var_gomulka_res = -6 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_form_up_military_junta = {
+        icon = GFX_decision_generic_military_guns_blue
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Jar_dec_deactive
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.1
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = despotism
+                popularity = 0.06
+            }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_Gom_dec_toggle = {
+        icon = GFX_decision_generic_document_socialism
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+        fire_only_once = no
+        days_re_enable = 0
+        complete_effect = {
+            if = {
+                limit = { has_country_flag = Gom_act_deact }
+                clr_country_flag = Gom_act_deact
+            }
+            else_if = {
+                limit = { NOT = { has_country_flag = Gom_act_deact } }
+                set_country_flag = Gom_act_deact
+            }
+        }
+    }
+    POL_political_propaganda_dec = {
+        icon = GFX_decision_generic_propaganda
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Gom_act_deact
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.05
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            add_to_variable = { var_gomulka_res = -5 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_talk_with_reactionarist = {
+        icon = GFX_decision_generic_political_action
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Gom_act_deact
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.05
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            add_to_variable = { var_gomulka_res = -4 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+    POL_promote_reforms_to_ppl = {
+        icon = GFX_decision_generic_decrease
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Gom_act_deact
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.05
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            clr_country_flag = using_decision_1_flag
+            add_to_variable = { var_gomulka_res = -5 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+        }
+    }
+    POL_set_up_internal_secure_corps = {
+        icon = GFX_decision_generic_defend
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = using_decision_1_flag
+            }
+		}
+
+		visible = {
+            has_country_flag = POL_suppressing_the_potential_uprising_flag
+            not = {
+                has_country_flag = Gom_act_deact
+            }
+		}
+        fire_only_once = yes
+
+        days_remove = 30
+        complete_effect = {
+            add_stability = -0.05
+            set_country_flag = using_decision_1_flag
+        }
+        remove_effect = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            add_to_variable = { var_gomulka_res = -12 }
+            clamp_variable = {
+	          	var = var_gomulka_res
+	            min = 0
+            	max = 100
+	        }
+            clr_country_flag = using_decision_1_flag
+        }
+    }
+}

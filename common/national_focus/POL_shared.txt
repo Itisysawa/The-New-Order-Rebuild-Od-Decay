@@ -1,0 +1,142 @@
+shared_focus = {
+	id = POL_the_final_uprising
+	icon = GFX_focus_POL_a_trip_to_lwow
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_final_uprising"
+		add_war_support = 0.1
+		country_event = { id = POL_ROD.8 days = 7 }
+	}
+}
+
+shared_focus = {
+	id = POL_for_last_time
+	icon = GFX_focus_POL_we_need_the_lot_of_them
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_final_uprising
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_the_final_uprising
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_for_last_time"
+		add_timed_idea = {
+			idea = POL_home_defense
+			days = 180
+		}
+		hidden_effect = {
+			set_temp_variable = { income_tax_temp = 0.15 }
+			econ_income_tax_rate_change = yes
+			set_temp_variable = { business_tax_temp = 0.15 }
+			econ_business_tax_rate_change = yes
+			set_temp_variable = { sales_tax_temp = 0.15 }
+			econ_sales_tax_rate_change = yes
+		}
+	}
+}
+shared_focus = {
+	id = POL_emergent_manpower
+	icon = GFX_focus_POL_galicja_jest_nasza
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_for_last_time
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_for_last_time
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_emergent_manpower"
+		add_manpower = 8750
+	}
+}
+shared_focus = {
+	id = POL_heritage_from_2nd_republic
+	icon = GFX_focus_POL_seize_the_caches
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_for_last_time
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_for_last_time
+	available = {
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = POL
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment_1
+			amount = 300
+			producer = POL
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 150
+			producer = POL
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment_0
+			amount = 500
+			producer = POL
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus POL_heritage_from_2nd_republic"
+	}
+}
+shared_focus = {
+	id = POL_sword_down
+	icon = GFX_focus_POL_polish_unity
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_heritage_from_2nd_republic
+	}
+	prerequisite = {
+		focus = POL_emergent_manpower
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_heritage_from_2nd_republic
+	available = {
+		GGN = { exists = no }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_sword_down"
+		hidden_effect = {
+			load_focus_tree = victory_of_warzaw
+		}
+		custom_effect_tooltip = POLAND_won
+		country_event = { id = by_kasimir_event.15 days = 7 }
+		country_event = { id = POL_ROD.7 days = 3 }
+	}
+}

@@ -1,0 +1,1749 @@
+shared_focus = {
+	id = POL_pileski_government
+	icon = GFX_focus_POL_stable_for_provisional
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+#		always = no
+	}
+	allow_branch = {
+		not = {
+			has_country_flag = POL_monarchy_p1_flag
+		}
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_pileski_government"
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = POL_consider_next_leader
+	icon = GFX_focus_generic_despotism
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_pileski_government
+	}
+	
+	x = 0
+	y = 1
+	relative_position_id = POL_pileski_government
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_consider_next_leader"
+		add_stability = 0.07
+	}
+}
+shared_focus = {
+	id = POL_armia_krajowa_remained
+	icon = GFX_focus_POL_integrate_the_army
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_another_new_choice
+	}
+	prerequisite = {
+		focus = POL_consider_next_leader
+	}
+	x = -4
+	y = 1
+	relative_position_id = POL_consider_next_leader
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_armia_krajowa_remained"
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = POL_armia_krajowa_remained_tt
+	}
+}
+shared_focus = {
+	id = POL_another_new_choice
+	icon = GFX_focus_POL_king_stanislaws_throne
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_armia_krajowa_remained
+	}
+	prerequisite = {
+		focus = POL_consider_next_leader
+	}
+	x = 4
+	y = 1
+	relative_position_id = POL_consider_next_leader
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_another_new_choice"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = POL_another_new_choice_tt
+	}
+}
+shared_focus = {
+	id = POL_old_general
+	icon = GFX_focus_POL_old_general
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_consider_next_leader
+	}
+	x = 0
+	y = 2
+	relative_position_id = POL_consider_next_leader
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_old_general"
+		TNO_improve_admin_efficiency_low = yes
+		add_stability = -0.03
+	}
+}
+shared_focus = {
+	id = POL_dissolve_secret_police
+	icon = GFX_focus_generic_purge_the_bureaucrats
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_old_general
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_old_general
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_old_general"
+		TNO_improve_security_policy_effectiveness_low = yes
+		TNO_improve_slavery_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_end_the_faith_crisis
+	icon = GFX_focus_generic_government_purge
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_old_general
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_old_general
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_end_the_faith_crisis"
+		add_stability = 0.1
+		TNO_improve_minimum_wage_policy_effectiveness_low = yes
+		TNO_improve_poverty_low = yes
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = POL_combine_military_district
+	icon = GFX_focus_GER_prussian_legacy
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_end_the_faith_crisis
+	}
+	prerequisite = {
+		focus = POL_dissolve_secret_police
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_end_the_faith_crisis
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_combine_military_district"
+		else = {
+			every_owned_state = {
+				if = {
+					limit = { is_core_of = PWR }
+				}
+				add_core_of = POL
+				remove_core_of = PWR
+			}
+		}
+	}
+}
+shared_focus = {
+	id = POL_only_seed_left
+	icon = GFX_focus_generic_elections_2
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_armia_krajowa_remained
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_armia_krajowa_remained
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_armia_krajowa_remained"
+		add_ideas = tno_vote_franchise_universal
+	}
+}
+shared_focus = {
+	id = POL_assign_zaleski
+	icon = GFX_focus_generic_specialized_assistance
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_only_seed_left
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_only_seed_left
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_assign_Ryszard_Kaczorowsk"
+		add_country_leader_role = {
+			character = POL_August_Zaleski
+			promote_leader = yes
+			country_leader = {
+				expire = "1999.1.1"
+				ideology = conservatism_christian_conservatism_subtype
+				id = -1
+				desc = "POL_August_Zaleski_desc"
+			}	
+			
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+	}
+}
+shared_focus = {
+	id = POL_democratize_poland
+	icon = GFX_focus_generic_democratic_unity
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_only_seed_left
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_only_seed_left
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_democratize_poland"
+		add_ideas = POL_democratizing_poland
+	}
+}
+shared_focus = {
+	id = POL_a_try_to_seperate_power
+	icon = GFX_focus_generic_democracy_saved
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_democratize_poland
+	}
+	prerequisite = {
+		focus = POL_assign_zaleski
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_democratize_poland
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_a_try_to_seperate_power"
+		TNO_improve_vote_franchise_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_speech_of_freedom
+	icon = GFX_focus_generic_freedom_must_be_found
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_a_try_to_seperate_power
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_a_try_to_seperate_power
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_a_try_to_seperate_power"
+		add_ideas = tno_trade_unions_state_controlled
+		add_ideas = tno_press_rights_free_press
+	}
+}
+shared_focus = {
+	id = POL_promise_of_reform
+	icon = GFX_focus_generic_monarchist_constitution
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_another_new_choice
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_another_new_choice
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_promise_of_reform"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.1
+		}
+		add_ideas = tno_political_parties_controlled_opposition
+	}
+}
+shared_focus = {
+	id = POL_christian_back
+	icon = GFX_focus_generic_monarchy_debate
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_promise_of_reform
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_promise_of_reform
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_christian_back"
+		custom_effect_tooltip = POL_christian_back_tt
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.06
+		}
+	}
+}
+shared_focus = {
+	id = POL_explain_reformist_aristocratic_democratic
+	icon = GFX_focus_generic_change_law_speech
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_promise_of_reform
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_promise_of_reform
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_explain_reformist_aristocratic_democratic"
+		TNO_improve_minorities_policy_effectiveness_med = yes
+		add_ideas = tno_penal_system_incarceration
+	}
+}
+shared_focus = {
+	id = POL_attract_democrats
+	icon = GFX_focus_generic_social_liberalization
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_christian_back
+	}
+	prerequisite = {
+		focus = POL_explain_reformist_aristocratic_democratic
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_christian_back
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_promise_of_reform"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+	}
+}
+shared_focus = {
+	id = POL_talk_with_pilecki
+	icon = GFX_focus_generic_secret_meetings
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_attract_democrats
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = POL_attract_democrats
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_talk_with_pilecki"
+		#country_event = { POL_ROD.XXX days = 3 }
+		custom_effect_tooltip = POL_talk_with_pilecki_tt
+	}
+}
+shared_focus = {
+	id = POL_set_up_monarch
+	icon = GFX_focus_generic_make_the_call
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_talk_with_pilecki
+	}
+
+	x = -1
+	y = 1
+	relative_position_id = POL_talk_with_pilecki
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_set_up_monarch"
+		add_stability = 0.14
+		custom_effect_tooltip = POL_set_up_monarch_tt
+	}
+}
+
+shared_focus = {
+	id = POL_diplomatic_problem_after_war
+	icon = GFX_focus_generic_diplomacy_peace
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_speech_of_freedom
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_speech_of_freedom
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_diplomatic_problem_after_war"
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = POL_pruss_deutsches_left
+	icon = GFX_focus_GER_new_german_worker
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_forced_moving_prussian
+	}
+	prerequisite = {
+		focus = POL_combine_military_district
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_combine_military_district
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_pruss_deutsches_left"
+		add_stability = -0.05
+		custom_effect_tooltip = POL_pruss_deutsches_left_tt
+	}
+}
+shared_focus = {
+	id = POL_forced_moving_prussian
+	icon = GFX_focus_generic_refugee_crisis
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_combine_military_district
+	}
+	mutually_exclusive = {
+		focus = POL_pruss_deutsches_left
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_combine_military_district
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_forced_moving"
+		add_stability = 0.1
+	}
+}
+shared_focus = {
+	id = POL_a_pan_european_union
+	icon = GFX_focus_generic_orthographic_europe
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_pruss_deutsches_left
+		focus = POL_forced_moving_prussian
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_pruss_deutsches_left
+	available = {
+		OR = {
+			has_completed_focus = POL_diplomatic_problem_after_war
+			has_completed_focus = POL_set_up_monarch
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_a_pan_european_union"
+		if = {
+			limit = { has_completed_focus = POL_diplomatic_problem_after_war }
+			create_faction = european_union
+		}
+		else_if = {
+			limit = { has_completed_focus = POL_set_up_monarch }
+			create_faction = east_european_defensive_treaty
+		}
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_lithuania
+	icon = GFX_focus_generic_peace_after_violence
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_a_pan_european_union
+	}
+	prerequisite = {
+		focus = POL_set_up_monarch
+		focus = POL_diplomatic_problem_after_war
+	}
+	x = 3
+	y = 1
+	relative_position_id = POL_a_pan_european_union
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_lithuania"
+		add_to_faction = LIT
+		
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_ukraine
+	icon = GFX_focus_FUK_a_meeting_with_the_workforce
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_a_pan_european_union
+	}
+	prerequisite = {
+		focus = POL_set_up_monarch
+		focus = POL_diplomatic_problem_after_war
+	}
+	x = -3
+	y = 1
+	relative_position_id = POL_a_pan_european_union
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_ukraine"
+		add_to_faction = FUK
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_belarus
+	icon = GFX_focus_BLR_unite_belarussians
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_lithuania
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_ukraine
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_lithuania
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_ukraine"
+		add_to_faction = BLR
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_latovia
+	icon = GFX_focus_LAT_lightning_strike
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_lithuania
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_ukraine
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_lithuania
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_latovia"
+		add_to_faction = MST
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_slovakia
+	icon = GFX_focus_generic_befriend_slovakia
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_lithuania
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_ukraine
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_ukraine
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_slovakia"
+		add_to_faction = SLO
+	}
+}
+shared_focus = {
+	id = POL_rebuild_relationship_to_estonia
+	icon = GFX_focus_EST_estonia_is_scandinavia
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_lithuania
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_ukraine
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_ukraine
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_relationship_to_estonia"
+		add_to_faction = EST
+	}
+}
+shared_focus = {
+	id = POL_intercept_moscowien
+	icon = GFX_focus_generic_military_engineering
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_slovakia
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_estonia
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_belarus
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_latovia
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_slovakia
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_intercept_moscowien"
+		add_to_faction = PMW
+		declare_war_on = {
+			target = MCW
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCD
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCE
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCF
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCG
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCH
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCI
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = POL_invite_caucasus
+	icon = GFX_focus_GER_assist_caucasia
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_slovakia
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_estonia
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_belarus
+	}
+	prerequisite = {
+		focus = POL_rebuild_relationship_to_latovia
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_rebuild_relationship_to_latovia
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_invite_caucasus"
+		add_to_faction = GEO
+		add_to_faction = AZR
+		add_to_faction = CAU
+	}
+}
+shared_focus = {
+	id = POL_who_will_win
+	icon = GFX_focus_generic_tentative_political_liberalization
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_invite_caucasus
+	}
+	prerequisite = {
+		focus = POL_intercept_moscowien
+	}
+	x = 3
+	y = 1
+	relative_position_id = POL_intercept_moscowien
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_who_will_win"
+		if = {
+			limit = { has_completed_focus = POL_armia_krajowa_remained }
+			set_politics = { ruling_party = conservatism elections_allowed = yes }
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.32
+			}
+		}
+		if = {
+			limit = { has_completed_focus = POL_another_new_choice }
+			set_politics = { ruling_party = liberal_conservatism elections_allowed = yes }
+			add_popularity = {
+				ideology = liberal_conservatism
+				popularity = 0.45
+			}
+			set_country_flag = POL_monarchy_p1_flag
+			load_focus_tree = POL_monarchy
+		}
+	}
+}
+shared_focus = {
+	id = POL_the_formation_of_kingdom_of_polish
+	icon = GFX_focus_VYT_many_shades_of_monarchism
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 0
+	available = {
+	}
+	allow_branch = {
+#		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_formation_of_kingdom_of_polish"
+		add_popularity = {
+			ideology = liberal_conservatism 
+			popularity = 0.03
+		}
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = POL_the_peace_finally_arrived
+	icon = GFX_focus_generic_religious_peace
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_formation_of_kingdom_of_polish
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_the_formation_of_kingdom_of_polish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_livelihood_problem"
+		add_war_support = -0.15
+		add_stability = 0.05
+		TNO_improve_poverty_low = yes
+	}
+}
+shared_focus = {
+	id = POL_reconstruction_work
+	icon = GFX_focus_generic_building_smoke
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_peace_finally_arrived
+	}
+	x = 8
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_the_peace_finally_arrived
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_reconstruction_work"
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
+		add_ideas = POL_reconstruct_work_idea
+	}
+}
+shared_focus = {
+	id = POL_starting_to_rebuild_commonwealth
+	icon = GFX_focus_LIT_restore_the_grand_duchy
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_peace_finally_arrived
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_the_peace_finally_arrived
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_starting_to_rebuild_commonwealth"
+		add_political_power = 50
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.06
+		}
+	}
+}
+shared_focus = {
+	id = POL_szlachta_work
+	icon = GFX_focus_ARG_all_the_nobles_men
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_reconstruction_work
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_reconstruction_work
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_szlachta_work"
+		
+	}
+}
+shared_focus = {
+	id = POL_invest_rebuilding_order
+	icon = GFX_focus_generic_infrastructure_expansion
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_reconstruction_work
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_reconstruction_work
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_invest_rebuilding_order"
+		
+	}
+}
+shared_focus = {
+	id = POL_light_industry_rebuilding
+	icon = GFX_focus_generic_industrial_data_consolidation
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_invest_rebuilding_order
+	}
+	mutually_exclusive = {
+		focus = POL_heavy_industry_as_top_place
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_invest_rebuilding_order
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_light_industry_rebuilding"
+		
+	}
+}
+shared_focus = {
+	id = POL_silecia_mines
+	icon = GFX_focus_generic_reopen_mines
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_light_industry_rebuilding
+		focus = POL_heavy_industry_as_top_place
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_light_industry_rebuilding
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_silecia_mines"
+		
+	}
+}
+shared_focus = {
+	id =  POL_heavy_industry_as_top_place
+	icon = GFX_focus_generic_industrial_progress_blue
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_invest_rebuilding_order
+	}
+	mutually_exclusive = {
+		focus = POL_light_industry_rebuilding
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_invest_rebuilding_order
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_invest_rebuilding_order"
+		
+	}
+}
+shared_focus = {
+	id = POL_conference_with_lithuan
+	icon = GFX_focus_generic_friends_in_the_garrison
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_starting_to_rebuild_commonwealth
+	}
+	mutually_exclusive = {
+		focus = POL_no_intercept_to_other_countries_politic
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_starting_to_rebuild_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_conference_with_lithuan"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.02
+		}
+	}
+}
+shared_focus = {
+	id = POL_no_intercept_to_other_countries_politic
+	icon = GFX_focus_generic_reordering_politics
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_starting_to_rebuild_commonwealth
+	}
+	mutually_exclusive = {
+		focus = POL_conference_with_lithuan
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_starting_to_rebuild_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_conference_with_lithuan"
+	}
+}
+shared_focus = {
+	id = POL_friendship_from_past
+	icon = GFX_focus_generic_diplomacy_political
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_conference_with_lithuan
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_conference_with_lithuan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_friendship_from_past"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.06
+		}
+	}
+}
+shared_focus = {
+	id = POL_belarus_monarchy
+	icon = GFX_focus_POL_belarus_army
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_conference_with_lithuan
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_conference_with_lithuan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_belarus_monarchy"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.03
+		}
+		BLR = {
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.2
+			}
+		}
+	}
+}
+shared_focus = {
+	id = POL_for_lithuania_monarch
+	icon = GFX_focus_KEM_reign_of_the_mad_king
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_friendship_from_past
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_friendship_from_past
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_for_lithuania_monarch"
+		set_autonomy = {
+			target = LIT
+			autonomy_state = autonomous_commonwealth
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		LIT = {
+			set_cosmetic_tag = LIT_duchy_of_lit
+			set_country_flag = LIT_duchy_of_lit_flag
+		}
+	}
+}
+shared_focus = {
+	id = POL_belarus_duchy
+	icon = GFX_focus_KEM_the_zemsky_sobor_reborn
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_belarus_monarchy
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_belarus_monarchy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_belarus_duchy"
+		set_autonomy = {
+			target = BLR
+			autonomy_state = autonomous_commonwealth
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		BLR = {
+			set_cosmetic_tag = BLR_duchy_of_blr
+			set_country_flag = BLR_duchy_of_blr_flag
+		}
+	}
+}
+shared_focus = {
+	id = POL_Courland_duchy
+	icon = GFX_focus_generic_authoritarian_democracy
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_Courland_federation
+	}
+	prerequisite = {
+		focus = POL_for_lithuania_monarch
+	}
+	prerequisite = {
+		focus = POL_belarus_duchy
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_for_lithuania_monarch
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_Courland_duchy"
+		set_autonomy = {
+			target = MST
+			autonomy_state = autonomous_commonwealth
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.03
+		}
+		MST = {
+			set_cosmetic_tag = MST_duchy_of_courland
+			set_country_flag = MST_duchy_of_courland_flag
+		}
+	}
+}
+shared_focus = {
+	id = POL_Courland_federation
+	icon = GFX_focus_MST_ostland_federal_citizenship
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_for_lithuania_monarch
+	}
+	prerequisite = {
+		focus = POL_belarus_duchy
+	}
+	mutually_exclusive = {
+		focus = POL_Courland_duchy
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_belarus_duchy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_Courland_federation"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.03
+		}
+		MST = {
+			set_cosmetic_tag = MST_feder_of_courland
+		}
+	}
+}
+shared_focus = {
+	id = POL_polish_lithuanian_ukranian_commonwealth
+	icon = GFX_focus_FUK_inform_the_lost_and_confused
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_Courland_duchy
+		focus = POL_Courland_federation
+	}
+	mutually_exclusive = {
+		focus = POL_no_ukr
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_Courland_duchy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_polish_lithuanian_ukranian_commonwealth"
+		set_autonomy = {
+			target = FUK
+			autonomy_state = autonomous_commonwealth
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		FUK = {
+			set_cosmetic_tag = FUK_duchy_of_ukr
+			set_country_flag = FUK_duchy_of_ukr_flag
+		}
+	}
+}
+shared_focus = {
+	id = POL_no_ukr
+	icon = GFX_focus_FUK_eternal_monuments_to_unity
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_Courland_duchy
+		focus = POL_Courland_federation
+	}
+	mutually_exclusive = {
+		focus = POL_polish_lithuanian_ukranian_commonwealth
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_Courland_federation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_no_ukr"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.03
+		}
+	}
+}
+shared_focus = {
+	id = POL_again_union_of_lublin
+	icon = GFX_focus_BOV_guardians_of_ukrainian_purity
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_polish_lithuanian_ukranian_commonwealth
+		focus = POL_no_ukr
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_polish_lithuanian_ukranian_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_polish_lithuanian_ukranian_commonwealth"
+		add_stability = 0.1
+	}
+}
+shared_focus = {
+	id = POL_our_ukrainian_friends
+	icon = GFX_focus_FUK_our_great_history
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_no_ukr
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_no_ukr
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_our_ukrainian_friends"
+		add_opinion_modifier = { target = FUK modifier = TNO_opened_diplomatic_relations }
+	}
+}
+shared_focus = {
+	id = POL_a_day_break
+	icon = GFX_focus_generic_no_more_prohibitions
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_again_union_of_lublin
+		focus = POL_our_ukrainian_friends
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_again_union_of_lublin
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_a_day_break"
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+shared_focus = {
+	id = POL_first_republic_still_alive
+	icon = GFX_focus_POL_cultural_defiance
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_a_day_break
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_a_day_break
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_first_republic_still_alive"
+		
+		if  = {
+			limit = {
+				BLR = {
+					has_country_flag = BLR_duchy_of_blr_flag
+				}
+			}
+			annex_country = {
+				target = BLR
+				transfer_troops = yes
+			}
+		}
+		if  = {
+			limit = {
+				LIT = {
+					has_country_flag = LIT_duchy_of_lit_flag
+				}
+			}
+			annex_country = {
+				target = LIT
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = POL
+		}
+		if  = {
+			limit = {
+				MST = {
+					has_country_flag = MST_duchy_of_courland_flag
+				}
+			}
+			annex_country = {
+				target = MST
+				transfer_troops = yes
+			}
+		}
+		if  = {
+			limit = {
+				FUK = {
+					has_country_flag = FUK_duchy_of_ukr_flag
+				}
+			}
+			annex_country = {
+				target = FUK
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = POL_pol_lit_ukr_comm
+		}
+		annex_country = {
+			target = PWR
+			transfer_troops = yes
+		}
+		add_stability = 0.03
+		every_owned_state = {
+			add_core_of = POL
+		}
+		
+	}
+}
+shared_focus = {
+	id = POL_lithuania_my_home
+	icon = GFX_focus_generic_a_standing_army
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_no_intercept_to_other_countries_politic
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_no_intercept_to_other_countries_politic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_lithuania_my_home"
+	}
+}
+shared_focus = {
+	id = POL_ukr_my_favourite_girl
+	icon = GFX_focus_FUK_anthem_of_the_liberated
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_no_intercept_to_other_countries_politic
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_no_intercept_to_other_countries_politic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_ukr_my_favourite_girl"
+	}
+}
+shared_focus = {
+	id = POL_lets_march
+	icon = GFX_focus_RUS_soldiers_marching
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_lithuania_my_home
+	}
+	prerequisite = {
+		focus = POL_ukr_my_favourite_girl
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_lithuania_my_home
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_lets_march"
+	}
+}
+shared_focus = {
+	id = POL_purge_from_potop
+	icon = GFX_focus_generic_experimental_training_methods
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_lets_march
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_lets_march
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_purge_from_potop"
+	}
+}
+shared_focus = {
+	id = POL_federal_defensive_arms
+	icon = GFX_focus_generic_new_model_army
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_lets_march
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_lets_march
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_federal_defensive_arms"
+	}
+}
+shared_focus = {
+	id = POL_strike_communist
+	icon = GFX_focus_generic_socialist_purge
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_purge_from_potop
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_purge_from_potop
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_strike_communist"
+	}
+}
+shared_focus = {
+	id = POL_purge_nationalist
+	icon = GFX_focus_generic_smash_fascism
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_federal_defensive_arms
+	}
+	x = -0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_federal_defensive_arms
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_purge_nationalist"
+	}
+}
+shared_focus = {
+	id = POL_Poland_freedom_anD_democratic
+	icon = GFX_focus_POL_solidarity_forever
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_strike_communist
+	}
+	prerequisite = {
+		focus = POL_purge_nationalist
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_strike_communist
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_Poland_freedom_anD_democratic"
+	}
+}
+shared_focus = {
+	id = POL_slava_west_slavic_federation
+	icon = GFX_focus_generic_beacon_light
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_Poland_freedom_anD_democratic
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_Poland_freedom_anD_democratic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_slava_west_slavic_federation"
+	}
+}
+shared_focus = {
+	id = POL_further_cooperation
+	icon = GFX_focus_generic_reluctant_cooperation
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_slava_west_slavic_federation
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_slava_west_slavic_federation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_further_cooperation"
+	}
+}
+shared_focus = {
+	id = POL_first_polish_lithuania_constitution
+	icon = GFX_focus_generic_draft_a_constitution
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_further_cooperation
+		focus = POL_first_republic_still_alive
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	relative_position_id = POL_further_cooperation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_further_cooperation"
+	}
+}

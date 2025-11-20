@@ -1,0 +1,1168 @@
+shared_focus = {
+	id = POL_revolutive_council
+	icon = GFX_focus_generic_cut_the_red_tape
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_revolutive_council"
+		set_variable = { PZPR_aff_leftist = 38 }
+		set_variable = { PPS_aff_leftist = 32 }
+		set_variable = { PSL_aff_leftist = 30 }
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.84
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -1
+		}
+	}
+}
+shared_focus = {
+	id = POL_the_start_of_confusion
+	icon = GFX_focus_generic_question_statistics
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_revolutive_council
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_revolutive_council
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_start_of_confusion"
+		set_country_flag = POL_revolutive_council_flag
+	}
+}
+shared_focus = {
+	id = POL_trust_progressivism
+	icon = GFX_focus_generic_social_conservative
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_trust_radicalism
+	}
+	prerequisite = {
+		focus = POL_the_start_of_confusion
+	}
+	x = -6
+	y = 1
+	relative_position_id = POL_the_start_of_confusion
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_start_of_confusion"
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.03
+		}
+		add_to_variable = { PZPR_aff_leftist = -2 }
+		add_to_variable = { PPS_aff_leftist = -2 }
+		add_to_variable = { PSL_aff_leftist = 4 }
+	}
+}
+shared_focus = {
+	id = POL_trust_radicalism
+	icon = GFX_focus_generic_red_dawn
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_start_of_confusion
+	}
+	mutually_exclusive = {
+		focus = POL_trust_progressivism
+	}
+	x = 6
+	y = 1
+	relative_position_id = POL_the_start_of_confusion
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_trust_radicalism"
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.03
+		}
+		add_to_variable = { PZPR_aff_leftist = 2 }
+		add_to_variable = { PPS_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -5 }
+	}
+}
+shared_focus = {
+	id = POL_solve_moskowien_risk
+	icon = GFX_focus_GER_moskowien_plan
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_the_start_of_confusion
+	}
+	x = 0
+	y = 2
+	relative_position_id = POL_the_start_of_confusion
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_solve_moskowien_risk"
+		declare_war_on = {
+			target = MCW
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCF
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCG
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MCI
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = POL_polish_rebirth
+	icon = GFX_focus_generic_industrial_progress_red
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_solve_moskowien_risk
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_solve_moskowien_risk
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_polish_rebirth"
+		dismantle_faction = yes
+		create_faction = warsaw_pact
+		
+		hidden_effect = {
+			add_to_faction = FUK
+			add_to_faction = UKS
+			add_to_faction = SLO
+			add_to_faction = AZR
+			add_to_faction = GEO
+			add_to_faction = PMW
+			add_to_faction = BLR
+			add_to_faction = EST
+			add_to_faction = LAT
+			add_to_faction = LIT
+		}
+		if = {
+			limit = {
+				country_exists = FUK
+			}
+			FUK = {
+				swap_ideas = {
+					remove_idea = AGCDL_member
+					add_idea = warsaw_pact_member
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = UKS
+			}
+			UKS = {
+				swap_ideas = {
+					remove_idea = AGCDL_member
+					add_idea = warsaw_pact_member
+				}
+			}
+		}
+		SLO = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		AZR = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		GEO = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		PMW = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		BLR = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		EST = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		MST = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		LIT = {
+			swap_ideas = {
+				remove_idea = AGCDL_member
+				add_idea = warsaw_pact_member
+			}
+		}
+		remove_ideas = AGCDL_member
+		remove_ideas = AGCDL_leader
+		add_ideas = warsaw_pact_member
+	}
+}
+shared_focus = {
+	id = POL_end_war_time_econ
+	icon = GFX_focus_generic_economy_green_line_question
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_polish_rebirth
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_polish_rebirth
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_end_war_time_econ"
+		remove_ideas = POL_war_time_warsaw
+	}
+}
+shared_focus = {
+	id = POL_plan_economy
+	icon = GFX_focus_generic_the_planned_economy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_end_war_time_econ
+	}
+	mutually_exclusive = {
+		focus = POL_worker_econ
+		focus = POL_liberal_market
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_end_war_time_econ
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_plan_economy"
+		set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		set_temp_variable = { gdp_growth_temp = 0.4 }
+		econ_gdp_growth_change = yes
+		hidden_effect = {
+			set_temp_variable = { inflation_temp = 0.20 }
+			econ_inflation_change = yes
+		}
+	}
+}
+shared_focus = {
+	id = POL_worker_econ
+	icon = GFX_focus_generic_workers_rights
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_end_war_time_econ
+	}
+	mutually_exclusive = {
+		focus = POL_plan_economy
+		focus = POL_liberal_market
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_end_war_time_econ
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_worker_econ"
+		set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+		econ_subtype_change = yes
+		set_temp_variable = { gdp_growth_temp = 0.4 }
+		econ_gdp_growth_change = yes
+		hidden_effect = {
+			set_temp_variable = { inflation_temp = 0.30 }
+			econ_inflation_change = yes
+		}
+	}
+}
+shared_focus = {
+	id = POL_liberal_market 
+	icon = GFX_focus_generic_european_markets
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_end_war_time_econ
+	}
+	mutually_exclusive = {
+		focus = POL_plan_economy
+		focus = POL_worker_econ
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_end_war_time_econ
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_liberal_market"
+		set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Social_Market }
+		econ_subtype_change = yes
+		set_temp_variable = { gdp_growth_temp = 4 }
+		econ_gdp_growth_change = yes
+		hidden_effect = {
+			set_temp_variable = { inflation_temp = 4 }
+			econ_inflation_change = yes
+		}
+	}
+}
+shared_focus = {
+	id = POL_expermental_reform
+	icon = GFX_focus_generic_reform_for_the_people
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_liberal_market
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_liberal_market
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_expermental_reform"
+		add_stability = -0.05
+		add_ideas = POL_social_liberal_market_idea
+		set_temp_variable = { gdp_growth_temp = 5 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = 6 }
+		econ_inflation_change = yes
+	}
+}
+shared_focus = {
+	id = POL_market_reform
+	icon = GFX_focus_generic_rebuilding_the_cities
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_worker_econ
+		focus = POL_plan_economy
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_worker_econ
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_market_reform"
+		add_stability = 0.1
+		add_ideas = POL_socialist_market_idea
+		set_temp_variable = { gdp_growth_temp = 2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = 2 }
+		econ_inflation_change = yes
+	}
+}
+shared_focus = {
+	id = POL_democratic_socialist
+	icon = GFX_focus_generic_social_democracy_1
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_trust_progressivism
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_trust_progressivism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_democratic_socialist"
+		TNO_improve_vote_franchise_policy_effectiveness_med = yes
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.02
+		}
+		add_to_variable = { PZPR_aff_leftist = -1 }
+		add_to_variable = { PPS_aff_leftist = -1 }
+		add_to_variable = { PSL_aff_leftist = 2 }
+	}
+}
+shared_focus = {
+	id = POL_banzycks_faith
+	icon = GFX_focus_POL_trust_banczyk
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_democratic_socialist
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_democratic_socialist
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_banzycks_faith"
+		TNO_improve_admin_efficiency_low = yes 
+		add_stability = 0.04
+	}
+}
+shared_focus = {
+	id = POL_use_council_to_power
+	icon = GFX_focus_generic_political_oppression
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_democratic_socialist
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_democratic_socialist
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_use_council_to_power"
+		add_to_variable = { PZPR_aff_leftist = -5 }
+		add_to_variable = { PPS_aff_leftist = -3 }
+		add_to_variable = { PSL_aff_leftist = 8 }
+		custom_effect_tooltip = POL_use_council_to_power_tt
+	}
+}
+shared_focus = {
+	id = POL_reform_in_necessary
+	icon = GFX_focus_generic_purge_bureaucracy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_banzycks_faith
+	}
+	prerequisite = {
+		focus = POL_use_council_to_power
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_use_council_to_power
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_reform_in_necessary"
+		TNO_improve_admin_efficiency_med = yes
+		TNO_improve_poverty_low = yes
+	}
+}
+shared_focus = {
+	id = POL_say_no_to_radicalism
+	icon = GFX_focus_generic_purge_political_opponents
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_reform_in_necessary
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_reform_in_necessary
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_say_no_to_radicalism"
+		add_popularity = {
+			ideology = ultranationalism 
+			popularity = -1
+		}
+		add_popularity = {
+			ideology = communist 
+			popularity = -0.1
+		}
+		add_to_variable = { PZPR_aff_leftist = -5 }
+		add_to_variable = { PSL_aff_leftist = 5 }
+	}
+}
+shared_focus = {
+	id = POL_incriminate_gomulka
+	icon = GFX_focus_incriminate_gomulka
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_say_no_to_radicalism
+	}
+	x = -1
+	y = 1
+	relative_position_id = POL_say_no_to_radicalism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_incriminate_gomulka"
+		add_popularity = {
+			ideology = communist 
+			popularity = -0.05
+		}
+		add_to_variable = { PZPR_aff_leftist = -5 }
+		add_to_variable = { PSL_aff_leftist = 5 }
+	}
+}
+shared_focus = {
+	id = POL_incriminate_pajak
+	icon = GFX_focus_incriminate_pajak
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_say_no_to_radicalism
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_say_no_to_radicalism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_incriminate_pajak"
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.03
+		}
+		add_to_variable = { PPS_aff_leftist = -3 }
+		add_to_variable = { PSL_aff_leftist = 3 }
+	}
+}
+shared_focus = {
+	id = POL_iron_fist_of_gomulka
+	icon = GFX_focus_POL_polish_lenin
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_trust_radicalism
+	}
+	mutually_exclusive = {
+		focus = POL_pajak_will_care_this
+	}
+	x = -2
+	y = 1
+	relative_position_id = POL_trust_radicalism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_iron_fist_of_gomulka"
+		add_popularity = {
+			ideology = communist
+			popularity = 0.03
+		}
+		add_to_variable = { PZPR_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -3 }
+		country_event = { id = POL_ROD.17 days = 3 }
+	}
+}
+shared_focus = {
+	id = POL_pajak_will_care_this
+	icon = GFX_focus_POL_polish_pajak
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_iron_fist_of_gomulka
+	}
+	prerequisite = {
+		focus = POL_trust_radicalism
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_trust_radicalism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_pajak_will_care_this"
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.03
+		}
+		add_to_variable = { PPS_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -3 }
+	}
+}
+shared_focus = {
+	id = POL_united_and_equality
+	icon = GFX_focus_generic_unite_the_left
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_pajak_will_care_this
+	}
+	x = -0
+	y = 2
+	relative_position_id = POL_pajak_will_care_this
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_united_and_equality"
+		TNO_improve_vote_franchise_policy_effectiveness_med = yes
+		add_to_variable = { PPS_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -3 }
+	}
+}
+shared_focus = {
+	id = POL_united_nation
+	icon = GFX_focus_POL_the_peoples_republic_secured
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_iron_fist_of_gomulka
+	}
+	x = -0
+	y = 2
+	relative_position_id = POL_iron_fist_of_gomulka
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_united_nation"
+		add_stability = 0.05
+		add_to_variable = { PZPR_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -3 }
+	}
+}
+shared_focus = {
+	id = POL_victory_of_radicalism
+	icon = GFX_focus_generic_marx
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_iron_fist_of_gomulka
+		focus = POL_pajak_will_care_this
+	}
+	x = 2
+	y = 1
+	relative_position_id = POL_iron_fist_of_gomulka
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_victory_of_radicalism"
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.03
+		}
+		TNO_improve_education_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_bring_liberal_to_polish
+	icon = GFX_focus_generic_purge_bureaucracy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_victory_of_radicalism
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_victory_of_radicalism
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_bring_liberal_to_polish"
+		add_popularity = {
+			ideology = progressivism
+			popularity = -0.05
+		}
+		add_to_variable = { PPS_aff_leftist = 2 }
+		add_to_variable = { PZPR_aff_leftist = 3 }
+		add_to_variable = { PSL_aff_leftist = -5 }
+	}
+}
+shared_focus = {
+	id = POL_polish_communism_route
+	icon = GFX_focus_generic_cooperate_with_the_socialists
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_united_nation
+	}
+	prerequisite = {
+		focus = POL_bring_liberal_to_polish
+	}
+	x = -0
+	y = 1
+	relative_position_id = POL_united_nation
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_polish_communism_route"
+		set_cosmetic_tag = pol_soc
+	}
+}
+shared_focus = {
+	id = POL_polish_socialistic_republic
+	icon = GFX_focus_generic_compensation_for_the_people
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_united_and_equality
+	}
+	prerequisite = {
+		focus = POL_bring_liberal_to_polish
+	}
+	x = -0
+	y = 1
+	relative_position_id = POL_united_and_equality
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_polish_communism_route"
+		add_stability = 0.05
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+shared_focus = {
+	id = POL_criticize_democrats
+	icon = GFX_focus_generic_authoritarian_socialism
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_polish_communism_route
+		focus = POL_polish_socialistic_republic
+	}
+
+	x = 2
+	y = 1
+	relative_position_id = POL_polish_communism_route
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_criticize_democrats"
+		add_stability = 0.06
+		add_popularity = {
+			ideology = progressivism
+			popularity = -0.03
+		}
+		add_to_variable = { PPS_aff_leftist = 2 }
+		add_to_variable = { PZPR_aff_leftist = 2 }
+		add_to_variable = { PSL_aff_leftist = -4 }
+	}
+}
+shared_focus = {
+	id = POL_criticize_mild_socialist
+	icon = GFX_focus_generic_authoritarian_constitution
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_polish_communism_route
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = POL_polish_communism_route
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_criticize_democrats"
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.05
+		}
+		add_to_variable = { PPS_aff_leftist = -3 }
+		add_to_variable = { PZPR_aff_leftist = 5 }
+		add_to_variable = { PSL_aff_leftist = -2 }
+	}
+}
+shared_focus = {
+	id = POL_criticize_gomulka
+	icon = GFX_focus_generic_socialist_purge
+	cost = 2
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_polish_socialistic_republic
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = POL_polish_socialistic_republic
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_criticize_gomulka"
+		add_popularity = {
+			ideology = communist
+			popularity = -0.05
+		}
+		add_to_variable = { PPS_aff_leftist = 5 }
+		add_to_variable = { PZPR_aff_leftist = -3 }
+		add_to_variable = { PSL_aff_leftist = -2 }
+	}
+}
+shared_focus = {
+	id = POL_a_socialist_country
+	icon = GFX_focus_POL_jednostka_operacji_specjalnych_roze
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_market_reform
+		focus = POL_expermental_reform
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_expermental_reform
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_a_socialist_country"
+		add_stability = 0.05
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_form_united_government
+	icon = GFX_focus_generic_democratic_unity
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_incriminate_gomulka
+	}
+	prerequisite = {
+		focus = POL_incriminate_pajak
+	}
+	x = 1
+	y = 1
+	relative_position_id = POL_incriminate_gomulka
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_incriminate_pajak"
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_to_variable = { PPS_aff_leftist = -10 }
+		add_to_variable = { PZPR_aff_leftist = -5 }
+		add_to_variable = { PSL_aff_leftist = 15 }
+	}
+}
+shared_focus = {
+	id = POL_socialist_heaven_in_europe
+	icon = GFX_focus_generic_workers_paradise
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_criticize_democrats
+	}
+	prerequisite = {
+		focus = POL_criticize_mild_socialist
+		focus = POL_criticize_gomulka
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = POL_criticize_democrats
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_socialist_heaven_in_europe"
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
+		TNO_improve_education_policy_effectiveness_med = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+		TNO_improve_pensions_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = POL_non_trust_elect
+	icon = GFX_focus_generic_election
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_a_socialist_country
+
+	}
+	prerequisite = {
+		focus = POL_form_united_government
+		focus = POL_socialist_heaven_in_europe
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_a_socialist_country
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_non_trust_elect"
+		custom_effect_tooltip = POL_non_trust_elect_tt
+		add_stability = -0.05
+	}
+}
+shared_focus = {
+	id = POL_show_the_answer
+	icon = GFX_focus_generic_yet_the_darkness_did_not_overcome
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = POL_non_trust_elect
+	}
+	x = 0
+	y = 1
+	relative_position_id = POL_non_trust_elect
+	available = { 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_show_the_answer"
+		clr_country_flag = POL_revolutive_council_flag
+		custom_effect_tooltip = POL_fate_clear_now_tt
+		set_party_name = {
+			ideology = socialist
+			name = POL_socialist_party
+			long_name = POL_socialist_party_long
+		}
+		hidden_effect = {
+			
+			if = {
+				limit = {
+					AND = {
+						check_variable = { PZPR_aff_leftist > PPS_aff_leftist }
+						check_variable = { PZPR_aff_leftist > PSL_aff_leftist }
+					}
+				}
+				set_party_name = {
+					ideology = despotism
+					name = POL_despotism_party_GM
+					long_name = POL_despotism_party_GM_long
+				}
+				set_party_name = {
+					ideology = paternalism_1
+					name = POL_paternalism_1_party_GM
+					long_name = POL_paternalism_1_party_GM_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = POL_socialist_party_GM
+					long_name = POL_socialist_party_GM_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = POL_communist_party_GM
+					long_name = POL_communist_party_GM_long
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.65
+				}
+				add_popularity = {
+					ideology = socialist
+					popularity = -0.2
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = 0.04
+				}
+				add_popularity = {
+					ideology = liberalism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = paternalism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = paternalism_1
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = paternalism_2
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = despotism
+					popularity = 0.2
+				}
+				set_politics = { ruling_party = communist elections_allowed = no }
+				load_focus_tree = POL_gomulka_start
+				mark_focus_tree_layout_dirty = yes
+			}
+			if = {
+				limit = {
+					AND = {
+						check_variable = { PPS_aff_leftist > PZPR_aff_leftist }
+						check_variable = { PPS_aff_leftist > PSL_aff_leftist }
+					}
+				}
+				set_politics = { ruling_party = socialist elections_allowed = no }
+				add_popularity = {
+					ideology = communist
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = socialist
+					popularity = -0.35
+				}
+				add_popularity = {
+					ideology = socialist_1
+					popularity = 0.27
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.15
+				}
+				load_focus_tree = POL_PPS
+				mark_focus_tree_layout_dirty = yes
+				retire_country_leader = yes
+				promote_character = POL_Antoni_Pajak
+			}
+			if = {
+				limit = {
+					AND = {
+						check_variable = { PSL_aff_leftist > PZPR_aff_leftist }
+						check_variable = { PSL_aff_leftist > PPS_aff_leftist }
+					}
+				}
+				set_politics = { ruling_party = progressivism elections_allowed = no }
+				add_popularity = {
+					ideology = communist
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = socialist
+					popularity = -0.25
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = 0.36
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+characters = {
+	MCD_Dmitry_Medvedev = {
+		name = MCD_Dmitry_Medvedev
+		portraits = { civilian = { large = "gfx/leaders/PMW/PMW_Dmitry_Medvedev.png" } }
+		country_leader = {
+			desc = "MCD_Dmitry_Medvedev_desc"
+			ideology = despotism_partisan_movement_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "MCD_Dmitry_Medvedev_desc"
+			ideology = communist_bolshevism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCE_Mikhail_Gorbachev = {
+		name = MCE_Mikhail_Gorbachev
+		portraits = { civilian = { large = "gfx/leaders/PMW/Moskowien_Mikhail_Gorbachev.png" } }
+		country_leader = {
+			desc = "MCE_Mikhail_Gorbachev_desc"
+			ideology = progressivism_left_wing_agrarianism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCF_Hermann_Fegelein = {
+		name = MCF_Hermann_Fegelein
+		portraits = { civilian = { large = "gfx/leaders/PMW/Fegelein_portrait.png" } }
+		country_leader = {
+			desc = "MCF_Hermann_Fegelein_desc"
+			ideology = national_socialism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCG_Dietrich_von_Saucken = {
+		name = MCG_Dietrich_von_Saucken
+		portraits = { civilian = { large = "gfx/leaders/PMW/Portrait_MOS_Dietrich_von_Saucken.png" } }
+		country_leader = {
+			desc = "MCG_Dietrich_von_Saucken_desc"
+			ideology = despotism_military_junta_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCW_Bronislav_Kaminski = {
+		name = MCW_Bronislav_Kaminski
+		portraits = { civilian = { large = "gfx/leaders/PMW/Moskowien_Bronislav_Kaminski.png" } }
+		country_leader = {
+			desc = "MCW_Bronislav_Kaminski_desc"
+			ideology = national_socialism_naturalised_nazism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCI_Alfred_Rosenberg = {
+		name = MCI_Alfred_Rosenberg
+		portraits = { civilian = { large = "gfx/leaders/MCW/Portrait_Moskowien_Wolf_Heinrich_von_Helldorff.png" } }
+		country_leader = {
+			desc = "MCI_Alfred_Rosenberg_desc"
+			ideology = national_socialism_subtype
+			traits = { rohms_diodochus }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCH_Alexander_Saburov = {
+		name = MCH_Alexander_Saburov
+		portraits = { civilian = { large = "gfx/leaders/PMW/MCH_Alexander_saburov.png" } }
+		country_leader = {
+			desc = "MCH_Alexander_Saburov_desc"
+			ideology = communist_stratocratic_communism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+}

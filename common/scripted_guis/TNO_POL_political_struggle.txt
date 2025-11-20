@@ -1,0 +1,304 @@
+scripted_gui = {
+	POL_pwrstruggle_container = {
+		context_type = decision_category
+		window_name = "POL_pwrstruggle_container"
+
+		visible = {
+			original_tag = POL
+		}
+		effects = {
+			
+
+		}
+		properties = {
+			GFX_serm_1 = {
+				frame = serm_1_frame
+			}
+			GFX_serm_2 = {
+				frame = serm_2_frame
+			}
+			GFX_serm_3 = {
+				frame = serm_3_frame
+			}
+			GFX_serm_4 = {
+				frame = serm_4_frame
+			}
+			GFX_serm_5 = {
+				frame = serm_5_frame
+			}
+			GFX_serm_6 = {
+				frame = serm_6_frame
+			}
+			GFX_serm_7 = {
+				frame = serm_7_frame
+			}
+			GFX_serm_8 = {
+				frame = serm_8_frame
+			}
+			GFX_serm_9 = {
+				frame = serm_9_frame
+			}
+			GFX_serm_10 = {
+				frame = serm_10_frame
+			}
+			GFX_serm_11 = {
+				frame = serm_11_frame
+			}
+			GFX_serm_12 = {
+				frame = serm_12_frame
+			}
+			GFX_serm_13 = {
+				frame = serm_13_frame
+			}
+			GFX_serm_14 = {
+				frame = serm_14_frame
+			}
+			GFX_serm_15 = {
+				frame = serm_15_frame
+			}
+			GFX_serm_16 = {
+				frame = serm_16_frame
+			}
+			GFX_serm_17 = {
+				frame = serm_17_frame
+			}
+			GFX_serm_18 = {
+				frame = serm_18_frame
+			}
+			GFX_serm_19 = {
+				frame = serm_19_frame
+			}
+			GFX_serm_20 = {
+				frame = serm_20_frame
+			}
+			GFX_serm_21 = {
+				frame = serm_21_frame
+			}
+			GFX_serm_22 = {
+				frame = serm_22_frame
+			}
+			GFX_serm_23 = {
+				frame = serm_23_frame
+			}
+			GFX_serm_24 = {
+				frame = serm_24_frame
+			}
+			GFX_serm_25 = {
+				frame = serm_25_frame
+			}
+			GFX_serm_26 = {
+				frame = serm_26_frame
+			}
+			GFX_serm_27 = {
+				frame = serm_27_frame
+			}
+			GFX_serm_28 = {
+				frame = serm_28_frame
+			}
+			GFX_serm_29 = {
+				frame = serm_29_frame
+			}
+			GFX_serm_30 = {
+				frame = serm_30_frame
+			}
+			GFX_serm_31 = {
+				frame = serm_31_frame
+			}
+			GFX_serm_32 = {
+				frame = serm_32_frame
+			}
+			GFX_serm_33 = {
+				frame = serm_33_frame
+			}
+			GFX_serm_34 = {
+				frame = serm_34_frame
+			}
+			GFX_serm_35 = {
+				frame = serm_35_frame
+			}
+			GFX_serm_36 = {
+				frame = serm_36_frame
+			}
+			GFX_serm_37 = {
+				frame = serm_37_frame
+			}
+			GFX_serm_38 = {
+				frame = serm_38_frame
+			}
+			GFX_serm_39 = {
+				frame = serm_39_frame
+			}
+			GFX_serm_40 = {
+				frame = serm_40_frame
+			}
+			GFX_serm_41 = {
+				frame = serm_41_frame
+			}
+			GFX_serm_42 = {
+				frame = serm_42_frame
+			}
+			GFX_serm_43 = {
+				frame = serm_43_frame
+			}
+			GFX_serm_44 = {
+				frame = serm_44_frame
+			}
+			GFX_serm_45 = {
+				frame = serm_45_frame
+			}
+			GFX_serm_46 = {
+				frame = serm_46_frame
+			}
+			GFX_serm_47 = {
+				frame = serm_47_frame
+			}
+			GFX_serm_48 = {
+				frame = serm_48_frame
+			}
+			GFX_serm_49 = {
+				frame = serm_49_frame
+			}
+			GFX_serm_50 = {
+				frame = serm_50_frame
+			}
+			GFX_serm_51 = {
+				frame = serm_51_frame
+			}
+			GFX_serm_52 = {
+				frame = serm_52_frame
+			}
+			GFX_serm_53 = {
+				frame = serm_53_frame
+			}
+			GFX_serm_54 = {
+				frame = serm_54_frame
+			}
+			GFX_serm_55 = {
+				frame = serm_55_frame
+			}
+			GFX_serm_56 = {
+				frame = serm_56_frame
+			}
+			GFX_serm_57 = {
+				frame = serm_57_frame
+			}
+			GFX_serm_58 = {
+				frame = serm_58_frame
+			}
+			GFX_serm_59 = {
+				frame = serm_59_frame
+			}
+			GFX_serm_60 = {
+				frame = serm_60_frame
+			}
+			GFX_serm_61 = {
+				frame = serm_61_frame
+			}
+			GFX_serm_62 = {
+				frame = serm_62_frame
+			}
+			GFX_serm_63 = {
+				frame = serm_63_frame
+			}
+			GFX_serm_64 = {
+				frame = serm_64_frame
+			}
+			GFX_serm_65 = {
+				frame = serm_65_frame
+			}
+			GFX_serm_66 = {
+				frame = serm_66_frame
+			}
+			GFX_serm_67 = {
+				frame = serm_67_frame
+			}
+			GFX_serm_68 = {
+				frame = serm_68_frame
+			}
+			GFX_serm_69 = {
+				frame = serm_69_frame
+			}
+			GFX_serm_70 = {
+				frame = serm_70_frame
+			}
+			GFX_serm_71 = {
+				frame = serm_71_frame
+			}
+			GFX_serm_72 = {
+				frame = serm_72_frame
+			}
+			GFX_serm_73 = {
+				frame = serm_73_frame
+			}
+			GFX_serm_74 = {
+				frame = serm_74_frame
+			}
+			GFX_serm_75 = {
+				frame = serm_75_frame
+			}
+			GFX_serm_76 = {
+				frame = serm_76_frame
+			}
+			GFX_serm_77 = {
+				frame = serm_77_frame
+			}
+			GFX_serm_78 = {
+				frame = serm_78_frame
+			}
+			GFX_serm_79 = {
+				frame = serm_79_frame
+			}
+			GFX_serm_80 = {
+				frame = serm_80_frame
+			}
+			GFX_serm_81 = {
+				frame = serm_81_frame
+			}
+			GFX_serm_82 = {
+				frame = serm_82_frame
+			}
+			GFX_serm_83 = {
+				frame = serm_83_frame
+			}
+			GFX_serm_84 = {
+				frame = serm_84_frame
+			}
+			GFX_serm_85 = {
+				frame = serm_85_frame
+			}
+			GFX_serm_86 = {
+				frame = serm_86_frame
+			}
+			GFX_serm_87 = {
+				frame = serm_87_frame
+			}
+			GFX_serm_88 = {
+				frame = serm_88_frame
+			}
+			GFX_serm_89 = {
+				frame = serm_89_frame
+			}
+			GFX_serm_90 = {
+				frame = serm_90_frame
+			}
+		}
+	}
+	POL_uprising_preparation = {
+		context_type = decision_category
+		window_name = "POL_uprising_preparation"
+
+		visible = {
+			original_tag = GGN
+		}
+
+		properties = {
+			POL_preparement_on_upr = {
+				frame = Preparing_for_uprise
+			}
+			POL_prpr_on_war = {
+				frame = 0
+			}
+		}
+	}
+}
+ 

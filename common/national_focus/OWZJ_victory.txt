@@ -1,0 +1,545 @@
+shared_focus = {
+	id = POL_OWZJs_victory
+	icon = GFX_focus_POL_szczera_i_nieprzymuszona_wola
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_OWZJs_victory"
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = POL_wolfs_around
+	icon = GFX_focus_generic_yet_the_darkness_did_not_overcome
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = POL_OWZJs_victory
+	}
+	available = {
+	}
+	relative_position_id = POL_OWZJs_victory
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_wolfs_around"
+		set_variable = { western_poland_AK = 62 }
+		set_variable = { eastern_poland_AK = 35 }
+		set_variable = { belarus_AK = 100 }
+		set_variable = { western_ukraine_AK = 100 }
+		add_stability = -0.05
+		set_country_flag = POL_wolfs_rounds_flag
+		custom_effect_tooltip = POL_wolfs_around_tt
+		hidden_effect = {
+			activate_mission = AK_movement_decision
+			activate_mission = AK_overthrow_Salski_decision
+		}
+	}
+}
+shared_focus = {
+	id = POL_EPJ_threat
+	icon = GFX_focus_generic_yet_the_darkness_did_not_overcome
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = POL_wolfs_around
+	}
+	available = {
+		has_completed_focus = POL_end_the_armia_krajowa
+	}
+	relative_position_id = POL_wolfs_around
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_EPJ_threat"
+		declare_war_on = {
+			target = EPJ
+			type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = POL_end_the_armia_krajowa
+	icon = GFX_focus_POL_jednostka_operacji_specjalnych_ak
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = POL_wolfs_around
+	}
+	available = {
+	}
+	relative_position_id = POL_wolfs_around
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_EPJ_threat"
+		add_ideas = POL_ending_Armia_Krajowa
+	}
+}
+shared_focus = {
+	id = POL_use_monarchists_hand
+	icon = GFX_focus_generic_restricted_monarchy
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = POL_EPJ_threat
+	}
+	prerequisite = {
+		focus = POL_end_the_armia_krajowa
+	}
+	available = {
+	}
+	relative_position_id = POL_EPJ_threat
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_use_monarchists_hand"
+		TNO_worsen_admin_efficiency_low = yes
+		add_ideas = POL_kill_monarchist
+	}
+}
+shared_focus = {
+	id = POL_alarm_whole_country
+	icon = GFX_focus_generic_martial_law
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -4
+	y = 1
+	prerequisite = {
+		focus = POL_use_monarchists_hand
+	}
+	available = {
+		NOT = {
+			country_exists = EPJ
+		}
+	}
+	relative_position_id = POL_use_monarchists_hand
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_alarm_whole_country"
+		TNO_improve_admin_efficiency_low = yes
+		add_stability = -0.2
+		93 = {
+			set_demilitarized_zone = yes
+		}
+		10 = {
+			set_demilitarized_zone = yes
+		}
+		1391 = {
+			set_demilitarized_zone = yes
+		}
+		88 = {
+			set_demilitarized_zone = yes
+		}
+		95 = {
+			set_demilitarized_zone = yes
+		}
+		97 = {
+			set_demilitarized_zone = yes
+		}
+		add_to_variable = { western_poland_AK = -5 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { eastern_poland_AK = -5 }
+		clamp_variable = {
+			var = eastern_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { western_ukraine_AK = -5 }
+		clamp_variable = {
+			var = western_ukraine_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { belarus_AK = -5 }
+		clamp_variable = {
+			var = belarus_AK
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = POL_alarm_whole_country_tt
+	}
+}
+shared_focus = {
+	id = POL_new_economic_structure
+	icon = GFX_focus_generic_puppet_corporations
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 4
+	y = 1
+	prerequisite = {
+		focus = POL_use_monarchists_hand
+	}
+	available = {
+		not = {
+			has_country_flag = POL_wolfs_rounds_flag
+		}
+	}
+	relative_position_id = POL_use_monarchists_hand
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_alarm_whole_country"
+		TNO_improve_minimum_wage_policy_effectiveness_low = yes
+		TNO_worsen_poverty_low = yes
+		set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Corporatism }
+		econ_type_change = yes
+	}
+}
+shared_focus = {
+	id = POL_betrayer_go_to_work
+	icon = GFX_focus_generic_slavery_toppled
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = POL_alarm_whole_country
+	}
+	available = {
+	}
+	relative_position_id = POL_alarm_whole_country
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_alarm_whole_country"
+		swap_ideas = {
+			add_idea = tno_slavery_penal_labor
+			remove_idea = tno_slavery_outlawed
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.03
+		}
+		add_to_variable = { western_poland_AK = -3 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+	}
+}
+shared_focus = {
+	id = POL_Sturmabteilung_action
+	icon = GFX_focus_generic_riot_police_2
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = POL_alarm_whole_country
+	}
+	available = {
+	}
+	relative_position_id = POL_alarm_whole_country
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_Sturmabteilung_action"
+		TNO_improve_admin_efficiency_low = yes
+		add_stability = 0.03
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.04
+		}
+		add_to_variable = { western_poland_AK = -4 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+	}
+}
+shared_focus = {
+	id = POL_nationalize_them
+	icon = GFX_focus_generic_the_industrial_security_council
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = POL_new_economic_structure
+	}
+	available = {
+	}
+	relative_position_id = POL_new_economic_structure
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalize_them"
+		TNO_improve_industrial_expertise_low = yes
+	}
+}
+shared_focus = {
+	id = POL_no_more_labor_union
+	icon = GFX_focus_generic_labor
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = POL_new_economic_structure
+	}
+	available = {
+	}
+	relative_position_id = POL_new_economic_structure
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalize_them"
+		add_ideas = tno_trade_unions_illegal
+	}
+}
+shared_focus = {
+	id = POL_spy_infiltration
+	icon = GFX_focus_generic_a_spy_in_every_command
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = POL_Sturmabteilung_action
+	}
+	prerequisite = {
+		focus = POL_betrayer_go_to_work
+	}
+	available = {
+	}
+	relative_position_id = POL_Sturmabteilung_action
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_spy_infiltration"
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.04
+		}
+		add_to_variable = { western_poland_AK = -5 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { eastern_poland_AK = -5 }
+		clamp_variable = {
+			var = eastern_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { western_ukraine_AK = -5 }
+		clamp_variable = {
+			var = western_ukraine_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { belarus_AK = -5 }
+		clamp_variable = {
+			var = belarus_AK
+			min = 0
+			max = 100
+		}
+	}
+}
+shared_focus = {
+	id = POL_nationalism_education
+	icon = GFX_focus_generic_primary_education_act
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = POL_spy_infiltration
+	}
+	available = {
+	}
+	relative_position_id = POL_spy_infiltration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalism_education"
+		TNO_improve_education_policy_effectiveness_low = yes
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.04
+		}
+		add_to_variable = { western_poland_AK = -5 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { eastern_poland_AK = -5 }
+		clamp_variable = {
+			var = eastern_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { western_ukraine_AK = -5 }
+		clamp_variable = {
+			var = western_ukraine_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { belarus_AK = -5 }
+		clamp_variable = {
+			var = belarus_AK
+			min = 0
+			max = 100
+		}
+	}
+}
+shared_focus = {
+	id = POL_set_up_secret_police_of_POLAND
+	icon = GFX_focus_generic_spy
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = POL_spy_infiltration
+	}
+	available = {
+	}
+	relative_position_id = POL_spy_infiltration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_set_up_secret_police_of_POLAND"
+		TNO_improve_admin_efficiency_med = yes
+		add_stability = -0.05
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.02
+		}
+		add_to_variable = { western_poland_AK = -3 }
+		clamp_variable = {
+			var = western_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { eastern_poland_AK = -3 }
+		clamp_variable = {
+			var = eastern_poland_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { western_ukraine_AK = -3 }
+		clamp_variable = {
+			var = western_ukraine_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { belarus_AK = -3 }
+		clamp_variable = {
+			var = belarus_AK
+			min = 0
+			max = 100
+		}
+	}
+}
+shared_focus = {
+	id = POL_their_fault
+	icon = GFX_focus_BLR_belarus_is_a_battle
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = POL_nationalism_education
+	}
+	prerequisite = {
+		focus = POL_set_up_secret_police_of_POLAND
+	}
+	available = {
+	}
+	relative_position_id = POL_nationalism_education
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_their_fault"
+		add_to_variable = { western_ukraine_AK = -3 }
+		clamp_variable = {
+			var = western_ukraine_AK
+			min = 0
+			max = 100
+		}
+		add_to_variable = { belarus_AK = -3 }
+		clamp_variable = {
+			var = belarus_AK
+			min = 0
+			max = 100
+		}
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_forced_moving
+	icon = GFX_focus_BLR_belarus_is_a_battle
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = POL_their_fault
+	}
+	available = {
+	}
+	relative_position_id = POL_their_fault
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_forced_moving"
+		add_stability = -0.05
+	}
+}

@@ -1,0 +1,38 @@
+bookmarks = {
+
+	##########################################################
+	##### DON'T DELETE THIS, ALSO EDIT IN blitzkrieg.txt #####
+	##### DON'T DELETE THIS, ALSO EDIT IN blitzkrieg.txt #####
+	##########################################################
+
+	bookmark = {
+		name = "THENEWORDER_NAME"
+		desc = "THENEWORDER_DESC"
+		date = 1962.1.1.1
+		picture = "GFX_select_date_1939"
+		default_country = "GGN"
+		default = yes
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+		#### MAJORS ####
+		# ROW 1 MAJOR #
+		"GGN" = {
+			history = "GGN_THENEWORDER_DESC"
+			ideology = national_socialism
+			ideas = { 
+				POL_underground_state 
+				POL_underground_handmade_guns 
+				POL_polish_partisan 
+			}
+			focuses = { 
+				POL_a_german_state 
+				POL_dominate_from_terror 
+				POL_resisting_underground_state 
+			}
+		}
+	}
+}

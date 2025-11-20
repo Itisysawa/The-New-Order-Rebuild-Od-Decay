@@ -1,0 +1,122 @@
+focus_tree = {
+	id = General_gov_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = GGN_strange_place
+}
+focus_tree = {
+	id = Polish_civilwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_the_final_uprising
+}
+
+focus_tree = {
+	id = victory_of_warzaw
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_the_great_victory
+}
+focus_tree = {
+	id = AL_victory
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_revolutive_council
+}
+focus_tree = {
+	id = OWZJ_victory
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_OWZJs_victory
+}
+focus_tree = {
+	id = POL_gomulka_start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_gomulka_start_focus
+	shared_focus = POL_red_poland_with_flags
+}
+focus_tree = {
+	id = POL_PPS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_the_victory_of_PPS
+}
+focus_tree = {
+	id = POL_pileski
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_pileski_government
+}
+focus_tree = {
+	id = POL_monarchy
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_the_formation_of_kingdom_of_polish
+}
+focus_tree = {
+	id = POL_sanaji_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	shared_focus = POL_armia_krajowa_came_back
+}

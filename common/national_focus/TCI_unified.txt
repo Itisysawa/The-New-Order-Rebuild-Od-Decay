@@ -1,0 +1,293 @@
+shared_focus = {
+	id = TCI_the_end_of_the_end_1
+	icon = GFX_focus_TCI_the_end_of_realism_1
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_1_used
+		}
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_1_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_1
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_2
+	icon = GFX_focus_TCI_the_end_of_realism_2
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_1_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_2_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_1
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_2_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_2
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_3
+	icon = GFX_focus_TCI_the_end_of_realism_3
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_2_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_3_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_2
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_3_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_3
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_4
+	icon = GFX_focus_TCI_the_end_of_realism_4
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_3_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_4_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_3
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_4_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_4
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_5
+	icon = GFX_focus_TCI_the_end_of_realism_5
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_4_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_5_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_4
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_5_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_5
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_6
+	icon = GFX_focus_TCI_the_end_of_realism_6
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_5_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_6_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_5
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_6_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_6
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_7
+	icon = GFX_focus_TCI_the_end_of_realism_7
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_6_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_7_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_6
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_7_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_7
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_8
+	icon = GFX_focus_TCI_the_end_of_realism_8
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_7_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_8_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_7
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_8_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_8
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_9
+	icon = GFX_focus_TCI_the_end_of_realism_9
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_8_used
+		not = {
+			has_country_flag = TCI_the_end_of_the_end_9_used
+		}
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_8
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_9_used
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = surrealism_rus_9
+	}
+}
+shared_focus = {
+	id = TCI_the_end_of_the_end_end
+	icon = GFX_focus_TCI_the_end_of_realism_end
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		has_country_flag = TCI_the_end_of_the_end_9_used
+	}
+
+	relative_position_id = TCI_the_end_of_the_end_9
+	x = 0
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TCI_the_end_of_the_end_1"
+		set_country_flag = TCI_the_end_of_the_end_9_used
+		custom_effect_tooltip = surrealism_rus_end
+		hidden_effect = {	
+			remove_country_leader_role = { ideology = surrealism_subtype }
+			add_country_leader_role = {
+				character = TCI_Erik_Bulatov
+				promote_leader = yes
+				country_leader = {
+					expire = "1999.1.1"
+					ideology = despotism_interim_government_subtype
+					traits = {  }
+					id = -1
+					desc = ""
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+			set_cosmetic_tag = TCI_land_of_salvation
+			set_variable = { bulatov_surrealism = party_popularity@surrealism }
+			add_popularity = {
+				ideology = surrealism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = bulatov_surrealism
+			}
+			add_popularity = {
+				ideology = surrealism
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = despotism elections_allowed = no }
+		}
+	}
+}
