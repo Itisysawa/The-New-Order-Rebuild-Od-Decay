@@ -1,0 +1,31 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "POL_salski_gotAKresistant_container"
+		size = { 
+			width = 480 
+			height = 300
+		}
+		position = { x = 0 y = 0 }
+		iconType = {
+			name = "GUI_western_poland"
+			spriteType = "GFX_GUI_POL_west_pol"
+			position = { x = 100 y = 60 }
+		}
+		iconType = {
+			name = "GUI_western_ukraine"
+			spriteType = "GFX_GUI_POL_west_ukr"
+			position = { x = 229 y = 113 }
+		}
+		iconType = {
+			name = "GUI_belarus"
+			spriteType = "GFX_GUI_POL_blr"
+			position = { x = 264 y = 13 }
+		}
+		iconType = {
+			name = "GUI_eastern_poland"
+			spriteType = "GFX_GUI_POL_lwow"
+			position = { x = 218 y = 188 }
+		}
+	}
+}

@@ -1,0 +1,461 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "POL_pwrstruggle_container"
+		size = { 
+			width = 480 
+			height = 300
+		}
+		position = { x = 0 y = 0 }
+		iconType = {
+			name = "GFX_serm_1"
+			spriteType = "GFX_serm"
+			position = { x = 140 y = 278 }
+		}
+		iconType = {
+			name = "GFX_serm_2"
+			spriteType = "GFX_serm"
+			position = { x = 110 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_3"
+			spriteType = "GFX_serm"
+			position = { x = 80 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_4"
+			spriteType = "GFX_serm"
+			position = { x = 50 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_5"
+			spriteType = "GFX_serm"
+			position = { x = 20 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_6"
+			spriteType = "GFX_serm"
+			position = { x = 149 y = 252 }
+		}
+		iconType = {
+			name = "GFX_serm_7"
+			spriteType = "GFX_serm"
+			position = { x = 119 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_8"
+			spriteType = "GFX_serm"
+			position = { x = 89 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_9"
+			spriteType = "GFX_serm"
+			position = { x = 56 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_10"
+			spriteType = "GFX_serm"
+			position = { x = 26 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_11"
+			spriteType = "GFX_serm"
+			position = { x = 163 y = 228 }
+		}
+		iconType = {
+			name = "GFX_serm_12"
+			spriteType = "GFX_serm"
+			position = { x = 131 y = 221 }
+		}
+		iconType = {
+			name = "GFX_serm_13"
+			spriteType = "GFX_serm"
+			position = { x = 101 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_14"
+			spriteType = "GFX_serm"
+			position = { x = 68 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_15"
+			spriteType = "GFX_serm"
+			position = { x = 35 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_16"
+			spriteType = "GFX_serm"
+			position = { x = 148 y = 198 }
+		}
+		iconType = {
+			name = "GFX_serm_17"
+			spriteType = "GFX_serm"
+			position = { x = 115 y = 195 }
+		}
+		iconType = {
+			name = "GFX_serm_18"
+			spriteType = "GFX_serm"
+			position = { x = 80 y = 193 }
+		}
+		iconType = {
+			name = "GFX_serm_19"
+			spriteType = "GFX_serm"
+			position = { x = 48 y = 192 }
+		}
+		iconType = {
+			name = "GFX_serm_20"
+			spriteType = "GFX_serm"
+			position = { x = 65 y = 166 }
+		}
+		iconType = {
+			name = "GFX_serm_21"
+			spriteType = "GFX_serm"
+			position = { x = 183 y = 206 }
+		}
+		iconType = {
+			name = "GFX_serm_22"
+			spriteType = "GFX_serm"
+			position = { x = 172 y = 180 }
+		}
+		iconType = {
+			name = "GFX_serm_23"
+			spriteType = "GFX_serm"
+			position = { x = 135 y = 174 }
+		}
+		iconType = {
+			name = "GFX_serm_24"
+			spriteType = "GFX_serm"
+			position = { x = 100 y = 170 }
+		}
+		iconType = {
+			name = "GFX_serm_25"
+			spriteType = "GFX_serm"
+			position = { x = 85 y = 143 }
+		}
+		iconType = {
+			name = "GFX_serm_26"
+			spriteType = "GFX_serm"
+			position = { x = 120 y = 147 }
+		}
+		iconType = {
+			name = "GFX_serm_27"
+			spriteType = "GFX_serm"
+			position = { x = 105 y = 129 }
+		}
+		iconType = {
+			name = "GFX_serm_28"
+			spriteType = "GFX_serm"
+			position = { x = 157 y = 157 }
+		}
+		iconType = {
+			name = "GFX_serm_29"
+			spriteType = "GFX_serm"
+			position = { x = 145 y = 132 }
+		}
+		iconType = {
+			name = "GFX_serm_30"
+			spriteType = "GFX_serm"
+			position = { x = 125 y = 115 }
+		}
+		iconType = {
+			name = "GFX_serm_31"
+			spriteType = "GFX_serm"
+			position = { x = 208 y = 192 }
+		}
+		iconType = {
+			name = "GFX_serm_32"
+			spriteType = "GFX_serm"
+			position = { x = 195 y = 169 }
+		}
+		iconType = {
+			name = "GFX_serm_33"
+			spriteType = "GFX_serm"
+			position = { x = 182 y = 146 }
+		}
+		iconType = {
+			name = "GFX_serm_34"
+			spriteType = "GFX_serm"
+			position = { x = 170 y = 123 }
+		}
+		iconType = {
+			name = "GFX_serm_35"
+			spriteType = "GFX_serm"
+			position = { x = 147 y =102 }
+		}
+		iconType = {
+			name = "GFX_serm_36"
+			spriteType = "GFX_serm"
+			position = { x = 220 y = 165 }
+		}
+		iconType = {
+			name = "GFX_serm_37"
+			spriteType = "GFX_serm"
+			position = { x = 208 y = 142 }
+		}
+		iconType = {
+			name = "GFX_serm_38"
+			spriteType = "GFX_serm"
+			position = { x = 195 y = 120 }
+		}
+		iconType = {
+			name = "GFX_serm_39"
+			spriteType = "GFX_serm"
+			position = { x = 170 y = 95 }
+		}
+		iconType = {
+			name = "GFX_serm_40"
+			spriteType = "GFX_serm"
+			position = { x = 192 y = 90 }
+		}
+		iconType = {
+			name = "GFX_serm_41"
+			spriteType = "GFX_serm"
+			position = { x = 235 y = 185 }
+		}
+		iconType = {
+			name = "GFX_serm_42"
+			spriteType = "GFX_serm"
+			position = { x = 235 y = 145 }
+		}
+		iconType = {
+			name = "GFX_serm_43"
+			spriteType = "GFX_serm"
+			position = { x = 225 y = 125 }
+		}
+		iconType = {
+			name = "GFX_serm_44"
+			spriteType = "GFX_serm"
+			position = { x = 215 y = 105 }
+		}
+		iconType = {
+			name = "GFX_serm_45"
+			spriteType = "GFX_serm"
+			position = { x = 215 y =85 }
+		}
+		iconType = {
+			name = "GFX_serm_46"
+			spriteType = "GFX_serm"
+			position = { x = 235 y = 105 }
+		}
+		iconType = {
+			name = "GFX_serm_47"
+			spriteType = "GFX_serm"
+			position = { x = 235 y = 85 }
+		}
+		iconType = {
+			name = "GFX_serm_48"
+			spriteType = "GFX_serm"
+			position = { x = 255 y = 105 }
+		}
+		iconType = {
+			name = "GFX_serm_49"
+			spriteType = "GFX_serm"
+			position = { x = 255 y =85 }
+		}
+		iconType = {
+			name = "GFX_serm_50"
+			spriteType = "GFX_serm"
+			position = { x = 245 y = 125 }
+		}
+		iconType = {
+			name = "GFX_serm_51"
+			spriteType = "GFX_serm"
+			position = { x = 278 y = 90 }
+		}
+		iconType = {
+			name = "GFX_serm_52"
+			spriteType = "GFX_serm"
+			position = { x = 250 y = 165 }
+		}
+		iconType = {
+			name = "GFX_serm_53"
+			spriteType = "GFX_serm"
+			position = { x = 262 y = 142 }
+		}
+		iconType = {
+			name = "GFX_serm_54"
+			spriteType = "GFX_serm"
+			position = { x = 275 y = 120 }
+		}
+		iconType = {
+			name = "GFX_serm_55"
+			spriteType = "GFX_serm"
+			position = { x = 300 y = 95 }
+		}
+		iconType = {
+			name = "GFX_serm_56"
+			spriteType = "GFX_serm"
+			position = { x = 262 y = 192 }
+		}
+		iconType = {
+			name = "GFX_serm_57"
+			spriteType = "GFX_serm"
+			position = { x = 275 y = 169 }
+		}
+		iconType = {
+			name = "GFX_serm_58"
+			spriteType = "GFX_serm"
+			position = { x = 288 y = 146 }
+		}
+		iconType = {
+			name = "GFX_serm_59"
+			spriteType = "GFX_serm"
+			position = { x = 300 y = 123 }
+		}
+		iconType = {
+			name = "GFX_serm_60"
+			spriteType = "GFX_serm"
+			position = { x = 323 y = 102 }
+		}
+		iconType = {
+			name = "GFX_serm_61"
+			spriteType = "GFX_serm"
+			position = { x = 287 y = 206 }
+		}
+		iconType = {
+			name = "GFX_serm_62"
+			spriteType = "GFX_serm"
+			position = { x = 298 y = 180 }
+		}
+		iconType = {
+			name = "GFX_serm_63"
+			spriteType = "GFX_serm"
+			position = { x = 313 y = 157 }
+		}
+		iconType = {
+			name = "GFX_serm_64"
+			spriteType = "GFX_serm"
+			position = { x = 325 y = 132 }
+		}
+		iconType = {
+			name = "GFX_serm_65"
+			spriteType = "GFX_serm"
+			position = { x = 345 y = 115 }
+		}
+		iconType = {
+			name = "GFX_serm_66"
+			spriteType = "GFX_serm"
+			position = { x = 307 y = 228 }
+		}
+		iconType = {
+			name = "GFX_serm_67"
+			spriteType = "GFX_serm"
+			position = { x = 322 y = 198 }
+		}
+		iconType = {
+			name = "GFX_serm_68"
+			spriteType = "GFX_serm"
+			position = { x = 335 y = 174 }
+		}
+		iconType = {
+			name = "GFX_serm_69"
+			spriteType = "GFX_serm"
+			position = { x = 350 y = 147 }
+		}
+		iconType = {
+			name = "GFX_serm_70"
+			spriteType = "GFX_serm"
+			position = { x = 365 y = 129 }
+		}
+		iconType = {
+			name = "GFX_serm_71"
+			spriteType = "GFX_serm"
+			position = { x = 355 y = 195 }
+		}
+		iconType = {
+			name = "GFX_serm_72"
+			spriteType = "GFX_serm"
+			position = { x = 370 y = 170 }
+		}
+		iconType = {
+			name = "GFX_serm_73"
+			spriteType = "GFX_serm"
+			position = { x = 385 y = 143 }
+		}
+		iconType = {
+			name = "GFX_serm_74"
+			spriteType = "GFX_serm"
+			position = { x = 339 y = 221 }
+		}
+		iconType = {
+			name = "GFX_serm_75"
+			spriteType = "GFX_serm"
+			position = { x = 390 y = 193 }
+		}
+		iconType = {
+			name = "GFX_serm_76"
+			spriteType = "GFX_serm"
+			position = { x = 405 y = 166 }
+		}
+		iconType = {
+			name = "GFX_serm_77"
+			spriteType = "GFX_serm"
+			position = { x = 321 y = 252 }
+		}
+		iconType = {
+			name = "GFX_serm_78"
+			spriteType = "GFX_serm"
+			position = { x = 369 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_79"
+			spriteType = "GFX_serm"
+			position = { x = 422 y = 192 }
+		}
+		iconType = {
+			name = "GFX_serm_80"
+			spriteType = "GFX_serm"
+			position = { x = 402 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_81"
+			spriteType = "GFX_serm"
+			position = { x = 435 y = 220 }
+		}
+		iconType = {
+			name = "GFX_serm_82"
+			spriteType = "GFX_serm"
+			position = { x = 351 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_83"
+			spriteType = "GFX_serm"
+			position = { x = 381 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_84"
+			spriteType = "GFX_serm"
+			position = { x = 414 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_85"
+			spriteType = "GFX_serm"
+			position = { x = 444 y = 250 }
+		}
+		iconType = {
+			name = "GFX_serm_86"
+			spriteType = "GFX_serm"
+			position = { x = 330 y = 278 }
+		}
+		iconType = {
+			name = "GFX_serm_87"
+			spriteType = "GFX_serm"
+			position = { x = 360 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_88"
+			spriteType = "GFX_serm"
+			position = { x = 390 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_89"
+			spriteType = "GFX_serm"
+			position = { x = 420 y = 280 }
+		}
+		iconType = {
+			name = "GFX_serm_90"
+			spriteType = "GFX_serm"
+			position = { x = 450 y = 280 }
+		}
+	}
+}

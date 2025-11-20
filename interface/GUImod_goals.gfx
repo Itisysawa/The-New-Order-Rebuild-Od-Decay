@@ -1,0 +1,847 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_POL_the_great_polska_federation"
+		texturefile = "gfx/interface/POL/focus_POL_the_great_polska_federation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_the_highest_leader"
+		texturefile = "gfx/interface/POL/focus_POL_the_highest_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_amount_to_the_armies"
+		texturefile = "gfx/interface/POL/idea_POL_amount_to_the_armies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_polish_ug_state"
+		texturefile = "gfx/interface/POL/idea_POL_polish_ug_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_quality_to_the_armies"
+		texturefile = "gfx/interface/POL/idea_POL_quality_to_the_armies.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_diplomatic_iron_fist"
+		texturefile = "gfx/interface/POL/focus_POL_diplomatic_iron_fist.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_1"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_2"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_3"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_4"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_5"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_6"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_7"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_8"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_9"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TCI_the_end_of_realism_end"
+		texturefile = "gfx/interface/TCI/focus_TCI_the_end_of_realism_end.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_POL_fiat_car_and_poland"
+		texturefile = "gfx/interface/POL/focus_POL_fiat_car_and_poland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_wrong_of_sanaji"
+		texturefile = "gfx/interface/POL/focus_POL_wrong_of_sanaji.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_in_faith_of_dmowski"
+		texturefile = "gfx/interface/POL/focus_in_faith_of_dmowski.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_incriminate_pajak"
+		texturefile = "gfx/interface/POL/focus_incriminate_pajak.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_polish_lenin"
+		texturefile = "gfx/interface/POL/focus_POL_polish_lenin.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_trust_banczyk"
+		texturefile = "gfx/interface/POL/focus_POL_trust_banczyk.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_POL_polish_pajak"
+		texturefile = "gfx/interface/POL/focus_POL_polish_pajak.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_incriminate_gomulka"
+		texturefile = "gfx/interface/POL/focus_incriminate_gomulka.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_pilsuski_new_one"
+		texturefile = "gfx/interface/POL/focus_pilsuski_new_one.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_rebirth_of_sanaji"
+		texturefile = "gfx/interface/POL/focus_rebirth_of_sanaji.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_the_way_of_antikhrist"
+		texturefile = "gfx/interface/POL/focus_the_way_of_antikhrist.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_release_rules"
+		texturefile = "gfx/interface/POL/focus_TMB_release_rules.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_worship_abaddon"
+		texturefile = "gfx/interface/POL/focus_TMB_worship_abaddon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cain_army"
+		texturefile = "gfx/interface/POL/idea_cain_army.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_fallen_angel"
+		texturefile = "gfx/interface/POL/focus_TMB_fallen_angel.dds"
+	}
+    spriteType = {
+        name = "GFX_selecting_chita"
+        texturefile = "gfx/interface/TMR/chita.png"
+        noOfFrames = 3
+        #transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_selecting_amur"
+        texturefile = "gfx/interface/TMR/Amur.png"
+        noOfFrames = 3
+        #transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_bg"
+        texturefile = "gfx/interface/TMR/bg.png"
+    }
+    spriteType = {
+        name = "GFX_amr2"
+        texturefile = "gfx/interface/TMR/amr2.png"
+        noOfFrames = 3
+        #transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_hlp"
+        texturefile = "gfx/interface/TMR/hailanpao.png"
+        noOfFrames = 3
+        #transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_button"
+        texturefile = "gfx/interface/TMR/button.png"
+    }
+    spriteType = {
+        name = "GFX_button2"
+        texturefile = "gfx/interface/TMR/button2.png"
+    }
+    spriteType = {
+        name = "GFX_TMR_civil_army"
+        texturefile = "gfx/interface/TMR/army.dds"
+    }
+    spriteType = {
+        name = "GFX_amur_stasis"
+        texturefile = "gfx/interface/TMR/Amurstasis.png"
+    }
+    spriteType = {
+        name = "GFX_amur2_stasis"
+        texturefile = "gfx/interface/TMR/Amur2stasis.png"
+    }
+    spriteType = {
+        name = "GFX_chita_stasis"
+        texturefile = "gfx/interface/TMR/Chitastasis.png"
+    }
+    spriteType = {
+        name = "GFX_hlp_stasis"
+        texturefile = "gfx/interface/TMR/hlpstasis.png"
+    }
+    spriteType = {
+        name = "GFX_fuck_ss"
+        texturefile = "gfx/interface/TMR/s.png"
+    }
+    spriteType = {
+        name = "GFX_SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE"
+        texturefile = "gfx/interface/TMR/SE_RUSSIAN_REUNIFICATION_AMUR_REFUGEE_ZONE.png"
+    }
+    spriteType = {
+        name = "GFX_SE_RUSSIAN_REUNIFICATION_CAIN"
+        texturefile = "gfx/interface/POL/SE_RUSSIAN_REUNIFICATION_CAIN.png"
+    }
+    spriteType = {
+        name = "GFX_SE_ANTIREALISM_FISRT_REUNIFIED"
+        texturefile = "gfx/interface/POL/SE_ANTIREALISM_FISRT_REUNIFIED.tga"
+    }
+    spriteType = {
+        name = "GFX_electbar"
+        texturefile = "gfx/interface/TMR/TMR_election_bar.png"
+    }
+    spriteType = {
+        name = "GFX_electsobchak"
+        texturefile = "gfx/interface/TMR/TMR_election_sobchak.png"
+    }
+    spriteType = {
+        name = "GFX_electfascist"
+        texturefile = "gfx/interface/TMR/TMR_election_fascist.png"
+    }
+    spriteType = {
+        name = "GFX_electtick"
+        texturefile = "gfx/interface/TMR/TMR_election_tick.png"
+    }
+    progressbartype = {
+		name = "GFX_Election_bar"
+		textureFile1 = "gfx/interface/TMR/TMR_election_sobchak.png"
+		textureFile2 = "gfx/interface/TMR/TMR_election_fascist.png"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 468
+			y = 51
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+    spriteType = {
+        name = "GFX_TMR_election"
+        texturefile = "gfx/interface/TMR/TMR_election.png"
+    }
+    spriteType = {
+        name = "GFX_idea_TMR_civilarms"
+        texturefile = "gfx/interface/ideas/national_spirits/TMR/refugee_civilarm.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_TMR_poor_admin"
+        texturefile = "gfx/interface/ideas/national_spirits/TMR/poor_admin_net.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_TMR_labour_shortage"
+        texturefile = "gfx/interface/ideas/national_spirits/TMR/labour_shortage.dds"
+    }
+    spriteType = {
+        name = "GFX_SE_POLISH_UKRAINIAN_WAR"
+        texturefile = "gfx/interface/POL/SE_POLISH_UKRAINIAN_WAR.tga"
+    }
+    spriteType = {
+		name = "GFX_focus_TMB_abaddon_authority"
+		texturefile = "gfx/interface/TMB/focus_TMB_abaddon_authority.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_a_weird_experiment"
+		texturefile = "gfx/interface/POL/focus_TMB_a_weird_experiment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TMB_their_nightmare"
+		texturefile = "gfx/interface/POL/focus_TMB_their_nightmare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TMB_totally_loyalty"
+		texturefile = "gfx/interface/POL/focus_TMB_totally_loyalty.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_PWA_gcw"
+		texturefile = "gfx/interface/POL/idea_PWA_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWB_gcw"
+		texturefile = "gfx/interface/POL/idea_PWB_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWC_gcw"
+		texturefile = "gfx/interface/POL/idea_PWC_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWD_gcw"
+		texturefile = "gfx/interface/POL/idea_PWD_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWE_gcw"
+		texturefile = "gfx/interface/POL/idea_PWE_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWF_gcw"
+		texturefile = "gfx/interface/POL/idea_PWF_gcw.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_PWQ_gcw"
+		texturefile = "gfx/interface/POL/idea_PWQ_gcw.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PWH_gcw"
+		texturefile = "gfx/interface/POL/idea_PWH_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWI_gcw"
+		texturefile = "gfx/interface/POL/idea_PWI_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWJ_gcw_oh"
+		texturefile = "gfx/interface/POL/idea_PWJ_gcw_oh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWJ_gcw_sar"
+		texturefile = "gfx/interface/POL/idea_PWJ_gcw_sar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWK_gcw"
+		texturefile = "gfx/interface/POL/idea_PWK_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWL_gcw"
+		texturefile = "gfx/interface/POL/idea_PWL_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWM_gcw"
+		texturefile = "gfx/interface/POL/idea_PWM_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWN_gcw"
+		texturefile = "gfx/interface/POL/idea_PWN_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWO_gcw"
+		texturefile = "gfx/interface/POL/idea_PWO_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWP_gcw"
+		texturefile = "gfx/interface/POL/idea_PWP_gcw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PWR_gcw"
+		texturefile = "gfx/interface/POL/idea_PWR_gcw.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TMB_use_slivko"
+		texturefile = "gfx/interface/POL/focus_TMB_use_slivko.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TMB_abaddon_despotis"
+		texturefile = "gfx/interface/TMB/focus_TMB_abaddon_despotis.dds"
+	}
+    spriteType = {
+        name = "GFX_SE_TCA_unified_akh"
+        texturefile = "gfx/interface/After_mdnt/SE_TCA_unified_akh.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCA_unified_gas"
+        texturefile = "gfx/interface/After_mdnt/SE_TCA_unified_gas.tga"
+    }
+    spriteType = {
+		name = "GFX_focus_TMB_caught_kardashev"
+		texturefile = "gfx/interface/TMB/focus_TMB_caught_kardashev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TMB_fuck_holyrus_airtroops"
+		texturefile = "gfx/interface/TMB/focus_TMB_fuck_holyrus_airtroops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TMB_fuck_kazakh"
+		texturefile = "gfx/interface/TMB/focus_TMB_fuck_kazakh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_TMB_institute"
+		texturefile = "gfx/interface/TMB/focus_TMB_institute.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_the_great_war"
+		texturefile = "gfx/interface/TMB/focus_TMB_the_great_war.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_TMB_newbirth_of_satan"
+		texturefile = "gfx/interface/TMB/focus_TMB_newbirth_of_satan.dds"
+	}
+    spriteType = {
+        name = "GFX_SE_TCB_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCB_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCC_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCC_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCD_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCD_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCF_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCF_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCH_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCH_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCK_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TCK_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCK_unified_despo"
+        texturefile = "gfx/interface/After_mdnt/SE_TCK_unified_despo.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCL_unified_comm"
+        texturefile = "gfx/interface/After_mdnt/SE_TCL_unified_comm.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCL_unified_prog"
+        texturefile = "gfx/interface/After_mdnt/SE_TCL_unified_prog.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TCL_unified_socio"
+        texturefile = "gfx/interface/After_mdnt/SE_TCL_unified_socio.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TMB_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TMB_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TPA_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TPA_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_TPC_unified"
+        texturefile = "gfx/interface/After_mdnt/SE_TPC_unified.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_DEFRATED_GERMAN"
+        texturefile = "gfx/interface/POL/SE_DEFRATED_GERMAN.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_POLISH_GERMAN_WAR"
+        texturefile = "gfx/interface/POL/SE_POLISH_GERMAN_WAR.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_POLISH_WIN_PGW"
+        texturefile = "gfx/interface/POL/SE_POLISH_WIN_PGW.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWA_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWA_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWB_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWB_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWD_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWD_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWE_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWE_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWF_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWF_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWG_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWG_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWH_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWH_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWI_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWI_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWJ_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWJ_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWK_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWK_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWL_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWL_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_SE_PWM_reunification"
+        texturefile = "gfx/interface/GCWSE/SE_PWM_reunification.tga"
+    }
+    spriteType = {
+        name = "GFX_POL_Witold_Pilecki"
+        texturefile = "gfx/leaders/POL/POL_Witold-Pilecki.png"
+    }
+    spriteType = {
+        name = "GFX_POL_Stanislaw_Ostrowski"
+        texturefile = "gfx/leaders/POL/POL_Stanislaw_Ostrowski.tga"
+    }
+    spriteType = {
+        name = "GFX_POL_Florian_Siwicki"
+        texturefile = "gfx/leaders/POL/POL_Florian_Siwicki_a.tga"
+    }
+    spriteType = {
+        name = "GFX_POL_August_Zaleski"
+        texturefile = "gfx/leaders/POL/POL_August_Zaleski_a.tga"
+    }
+    spriteType = {
+        name = "GFX_POL_Czeslaw_Milosz"
+        texturefile = "gfx/leaders/POL/POL_Czeslaw_Milosz.tga"
+    }
+    spriteType = {
+        name = "GFX_polska_underground_state"
+        texturefile = "gfx/interface/POL/polska_under.tga"
+    }
+    progressbartype = {
+		name = "GFX_pol_pwrstruggle_workers"
+		textureFile1 = "gfx/interface/POL/worker's_group.png"
+		textureFile2 = "gfx/interface/POL/AK's_group.png"
+		size = { 
+			x = 101
+			y = 101
+		}
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+    progressbartype = {
+		name = "GFX_pol_pwrstruggle_AK"
+		textureFile1 = "gfx/interface/POL/AK's_group.png"
+		textureFile2 = "gfx/interface/POL/empty.png"
+		size = { 
+			x = 101
+			y = 101
+		}
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+    spriteType = {
+        name = "GFX_overlay_pol"
+        texturefile = "gfx/interface/POL/Overlay.png"
+    }
+    spriteType = {
+        name = "GFX_focus_POL_form_DSR"
+        texturefile = "gfx/interface/POL/focus_POL_form_DSR.dds"
+    }
+    spriteType = {
+        name = "GFX_POL_Stanislaw_Banczyk"
+        texturefile = "gfx/leaders/POL/POL_Stanislaw_Banczyk.png"
+    }
+    spriteType = {
+        name = "GFX_AGCDL"
+        texturefile = "gfx/interface/POL/AGCDL.dds"
+    }
+	spriteType = {
+        name = "GFX_AGCDL_member"
+        texturefile = "gfx/interface/POL/AGCDL_member.dds"
+    }
+    spriteType = {
+		name = "GFX_warsaw_pact"
+		texturefile = "gfx/interface/POL/warsaw_pact.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_salski_objection"
+		texturefile = "gfx/interface/POL/focus_POL_salski_objection.dds"
+	}
+    spriteType = {
+        name = "GFX_idea_ideology_conflict"
+        texturefile = "gfx/interface/POL/ideology_conflict.png"
+    }
+    spriteType = {
+		name = "GFX_focus_POL_old_general"
+		texturefile = "gfx/interface/POL/focus_POL_old_general.png"
+	}
+    spriteType = {
+        name = "GFX_focus_pol_gomulka_period"
+        texturefile = "gfx/interface/POL/focus_pol_gomulka_period.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_pol_meeting_with_makuz_worf"
+        texturefile = "gfx/interface/POL/focus_pol_meeting_with_makuz_worf.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_POL_beware_german"
+        texturefile = "gfx/interface/POL/focus_POL_beware_german.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_POL_pitsuski_never_die"
+        texturefile = "gfx/interface/POL/POL_pitsuski_never_die.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ger_2cw"
+        texturefile = "gfx/interface/POL/idea_ger_2cw.dds"
+    }
+    spriteType = {
+        name = "GFX_POL_Pilsudski"
+        texturefile = "gfx/leaders/POL/Pilsudski.png"
+    }
+    spriteType = {
+        name = "GFX_decision_category_POL_decision_belarus_land"
+        texturefile = "gfx/interface/POL/POL_decision_belarus_land.dds"
+    }
+    spriteType = {
+		name = "GFX_focus_POL_stable_for_provisional"
+		texturefile = "gfx/interface/POL/focus_POL_stable_for_provisional.png"
+	}
+    spriteType = {
+        name = "GFX_decision_category_POL_decision_lwow_land"
+        texturefile = "gfx/interface/POL/POL_decision_lwow_land.dds"
+    }
+    frameAnimatedSpriteType = {
+		name = "GFX_pol_debug"
+		texturefile = "gfx/interface/POL/game.dds"
+		noOfFrames = 3
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes  
+	}
+    frameAnimatedSpriteType = {
+		name = "GFX_GUI_POL_blr"
+		texturefile = "gfx/interface/POL/GUI_blr.dds"
+		noOfFrames = 2
+	}
+    frameAnimatedSpriteType = {
+		name = "GFX_GUI_POL_lwow"
+		texturefile = "gfx/interface/POL/GUI_lwow.dds"
+		noOfFrames = 2
+	}
+    frameAnimatedSpriteType = {
+		name = "GFX_GUI_POL_west_ukr"
+		texturefile = "gfx/interface/POL/GUI_west_ukr.dds"
+		noOfFrames = 2
+	}
+    frameAnimatedSpriteType = {
+		name = "GFX_GUI_POL_west_pol"
+		texturefile = "gfx/interface/POL/GUI_west_pol.dds"
+		noOfFrames = 2
+	}
+    spriteType = {
+        name = "GFX_POL_hoshino"
+        texturefile = "gfx/leaders/POL/hoshino.png"
+    }
+    spriteType = {
+        name = "GFX_focus_POL_beware_german"
+        texturefile = "gfx/interface/POL/focus_POL_beware_german.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_focus_POL_european_revolution"
+        texturefile = "gfx/interface/POL/focus_POL_european_revolution.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_POL_unify_for_us"
+        texturefile = "gfx/interface/POL/focus_POL_unify_for_us.dds"
+    }
+    spriteType = {
+		name = "GFX_focus_POL_attack_from_diff_direction"
+		texturefile = "gfx/interface/POL/POL_attack_from_diff_direction.dds"
+	}
+    progressbartype = {
+		name = "GFX_uprising_progress_bar"
+		textureFile1 = "gfx/interface/POL/pol_ak.png"
+		textureFile2 = "gfx/interface/POL/pol_ggn.png"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 200
+			y = 150
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+    progressbartype = {
+		name = "GFX_POL_final_war_supply"
+		textureFile1 = "gfx/interface/POL/progress_bar_full_preparation.dds"
+		textureFile2 = "gfx/interface/POL/progress_bar_empty_preparation.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 400
+			y = 43
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+    progressbartype = {
+		name = "GFX_POL_final_war_ger_war_supp"
+		textureFile1 = "gfx/interface/POL/progress_bar_full_tension.dds"
+		textureFile2 = "gfx/interface/POL/progress_bar_no_tension.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 400
+			y = 43
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+    spriteType = {
+		name = "GFX_GGN_uprising"
+		texturefile = "gfx/interface/POL/GGN_uprising.png"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_boleslaw_bierut"
+		texturefile = "gfx/leaders/POL/POL_boleslaw_bierut.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_felicjan_skladkowski"
+		texturefile = "gfx/leaders/POL/POL_felicjan_skladkowski.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_kazimierz_mijal"
+		texturefile = "gfx/leaders/POL/POL_kazimierz_mijal.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_kazimir_zakrzewski"
+		texturefile = "gfx/leaders/POL/POL_kazimir_zakrzewski.png"
+	}
+    spriteType = {
+		name = "GFX_POL_supplies_during_war"
+		texturefile = "gfx/interface/POL/POL_supplies_during_war.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_POL_marian_janmuszajtis"
+		texturefile = "gfx/leaders/POL/POL_marian_janmuszajtis.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_marian_spychalski"
+		texturefile = "gfx/leaders/POL/POL_marian_spychalski.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_oskar_lange"
+		texturefile = "gfx/leaders/POL/POL_oskar_lange.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_stanislaw_maczek"
+		texturefile = "gfx/leaders/POL/POL_stanislaw_maczek.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_stanislaw_sosabowski"
+		texturefile = "gfx/leaders/POL/POL_stanislaw_sosabowski.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_tadeusz_komorowski"
+		texturefile = "gfx/leaders/POL/POL_tadeusz_komorowski.png"
+	}
+    spriteType = {
+		name = "GFX_focus_cain_destiny"
+		texturefile = "gfx/interface/POL/focus_cain_destiny.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_genocide_warfare"
+		texturefile = "gfx/interface/POL/idea_genocide_warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_POL_wladylaw_anders"
+		texturefile = "gfx/leaders/POL/POL_wladylaw_anders.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_wojciech_jaruzelski"
+		texturefile = "gfx/leaders/POL/POL_wojciech_jaruzelski.png"
+	}
+    spriteType = {
+		name = "GFX_focus_POL_pilecki_plan"
+		texturefile = "gfx/interface/POL/focus_POL_pilecki_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_POL_unite_to_resist"
+		texturefile = "gfx/interface/POL/focus_POL_unite_to_resist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_koc_gold"
+		texturefile = "gfx/interface/POL/idea_POL_koc_gold.dds"
+	}
+    spriteType = {
+        name = "GFX_hoshino_destroy_nazis"
+        texturefile = "gfx/interface/achievements/hoshino_destroy_nazis.dds"
+    }
+    spriteType = {
+        name = "GFX_polish_hard_defence"
+        texturefile = "gfx/interface/achievements/polish_hard_defence.dds"
+    }
+    spriteType = {
+		name = "GFX_TNO_OpeningScreen_Poster_Poland"
+		texturefile = "gfx/interface/POL/TNO_OpeningScreen_Poster_Poland.dds"
+	}
+    spriteType = {
+        name = "GFX_serm"
+        texturefile = "gfx/interface/POL/national_serm.png"
+        noOfFrames = 3
+    }
+	spriteType = {
+		name = "GFX_nknmn"
+		texturefile = "gfx/interface/POL/nknmn.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_POL_PPS_with_pajak"
+		texturefile = "gfx/interface/POL/focus_POL_PPS_with_pajak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_AK_old_one"
+		texturefile = "gfx/interface/POL/idea_POL_AK_old_one.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_fortress_city"
+		texturefile = "gfx/interface/POL/idea_POL_fortress_city.dds"
+	}
+}
