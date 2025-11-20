@@ -1,0 +1,316 @@
+﻿division_template = {
+	name = "Polish Partisan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Polish Partisan 2"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Polish Partisan 3"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "NPL army"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "TKS troop"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		APC = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Polish Partisan 4"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "International troop"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Polish Marine"
+	division_names_group = POL_Marine_1
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 1 }
+	}
+}
+units = {
+	
+	
+	division = {
+		name = "1st Legions Infantry Regiment (Reorganized)"
+		location = 9558
+		division_template = "NPL army"
+		start_experience_factor = 1 
+		start_equipment_factor = 1
+		allow_spawning_on_enemy_provs = yes
+	}
+	division = {
+		name = "2nd Legions Infantry Regiment"
+		location = 19175
+		division_template = "Polish Partisan 2"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+		allow_spawning_on_enemy_provs = yes
+	}
+	
+	
+	division = {
+		name = "1st Legions Union of Armed Struggle"
+		location = 9400
+		division_template = "Polish Partisan 2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Legions Union of Armed Struggle"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3rd Legions Union of Armed Struggle"
+		location = 524
+		division_template = "Polish Partisan 2"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "1st National Security Corps"
+		location = 3544
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.1
+	}
+
+	
+	division = {
+		name = "1st Legions Warsaw Theatre"
+		location = 9400
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2nd Legions Warsaw Theatre"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Legions Warsaw Theatre"
+		location = 524
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "4th Legions Warsaw Theatre"
+		location = 3544
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.4
+	}
+
+	division = {
+		name = "5th Legions Warsaw Theatre"
+		location = 6511
+		division_template = "International troop"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "6th Legions Warsaw Theatre"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.05
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "7th Legions Warsaw Theatre"
+		location = 9558
+		division_template = "Polish Partisan 2"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+		count = 1
+		allow_spawning_on_enemy_provs = yes
+	}
+	division = {
+		name = "8th Legions Warsaw Theatre"
+		location = 19175
+		division_template = "Polish Partisan 2"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.2
+		count = 1
+		allow_spawning_on_enemy_provs = yes
+	}
+	division = {
+		name = "1st New Polish Army"
+		location = 19175
+		division_template = "NPL army"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+		count = 1
+		allow_spawning_on_enemy_provs = yes
+	}
+	
+	division = {
+		name = "9th Legions Warsaw Theatre"
+		location = 9400
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "10th Legions Warsaw Theatre"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "11th Legions Warsaw Theatre"
+		location = 524
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "12th Legions Warsaw Theatre"
+		location = 3544
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.4
+	}
+
+	
+	division = {
+		name = "13th Legions Warsaw Theatre"
+		location = 9400
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "14th Legions Warsaw Theatre"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.1
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "15th Legions Warsaw Theatre"
+		location = 524
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.6
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "16th Legions Warsaw Theatre"
+		location = 3544
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.2
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "17th Legions Warsaw Theatre"
+		location = 6511
+		division_template = "International troop"
+		start_equipment_factor = 1
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "18th Legions Warsaw Theatre"
+		location = 15680
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "19th Legions Warsaw Theatre"
+		location = 9400
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.6
+		start_experience_factor = 0.5
+	}
+	
+}

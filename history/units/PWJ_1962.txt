@@ -1,0 +1,153 @@
+﻿division_template = {
+	name = "GCWPWJ1"
+	division_names_group = GER_waffen
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "GCWPWJ2"
+	division_names_group = SLO_INF_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "GCWPWJ3"
+	division_names_group = SLO_MOT_1
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6488
+		division_template = "GCWPWJ1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9557
+		division_template = "GCWPWJ2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11560
+		division_template = "GCWPWJ2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3530
+		division_template = "GCWPWJ2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9517
+		division_template = "GCWPWJ2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9517
+		division_template = "GCWPWJ3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11499
+		division_template = "GCWPWJ3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9545
+		division_template = "GCWPWJ3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6712
+		division_template = "GCWPWJ3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6421
+		division_template = "GCWPWJ3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,37 @@
+state = { #Population Done
+	id = 2529
+	name = "STATE_2529"
+
+	resources = {
+		steel = 60
+		aluminium = 25
+	}
+
+	manpower = 2009081
+	state_category = metropolis
+
+	history = {
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			3288 8
+		}		
+		buildings = {
+			schools = 1
+			offices = 1
+			prisons = 1
+			infrastructure = 6
+			radar_station = 1
+			missile_silo = 1
+			thermoelectric_plant = 2
+			3288 = { naval_base = 1 }
+		}
+		set_state_flag = universal_renamings
+		set_state_flag = GDP_category_city
+		
+	}
+
+	provinces = {
+		3288
+	}
+}

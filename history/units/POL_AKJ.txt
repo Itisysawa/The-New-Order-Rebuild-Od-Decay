@@ -1,0 +1,189 @@
+﻿division_template = {
+	name = "Polish Partisan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Polish Partisan 2"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Polish Partisan 3"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "NPL army"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "TKS troop"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		APC = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Polish Partisan 4"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "International troop"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Polish Marine"
+	division_names_group = POL_Marine_1
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "1st Legions Krakow Theatre"
+		location = 3458
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Legions Krakow Theatre"
+		location = 3458
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Legions Krakow Theatre"
+		location = 3497
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "4th Legions Krakow Theatre"
+		location = 3497
+		division_template = "Polish Partisan 2"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "5th Legions Krakow Theatre"
+		location = 3586
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.4
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "6th Legions Krakow Theatre"
+		location = 3586
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.6
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "7th Legions Krakow Theatre"
+		location = 15816
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.7
+	}
+	division = {
+		name = "8th Legions Krakow Theatre"
+		location = 15816
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.7
+	}
+	division = {
+		name = "9th Legions Krakow Theatre"
+		location = 15816
+		division_template = "Polish Partisan"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Armed Troop Krakow Theatre"
+		location = 15816
+		division_template = "TKS troop"
+		start_experience_factor = 1 
+		start_equipment_factor = 0.8
+		count = 1
+		allow_spawning_on_enemy_provs = yes
+	}
+}

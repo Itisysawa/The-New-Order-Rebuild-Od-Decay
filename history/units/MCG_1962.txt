@@ -1,0 +1,112 @@
+﻿division_template = {
+	name = "MCG_infantry"
+	division_names_group = GER_waffen
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "MCGTANK"
+	division_names_group = GER_waffen
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT = { x = 0 y = 2 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		MBT = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18261
+		division_template = "MCG_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 149
+		division_template = "MCG_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3151
+		division_template = "MCG_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18261
+		division_template = "MCG_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18261
+		division_template = "MCGTANK"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 149
+		division_template = "MCGTANK"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 149
+		division_template = "MCGTANK"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3151
+		division_template = "MCGTANK"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,122 @@
+﻿division_template = {
+	name = "GCWPWI1"
+	division_names_group = GER_waffen
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "GCWPWI2"
+	division_names_group = GER_waffen
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "GCWPWI3"
+	division_names_group = SLO_MOT_1
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 0 y = 2 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+		elite_infantry = { x = 1 y = 2 }
+		elite_infantry = { x = 2 y = 0 }
+		elite_infantry = { x = 2 y = 1 }
+		elite_infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "GCWPWI4"
+	division_names_group = SLO_MOT_1
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 3 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 587
+		division_template = "GCWPWI1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11531
+		division_template = "GCWPWI2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9503
+		division_template = "GCWPWI3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3558
+		division_template = "GCWPWI4"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}

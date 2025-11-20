@@ -1,0 +1,84 @@
+﻿division_template = {
+	name = "TCKtrp1"
+	division_names_group = GER_waffen
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "TCKtrp2"
+	division_names_group = GER_waffen
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4724
+		division_template = "TCKtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7886
+		division_template = "TCKtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10649
+		division_template = "TCKtrp2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12621
+		division_template = "TCKtrp2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13294
+		division_template = "TCKtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13312
+		division_template = "TCKtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}	
+}

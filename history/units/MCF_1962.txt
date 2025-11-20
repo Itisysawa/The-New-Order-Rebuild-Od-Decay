@@ -1,0 +1,180 @@
+﻿division_template = {
+	name = "MCF_infantry"
+	division_names_group = GER_waffen
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "MCFSStank"
+	division_names_group = GER_waffen
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT = { x = 0 y = 2 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		MBT = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 534
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9579
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18313
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3291
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3318
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 18309
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3346
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3376
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6316
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 384
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11214
+		division_template = "MCF_infantry"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6056
+		division_template = "MCFSStank"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3279
+		division_template = "MCFSStank"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 335
+		division_template = "MCFSStank"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11300
+		division_template = "MCFSStank"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}

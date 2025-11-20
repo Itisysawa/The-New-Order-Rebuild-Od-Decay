@@ -1,0 +1,302 @@
+﻿division_template = {
+	name = "Diwizya Piechoty"
+	division_names_group = GGN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "TKS troop"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		APC = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "NPL army"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Polish Partisan 2"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Schutzstaffel"
+	division_names_group = GGN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Pojazd Battalion"
+	division_names_group = GGN_INF_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+	division_names_group = GGNLMOB_01
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3483
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3559
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 19171
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 15815
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 19179
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3497
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3586
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 491
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3559
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 19171
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 15815
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 19179
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3497
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3586
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Polnische Freiwilligen Division"
+		location = 3743
+		division_template = "Diwizya Piechoty"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 1)"
+		location = 19181
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 2)"
+		location = 19182
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Lublin"
+		location = 3562
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Krakau"
+		location = 15816
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 1)"
+		location = 19181
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 2)"
+		location = 19182
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Lublin"
+		location = 466
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Krakau"
+		location = 15811
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 1)"
+		location = 19181
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 2)"
+		location = 19182
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Lublin"
+		location = 11479
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Krakau"
+		location = 15812
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "Pojazd Battalion"
+		location = 6499
+		division_template = "Pojazd Battalion"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 1)"
+		location = 19181
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Warschau (Nr. 2)"
+		location = 19182
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Lublin"
+		location = 11479
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "SS-Kommando Krakau"
+		location = 15812
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "Pojazd Battalion"
+		location = 6499
+		division_template = "Pojazd Battalion"
+		start_experience_factor = 0.0
+	}
+
+	division = {
+		#name = "4th Panzer Group"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 15816
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.0
+	}
+}

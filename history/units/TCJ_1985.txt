@@ -1,0 +1,74 @@
+﻿division_template = {
+	name = "TCJtrp1"
+	division_names_group = GER_waffen
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "TCJtrp2"
+	division_names_group = GER_waffen
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7789
+		division_template = "TCJtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1828
+		division_template = "TCJtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.3
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12595
+		division_template = "TCJtrp2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4831
+		division_template = "TCJtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7849
+		division_template = "TCJtrp1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}	
+}

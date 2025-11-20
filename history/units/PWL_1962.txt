@@ -1,0 +1,156 @@
+﻿division_template = {
+	name = "GCWPWL1"
+	division_names_group = GER_waffen
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "GCWPWL2"
+	division_names_group = SLO_INF_1
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 0 y = 2 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+		elite_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "GCWPWL3"
+	division_names_group = SLO_MOT_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "GCWPWL4"
+	division_names_group = SLO_MOT_1
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 692
+		division_template = "GCWPWL1"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 15832
+		division_template = "GCWPWL2"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3299
+		division_template = "GCWPWL3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 586
+		division_template = "GCWPWL3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3474
+		division_template = "GCWPWL3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9515
+		division_template = "GCWPWL3"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 732
+		division_template = "GCWPWL4"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9665
+		division_template = "GCWPWL4"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11620
+		division_template = "GCWPWL4"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}
