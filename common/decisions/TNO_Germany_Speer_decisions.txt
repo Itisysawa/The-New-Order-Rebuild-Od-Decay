@@ -2827,6 +2827,11 @@ SGR_state_of_the_reich_category = {
 					has_global_flag = SGR_natsoc_collapse
 					country_exists = POL
 				}
+				GER = {
+					add_dynamic_modifier = {
+						modifier = POL_GER_war_weariness
+					}
+				}
 				declare_war_on = {
 					target = POL
 					type = annex_everything

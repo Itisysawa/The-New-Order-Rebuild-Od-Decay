@@ -1,0 +1,101 @@
+shared_focus = {
+	id = NPL_threat_from_anywhere
+	icon = GFX_focus_generic_bomb_em_into_the_stone_age
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 8
+	y = 0
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PWJ_rote_armee_fraktion"
+		
+	}
+}
+shared_focus = {
+	id = NPL_food_distribution
+	icon = GFX_focus_generic_food_for_all
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	relative_position_id = NPL_threat_from_anywhere
+	available = {
+	}
+	prerequisite = {
+		focus = NPL_threat_from_anywhere
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NPL_food_distribution"
+		
+	}
+}
+shared_focus = {
+	id = NPL_underground_concentrating_buildings
+	icon = GFX_focus_generic_move_it_underground
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -4
+	y = 1
+	relative_position_id = NPL_food_distribution
+	available = {
+	}
+	prerequisite = {
+		focus = NPL_food_distribution
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NPL_underground_concentrating_buildings"
+		
+	}
+}
+shared_focus = {
+	id = NPL_boost_the_production
+	icon = GFX_focus_generic_fortification_production_charter
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 4
+	y = 1
+	relative_position_id = NPL_food_distribution
+	available = {
+	}
+	prerequisite = {
+		focus = NPL_food_distribution
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NPL_boost_the_production"
+		
+	}
+}
+shared_focus = {
+	id = NPL_two_ways_prepareing
+	icon = GFX_focus_generic_fortification_production_charter
+	cost = 1
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	relative_position_id = NPL_boost_the_production
+	available = {
+	}
+	prerequisite = {
+		focus = NPL_boost_the_production
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NPL_two_ways_prepareing"
+		
+	}
+}

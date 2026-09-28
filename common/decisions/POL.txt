@@ -387,34 +387,20 @@ Polish_form_occu_zone = {
             has_country_flag = fuk_ukr
             custom_trigger_tooltip = {
 				tooltip = east_poland_junta_tt
-				AND = {
+                1431 = {
                     OR = {
-                        93 = {
-                            is_fully_controlled_by = POL
-                        }
-                        93 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        93 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        93 = {
-                            is_fully_controlled_by = EPJ
-                        }
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = POL
                     }
+                }
+                93 = {
                     OR = {
-                        1431 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1431 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1431 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1431 = {
-                            is_fully_controlled_by = EPJ
-                        }
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = POL
                     }
                 }
 			}
@@ -429,7 +415,6 @@ Polish_form_occu_zone = {
             hidden_effect = {
                 add_ideas = AGCDL_member
             }
-            
             93 = {
                 add_core_of = EPJ
             }
@@ -470,33 +455,25 @@ Polish_form_occu_zone = {
     }
     UKR_new_one = {
         icon = GFX_decision_UKR_heerema_noc
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
             custom_trigger_tooltip = {
 				tooltip = UKR_new_one_tt
                 OR = {
                     AND = {
-                        NOT = {
-                            country_exists = BOV
-                            country_exists = UKR
-				    	}
+                        any_allied_country = {
+                            OR = {
+                                tag = FUK
+                                tag = UKS
+                            }
+                            has_war = no
+                        }
                         OR = {
-                            AND = {
-                                NOT = {
-                                    country_exists = FUK
-                                }
-                                is_in_faction_with = UKS
-                            }
-                            AND = {
-                                NOT = {
-                                    country_exists = UKS
-                                }
-                                is_in_faction_with = FUK
-                            }
+                            POL ={ owns_state = 1428 }
+                            FUK ={ owns_state = 1428 }
+                            UKS ={ owns_state = 1428 }
                         }
                     }
                     NOT = {
@@ -571,6 +548,7 @@ Polish_form_occu_zone = {
                     load_oob = UKR_1962
                     add_ideas = AGCDL_member
                     hidden_effect = {
+                        UKR_UCW_check_victor = yes
                         transfer_state = 197
 		            	transfer_state = 199
 	    	    	    transfer_state = 1430
@@ -602,188 +580,104 @@ Polish_form_occu_zone = {
 Polish_form_occu_zone_ost = {
     Belarus_republic = {
         icon = GFX_decision_generic_decision
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
             has_country_flag = fuk_ost 
             custom_trigger_tooltip = {
 				tooltip = Belarus_republic_tt
-				AND = {
+                1407 = {
                     OR = {
-                        1407 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1407 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1407 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1407 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        1407 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        95 = {
-                            is_fully_controlled_by = POL
-                        }
-                        95 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        95 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        95 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        95 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        1406 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1406 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1406 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1406 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        1406 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        1403 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1403 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1403 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1403 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        1403 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        1404 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1404 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1404 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1404 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        1404 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        204 = {
-                            is_fully_controlled_by = POL
-                        }
-                        204 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        204 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        204 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        204 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        194 = {
-                            is_fully_controlled_by = POL
-                        }
-                        194 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        194 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        194 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        194 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        1405 = {
-                            is_fully_controlled_by = POL
-                        }
-                        1405 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        1405 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        1405 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        1405 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        206 = {
-                            is_fully_controlled_by = POL
-                        }
-                        206 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        206 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        206 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        206 = {
-                            is_fully_controlled_by = MST
-                        }
-                    }
-                    OR = {
-                        207 = {
-                            is_fully_controlled_by = POL
-                        }
-                        207 = {
-                            is_fully_controlled_by = FUK
-                        }
-                        207 = {
-                            is_fully_controlled_by = UKS
-                        }
-                        207 = {
-                            is_fully_controlled_by = EPJ
-                        }
-                        207 = {
-                            is_fully_controlled_by = MST
-                        }
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
                     }
                 }
-			}
+                95 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                1406 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                1403 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                1404 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                204 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                194 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                1405 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                206 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+                207 = {
+                    OR = {
+                        is_fully_controlled_by = POL
+                        is_fully_controlled_by = FUK
+                        is_fully_controlled_by = UKS
+                        is_fully_controlled_by = EPJ
+                        is_fully_controlled_by = MST
+                    }
+                }
+            }
 		}
 
 		visible = {
@@ -861,38 +755,25 @@ Polish_form_occu_zone_ost = {
     }
     Lithuan_republic = {
         icon = GFX_decision_diplo_ostland
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
             has_country_flag = fuk_ost
-            custom_trigger_tooltip = {
-				tooltip = Lithuan_republic_tt
-				OR = {
-                    AND = {
-                        NOT = {
-                            country_exists = DST
-                            country_exists = JST
-                            country_exists = UPO
-                            country_exists = OST
-				    	}
-                        AND = {
-                            OR = {
-                                NOT = {
-                                    country_exists = MST
-                                }
-                                is_in_faction_with = MST
-                            }
-                            OR = {
-                                NOT = {
-                                    country_exists = BLR
-                                }
-                                is_in_faction_with = BLR
-                            }
-                        }
+            OR = {
+                custom_trigger_tooltip = {
+    				tooltip = Lithuan_republic_tt
+                    all_allied_country = {
+                        tag = MST
+                        has_war = no
                     }
+                }
+                custom_trigger_tooltip = {
+	    			tooltip = Lithuan_republic_tt
+                    BLR = {
+                        has_war = no
+                    }
+                    country_exists = BLR
                 }
             }
 		}
@@ -1395,75 +1276,457 @@ POL_armament_purchasing = {
     }
 }
 POL_sacred_war = {
-    pol_war = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = { 
-            POL = {
-                has_war_with = GER
-            }
-        }
-		activation = { 
-            POL = {
-                has_war_with = GER
-            }
-        }
-		available = {
-            check_variable = { POL_final_war_ger_war_supp_var > 80 }
-        }
+    gpw_text_3 = {
         visible = {
-            original_tag = pol
-        }
-		priority = 3655
-		days_mission_timeout = 7
-		is_good = yes
-		selectable_mission = no
-        mission = {
-            check_variable = { POL_final_war_ger_war_supp_var > 80 }
-        }
-		timeout_effect = {
-			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
-            activate_mission = pol_war
-            add_to_variable = { POL_final_war_supply_var = 3 }
-            add_war_support = -0.01
-            
-            clamp_variable = {
-	          	var = POL_final_war_supply_var
-	            min = 0
-            	max = 100
-	        }
+            is_debug = yes
 		}
+        fire_only_once = No
         complete_effect = {
-            POL = {
-			    country_event = { id = POL_ROD.15 }
-			}
+            set_variable = {
+                POL_GPW_surrender_var = 3
+            }
         }
-        days_re_enable = 0
-	}
-    decision_strike_their_fortress = {
+    }
+    gpw_text_10 = {
+        visible = {
+            is_debug = yes
+		}
+        fire_only_once = No
+        complete_effect = {
+            set_variable = {
+                POL_GPW_surrender_var = 10
+            }
+        }
+    }
+    gpw_text_30 = {
+        visible = {
+            is_debug = yes
+		}
+        fire_only_once = No
+        complete_effect = {
+            set_variable = {
+                POL_GPW_surrender_var = 30
+            }
+        }
+    }
+    gpw_text_50 = {
+        visible = {
+            is_debug = yes
+		}
+        fire_only_once = No
+        complete_effect = {
+            set_variable = {
+                POL_GPW_surrender_var = 50
+            }
+        }
+    }
+    gpw_text_65 = {
+        visible = {
+            is_debug = yes
+		}
+        fire_only_once = No
+        complete_effect = {
+            set_variable = {
+                POL_GPW_surrender_var = 65
+            }
+        }
+    }
+    gpw_text_85 = {
+        visible = {
+            is_debug = yes
+		}
+        fire_only_once = No
+        complete_effect = {
+            set_variable = {
+                POL_GPW_surrender_var = 85
+            }
+        }
+    }
+    POL_war_weariness_7 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 7
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            POL_GER_war_weariness = yes
+            POL_GER_war_check_in_week = yes
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = POL_war_weariness_7 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = POL_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = POL_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = POL_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = POL_war_weariness_35 }
+        }
+        complete_effect = {
+            POL = { country_event = { id = POL_ROD.15 } }
+        }
+    }
+    POL_war_weariness_14 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 14
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            POL_GER_war_weariness = yes
+            POL_GER_war_check_in_week = yes
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = POL_war_weariness_7 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = POL_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = POL_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = POL_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = POL_war_weariness_35 }
+        }
+        complete_effect = {
+            POL = { country_event = { id = POL_ROD.15 } }
+        }
+    }
+    POL_war_weariness_21 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 21
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            POL_GER_war_weariness = yes
+            POL_GER_war_check_in_week = yes
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = POL_war_weariness_7 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = POL_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = POL_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = POL_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = POL_war_weariness_35 }
+        }
+        complete_effect = {
+            POL = { country_event = { id = POL_ROD.15 } }
+        }
+    }
+    POL_war_weariness_28 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 28
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            POL_GER_war_weariness = yes
+            POL_GER_war_check_in_week = yes
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = POL_war_weariness_7 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = POL_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = POL_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = POL_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = POL_war_weariness_35 }
+        }
+        complete_effect = {
+            POL = { country_event = { id = POL_ROD.15 } }
+        }
+    }
+    POL_war_weariness_35 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 35
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            POL_GER_war_weariness = yes
+            POL_GER_war_check_in_week = yes
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = POL_war_weariness_7 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = POL_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = POL_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = POL_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = POL_war_weariness_35 }
+        }
+        complete_effect = {
+            POL = { country_event = { id = POL_ROD.15 } }
+        }
+    }
+    GER_war_weariness_7 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 7
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            GER = { POL_GER_war_weariness = yes }
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = GER_war_weariness_35 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = GER_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = GER_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = GER_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = GER_war_weariness_7 }
+        }
+    }
+    GER_war_weariness_14 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 14
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            GER = { POL_GER_war_weariness = yes }
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = GER_war_weariness_35 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = GER_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = GER_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = GER_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = GER_war_weariness_7 }
+        }
+    }
+    GER_war_weariness_21 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 21
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            GER = { POL_GER_war_weariness = yes }
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = GER_war_weariness_35 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = GER_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = GER_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = GER_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = GER_war_weariness_7 }
+        }
+    }
+    GER_war_weariness_28 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 28
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            GER = { POL_GER_war_weariness = yes }
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = GER_war_weariness_35 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = GER_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = GER_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = GER_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = GER_war_weariness_7 }
+        }
+    }
+    GER_war_weariness_35 = {
+        priority = 21
+		available = { has_country_flag = POL_GPW_win }
+		cancel_trigger = { hidden_trigger = { always = no } }
+		days_mission_timeout = 35
+		fire_only_once = no
+		activation = { always = no }
+		visible = { always = yes }
+        timeout_effect = {
+            log = "[ROOT.Getname] [GetDateText]: POL_war_weariness timeout"
+            GER = { POL_GER_war_weariness = yes }
+            if = { limit = { has_country_flag = POL_GPW_desperate_situation } activate_mission = GER_war_weariness_35 }
+            else_if = { limit = { has_country_flag = POL_GPW_disadvantages } activate_mission = GER_war_weariness_28 }
+            else_if = { limit = { has_country_flag = POL_GPW_tug_of_war } activate_mission = GER_war_weariness_21 }
+            else_if = { limit = { has_country_flag = POL_GPW_advantages } activate_mission = GER_war_weariness_14 }
+            else_if = { limit = { has_country_flag = POL_GPW_crushing } activate_mission = GER_war_weariness_7 }
+        }
+    }
+    # pol_war = {
+	# 	icon = GFX_decision_generic_prepare_civil_war
+	# 	allowed = { 
+    #         POL = {
+    #             has_war_with = GER
+    #         }
+    #     }
+	# 	activation = { 
+    #         POL = {
+    #             has_war_with = GER
+    #         }
+    #     }
+	# 	available = {
+    #         check_variable = { POL_final_war_ger_war_supp_var > 80 }
+    #     }
+    #     visible = {
+    #         original_tag = pol
+    #     }
+	# 	priority = 3655
+	# 	days_mission_timeout = 7
+	# 	is_good = yes
+	# 	selectable_mission = no
+    #     mission = {
+    #         check_variable = { POL_final_war_ger_war_supp_var > 80 }
+    #     }
+	# 	timeout_effect = {
+	# 		log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"
+    #         activate_mission = pol_war
+    #         add_to_variable = { POL_GPW_surrender_var = 3 }
+    #         add_war_support = -0.01
+    
+    #         clamp_variable = {
+	#           	var = POL_GPW_surrender_var
+	#             min = 0
+    #         	max = 100
+	#         }
+	# 	}
+    #     complete_effect = {
+    #         POL = {
+	# 		    country_event = { id = POL_ROD.15 }
+	# 		}
+    #     }
+    #     days_re_enable = 0
+	# }
+    # decision_strike_their_fortress = {
+    #     icon = GFX_AM_Amur
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+    #     visible = {
+    #         has_country_flag = POL_wolfs_rounds_flag
+	# 	}
+    #     fire_only_once = No
+    #     days_remove = 20
+    #     days_re_enable = 10
+    #     complete_effect = {
+    #         add_equipment_to_stockpile = {
+    #             type = infantry_equipment
+    # 		    amount = -200
+	# 	        producer = POL
+    #         }
+    #         add_manpower = -4000
+    #     }
+    #     remove_effect = {
+            
+    #     }
+    # }
+}
+ROD_debug_decisions = {
+    success_reform = {
         icon = GFX_AM_Amur
+
 		ai_will_do = {
 			factor = 0
 		}
-        visible = {
-            has_country_flag = POL_wolfs_rounds_flag
-		}
-        fire_only_once = No
-        days_remove = 20
-        days_re_enable = 10
+        fire_only_once = no
+        days_re_enable = 0
+
         complete_effect = {
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-    		    amount = -200
-		        producer = POL
+            POL_Wladyslaw_Gomulka = {
+                set_portraits = {
+				    army = { large = "gfx/leaders/POL/POL_Wladyslaw_Gomulkas.png" }
+				    civilian = { large = "gfx/leaders/POL/POL_Wladyslaw_Gomulkas.png" }
+			    }
             }
-            add_manpower = -4000
-        }
-        remove_effect = {
-            
+			add_country_leader_role = {
+			   	character = POL_Wladyslaw_Gomulka
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	communist_innovative_communism_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_Wladyslaw_Gomulka_desc"
+                    expire = "1999.4.4"
+			        traits = { }
+                    id = -1
+		        }
+	    	}
+            set_popularities = {
+	    		communist = 34
+	    		communist_1 = 28
+            	ultranationalism = 0
+	            socialist = 12
+	            socialist_1 = 11
+	            progressivism = 8
+	            liberalism = 0
+
+	            conservatism = 0
+	            paternalism = 7
+	            paternalism_1 = 0
+	            paternalism_2 = 0
+	            despotism = 0
+	            fascism = 0
+			}
         }
     }
-}
-ROD_debug_decisions = {
+    failure_reform = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = no
+        days_re_enable = 0
+
+        complete_effect = {
+            POL_Emil_Fieldorf = {
+                remove_country_leader_role = { ideology = paternalism_provisional_government_subtype }
+            }
+            POL_Joseph_Pilsudski = {
+                remove_country_leader_role = { ideology = paternalism_provisional_government_subtype }
+            }
+            POL_Wladyslaw_Gomulka = {
+                set_portraits = {
+				    army = { large = "gfx/leaders/POL/wladyslaw_gomulka.png" }
+				    civilian = { large = "gfx/leaders/POL/wladyslaw_gomulka.png" }
+			    }
+            }
+			add_country_leader_role = {
+			   	character = POL_Wladyslaw_Gomulka
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	paternalism_pragmatic_socialism_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_Wladyslaw_Gomulka_desc"
+                    expire = "1999.4.4"
+			        traits = { }
+                    id = -1
+		        }
+	    	}
+            set_popularities = {
+	    		communist = 3
+            	ultranationalism = 0
+	            socialist = 5
+	            progressivism = 9
+	            liberalism = 0
+
+	            conservatism = 0
+	            paternalism = 28
+	            paternalism_1 = 17
+	            paternalism_2 = 18
+	            despotism = 20
+	            fascism = 0
+			}
+            set_party_name = {
+				ideology = paternalism
+				long_name = POL_PPR_pragmatic_soc_party_long
+				name = POL_PPR_pragmatic_soc_party
+			}
+            set_party_name = {
+				ideology = paternalism_1
+				long_name = POL_PPR_pragmatic_soc_party_long
+				name = POL_PPR_pragmatic_soc_party
+			}
+            set_party_name = {
+				ideology = paternalism_2
+				long_name = POL_PPR_pragmatic_soc_party_long
+				name = POL_PPR_pragmatic_soc_party
+			}
+            set_party_name = {
+				ideology = despotism
+				long_name = POL_PPR_KBW_party_long
+				name = POL_PPR_KBW_party
+			}
+        }
+    }
     revive_pilsuski = {
         icon = GFX_AM_Amur
 
@@ -1498,6 +1761,34 @@ ROD_debug_decisions = {
     	    	}
 	    	}
             country_event = { id = by_kasimir_event.16 days = 3 }
+        }
+    }
+    revive_polish_cow = {
+        icon = GFX_AM_Amur
+
+		ai_will_do = {
+			factor = 0
+		}
+        fire_only_once = no
+        days_re_enable = 0
+
+        complete_effect = {
+            POL_polish_cow = {
+                remove_country_leader_role = { ideology = paternalism_provisional_government_subtype }
+            }
+			add_country_leader_role = {
+			   	character = POL_polish_cow
+			   	promote_leader = yes
+			   	country_leader = {
+			    	ideology = 	paternalism_sanacja_subtype
+			    	expire = "1999.9.9"
+			   		desc = "POL_polish_cow_desc"
+                    expire = "1999.4.4"
+			        traits = { }
+                    id = -1
+		        }
+	    	}
+            add_ideas = POL_druggggg
         }
     }
     hoshino_as_leader = {
@@ -1593,10 +1884,68 @@ ROD_debug_decisions = {
 }
 
 POL_power_struggle = {
+    POL_power_struggle_timed_mission = {  #xnn的限时任务
+		priority = 99
+		icon = GFX_AM_Amur
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			has_country_flag = POL_win_of_GE
+		}
+		allowed = {
+			
+		}
+		days_mission_timeout = 14
+		activation = {
+			has_completed_focus = POL_set_up_council
+            hidden_trigger = {
+                NOT = {
+                    has_country_flag = POL_win_of_GE
+                }
+            }
+		}
+		visible = {
+			has_completed_focus = POL_set_up_council
+		}
+		
+		cancel_if_not_visible = yes
+		is_good = yes
+		cancel_effect = {
+			
+		}
+		timeout_effect = {
+			activate_mission = POL_power_struggle_timed_mission
+            hidden_effect = {
+                random_list = {
+                    10 = {
+                        add_to_variable = { PWR_OWZJ_affection = 1 }
+                        add_to_variable = { PWR_sanaji_affection = -1 }
+                    }
+                    10 = {
+                        add_to_variable = { PWR_OWZJ_affection = 1 }
+                        add_to_variable = { PWR_PZPR_affection = -1 }
+                    }
+                    10 = {
+                        add_to_variable = { PWR_PZPR_affection = 1 }
+                        add_to_variable = { PWR_sanaji_affection = -1 }
+                    }
+                    10 = {
+                        add_to_variable = { PWR_PZPR_affection = 1 }
+                        add_to_variable = { PWR_OWZJ_affection = -1 }
+                    }
+                    60 = {
+                    }
+                }
+            }
+            POL_unity_ensures_survival_calculate = yes
+		}
+	}
     NON_STOP_PRODUCTION = {
         icon = GFX_AM_Amur
         available = {
-            
             NOT = {
                 has_country_flag = pwrst_doing_decision
             }
@@ -1907,8 +2256,8 @@ POL_salski_massacre_on_AK_and_AL = {
             original_tag = pol
         }
 		priority = 3655
-#		days_mission_timeout = 180
-		days_mission_timeout = 1
+		days_mission_timeout = 180
+#		days_mission_timeout = 1
 		is_good = no
 		selectable_mission = no
         mission = {
@@ -2143,7 +2492,7 @@ POL_suppressing_the_potential_uprising = {
 		is_good = yes
 		selectable_mission = no
         mission = {
-            check_variable = { POL_final_war_ger_war_supp_var > 80 }
+            check_variable = { POL_final_war_ger_war_supp_var > 80 } 
         }
 		timeout_effect = {
 			log = "[ROOT.Getname] [GetDateText]: TMR_food_requirement timeout"

@@ -1485,6 +1485,13 @@ country_event = {
 				hours = 1
 			}
 
+			HUN = {
+				country_event = {
+					id = POL_ROD.22
+					days = 3
+				}
+			}
+
 			every_country = {
 				limit = {
 					OR = {

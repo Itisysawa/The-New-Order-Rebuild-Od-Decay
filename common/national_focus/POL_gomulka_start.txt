@@ -1018,10 +1018,13 @@ shared_focus = {
 	relative_position_id = POL_political_instable
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_uninstall_those_reactionarists"
-		country_event = { id = POL_ROD.19 days = 3 }
+		
 		set_variable = { var_gomulka_aff = 0 }
 		set_variable = { var_jaru_aff = 0 }
 		set_variable = { var_gomulka_res = 12 }
+		set_country_flag = POL_bloody_street_flag
+		set_country_flag = POL_suppressing_the_potential_uprising_flag
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 shared_focus = {

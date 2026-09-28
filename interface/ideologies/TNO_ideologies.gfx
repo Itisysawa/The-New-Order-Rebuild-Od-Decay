@@ -5,16 +5,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/paternalism_sanacja_subtype.dds"
 	}
 	spriteType = {
+		name = "GFX_ideology_despotism_national_democratism_subtype"
+		texturefile = "gfx/interface/ideologies/despotism_national_democratism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_paternalism_pragmatic_socialism_subtype"
+		texturefile = "gfx/interface/ideologies/paternalism_pragmatic_socialism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_communist_innovative_communism_subtype"
+		texturefile = "gfx/interface/ideologies/communist_innovative_communism_subtype.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_esoteric_nazism_unity_socialist_subtype"
 		texturefile = "gfx/interface/ideologies/esoteric_nazism_unity_socialist_subtype.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_esoteric_nazism_esoteric_fundamentalism_subtype"
-		texturefile = "gfx/interface/ideologies/esoteric_nazism_esoteric_fundamentalism_subtype.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_national_socialism_national_bolshevism_subtype"
-		texturefile = "gfx/interface/ideologies/national_socialism_national_bolshevism_subtype.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_socialist_polish_socialism_subtype"
@@ -36,30 +40,10 @@ spriteTypes = {
 		name = "GFX_ideology_liberal_conservatism_aristocratic_democratism_subtype"
 		texturefile = "gfx/interface/ideologies/liberal_conservatism_aristocratic_democratism_subtype.dds"
 	}
-	spriteType = {
-		name = "GFX_ideology_Annihilationism_posadas_thought_subtype"
-		texturefile = "gfx/interface/ideologies/Annihilationism_posadas_thought_subtype.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_ultranationalism_INGSOC_subtype"
-		texturefile = "gfx/interface/ideologies/ultranationalism_INGSOC_subtype.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_Surrealism_subtype"
-		texturefile = "gfx/interface/ideologies/Surrealism_subtype.dds"
-	}
-	spriteType = {
-		name = "GFX_ideology_anarchy_subtype"
-		texturefile = "gfx/interface/ideologies/anarchy_subtype.dds"
-	}
 #	spriteType = {
 #		name = "GFX_ideology_communist_red_troops_subtype"
 #		texturefile = "gfx/interface/ideologies/communist_red_troops_subtype.dds"
 #	}
-	spriteType = {
-		name = "GFX_ideology_ultranationalism_fundamentalism_subtype"
-		texturefile = "gfx/interface/ideologies/ultranationalism_fundamentalism_subtype.dds"
-	}
 	spriteType = {
 		name = "GFX_ideology_national_socialism_rosenbergite_tendency_subtype"
 		texturefile = "gfx/interface/ideologies/national_socialism_rosenbergite_tendency_subtype.dds"

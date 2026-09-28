@@ -107,7 +107,6 @@ country_event = { #The Polish Revolutionary War
 				}
 			}
 			every_country = {
-				limit = { is_ai = no }
 				news_event = {
 					id = WORLD_REICH.1000
 					days = 1
@@ -272,20 +271,14 @@ country_event = { #boom!
 	option = {
 		name = ggn.7.a
 		
-		AKJ = {
+		POL = {
 			transfer_state = 1382
 			transfer_state = 90
 			transfer_state = 88
-			declare_war_on = {
-				target = GGN
-				type = annex_everything
-			}
 			transfer_state = 2261
 			load_oob = POL_AKJ
 		}
-		POL = {
-			add_to_faction = AKJ
-		}
+
 		country_event = { id = ggn.8 days = 3 }
 	}
 }
@@ -300,19 +293,14 @@ country_event = { #boom!
 
 	option = {
 		name = ggn.8.a
-		ALD = {
+		POL = {
 			transfer_state = 92
 			transfer_state = 1390
-			declare_war_on = {
-				target = GGN
-				type = annex_everything
-			}
+
 			load_oob = POL_ALD
 			
 		}
-		POL = {
-			add_to_faction = ALD
-		}
+
 		country_event = { id = ggn.9 days = 5 }
 	}
 }
@@ -327,18 +315,11 @@ country_event = { #boom!
 
 	option = {
 		name = ggn.9.a
-		OZJ = {
+		POL = {
 			transfer_state = 1391
 			transfer_state = 1393
-			declare_war_on = {
-				target = GGN
-				type = annex_everything
-			}
 			load_oob = POL_OZJ
 			load_oob = POL_OZJ
-		}
-		POL = {
-			add_to_faction = OZJ
 		}
 	}
 }

@@ -1,17 +1,17 @@
 characters = {
 	# Leaders #
 	
-	PWA_Albert_bormann = {
-		name = PWA_Albert_bormann
+	PWA_rudolf_wolters = {  #鲁道夫·沃尔特斯
+		name = PWA_rudolf_wolters
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GER/Portrait_GER_Albert_Bormann.png"
+				large = "gfx/leaders/POL/Portrait_GER_Rudolf_Wolters.png"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = national_socialism_spartanism_subtype
+			ideology = national_socialism_reformed_national_socialism_subtype
 			traits = { }
 			id = -1
 		}
@@ -54,7 +54,7 @@ characters = {
 			id = -1
 		}
 	}
-	PWD_willy_brandt = {
+	PWD_willy_brandt = {  #维利·勃兰特
 		name = PWD_willy_brandt
 		portraits = {
 			civilian = {
@@ -94,46 +94,46 @@ characters = {
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = socialist_anarcho_communist_subtype
+			ideology = national_socialism_subtype
 			traits = { }
 			id = -1
 		}
 	}
-	PWG_ernst_aust = {
-		name = PWG_ernst_aust
+	PWG_ulrike_mainhoff = {  #乌尔丽克·梅茵霍芙
+		name = PWG_ulrike_mainhoff
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/PWG_ernst_aus.png"
+				large = "gfx/leaders/POL/Portrait_GER_ulrike_meinhof.png"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = communist_stratocratic_communism_subtype
+			ideology = communist_red_troops_subtype
 			traits = { }
 			id = -1
 		}
 	}
-	PWH_willy_stoph = {
-		name = PWH_willy_stoph
+	PWH_guderian_younger = {  #小古德里安
+		name = PWH_guderian_younger
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/Portrait_GER_willy_stoph.png"
+				large = "gfx/leaders/GER/Portrait_GER_Heinz_Gunther_Guderian.png"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = communist_national_communism_subtype
+			ideology = despotism_military_junta_subtype
 			traits = { }
 			id = -1
 		}
 	}
-	PWI_Gustav_Krukenberg = {
-		name = PWI_Gustav_Krukenberg
+	PWI_erich_von_der_bach_zhelewski = { #埃里希·冯·德·巴赫-热莱夫斯基
+		name = PWI_erich_von_der_bach_zhelewski
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BRG/Portrait_Burgundy_Gustav_Krukenberg.png"
+				large = "gfx/leaders/BRG/Portrait_PWI_rich_von_der_Bach-Zelewski.png"
 			}
 		}
 		country_leader = {
@@ -144,47 +144,32 @@ characters = {
 			id = -1
 		}
 	}
-	PWJ_ulrike_meinhof = {
-		name = PWJ_ulrike_meinhof
+	PWJ_ans_martin_schleier = {  #汉斯·马丁·施莱尔
+		name = PWJ_ans_martin_schleier
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/Portrait_GER_ulrike_meinhof.png"
+				large = "gfx/leaders/POL/PWJ_ans_martin_schleier.png"
 			}
 		}
 		country_leader = {
-			desc = "PWJ_ulrike_meinhof_desc"
+			desc = "PWJ_ans_martin_schleier_desc"
 			expire = "1999.1.1"
-			ideology = communist_red_troops_subtype
+			ideology = fascism_statist_corporatocracy_subtype
 			traits = { }
 			id = -1
 		}
 	}
-	PWJ_Andreas_Baader = {
-		name = PWJ_Andreas_Baader
+	PWK_gerhard_klopfer = {  #格哈德·克洛普佛
+		name = PWK_gerhard_klopfer
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/Andreas_Baader.png"
-			}
-		}
-		country_leader = {
-			desc = "PWJ_Andreas_Baader_desc"
-			expire = "1999.1.1"
-			ideology = communist_subtype
-			traits = { }
-			id = -1
-		}
-	}
-	PWK_heinz_kessler = {
-		name = PWK_heinz_kessler
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/DFK/Portrait_Deutsches_Freikorps_Otto_Weidinger.png"
+				large = "gfx/leaders/GER/Portrait_GER_Gerhard_Klopfer.png"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = despotism_warlordism_subtype
+			ideology = national_socialism_subtype
 			traits = { }
 			id = -1
 		}
@@ -234,17 +219,17 @@ characters = {
 			id = -1
 		}
 	}
-	PWN_julius_raab = {
-		name = PWN_julius_raab
+	PWN_ernst_rudiger_stachemberg = {  #恩斯特·鲁迪格·斯塔赫姆贝格
+		name = PWN_ernst_rudiger_stachemberg
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/PWN_julius_raab.dds"
+				large = "gfx/leaders/POL/PWN_ernst_rudiger_stachemberg.dds"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = liberalism_national_liberal_subtype
+			ideology = ultranationalism_subtype
 			traits = { }
 			id = -1
 		}
@@ -279,17 +264,17 @@ characters = {
 			id = -1
 		}
 	}
-	PWQ_frantisek_slunecko = {
-		name = PWQ_frantisek_slunecko
+	PWQ_lothar_rendurik = {  #洛塔尔·伦杜里克
+		name = PWQ_lothar_rendurik
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/PWQ_frantisek_slunecko.dds"
+				large = "gfx/leaders/POL/PWQ_lothar_rendurik.dds"
 			}
 		}
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = liberalism_national_liberal_subtype
+			ideology = ultranationalism_stratocracy_subtype
 			traits = { }
 			id = -1
 		}

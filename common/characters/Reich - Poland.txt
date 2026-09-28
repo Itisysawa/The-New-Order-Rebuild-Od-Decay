@@ -1,8 +1,8 @@
 characters = {
 	POL_Emil_Fieldorf = {
 		name = POL_Emil_Fieldorf
-#		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Emil_Fieldorf.png" } }
-		portraits = { civilian = { large = "gfx/leaders/POL/POL_Emil_Fieldorf_re.png" } }
+		portraits = { civilian = { large = "gfx/leaders/POL/Portrait_Poland_Emil_Fieldorf.png" } }
+#		portraits = { civilian = { large = "gfx/leaders/POL/POL_Emil_Fieldorf_re.png" } }
 		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_kasimir.dds" } }
 		country_leader = {
 			desc = "POLITICS_EMIL_FIELDORF_DESC"
@@ -87,13 +87,25 @@ characters = {
 		}
 	}
 	## PARTY LEADERS ##
+	NPL_Piotr_Jaroszewicz = {
+		name = NPL_Piotr_Jaroszewicz
+		#portraits = { civilian = { large = "gfx/leaders/POL/GGN_Kobe_bryant.png" } }
+		portraits = { civilian = { large = "gfx/leaders/POL/NPL_Piotr_Jaroszewicz.png" } }
+		country_leader = {
+			desc = "NPL_Piotr_Jaroszewicz_desc"
+			ideology = communist_innovative_communism_subtype
+			expire = "1999.4.4"
+			traits = { }
+			id = -1
+		}
+	}
 	POL_Wladyslaw_Gomulka = {
 		name = POL_Wladyslaw_Gomulka
 		portraits = { civilian = { large = "gfx/leaders/POL/POL_Wladyslaw_Gomulkas.png" } }
 		#portraits = { civilian = { large = "gfx/leaders/POL/ZZZ_fog.dds" } }
 		country_leader = {
 			desc = "POL_Wladyslaw_Gomulka_desc"
-			ideology = communist_national_communism_subtype
+			ideology = communist_innovative_communism_subtype
 			expire = "1999.4.4"
 			traits = { general_secretary_of_polish }
 			id = -1
@@ -114,6 +126,10 @@ characters = {
 	POL_Joseph_Pilsudski = {
 		name = POL_Joseph_Pilsudski
 		portraits = { civilian = { large = "gfx/leaders/POL/Pilsudski.png" } }
+	}
+	POL_polish_cow = {
+		name = POL_polish_cow
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_polish_cow.png" } }
 	}
 	POL_takanashi_hoshino = {
 		name = POL_takanashi_hoshino
@@ -157,6 +173,24 @@ characters = {
 			id = -1
 		}
 	}
+	POL_Tadeusz_Gluzinski = {
+		name = POL_Tadeusz_Gluzinski
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Tadeusz_Gluzinski.png" } }
+		country_leader = {
+			ideology = national_socialism_clerical_fascism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
+	POL_Zdzislaw_Krzeminski = {
+		name = POL_Zdzislaw_Krzeminski
+		portraits = { civilian = { large = "gfx/leaders/POL/POL_Zdzislaw_Krzeminski.png" } }
+		country_leader = {
+			ideology = despotism_national_democratism_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+	}
 	POL_Tadeusz_Bielecki = {
 		name = POL_Tadeusz_Bielecki
 		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
@@ -169,9 +203,14 @@ characters = {
 	}
 	POL_Stanislaw_Kasznica = {
 		name = POL_Stanislaw_Kasznica
-		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
+		portraits = { civilian = { large = "gfx/leaders/POL/tadeusz_komorowski.png" } }
 		country_leader = {
 			ideology = despotism_military_junta_subtype
+			expire = "1999.4.4"
+			id = -1
+		}
+		country_leader = {
+			ideology = paternalism_1_subtype
 			expire = "1999.4.4"
 			id = -1
 		}
@@ -377,6 +416,13 @@ characters = {
 	POL_Marian_spychalski = {
 		name = POL_Marian_spychalski
 		portraits = { civilian = { large = "gfx/leaders/POL/POL_Marian_spychalski.dds" } }
+		country_leader = {
+			desc = "POL_Marian_spychalski_desc"
+			ideology = paternalism_social_nationalism_subtype
+			expire = "1999.4.4"
+			traits = { }
+			id = -1
+		}
 		corps_commander = {
 			traits = { politically_connected infantry_officer trait_cautious engineer_officer organizer skilled_staffer }
 			skill = 3

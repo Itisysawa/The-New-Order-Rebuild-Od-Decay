@@ -22,7 +22,7 @@ characters = {
 		portraits = { civilian = { large = "gfx/leaders/PMW/Moskowien_Mikhail_Gorbachev.png" } }
 		country_leader = {
 			desc = "MCE_Mikhail_Gorbachev_desc"
-			ideology = progressivism_left_wing_agrarianism_subtype
+			ideology = progressivism_reformist_socialism_subtype
 			traits = {  }
 			expire = "1999.1.1.1"
 			id = -1
@@ -78,6 +78,28 @@ characters = {
 		country_leader = {
 			desc = "MCH_Alexander_Saburov_desc"
 			ideology = communist_stratocratic_communism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCJ_Valentin_purgin = {
+		name = MCJ_Valentin_purgin
+		portraits = { civilian = { large = "gfx/leaders/PMW/Portrait_Moskowien_Valentin_Purgin.png" } }
+		country_leader = {
+			desc = "MCJ_Valentin_purgin_desc"
+			ideology = despotism_personalistic_dictatorship_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	MCK_Kurt_Andersen = {
+		name = MCK_Kurt_Andersen
+		portraits = { civilian = { large = "gfx/leaders/PMW/Portrait_MOS_Kurt_Andersen.png" } }
+		country_leader = {
+			desc = "MCK_Kurt_Andersen_desc"
+			ideology = despotism_military_junta_subtype
 			traits = {  }
 			expire = "1999.1.1.1"
 			id = -1

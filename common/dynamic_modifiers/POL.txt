@@ -14,3 +14,22 @@ POL_defensive_war_plan = { #for faction status
 	recon_factor_while_entrenched = polish_recon_aft_entr
 	army_attack_speed_factor = polish_army_attack_spd
 }
+POL_unity_ensures_survival = {  #团结则存
+	enable = { always = yes }
+	icon = "GFX_idea_idea_generic_unity"
+	stability_factor = POL_u_sf
+	war_support_factor = POL_u_ws
+	army_org_factor = POL_u_ao
+	army_morale_factor = POL_u_am
+}
+POL_GER_war_weariness = {  #厌战度
+	enable = { always = yes }
+	icon = "GFX_idea_idea_generic_unity"
+	stability_factor = PG_st
+	war_support_factor = PG_ws
+	army_attack_factor = PG_aa
+	army_defence_factor = PG_ad
+	army_org_factor = PG_ao
+	army_morale_factor = PG_am
+	surrender_limit = PG_sl
+}

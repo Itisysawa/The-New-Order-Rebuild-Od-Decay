@@ -3,12 +3,18 @@ spriteTypes = {
 		name = "GFX_focus_POL_the_great_polska_federation"
 		texturefile = "gfx/interface/POL/focus_POL_the_great_polska_federation.dds"
 	}
-
+	spriteType = {
+		name = "GFX_focus_POL_fieldorf_is_old"
+		texturefile = "gfx/interface/POL/focus_POL_fieldorf_is_old.dds"
+	}
 	spriteType = {
 		name = "GFX_focus_POL_the_highest_leader"
 		texturefile = "gfx/interface/POL/focus_POL_the_highest_leader.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_NPL_autonomous_polska"
+		texturefile = "gfx/interface/POL/idea_NPL_autonomous_polska.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_POL_amount_to_the_armies"
 		texturefile = "gfx/interface/POL/idea_POL_amount_to_the_armies.dds"
@@ -696,15 +702,23 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 	}
+	spriteType = {
+        name = "GFX_GUI_GPW_GER"
+        texturefile = "gfx/interface/POL/GPW_GER.png"
+    }
+    spriteType = {
+		name = "GFX_GUI_GPW_POL"
+		texturefile = "gfx/interface/POL/GPW_POL.png"
+	}
     progressbartype = {
 		name = "GFX_POL_final_war_supply"
-		textureFile1 = "gfx/interface/POL/progress_bar_full_preparation.dds"
-		textureFile2 = "gfx/interface/POL/progress_bar_empty_preparation.dds"
+		textureFile1 = "gfx/interface/POL/progress_bar_GPW_GER.dds"
+		textureFile2 = "gfx/interface/POL/progress_bar_GPW_POL.dds"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
 		size = { 
-			x = 400
-			y = 43
+			x = 493
+			y = 300
 		}
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes

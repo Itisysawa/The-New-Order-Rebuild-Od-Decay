@@ -46,50 +46,7 @@
 
 
 # // Europe // #
-TCA = "countries/West Siberia.txt"				
-TCB = "countries/West Siberia.txt"				
-TCC = "countries/West Siberia.txt"				
-TCD = "countries/West Siberia.txt"				
-TCE = "countries/West Siberia.txt"				
-TCF = "countries/West Siberia.txt"				
-TCG = "countries/West Siberia.txt"				
-TCH = "countries/West Siberia.txt"				
-TCI = "countries/West Siberia.txt"				
-TCJ = "countries/West Siberia.txt"				
-TCK = "countries/West Siberia.txt"				
-TCL = "countries/West Siberia.txt"
-TCM = "countries/West Siberia.txt"
-PWA = "countries/Germany.txt" 
-PWB = "countries/Germany.txt" 
-PWC = "countries/Germany.txt" 
-PWD = "countries/Germany.txt" 
-PWE = "countries/Germany.txt" 
-PWF = "countries/Germany.txt" 
-PWG = "countries/Germany.txt" 
-PWH = "countries/Germany.txt" 
-PWI = "countries/Germany.txt" 
-PWJ = "countries/Germany.txt" 
-PWK = "countries/Germany.txt" 
-PWL = "countries/Germany.txt" 
-PWM = "countries/Germany.txt" 
-PWN = "countries/Germany.txt" 
-PWO = "countries/Germany.txt" 
-PWP = "countries/Germany.txt" 
-PWQ = "countries/Germany.txt" 
-PWR = "countries/Germany.txt" 
-PWS = "countries/Germany.txt" 
-MCD = "countries/Germany - Europe.txt"			# Moskowien partisan
-MCE = "countries/Germany - Europe.txt"			# Moskowien partisan
-MCF = "countries/Germany - Europe.txt"			# Moskowien partisan
-MCG = "countries/Germany - Europe.txt"			# Moskowien partisan
-MCH = "countries/Germany - Europe.txt"			# Moskowien partisan
-MCI = "countries/Germany - Europe.txt"			# Moskowien partisan
-EPJ = "countries/East Europe - Pakt.txt"        # East Polish Junta
-PMW = "countries/East Europe - Pakt.txt" 
-OZJ = "countries/East Europe - Pakt.txt" 
-AKJ = "countries/East Europe - Pakt.txt" 
-ALD = "countries/East Europe - Pakt.txt" 
-LUX = "countries/East Europe - Pakt.txt" 
+
 # /// Reich - Western Europe /// #
 GER = "countries/Germany.txt"					# Germany
 SGR = "countries/Germany - Proper.txt"			# Speer's Germany
@@ -183,7 +140,7 @@ FIT = "countries/France.txt"					# Italy-aligned France - Sidos CW tag
 
 # /// Nothern Europe /// #
 SWE = "countries/West Europe.txt"				# Sweden
-FIN = "countries/East Europe.txt"				# Finland
+FIN = "countries/West Europe.txt"  				# Finland
 RFI = "countries/East Europe.txt"				# Red Finland - Finnish CW
 KRL = "countries/East Europe.txt"				# Karelia - Unused with MPR addition
 MPR = "countries/West Russia.txt"				# Murmansk People's Republic
@@ -298,7 +255,7 @@ THA = "countries/Asia - Sphere.txt"				# Thailand
 SHO = "countries/Japan - Overseas.txt"			# Shonan
 MLY = "countries/Asia.txt"						# UMAJF Malaya
 JHR = "countries/Asia - Sphere.txt"				# Johor - for partial Japanese defeat
-MAL = "countries/Asia.txt"						# Malaysia - Unused
+MAL = "countries/Asia.txt"						# Malaya - Unused
 BUR = "countries/Asia - Sphere.txt"				# Burma
 
 # /// India /// #
@@ -423,7 +380,7 @@ BKV = "countries/Africa.txt"					# Bukavu - Stage 3 Fragment
 
 # /// East Africa /// #
 GRO = "countries/Germany - Africa.txt"			# RK Ostafrika
-RSD = "countries/Germany - Africa.txt"			# SS Divison Hindenburg - Reichsstaat Breakaway
+RSD = "countries/Germany - Africa.txt"			# SS Division Hindenburg - Reichsstaat Breakaway
 RSQ = "countries/Germany - Africa.txt"			# Abteilung Ostafrika - Reichsstaat Breakaway
 RSZ = "countries/Germany - Africa.txt"			# Kolonialverwaltung Sambesi - Reichsstaat Breakaway
 MZB = "countries/USA - Africa.txt"				# OFN East Africa
@@ -690,7 +647,6 @@ SAB = "countries/Omsk Breakaway.txt"			# Gosudarstvo of the Great Trial - Arcade
 RMN = "countries/West Europe.txt"				# Hispania - Roman Legion Easter Egg
 ZOM = "countries/West Europe.txt"				# Zombies - 2020 Halloween Event
 PKT = "countries/West Europe.txt"				# Zollverein - Sphere Tag
-OFN = "countries/West Europe.txt"				# OFN - Unused?
 ADN = "countries/West Europe.txt"				# Andean Pact - Sphere Tag
 CME = "countries/West Europe.txt"				# COMECON - Sphere Tag
 

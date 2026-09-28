@@ -1,7 +1,7 @@
 shared_focus = {
 	id = POL_armia_krajowa_came_back
 	icon = GFX_focus_POL_integrate_the_army
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -12,13 +12,25 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_armia_krajowa_came_back"
-	
+		add_stability = 0.05
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = paternalism_1
+			popularity = 0.02
+		}
 	}
 }
 shared_focus = {
 	id = POL_restoring_order
 	icon = GFX_focus_generic_call_the_council_to_order
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -33,13 +45,13 @@ shared_focus = {
 	relative_position_id = POL_armia_krajowa_came_back
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_restoring_order"
-	
+
 	}
 }
 shared_focus = {
 	id = POL_expel_german
 	icon = GFX_focus_GER_back_to_germany
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -60,7 +72,7 @@ shared_focus = {
 shared_focus = {
 	id = POL_opinion_poll
 	icon = GFX_focus_NOV_sunrise_democracy_sunset_dictatorship
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -68,7 +80,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = POL_radical_liberalism_rises 
 	}
-	x = -4
+	x = -3
 	y = 1
 	available = {
 	}
@@ -78,13 +90,22 @@ shared_focus = {
 	relative_position_id = POL_armia_krajowa_came_back
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_opinion_poll"
-	
+		set_popularities = {
+			paternalism = 50
+			paternalism_1 = 13
+			fascism = 1
+			national_socialism = 1
+			despotism = 10
+			progressivism = 10
+			socialist = 10
+			communist = 5
+		}
 	}
 }
 shared_focus = {
 	id = POL_radical_liberalism_rises
 	icon = GFX_focus_generic_liberalization
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	mutually_exclusive = {
 		focus = POL_opinion_poll
@@ -92,7 +113,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	x = 4
+	x = 3
 	y = 1
 	available = {
 	}
@@ -102,13 +123,20 @@ shared_focus = {
 	relative_position_id = POL_armia_krajowa_came_back
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_radical_liberalism_rises"
-	
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = paternalism_1
+			popularity = 0.1
+		}
 	}
 }
 shared_focus = {
 	id = POL_divide_and_chaos
 	icon = GFX_focus_generic_death_of_democracy
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 
 	ai_will_do = {
@@ -124,13 +152,24 @@ shared_focus = {
 	relative_position_id = POL_radical_liberalism_rises
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_divide_and_chaos"
-	
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = paternalism_1
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.15
+		}
 	}
 }
 shared_focus = {
 	id = POL_incite_the_ppl_in_serm
 	icon = GFX_focus_generic_question_reactionaries
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 
 	ai_will_do = {
@@ -146,13 +185,20 @@ shared_focus = {
 	relative_position_id = POL_radical_liberalism_rises
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_incite_the_ppl_in_serm"
-	
+		add_popularity = {
+			ideology = paternalism_1
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.1
+		}
 	}
 }
 shared_focus = {
 	id = POL_stay_fully_control_to_serm
 	icon = GFX_focus_generic_despotism
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 
 	ai_will_do = {
@@ -171,6 +217,14 @@ shared_focus = {
 	relative_position_id = POL_divide_and_chaos
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_incite_the_ppl_in_serm"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.3
+		}
+		set_politics = { 
+			ruling_party = despotism 
+			elections_allowed = no 
+		}
 		set_country_flag = POL_we_choose_the_liberalism
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -178,7 +232,7 @@ shared_focus = {
 shared_focus = {
 	id = POL_limited_appeasement_to_AL
 	icon = GFX_focus_POL_ludowa_i_krajowa
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -193,13 +247,18 @@ shared_focus = {
 	relative_position_id = POL_opinion_poll
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_limited_appeasement_to_AL"
-	
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.02
+		}
+		add_stability = 0.05
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
 	}
 }
 shared_focus = {
 	id = POL_iron_feet_to_OWZJ
 	icon = GFX_focus_POL_jednostka_operacji_specjalnych_ak
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -214,13 +273,18 @@ shared_focus = {
 	relative_position_id = POL_opinion_poll
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_iron_feet_to_OWZJ"
-
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = -0.5
+		}
+		kill_ideology_leader = ultranationalism
+		add_stability = 0.02
 	}
 }
 shared_focus = {
 	id = POL_both_in_soft_and_hard_way
-	icon = GFX_focus_POL_jednostka_operacji_specjalnych_ak
-	cost = 1
+	icon = GFX_focus_generic_fight_for_stability
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
@@ -238,18 +302,21 @@ shared_focus = {
 	relative_position_id = POL_limited_appeasement_to_AL
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_both_in_soft_and_hard_way"
-
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+		}
 	}
 }
 shared_focus = {
 	id = POL_political_crisis
 	icon = GFX_focus_POL_retribution
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
 	}
-	x = 2
+	x = 3
 	y = 1
 	available = {
 	}
@@ -267,18 +334,24 @@ shared_focus = {
 	relative_position_id = POL_both_in_soft_and_hard_way
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_both_in_soft_and_hard_way"
-
+		set_temp_variable = { gdp_growth_temp = 1 }
+		econ_gdp_growth_change = yes
+		custom_effect_tooltip = POL_add_HUN_and_ROM_into_faction
+		hidden_effect = {
+			add_to_faction = HUN
+			add_to_faction = ROM
+		}
 	}
 }
 shared_focus = {
-	id = POL_
-	icon = GFX_focus_POL_retribution
-	cost = 1
+	id = POL_za_our_stability
+	icon = GFX_focus_generic_religious_peace
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
 	}
-	x = -2
+	x = -1
 	y = 1
 	available = {
 	}
@@ -287,19 +360,479 @@ shared_focus = {
 	}
 	relative_position_id = POL_political_crisis
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus POL_"
+		log = "[GetDateText]: [Root.GetName]: Focus POL_za_our_stability"
+		TNO_improve_admin_efficiency_med = yes
+	}
+}
 
+shared_focus = {
+	id = POL_end_up_the_military_led_economy
+	icon = GFX_focus_generic_steady_economy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_political_crisis
+	}
+	relative_position_id = POL_political_crisis
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_end_up_the_military_led_economy"
+		remove_ideas = POL_war_time_warsaw
+		set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Dirigisme }
+		econ_subtype_change = yes
+	}
+}
+shared_focus = {
+	id = POL_new_era_of_Poles
+	icon = GFX_focus_generic_phoenix_reborn
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_end_up_the_military_led_economy
+	}
+	prerequisite = {
+		focus = POL_za_our_stability
+	}
+	relative_position_id = POL_za_our_stability
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_new_era_of_Poles"
+		dismantle_faction = yes
+		create_faction = Intermarium
+		hidden_effect = {
+			add_to_faction = FUK
+			add_to_faction = HUN
+			add_to_faction = ROM
+			add_to_faction = SLO
+			add_to_faction = EPJ
+			add_to_faction = AZR
+			add_to_faction = GEO
+			add_to_faction = KUB
+			add_to_faction = EST
+			add_to_faction = MST
+			add_to_faction = LIT
+			add_to_faction = BLR
+			add_to_faction = UKS
+		}
+	}
+}
+shared_focus = {
+	id = POL_the_polish_route_of_third_place_ideo
+	icon = GFX_focus_generic_social_conservative
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_new_era_of_Poles
+	}
+	relative_position_id = POL_new_era_of_Poles
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_polish_route_of_third_place_ideo"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.25
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.15
+		}
+		add_ideas = tno_political_parties_nonpartisan_system
+	}
+}
+shared_focus = {
+	id = POL_encourage_cooperated_enterprises
+	icon = GFX_focus_generic_reluctant_cooperation
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_the_polish_route_of_third_place_ideo
+	}
+	relative_position_id = POL_the_polish_route_of_third_place_ideo
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_encourage_cooperated_enterprises"
+		add_ideas = POL_encourage_cooperated_enterprises_idea
+	}
+}
+shared_focus = {
+	id = POL_nationalize_the_critical_goods
+	icon = GFX_focus_generic_industry
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_encourage_cooperated_enterprises
+	}
+	relative_position_id = POL_encourage_cooperated_enterprises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalize_the_critical_goods"
+		set_temp_variable = { inflation_temp = -3 }
+		econ_inflation_change = yes
+	}
+}
+shared_focus = {
+	id = POL_change_the_tax_rate
+	icon = GFX_focus_generic_close_the_economy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_nationalize_the_critical_goods
+	}
+	prerequisite = {
+		focus = POL_first_try_on_self_consuming_econ
+	}
+	relative_position_id = POL_nationalize_the_critical_goods
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_change_the_tax_rate"
+		set_temp_variable = { business_tax_temp = 0.1 }
+		econ_business_tax_rate_change = yes
+		set_temp_variable = { sales_tax_temp = 0.05 }
+		econ_sales_tax_rate_change = yes
+		set_temp_variable = { gdp_growth_temp = 0.2 }
+		econ_gdp_growth_change = yes
+	}
+}
+shared_focus = {
+	id = POL_nationalize_german_enterprises
+	icon = GFX_focus_generic_compromise
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_change_the_tax_rate
+	}
+
+	relative_position_id = POL_change_the_tax_rate
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalize_german_enterprises"
+		set_temp_variable = { money_reserves_temp = 0.844 }
+		econ_money_reserves_change_raw_money = yes
+		set_temp_variable = { gdp_growth_temp = 3 }
+		econ_gdp_growth_change = yes
+	}
+}
+shared_focus = {
+	id = POL_the_hero_is_no_longer_young
+	icon = GFX_focus_POL_fieldorf_is_old
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_nationalize_german_enterprises
+	}
+	prerequisite = {
+		focus = POL_education_emergence_need
+	}
+	relative_position_id = POL_nationalize_german_enterprises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_hero_is_no_longer_young"
+		country_event = {
+			id = POL_rod.20 days = 3
+		}
+	}
+}
+shared_focus = {
+	id = POL_rebuild_od_decay
+	icon = GFX_focus_POL_amongst_the_ruins
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_the_polish_route_of_third_place_ideo
+	}
+	relative_position_id = POL_the_polish_route_of_third_place_ideo
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_od_decay"
+		country_event = {
+
+		}
+	}
+}
+shared_focus = {
+	id = POL_first_try_on_self_consuming_econ
+	icon = GFX_focus_generic_steady_economy
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_encourage_cooperated_enterprises
+	}
+	prerequisite = {
+		focus = POL_rebuild_od_decay
+	}
+	relative_position_id = POL_encourage_cooperated_enterprises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_first_try_on_self_consuming_econ"
+		TNO_improve_agriculture_med = yes
+	}
+}
+shared_focus = {
+	id = POL_repair_infrastructures
+	icon = GFX_focus_generic_modernize_the_infrastructures
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 3
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_encourage_cooperated_enterprises
+		focus = POL_rebuild_od_decay
+	}
+	relative_position_id = POL_encourage_cooperated_enterprises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_repair_infrastructures"
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.124 }
+        econ_spend_money_once_effect_raw_money = yes
+	}
+}
+shared_focus = {
+	id = POL_national_power_supply_plan
+	icon = GFX_focus_generic_electrical_infrastructure
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_repair_infrastructures
+	}
+	relative_position_id = POL_repair_infrastructures
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_national_power_supply_plan"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = thermoelectric_plant
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = thermoelectric_plant
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = thermoelectric_plant
+				level = 3
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.15 }
+        econ_spend_money_once_effect_raw_money = yes
+	}
+}
+shared_focus = {
+	id = POL_warsaw_restoration_office
+	icon = GFX_focus_generic_retire_the_officers
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_repair_infrastructures
+	}
+	relative_position_id = POL_repair_infrastructures
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_warsaw_restoration_office"
+		TNO_improve_admin_efficiency_med = yes
+	}
+}
+shared_focus = {
+	id = POL_education_emergence_need
+	icon = GFX_focus_generic_primary_education_act
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_warsaw_restoration_office
+	}
+	prerequisite = {
+		focus = POL_national_power_supply_plan
+	}
+	relative_position_id = POL_national_power_supply_plan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_education_emergence_need"
+		TNO_improve_education_policy_effectiveness_low = yes
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = schools
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = schools
+				level = 2
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.3 }
+        econ_spend_money_once_effect_raw_money = yes
 	}
 }
 shared_focus = {
 	id = POL_start_the_martial_law
 	icon = GFX_focus_WAL_martial_law
-	cost = 1
+	cost = 3
 	available_if_capitulated = no
 	ai_will_do = {
 		factor = 1
 	}
-	x = 6
+	x = 3
 	y = 1
 	available = {
 	}
@@ -316,5 +849,723 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_start_the_martial_law"
 
+	}
+}
+shared_focus = {
+	id = POL_the_security_of_our_border
+	icon = GFX_focus_MCW_kaminskis_special_talent
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -2
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_start_the_martial_law
+	}
+	relative_position_id = POL_start_the_martial_law
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_security_of_our_border"
+
+	}
+}
+shared_focus = {
+	id = POL_use_up_OZN
+	icon = GFX_focus_POL_OZON
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_start_the_martial_law
+	}
+	relative_position_id = POL_start_the_martial_law
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_security_of_our_border"
+
+	}
+}
+shared_focus = {
+	id = POL_stability_above_all
+	icon = GFX_focus_generic_fight_for_stability
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 2
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_the_security_of_our_border
+	}
+	prerequisite = {
+		focus = POL_use_up_OZN
+	}
+	relative_position_id = POL_the_security_of_our_border
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_stability_above_all"
+
+	}
+}
+shared_focus = {
+	id = POL_ostrowski_period
+	icon = GFX_focus_POL_fieldorf_is_old
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 20
+	y = 0
+	allow_branch = {
+		has_country_flag = POL_ostrowski_period
+	}
+	available = {
+	}
+	prerequisite = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_the_hero_is_no_longer_young"
+
+	}
+}
+shared_focus = {
+	id = POL_reconcile_sanaji
+	icon = GFX_focus_generic_reluctant_cooperation
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_ostrowski_period
+	}
+	relative_position_id = POL_ostrowski_period
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_reconcile_sanaji"
+		add_stability = 0.03
+		TNO_improve_vote_franchise_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_united_government
+	icon = GFX_focus_generic_workers_rights
+	cost = 3
+	available_if_capitulated = no
+	mutually_exclusive = {
+		focus = POL_national_democratic_party
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_reconcile_sanaji
+	}
+	relative_position_id = POL_reconcile_sanaji
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_united_government"
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.03
+		}
+	}
+}
+shared_focus = {
+	id = POL_national_democratic_party
+	icon = GFX_focus_POL_polish_unity
+	cost = 3
+	available_if_capitulated = no
+	mutually_exclusive = {
+		focus = POL_united_government
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_reconcile_sanaji
+	}
+	relative_position_id = POL_reconcile_sanaji
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_national_democratic_party"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = POL_boost_up_industrialization
+	icon = GFX_focus_generic_industry
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_united_government
+		focus = POL_national_democratic_party
+	}
+	relative_position_id = POL_national_democratic_party
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_boost_up_industrialization"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.05
+		}
+		TNO_improve_industrial_equipment_low = yes
+		TNO_improve_industrial_expertise_low = yes
+		add_stability = 0.04
+	}
+}
+shared_focus = {
+	id = POL_liberate_moskowien
+	icon = GFX_focus_GER_moskowien_plan
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_boost_up_industrialization
+	}
+	relative_position_id = POL_boost_up_industrialization
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_liberate_moskowien"
+
+	}
+}
+shared_focus = {
+	id = POL_unite_all_power_that_can_use_up
+	icon = GFX_focus_generic_unity
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_liberate_moskowien
+	}
+	prerequisite = {
+		focus = POL_10_hour_work
+		focus = POL_demilitarize_militia
+	}
+	relative_position_id = POL_liberate_moskowien
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_unite_all_power_that_can_use_up"
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.06
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.06
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.02
+		}
+	}
+}
+shared_focus = {
+	id = POL_nationalized_trade_union
+	icon = GFX_focus_generic_socialist_spanner
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_united_government
+	}
+	relative_position_id = POL_united_government
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_nationalized_trade_union"
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.04
+		}
+		TNO_improve_poverty_med = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+		TNO_improve_pensions_policy_effectiveness_low = yes
+	}
+}
+shared_focus = {
+	id = POL_10_hour_work
+	icon = GFX_focus_generic_reassign_workers
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_nationalized_trade_union
+	}
+	relative_position_id = POL_nationalized_trade_union
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_10_hour_work"
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
+	}
+}
+shared_focus = {
+	id = POL_demilitarize_militia
+	icon = GFX_focus_generic_peace_after_violence
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_national_unity
+	}
+	relative_position_id = POL_national_unity
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_demilitarize_militia"
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.01
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = -0.01
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.01
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = -0.01
+		}
+        TNO_improve_army_professionalism_low = yes
+	}
+}
+shared_focus = {
+	id = POL_national_unity
+	icon = GFX_focus_POL_cultural_defiance
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_national_democratic_party
+	}
+	relative_position_id = POL_national_democratic_party
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_national_unity"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.04
+		}
+	}
+}
+shared_focus = {
+	id = POL_ideology_infiltrate
+	icon = GFX_focus_POL_religious_processions
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 4
+	y = 1
+	available = {
+	}
+	mutually_exclusive = {
+		focus = POL_workers_requirement
+		focus = POL_adjust_the_election_budget
+	}
+	prerequisite = {
+		focus = POL_demilitarize_militia
+	}
+	prerequisite = {
+		focus = POL_unite_all_power_that_can_use_up
+	}
+	relative_position_id = POL_unite_all_power_that_can_use_up
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_ideology_infiltrate"
+		
+	}
+}
+shared_focus = {
+	id = POL_adjust_the_election_budget
+	icon = GFX_focus_generic_elections_rigged_2
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = POL_workers_requirement
+		focus = POL_ideology_infiltrate
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_unite_all_power_that_can_use_up
+	}
+	relative_position_id = POL_unite_all_power_that_can_use_up
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_adjust_the_election_budget"
+		
+	}
+}
+shared_focus = {
+	id = POL_workers_requirement
+	icon = GFX_focus_generic_work_for_your_nation
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -4
+	y = 1
+	mutually_exclusive = {
+		focus = POL_adjust_the_election_budget
+		focus = POL_ideology_infiltrate
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = POL_10_hour_work
+	}
+	prerequisite = {
+		focus = POL_unite_all_power_that_can_use_up
+	}
+	relative_position_id = POL_unite_all_power_that_can_use_up
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_workers_requirement"
+		
+	}
+}
+shared_focus = {
+	id = POL_State_Grain_Control_Bureau
+	icon = GFX_focus_generic_food_stamps
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_adjust_the_election_budget
+	}
+	relative_position_id = POL_adjust_the_election_budget
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_State_Grain_Control_Bureau"
+		
+	}
+}
+shared_focus = {
+	id = POL_rebuild_national_identity
+	icon = GFX_focus_POL_cultural_defiance
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_ideology_infiltrate
+	}
+	relative_position_id = POL_ideology_infiltrate
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_rebuild_national_identity"
+		
+	}
+}
+shared_focus = {
+	id = POL_give_food_church_first
+	icon = GFX_focus_generic_yet_the_darkness_did_not_overcome
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_rebuild_national_identity
+	}
+	relative_position_id = POL_rebuild_national_identity
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_give_food_church_first"
+		
+	}
+}
+shared_focus = {
+	id = POL_strength_and_stability
+	icon = GFX_focus_generic_iron_fist
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_give_food_church_first
+	}
+	relative_position_id = POL_give_food_church_first
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_strength_and_stability"
+		
+	}
+}
+shared_focus = {
+	id = POL_expand_trade_unions
+	icon = GFX_focus_POL_solidarity_forever
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_workers_requirement
+	}
+	relative_position_id = POL_workers_requirement
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_expand_trade_unions"
+		
+	}
+}
+shared_focus = {
+	id = POL_worker_first_food
+	icon = GFX_focus_generic_change_law_labor
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_expand_trade_unions
+	}
+	relative_position_id = POL_expand_trade_unions
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_worker_first_food"
+		
+	}
+}
+shared_focus = {
+	id = POL_allow_the_procession
+	icon = GFX_focus_generic_bill_of_rights
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_worker_first_food
+	}
+	relative_position_id = POL_worker_first_food
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_allow_the_procession"
+		
+	}
+}
+shared_focus = {
+	id = POL_trial_to_collaborators
+	icon = GFX_focus_generic_show_trials
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_State_Grain_Control_Bureau
+	}
+	relative_position_id = POL_State_Grain_Control_Bureau
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_trial_to_collaborators"
+		
+	}
+}
+shared_focus = {
+	id = POL_censor_the_land_use_plan
+	icon = GFX_focus_generic_national_land_reform
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_State_Grain_Control_Bureau
+	}
+	relative_position_id = POL_State_Grain_Control_Bureau
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_censor_the_land_use_plan"
+		
+	}
+}
+shared_focus = {
+	id = POL_limit_budget_of_NGO
+	icon = GFX_focus_generic_limited_state_newspaper
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = -1
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_censor_the_land_use_plan
+	}
+	prerequisite = {
+		focus = POL_trial_to_collaborators
+	}
+	relative_position_id = POL_censor_the_land_use_plan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_limit_budget_of_NGO"
+		
+	}
+}
+shared_focus = {
+	id = POL_extreme_usage_of_GDP
+	icon = GFX_focus_generic_cut_the_costs
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 0
+	y = 1
+	available = {
+	}
+	prerequisite = {
+		focus = POL_limit_budget_of_NGO
+	}
+	relative_position_id = POL_limit_budget_of_NGO
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POL_extreme_usage_of_GDP"
+		
 	}
 }

@@ -568,11 +568,11 @@ shared_focus = {
 	relative_position_id = POL_no_matter_relig
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POL_freedom_to_vote"
-		add_ideas = {
+		add_popularity = {
 			ideology = socialist
 			popularity = 0.12
 		}
-		add_ideas = {
+		add_popularity = {
 			ideology = socialist_1
 			popularity = 0.07
 		}

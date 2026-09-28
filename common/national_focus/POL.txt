@@ -119,4 +119,5 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = POL_armia_krajowa_came_back
+	shared_focus = POL_ostrowski_period
 }

@@ -3436,6 +3436,10 @@ country_event = { #Finally, a hundred thousand Polish slaves are brought back to
 		}
 		hidden_effect = {
 			play_song = "POL_SE_POLISH_GERMAN_WAR"
+			POL_GER_war_begin = yes
+			POL = {
+				country_event = { id = POL_ROD.21 days = 14 }
+			}
 		}
 		GER = {
 			declare_war_on = {
@@ -3973,6 +3977,10 @@ country_event = { #Outcome 1 of Königsberger Abkommen: Poles agree, treaty is s
 		}
 		hidden_effect = {
 			play_song = "POL_SE_POLISH_GERMAN_WAR"
+			POL_GER_war_begin = yes
+			POL = {
+				country_event = { id = POL_ROD.21 days = 14 }
+			}
 		}
 		GER = {
 			declare_war_on = {

@@ -126,18 +126,6 @@ GER_COG_int = {
 	color = rgb { 118 124 94 }
 	color_ui = rgb { 118 124 94 }
 }
-TCA_akhlomevski = {
-	color = rgb { 160 40 40 }
-	color_ui = rgb { 160 40 40 }
-}
-TCL_RUS = {
-	color = rgb { 140 40 40 }
-	color_ui = rgb { 140 40 40 }
-}
-TCA_unified = {
-	color = rgb { 80 00 20 }
-	color_ui = rgb { 80 00 20 }
-}
 PMW_SOV = {
 	color = rgb { 170 35 60 }
 	color_ui = rgb { 170 35 60 }
@@ -2004,6 +1992,10 @@ ARP_confederation = {
 UTL_TURAN = {
 	color = rgb { 213 253 255 }
 	color_ui = rgb { 213 253 255 }
+}
+NPL_KAZAUTONOMY = {
+	color = rgb { 170 35 60 }
+	color_ui = rgb { 170 35 60 }
 }
 STC_puppet = {
 	color = rgb { 10 50 130 }

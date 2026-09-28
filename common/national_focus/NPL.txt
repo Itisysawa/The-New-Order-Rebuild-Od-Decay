@@ -1,0 +1,12 @@
+focus_tree = {
+	id = NPL_shared
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NPL
+		}
+	}
+	default = no
+	shared_focus = NPL_threat_from_anywhere
+}

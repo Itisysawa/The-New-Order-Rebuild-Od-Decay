@@ -985,6 +985,27 @@ country_event = {
 		TNO_fire_super_event = yes
 		hidden_effect = {
 			play_song = "POL_SE_POLISH_GERMAN_WAR"
+			POL = {
+				country_event = { id = POL_ROD.21 days = 14 }
+			}
+		}
+		hidden_effect = {
+			set_province_name = { id = 6558 name = VICTORY_POINTS_6558_pol }
+			set_province_name = { id = 3380 name = VICTORY_POINTS_3380_pol }
+			set_province_name = { id = 9263 name = VICTORY_POINTS_9263_pol }
+			set_province_name = { id = 279 name = VICTORY_POINTS_279_pol }
+			set_province_name = { id = 3230 name = VICTORY_POINTS_3230_pol }
+			set_province_name = { id = 6259 name = VICTORY_POINTS_6259_pol }
+			set_province_name = { id = 6375 name = VICTORY_POINTS_6375_pol }
+			set_province_name = { id = 6332 name = VICTORY_POINTS_6332_pol }
+			set_province_name = { id = 243 name = VICTORY_POINTS_243_pol }
+			set_province_name = { id = 6401 name = VICTORY_POINTS_6401_pol }
+			set_province_name = { id = 15828 name = VICTORY_POINTS_15828_pol }
+			set_province_name = { id = 348 name = VICTORY_POINTS_348_pol }
+			set_province_name = { id = 3288 name = VICTORY_POINTS_3288_pol }
+			set_province_name = { id = 3320 name = VICTORY_POINTS_3320_pol }
+			set_province_name = { id = 14574 name = VICTORY_POINTS_14574_pol }
+			set_province_name = { id = 6546 name = VICTORY_POINTS_6546_pol }
 		}
 	}
 }
@@ -1593,9 +1614,6 @@ country_event = {
 
 	option = {
 		name = POL_ROD.19.a
-		set_country_flag = POL_bloody_street_flag
-		set_country_flag = POL_suppressing_the_potential_uprising_flag
-		mark_focus_tree_layout_dirty = yes
 		add_stability = -0.1
 	}
 }
@@ -1633,6 +1651,143 @@ country_event = {
 				civilian = { large = "gfx/leaders/POL/POL_Emil_fieldorf.png" }
 			}
 		}
+	}
+}
+country_event = {
+	id = POL_ROD.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.20.t
+	desc = POL_ROD.20.d
+	picture = GFX_report_event_generic_sunset
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.20.a
+		set_country_flag = POL_sanaji_won
+		mark_focus_tree_layout_dirty = yes
+		remove_country_leader_role = { ideology = Paternalism_provisional_government_subtype }
+		add_country_leader_role = {
+			character = POL_Stanislaw_Ostrowski
+			portraits = { civilian = { large = "gfx/leaders/POL/Ostrowski.png" } }			
+			promote_leader = yes
+			country_leader = {
+				expire = "1999.1.1"
+				ideology = liberal_conservatism_big_tent_subtype
+				traits = { continer_of_sanaji }
+				id = -1
+				desc = ""
+			}
+		}
+		add_popularity = {
+			ideology = liberal_conservatism
+			popularity = 0.25
+		}
+		set_politics = { ruling_party = liberal_conservatism elections_allowed = no }
+		set_cosmetic_tag = POL_republic
+		POL_Stanislaw_Ostrowski = {
+			set_portraits = {
+				army = { large = "gfx/leaders/POL/Ostrowski.png" }
+				civilian = { large = "gfx/leaders/POL/Ostrowski.png" }
+			}
+		}
+		set_country_flag = POL_ostrowski_period
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = POL_ostrowski_period
+	}
+}
+country_event = {
+	id = POL_ROD.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.21.t
+	desc = POL_ROD.21.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.21.a
+		kill_ideology_leader = despotism
+	}
+}
+country_event = {
+	id = POL_ROD.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.22.t
+	desc = POL_ROD.22.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.22.a
+		POL = {
+			country_event = { id = POL_ROD.23 days = 1 }
+		}
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+		add_timed_idea = {
+			idea = HUN_attack_hidden
+			days = 40
+		}
+	}
+}
+country_event = {
+	id = POL_ROD.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.11" }
+	title = POL_ROD.23.t
+	desc = POL_ROD.23.d
+	picture = GFX_report_event_GER_army_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = POL_ROD.23.a
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = POL_ROD.24
+			}
+		}
+	}
+}
+news_event = {
+	id = POL_ROD.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.24.t
+	desc = POL_ROD.24.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.24.a
+	}
+}
+news_event = {
+	id = POL_ROD.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.25.t
+	desc = POL_ROD.25.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.25.a
+	}
+}
+news_event = {
+	id = POL_ROD.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.26.t
+	desc = POL_ROD.26.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.26.a
 	}
 }
 country_event = {
@@ -1729,7 +1884,7 @@ country_event = {
 
 	option = {
 		name = POL_ROD.500.a
-		
+		country_event = { id = POL_ROD.19 days = 52 }
 	}
 }
 country_event = {
@@ -1752,6 +1907,7 @@ country_event = {
 		POL = {
 			white_peace = GER
 			clr_country_flag = POL_prewar_period
+			set_country_flag = POL_win_of_GER
 			set_autonomy = {
 				target = SLO 
 				autonomy_state = autonomy_dominion
@@ -1808,10 +1964,6 @@ country_event = {
 				target = AZR
 				autonomy_state = autonomy_dominion
 			}	
-		}
-		FUK = {
-			white_peace = CAU
-			transfer_state = 137
 		}
 		GEO = {
 			add_state_core = 231
@@ -1886,11 +2038,11 @@ country_event = {
 			add_ideas = economic_recovering_ee_idea
 		}
 		hidden_effect = {
-			country_event = { id = POL_ROD.500 days = 240 }
+			country_event = { id = POL_ROD.500 days = 1245 }
 		}
 	}
 }
-country_event = {
+country_event = {    
 	id = POL_ROD.900
 	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
 	title = POL_ROD.900.t
@@ -2031,10 +2183,12 @@ country_event = {
 		152 = { set_demilitarized_zone = yes }
 		69 = { set_demilitarized_zone = yes }
 		9 = { set_demilitarized_zone = yes }
+		65 = { set_demilitarized_zone = yes }
 		country_event = { id = POL_ROD.907 days = 3 }
+		
 	}
 }
-country_event = {
+country_event = {    #日耳曼尼亚保护区
 	id = POL_ROD.907
 	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
 	title = POL_ROD.907.t
@@ -2060,10 +2214,18 @@ country_event = {
 		87 = { set_demilitarized_zone = yes }
 		5 = { set_demilitarized_zone = yes }
 		65 = { set_demilitarized_zone = yes }
+		2527 = { set_demilitarized_zone = yes }
+		2526 = { set_demilitarized_zone = yes }
+		2528 = { set_demilitarized_zone = yes }
+		2529 = { set_demilitarized_zone = yes }
 		country_event = { id = POL_ROD.908 days = 3 }
+		64 = { set_demilitarized_zone = no }
+		PWE = {
+			transfer_state = 64
+		}
 	}
-}
-country_event = {
+} 
+country_event = {     #改革派   奥地利国
 	id = POL_ROD.908
 	immediate = { log = "[GetDateText]: [Root.GetName]: event POL_ROD.3" }
 	title = POL_ROD.908.t
@@ -2075,31 +2237,18 @@ country_event = {
 
 	option = {
 		name = POL_ROD.908.a
-		58 = { set_demilitarized_zone = no }
-		188 = { set_demilitarized_zone = no }
-		775 = { set_demilitarized_zone = no }
-		61 = { set_demilitarized_zone = no }
-		PWA = {
-			transfer_state = 58
-			transfer_state = 188
-			transfer_state = 775
-			transfer_state = 61
-			load_oob = "PWA_1962"
-			load_oob = "PWA_1962"
-			load_oob = "PWA_1962"
+		56 = { set_demilitarized_zone = no }
+		1025 = { set_demilitarized_zone = no }
+		PWA = {  #改革派
+			transfer_state = 56
 			add_ideas = PWA_great_german
 		}
-		58 = {
+		56 = {
 			add_core_of = PWA
 		}
-		188 = {
-			add_core_of = PWA
-		}
-		775 = {
-			add_core_of = PWA
-		}
-		61 = {
-			add_core_of = PWA
+		PWN = {  #奥地利国
+			transfer_state = 1025
+			add_ideas = PWN_free_austria
 		}
 		country_event = { id = POL_ROD.909 days = 3 }
 	}
@@ -2116,52 +2265,46 @@ country_event = {
 
 	option = {
 		name = POL_ROD.909.a
-		63 = { set_demilitarized_zone = no }
-		776 = { set_demilitarized_zone = no }
-		64 = { set_demilitarized_zone = no }
-		1813 = { set_demilitarized_zone = no }
-		1814 = { set_demilitarized_zone = no }
-		PWB = {
+		58 = { set_demilitarized_zone = no }
+		188 = { set_demilitarized_zone = no }
+		775 = { set_demilitarized_zone = no }
+		59 = { set_demilitarized_zone = no }
+		1373 = { set_demilitarized_zone = no }
+		57 = { set_demilitarized_zone = no }
+		1810 = { set_demilitarized_zone = no }
+		4 = { set_demilitarized_zone = no }
+		PWA = {  #改革派
+			transfer_state = 188
+			transfer_state = 58
 			transfer_state = 775
-			transfer_state = 61
-			load_oob = "PWB_1962"
-			load_oob = "PWB_1962"
-			load_oob = "PWB_1962"
-			add_ideas = PWB_national_security
-		}
-		PWE = {
-			transfer_state = 63
-			transfer_state = 776
-			transfer_state = 64
-			transfer_state = 1813
-			transfer_state = 1814
-			load_oob = "PWE_1962"
-			load_oob = "PWE_1962"
-			load_oob = "PWE_1962"
-			add_ideas = PWE_osten_defence
-		}
-		775 = {
-			add_core_of = PWB
-		}
-		61 = {
-			add_core_of = PWB
-		}
-		63 = {
-			add_core_of = PWE
-		}
-		776 = {
-			add_core_of = PWE
-		}
-		64 = {
-			add_core_of = PWE
-		}
-		1813 = {
-			add_core_of = PWE
-		}
-		1814 = {
-			add_core_of = PWE
+			transfer_state = 59
+			transfer_state = 1373
+			transfer_state = 57
+			load_oob = "PWA_1962"
+			load_oob = "PWA_1962"
+			load_oob = "PWA_1962"
+			every_owned_state = {
+				add_core_of = PWA
+			}
 		}
 		country_event = { id = POL_ROD.910 days = 3 }
+		PWG = {  #红军派
+			transfer_state = 1809
+			transfer_state = 1810
+			add_ideas = PWG_fortress_of_deutsches_socialism
+			load_oob = "PWG_1962"
+			load_oob = "PWG_1962"
+			load_oob = "PWG_1962"
+			every_owned_state = {
+				add_core_of = PWG
+			}
+		}
+		PWN = {  #奥地利国
+			transfer_state = 4 
+			every_owned_state = {
+				add_core_of = PWN
+			}
+		}
 	}
 }
 country_event = {
@@ -2176,84 +2319,45 @@ country_event = {
 
 	option = {
 		name = POL_ROD.910.a
-		59 = { set_demilitarized_zone = no }
-		60 = { set_demilitarized_zone = no }
-		56 = { set_demilitarized_zone = no }
-		1373 = { set_demilitarized_zone = no }
-		1810 = { set_demilitarized_zone = no }
-		1809 = { set_demilitarized_zone = no }
-		51 = { set_demilitarized_zone = no }
-		57 = { set_demilitarized_zone = no }
-		42 = { set_demilitarized_zone = no }
-		1815 = { set_demilitarized_zone = no }
-		PWF = {
-			transfer_state = 59
-			load_oob = "PWF_1962"
-			load_oob = "PWF_1962"
-			load_oob = "PWF_1962"
-			add_ideas = PWF_last_war_for_freedom
+		152 = { set_demilitarized_zone = no }
+		75 = { set_demilitarized_zone = no }
+		69 = { set_demilitarized_zone = no }
+		9 = { set_demilitarized_zone = no }
+		PWN = {  #奥地利国
+			transfer_state = 152
+			load_oob = "PWN_1962"
+			load_oob = "PWN_1962"
+			load_oob = "PWN_1962"
+			every_owned_state = {
+				add_core_of = PWN
+			}
+		}
+		PWO = {   #党卫队欧根亲王
+			transfer_state = 4
+			add_ideas = PWO_SS_lefted
+			load_oob = "PWO_1962"
+			load_oob = "PWO_1962"
+			load_oob = "PWO_1962"
+			every_owned_state = {
+				add_core_of = PWO
+			}
+		}
+		PWP = {  #第十九军区
+			transfer_state = 75
+			transfer_state = 9
+			add_ideas = PWP_czech_stability
+			load_oob = "PWP_1962"
+			load_oob = "PWP_1962"
+			load_oob = "PWP_1962"
+			every_owned_state = {
+				add_core_of = PWP
+			}
 		}
 		PWC = {
-			transfer_state = 63
-			transfer_state = 2526
-			transfer_state = 2527
-			load_oob = "PWC_1962"
-			load_oob = "PWC_1962"
-			load_oob = "PWC_1962"
-			add_ideas = PWC_it_is_time
-		}
-		PWD = {
-			create_faction = deutsches_democratic_front
-        	add_to_faction = PWC
-			add_ideas = PWD_federal_national_security
-		}
-		PWH = {
-			transfer_state = 56
-			transfer_state = 1373
-			transfer_state = 60
-			transfer_state = 1810
-			transfer_state = 1809
-			transfer_state = 1815
-			transfer_state = 51
-			transfer_state = 57
-			transfer_state = 42
-			load_oob = "PWH_1962"
-			load_oob = "PWH_1962"
-			load_oob = "PWH_1962"
-			add_ideas = PWH_legacy_of_november_revolution
-		}
-		63 = {
-			add_core_of = PWC
-		}
-		59 = {
-			add_core_of = PWF
-		}
-		60 = {
-			add_core_of = PWF
-		}
-		56 = {
-			add_core_of = PWH
-		}
-		1373 = {
-			add_core_of = PWh
-		}
-		1810 = {
-			add_core_of = PWh
-		}
-		1809 = {
-			add_core_of = PWh
-		}
-		51 = {
-			add_core_of = PWh
-		}
-		57 = {
-			add_core_of = PWh
-		}
-		42 = {
-			add_core_of = PWh
-		}
-		1815 = {
-			add_core_of = PWh
+			transfer_state = 69
+			every_owned_state = {
+				add_core_of = PWP
+			}
 		}
 		country_event = { id = POL_ROD.911 days = 3 }
 	}
@@ -2270,69 +2374,42 @@ country_event = {
 
 	option = {
 		name = POL_ROD.911.a
-		8 = { set_demilitarized_zone = no }
-		1812 = { set_demilitarized_zone = no }
-		28 = { set_demilitarized_zone = no }
-		1811 = { set_demilitarized_zone = no }
-		50 = { set_demilitarized_zone = no }
-		54 = { set_demilitarized_zone = no }
-		55 = { set_demilitarized_zone = no }
-		72 = { set_demilitarized_zone = no }
-		PWF = {
-			transfer_state = 56
-			transfer_state = 1373
-			transfer_state = 60
-			
+		53 = { set_demilitarized_zone = no }
+		52 = { set_demilitarized_zone = no }
+		1026 = { set_demilitarized_zone = no }
+		68 = { set_demilitarized_zone = no }
+		153 = { set_demilitarized_zone = no }
+		1772 = { set_demilitarized_zone = no }
+		86 = { set_demilitarized_zone = no }
+		62 = { set_demilitarized_zone = no }
+		770 = { set_demilitarized_zone = no }
+		98= { set_demilitarized_zone = no }
+		PWK = {   #保守派
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 1026
+			transfer_state = 68
+			load_oob = "PWK_1962"
+			load_oob = "PWK_1962"
+			load_oob = "PWK_1962"
+			add_ideas = PWK_last_revolution
+			every_owned_state = {
+				add_core_of = PWK
+			}
 		}
-		PWI = {
-			transfer_state = 8
-			transfer_state = 1812
-			transfer_state = 1811
-			transfer_state = 28
-			transfer_state = 50
-			transfer_state = 54
-			transfer_state = 55
-			transfer_state = 72
-			load_oob = "PWI_1962"
-			load_oob = "PWI_1962"
-			load_oob = "PWI_1962"
-			add_ideas = PWI_ghost_of_new_francaise
-		}
-		56 = {
-			add_core_of = PWF
-		}
-		1373 = {
-			add_core_of = PWF
-		}
-		60 = {
-			add_core_of = PWF
-		}
-		51 = {
-			add_core_of = PWI
-		}
-		8 = {
-			add_core_of = PWI
-		}
-		1812 = {
-			add_core_of = PWI
-		}
-		1811 = {
-			add_core_of = PWI
-		}
-		28 = {
-			add_core_of = PWI
-		}
-		50 = {
-			add_core_of = PWJ
-		}
-		54 = {
-			add_core_of = PWJ
-		}
-		55 = {
-			add_core_of = PWJ
-		}
-		72 = {
-			add_core_of = PWJ
+		PWQ= {   #国防军
+			transfer_state = 153
+			transfer_state = 1772
+			transfer_state = 86
+			transfer_state = 62
+			transfer_state = 770
+			transfer_state = 98
+			load_oob = "PWQ_1962"
+			load_oob = "PWQ_1962"
+			load_oob = "PWQ_1962"
+			every_owned_state = {
+				add_core_of = PWQ
+			}
 		}
 		country_event = { id = POL_ROD.912 days = 3 }
 	}
@@ -2349,57 +2426,51 @@ country_event = {
 
 	option = {
 		name = POL_ROD.912.a
-		5 = { set_demilitarized_zone = no }
+		50= { set_demilitarized_zone = no }
+		72 = { set_demilitarized_zone = no }
+		67 = { set_demilitarized_zone = no }
+		66 = { set_demilitarized_zone = no }
+		2527= { set_demilitarized_zone = no }
+		2526 = { set_demilitarized_zone = no }
+		2528 = { set_demilitarized_zone = no }
+		2529 = { set_demilitarized_zone = no }
+		87= { set_demilitarized_zone = no }
 		85 = { set_demilitarized_zone = no }
-		87 = { set_demilitarized_zone = no }
-		PWG = {
-			transfer_state = 56
-			transfer_state = 1373
-			load_oob = "PWG_1962"
-			load_oob = "PWG_1962"
-			load_oob = "PWG_1962"
-			add_ideas = GER_SCW_no_join
-			add_ideas = PWG_fortress_of_deutsches_socialism
-		}
-		PWH = {
-			create_faction = People_liberation_front
-			add_ideas = GER_SCW_no_join
-        	add_to_faction = PWG
-		}
-		PWJ = {
+		5 = { set_demilitarized_zone = no }
+		PWJ= {   #斯图加特工业区
 			transfer_state = 50
-			transfer_state = 54
-			transfer_state = 55
 			transfer_state = 72
 			load_oob = "PWJ_1962"
 			load_oob = "PWJ_1962"
 			load_oob = "PWJ_1962"
-			add_ideas = PWJ_overheated_revolution
-			add_ideas = PWJ_students_and_star_of_revolution
+			every_owned_state = {
+				add_core_of = PWJ
+			}
 		}
-		PWR = {
-			transfer_state = 5
-			transfer_state = 85
+		PWM= {   #西里西亚
+			transfer_state = 67
+			transfer_state = 66
+			load_oob = "PWM_1962"
+			load_oob = "PWM_1962"
+			load_oob = "PWM_1962"
+			every_owned_state = {
+				add_core_of = PWM
+			}
+		}
+		PWR= {   #柯尼斯堡
 			transfer_state = 87
+			transfer_state = 85
+			transfer_state = 5
+			transfer_state = 2526
+			transfer_state = 2527
 			transfer_state = 2528
 			transfer_state = 2529
 			load_oob = "PWR_1962"
-			add_ideas = PWR_prepare_final_war
-		}
-		56 = {
-			add_core_of = PWG
-		}
-		1373 = {
-			add_core_of = PWG
-		}
-		5 = {
-			add_core_of = PWR
-		}
-		85 = {
-			add_core_of = PWR
-		}
-		87 = {
-			add_core_of = PWR
+			load_oob = "PWR_1962"
+			load_oob = "PWR_1962"
+			every_owned_state = {
+				add_core_of = PWR
+			}
 		}
 		country_event = { id = POL_ROD.913 days = 3 }
 	}
@@ -2416,53 +2487,26 @@ country_event = {
 
 	option = {
 		name = POL_ROD.913.a
-		153 = { set_demilitarized_zone = no }
-		86 = { set_demilitarized_zone = no }
-		62 = { set_demilitarized_zone = no }
-		152 = { set_demilitarized_zone = no }
-		1772 = { set_demilitarized_zone = no }
-		4 = { set_demilitarized_zone = no }
-		1025 = { set_demilitarized_zone = no }
-		770 = { set_demilitarized_zone = no }
-		98 = { set_demilitarized_zone = no }
-		PWO = {
-			transfer_state = 153
-			transfer_state = 86
-			transfer_state = 62
-			transfer_state = 152
-			transfer_state = 1772
-			transfer_state = 4
-			transfer_state = 1025
-			transfer_state = 770
-			transfer_state = 98
-			load_oob = "PWO_1962"
-			load_oob = "PWO_1962"
-			load_oob = "PWO_1962"
-			add_ideas = PWO_SS_lefted
-		}
-		153 = {
-			add_core_of = PWO
-		}
-		86 = {
-			add_core_of = PWO
-		}
-		62 = {
-			add_core_of = PWO
-		}
-		1772 = {
-			add_core_of = PWO
-		}
-		4 = {
-			add_core_of = PWN
-		}
-		1025 = {
-			add_core_of = PWN
-		}
-		770 = {
-			add_core_of = PWS
-		}
-		98 = {
-			add_core_of = PWS
+		51 = { set_demilitarized_zone = no }
+		42 = { set_demilitarized_zone = no }
+		1811 = { set_demilitarized_zone = no }
+		28 = { set_demilitarized_zone = no }
+		1812 = { set_demilitarized_zone = no }
+		8 = { set_demilitarized_zone = no }
+		1809 = { set_demilitarized_zone = no }
+		PWH = {   #莱茵兰军区
+			transfer_state = 51
+			transfer_state = 42
+			transfer_state = 1811
+			transfer_state = 28
+			transfer_state = 1812
+			transfer_state = 8
+			load_oob = "PWH_1962"
+			load_oob = "PWH_1962"
+			load_oob = "PWH_1962"
+			every_owned_state = {
+				add_core_of = PWH
+			}
 		}
 		country_event = { id = POL_ROD.914 days = 3 }
 	}
@@ -2479,61 +2523,40 @@ country_event = {
 
 	option = {
 		name = POL_ROD.914.a
-		69 = { set_demilitarized_zone = no }
-		9 = { set_demilitarized_zone = no }
-		75 = { set_demilitarized_zone = no }
-		1026 = { set_demilitarized_zone = no }
-		68 = { set_demilitarized_zone = no }
-		PWP = {
-			transfer_state = 9
-			transfer_state = 75
-			load_oob = "PWP_1962"
-			load_oob = "PWP_1962"
-			load_oob = "PWP_1962"
-			add_ideas = PWP_czech_stability
+		54 = { set_demilitarized_zone = no }
+		55 = { set_demilitarized_zone = no }
+		57 = { set_demilitarized_zone = no }
+		1815 = { set_demilitarized_zone = no }
+		PWB = {
+			drop_cosmetic_tag = GER
+			every_owned_state = {
+				add_core_of = PWB
+				set_demilitarized_zone = no
+			}
 		}
-		PWN = {
-			transfer_state = 4
-			transfer_state = 1025
-			load_oob = "PWN_1962"
-			load_oob = "PWN_1962"
-			load_oob = "PWN_1962"
-			add_ideas = PWN_free_austria
+		PWD = {   #德意志联邦
+			transfer_state = 54
+			transfer_state = 55
+			transfer_state = 57
+			transfer_state = 1815
+			load_oob = "PWD_1962"
+			load_oob = "PWD_1962"
+			load_oob = "PWD_1962"
+			every_owned_state = {
+				add_core_of = PWD
+			}
 		}
-		PWS = {
-			transfer_state = 770
-			transfer_state = 98
-			load_oob = "PWS_1962"
-			load_oob = "PWS_1962"
-			load_oob = "PWS_1962"
+		PWI = {   #党卫队
+			transfer_state = 1812
+			transfer_state = 28
+			load_oob = "PWI_1962"
+			load_oob = "PWI_1962"
+			load_oob = "PWI_1962"
+			every_owned_state = {
+				add_core_of = PWI
+			}
 		}
-		PWK = {
-			transfer_state = 1026
-			transfer_state = 68
-			load_oob = "PWK_1962"
-			load_oob = "PWK_1962"
-			load_oob = "PWK_1962"
-			add_ideas = PWK_last_revolution
-		}
-		PWD = {
-			transfer_state = 69
-		}
-		69 = {
-			add_core_of = PWD
-		}
-		9 = {
-			add_core_of = PWO
-		}
-		75 = {
-			add_core_of = PWO
-		}
-		1026 = {
-			add_core_of = PWK
-		}
-		68 = {
-			add_core_of = PWK
-		}
-		country_event = { id = POL_ROD.915 days = 3 }
+		country_event = { id = POL_ROD.916 days = 3 }
 	}
 }
 country_event = {
@@ -2548,73 +2571,6 @@ country_event = {
 
 	option = {
 		name = POL_ROD.915.a
-		65 = {
-			add_core_of = PWD
-		}
-		PWD = {
-			transfer_state = 65
-			load_oob = "PWD_1962"
-			load_oob = "PWD_1962"
-			load_oob = "PWD_1962"
-			
-		}
-		65 = { set_demilitarized_zone = no }
-		66 = { set_demilitarized_zone = no }
-		67 = { set_demilitarized_zone = no }
-		53 = { set_demilitarized_zone = no }
-		52 = { set_demilitarized_zone = no }
-		152 = { set_demilitarized_zone = no }
-		PWM = {
-			transfer_state = 66
-			transfer_state = 67
-			add_ideas = PWM_ultramilitarist_way
-		}
-		PWL = {
-			transfer_state = 52
-			transfer_state = 53
-			transfer_state = 152
-			load_oob = "PWL_1962"
-			load_oob = "PWL_1962"
-			load_oob = "PWL_1962"
-			add_ideas = PWL_last_good_of_wehrmacht
-		}
-		PWQ = {
-			transfer_state = 75
-			load_oob = "PWQ_1962"
-			load_oob = "PWQ_1962"
-			load_oob = "PWQ_1962"
-			add_ideas = PWQ_free_czech
-		}
-		PWM = {
-			load_oob = "PWM_1962"
-			load_oob = "PWM_1962"
-			load_oob = "PWM_1962"
-			add_ideas = PWM_ultramilitarist_way
-		}
-		66 = {
-			add_core_of = PWM
-		}
-		67 = {
-			add_core_of = PWM
-		}
-		52 = {
-			add_core_of = PWL
-		}
-		53 = {
-			add_core_of = PWL
-		}
-		152 = {
-			add_core_of = PWL
-		}
-		75 = {
-			add_core_of = PWQ
-		}
-		ICE = {
-			country_event = { id = POL_ROD.916 days = 3 }
-		}
-		PWB = {
-			set_cosmetic_tag = PWB
-		}
 	}
 }
 country_event = {
@@ -2630,15 +2586,25 @@ country_event = {
 	option = {
 		name = POL_ROD.916.a
 		set_global_flag = second_gcw_started
-		PWF = {
-			declare_war_on = {
-				target = PWG
-				type = annex_everything		
-        	}
-		}
 		PWI = {
 			declare_war_on = {
 				target = PWH
+				type = annex_everything		
+        	}
+		}
+		PWG = {
+			declare_war_on = {
+				target = PWH
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWI
+				type = annex_everything		
+        	}
+		}
+		PWH = {
+			declare_war_on = {
+				target = PWI
 				type = annex_everything		
         	}
 		}
@@ -2648,13 +2614,17 @@ country_event = {
 				type = annex_everything		
         	}
 			declare_war_on = {
-				target = PWL
+				target = PWD
 				type = annex_everything		
         	}
 		}
 		PWK = {
 			declare_war_on = {
 				target = PWL
+				type = annex_everything		
+        	}
+			declare_war_on = {
+				target = PWD
 				type = annex_everything		
         	}
 		}
@@ -2666,7 +2636,7 @@ country_event = {
 		}
 		PWP = {
 			declare_war_on = {
-				target = PWQ
+				target = PWC
 				type = annex_everything		
         	}
 		}
@@ -2676,27 +2646,13 @@ country_event = {
 				type = annex_everything		
         	}
 		}
-		PWE = {
+		PWQ = {
 			declare_war_on = {
-				target = PWM
+				target = PWN
 				type = annex_everything		
         	}
 			declare_war_on = {
-				target = PWD
-				type = annex_everything		
-        	}
-			declare_war_on = {
-				target = PWC
-				type = annex_everything		
-        	}
-		}
-		PWM = {
-			declare_war_on = {
-				target = PWC
-				type = annex_everything		
-        	}
-			declare_war_on = {
-				target = PWD
+				target = PWO
 				type = annex_everything		
         	}
 		}
@@ -3170,6 +3126,10 @@ country_event = {
 			target = PWR
 			type = annex_everything
 		}
+		declare_war_on = {
+			target = PWM 
+			type = annex_everything
+		}
 	}
 }
 country_event = {
@@ -3222,7 +3182,11 @@ country_event = {
 		}
 		PWR = {
 			transfer_state = 5
+			transfer_state = 2526
+			transfer_state = 2527
 			transfer_state = 2528
+			transfer_state = 67
+			transfer_state = 66
 		}
 	}
 }
@@ -3251,11 +3215,21 @@ country_event = {
 	picture = GFX_news_event_GER_eastern_front_german_troops
 	option = {
 		name = POL_ROD.10000.a
-		PWH = {
-			dismantle_faction = yes
+		PWA = {
+			create_faction = Einheitspakt
 		}
-		POL = {
-			add_to_faction = PWH
-		}
+	}
+}
+country_event = {
+	id = POL_ROD.10001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event speer.154" }
+	title = POL_ROD.10001.t
+	desc = POL_ROD.10001.d
+	is_triggered_only = yes
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	option = {
+		name = POL_ROD.10001.a
+		add_to_variable = { PWR_OWZJ_affection = -20 }
+		add_to_variable = { PWR_sanaji_affection = 20 }
 	}
 }

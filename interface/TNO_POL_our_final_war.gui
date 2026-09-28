@@ -1,47 +1,36 @@
 guiTypes = {
-
 	containerWindowType = {
 		name = "POL_our_final_war_container"
 		size = { 
 			width = 100% 
-			height = 200
+			height = 450
 		}
 		position = { x = 0 y = 0 }
 		iconType = {
 			name = "POL_final_war_supply"
 			spriteType = "GFX_POL_final_war_supply"
-			position = { x = 50 y = 50 }
+			position = { x = 260 y = 300 }
+			centerposition = yes
+			pdx_tooltip = "POL_final_war_supply_t" 
+			pdx_tooltip_delayed = "POL_final_war_supply_tt"
 		}
 		iconType = {
-			name = "POL_final_war_ger_war_supp"
-			spriteType = "GFX_POL_final_war_ger_war_supp"
-			position = { x = 50 y = 150 }
+			name = "POL_GFX_GUI_GPW_GER"
+			spriteType = "GFX_GUI_GPW_GER"
+			position = { x = 50 y = 40 }
 		}
 		iconType = {
-			name = "POL_supplies_during_war"
-			spriteType = "GFX_POL_supplies_during_war"
-			position = { x = 10 y = 56 }
-		}
-		iconType = {
-			name = "POL_tension_during_war"
-			spriteType = "GFX_decision_category_GER_reichskommissariats"
-			position = { x = 0 y = 149 }
+			name = "POL_GFX_GUI_GPW_POL"
+			spriteType = "GFX_GUI_GPW_POL"
+			position = { x = 300 y = 40 }
 		}
 		instantTextBoxType = {
-			name = "POL_war_supply"
-			position = { x = 10 y = 10 }
-			maxWidth = 400
-			maxHeight = 40
+			name = "war_situation_of_GPW"
+			position = { x = 130 y = 410 }
+			maxWidth = 600
+			maxHeight = 60
 			font = "aldrich_36_outline"
-			text = "war_time_supply_txt"
-		}
-		instantTextBoxType = {
-			name = "POL_german_tension"
-			position = { x = 10 y = 110 }
-			maxWidth = 400
-			maxHeight = 40
-			font = "aldrich_36_outline"
-			text = "war_time_german_tension_txt"
+			text = "war_situation_of_GPW_tt"
 		}
 	}
 }
